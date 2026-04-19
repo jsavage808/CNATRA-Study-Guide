@@ -1,21 +1,20 @@
 # CNATRA Study Hub
 
-Naval aviation training reference for **T-6B**, **T-44C**, and **T-45C** — cross-referencing syllabus discussion items to their source documents (NATOPS, FTI, and supporting publications).
+Naval aviation training reference for **T-6B**, **T-44C**, and **T-45C** — discussion items from the Master Curriculum Guide (MCG) cross-referenced to their source documents (NATOPS, FTI, and supporting publications).
 
 > **FOR STUDY USE ONLY.** Always verify all information against current-revision official publications before any flight. Boldface procedures must be memorized from current NATOPS.
 
 ---
 
-## What This Site Does
+## How It Works
 
-- **Syllabus Panel** — displays all training events by phase. Click any event to filter discussion items linked to it.
-- **Documents Panel** — lists all publications. Clicking "VIEW REFS" filters discussion items sourced from that document. If you add a PDF URL, an "OPEN PDF" button appears.
-- **Discussion Items Panel** — the core feature. Every item shows:
-  - The question (as it appears in the syllabus)
-  - Which syllabus events it applies to
-  - Which documents contain the answer, with the exact chapter/section to look in
-  - An optional note hinting at what to focus on
-- **Boldface Panel** — emergency procedure steps for quick review (must be memorized from current NATOPS).
+The site loads three JSON data files (one per aircraft) that were generated from your uploaded curriculum and index files. Each discussion item from the MCG is linked to the top-scoring document chunks found in the supporting publications.
+
+| Panel | What It Shows |
+|---|---|
+| **Discussion Items** | All MCG discussion items, filterable by block code and media type. Expand any item to see which document and page to study. |
+| **Publications** | All referenced documents. Click VIEW REFS to filter discussion items sourced from that publication. |
+| **Boldface / Emergency** | Emergency procedure steps for quick review (must be memorized from current NATOPS). |
 
 ---
 
@@ -23,273 +22,139 @@ Naval aviation training reference for **T-6B**, **T-44C**, and **T-45C** — cro
 
 ```
 cnatra-study-hub/
-├── index.html              ← single-page app shell (do not edit layout)
+├── index.html                    ← single-page app shell
 ├── css/
-│   └── style.css           ← all styling (edit only if customizing appearance)
+│   └── style.css                 ← all styling
 ├── js/
-│   └── app.js              ← all rendering logic (do not edit unless adding features)
+│   └── app.js                    ← all rendering logic
 ├── data/
+│   ├── all-discuss-locations.json   ← master source (all aircraft)
+│   ├── all-index.json               ← master document/chunk index
 │   ├── t6b/
-│   │   └── data.js         ← ✏️  ALL T-6B content lives here
+│   │   └── discuss-data.json        ← generated T-6B data (47 items)
 │   ├── t44c/
-│   │   └── data.js         ← ✏️  ALL T-44C content lives here
+│   │   └── discuss-data.json        ← generated T-44C data (24 items)
 │   └── t45c/
-│       └── data.js         ← ✏️  ALL T-45C content lives here
+│       └── discuss-data.json        ← generated T-45C data (68 items)
+├── pdfs/
+│   └── raw/
+│       ├── t6b/                  ← place T-6B PDFs here
+│       ├── t44c/                 ← place T-44C PDFs here
+│       └── t45c/                 ← place T-45C PDFs here
 └── README.md
 ```
 
-**You will spend nearly all your time editing the three `data/*.js` files.** The HTML, CSS, and JS are the engine — the data files are the content.
-
 ---
 
-## Deploying to GitHub Pages (Free Hosting)
+## Deploying to GitHub Pages
 
-### First time setup
+### First-time setup
 
-1. Create a free account at [github.com](https://github.com) if you don't have one.
-2. Create a new repository — call it `cnatra-study-hub` (or any name you want).
-3. Upload all the files from this project, maintaining the folder structure.
+1. Create a GitHub account at [github.com](https://github.com) if you don't have one.
+2. Create a new **public** repository — e.g. `cnatra-study-hub`.
+3. Upload all files from this project, maintaining the folder structure exactly.
 4. Go to your repo → **Settings** → **Pages**.
 5. Under **Source**, select **Deploy from a branch**, choose `main`, folder `/root`.
-6. Click **Save**. GitHub will give you a URL like `https://yourusername.github.io/cnatra-study-hub/`.
+6. Click **Save**. Your site will be live at `https://yourusername.github.io/cnatra-study-hub/` within ~60 seconds.
 
-### Updating content
+### Hosting PDFs for direct page links
 
-Every time you edit a data file:
-1. Edit `data/t6b/data.js`, `data/t44c/data.js`, or `data/t45c/data.js` on your computer.
-2. Go to your GitHub repo in the browser, click the file, click the pencil ✏️ icon, paste your changes, and click **Commit changes**.
-3. The site updates within ~60 seconds.
+The discussion items include file paths like `t6b/CNATRA-P-816.pdf`. For the "OPEN PDF" links to work, place your PDF files in `pdfs/raw/` matching those paths:
 
-Or use the GitHub Desktop app / VS Code for a more comfortable editing experience.
+```
+pdfs/raw/t6b/CNATRA-P-816.pdf
+pdfs/raw/t6b/A1-T6BAA-NFM-000.pdf
+pdfs/raw/t44c/A1-T44CA-NFM-000.pdf
+pdfs/raw/t45c/A1-T45CA-NFM-000.pdf
+... etc
+```
+
+**GitHub file size limit:** GitHub has a 100MB limit per file and a 1GB soft limit per repository. Large NATOPS PDFs may need to be hosted externally:
+
+- **GitHub LFS** (Large File Storage) — free for public repos up to 1GB, handles large PDFs natively
+- **Cloudflare R2** — free for up to 10GB storage, then cheap. Best for large PDF libraries.
+- **Google Drive** — upload PDFs, set sharing to "Anyone with link", use a direct-link URL converter
+
+If using external hosting, edit the `url` field for each document in `data/{aircraft}/discuss-data.json`.
 
 ---
 
-## How to Edit the Data Files
+## Updating Discussion Data
 
-Each data file has four sections. Here is what to edit and how.
+The `data/{t6b,t44c,t45c}/discuss-data.json` files are the content source. They were generated from:
+- `data/all-discuss-locations.json` — MCG discussion items with matched source locations
+- `data/all-index.json` — full document and chunk index
 
-### 1. Linking a PDF document
+### Regenerating the data files
 
-Find the doc entry and add the URL:
+If you get new versions of the source JSON files, run the generator script:
 
-```js
-{
-  id: "natops-t6b",
-  shortName: "NATOPS",
-  fullName: "NATOPS Flight Manual — T-6B Texan II",
-  pubNumber: "A1-T6BAA-NFM-000",
-  type: "NATOPS",
-  url: "https://your-server.com/natops-t6b.pdf",   // ← add this
-  description: "..."
-}
+```bash
+python3 generate-data.py
 ```
 
-Good places to host PDFs:
-- **GitHub itself** — add the PDF to your repo. If it's under 25MB, it just works. Link: `https://raw.githubusercontent.com/yourusername/cnatra-study-hub/main/data/t6b/natops-t6b.pdf`
-- **Google Drive** — upload, set to "Anyone with link can view", use a direct link generator to get a raw URL.
-- **Dropbox** — share link, change `?dl=0` to `?raw=1`.
+This reads `all-discuss-locations.json` and regenerates all three `discuss-data.json` files.
 
-### 2. Adding a discussion item
+### Manually editing a discussion item
 
-Copy this template and add it to the `discussionItems` array in the correct aircraft's data file:
+Open `data/t6b/discuss-data.json` and find the item. Each item looks like:
 
-```js
+```json
 {
-  id: "t6b-sys-999",             // unique ID — use aircraft prefix + category + number
-  category: "Systems",           // used for the filter buttons (must match other items of same type)
-  question: "Your discussion item question exactly as written in the syllabus.",
-  syllabusEvents: ["C-2001"],    // one or more event codes from syllabusPhases above
-  sourceRefs: [
+  "id": "t6b-FAM2101",
+  "blockCode": "FAM21",
+  "blockTitle": "Familiarization Cockpit Procedures",
+  "eventCode": "FAM2101",
+  "media": "UTD",
+  "discussText": "Checklist challenge-action response format...",
+  "topics": ["Checklist challenge-action response format", "dual concurrence/response CRM", ...],
+  "sourceRefs": [
     {
-      docId: "natops-t6b",       // must match a doc `id` in the docs array
-      location: "Chapter 2 — Fuel System",   // chapter, section, page, or table name
-      note: "Optional hint about what to look for."  // or remove this line
-    },
-    // add more refs if the answer spans multiple documents:
-    {
-      docId: "fti-contact",
-      location: "Emergency Procedures section"
+      "docId": "cnatra-p-816",
+      "shortName": "FTI",
+      "location": "CHAPTER FOUR PRIMARY CONTACT (page 68)",
+      "pageStart": 68,
+      "heading": "CHAPTER FOUR PRIMARY CONTACT",
+      "snippet": "The accomplishment of a safe, productive flight...",
+      "score": 52.648,
+      "file": "t6b/CNATRA-P-816.pdf"
     }
   ]
 }
 ```
 
-**Rules:**
-- `id` must be unique across the entire file.
-- `syllabusEvents` values must match codes defined in `syllabusPhases`.
-- `docId` values must match `id` values defined in the `docs` array.
-- `category` is free text — whatever you use becomes a filter button. Be consistent (e.g. always "Systems", not sometimes "System").
+You can add, remove, or edit `sourceRefs` entries. The `file` path determines whether a PDF link appears.
 
-### 3. Adding a syllabus event
+### Adding a PDF URL for a document
 
-Add to the correct phase in `syllabusPhases`:
+Find the document in the `documents` array of the relevant `discuss-data.json`:
 
-```js
-{ code: "C-2099", name: "My New Event", type: "Dual", hours: "1.2",
-  description: "Brief description of what happens in this event." }
-```
-
-Then reference the code in discussion items' `syllabusEvents` arrays.
-
-### 4. Adding a boldface procedure
-
-```js
+```json
 {
-  id: "t6b-bf-999",
-  title: "PROCEDURE NAME — ALL CAPS",
-  warning: "Steps must be memorized verbatim. Verify against current NATOPS revision.",
-  steps: [
-    "ITEM — ACTION",
-    "ITEM — ACTION",
-    "ITEM — ACTION"
-  ]
-}
-```
-
-### 5. Adding a new document type / publication
-
-Add to the `docs` array:
-
-```js
-{
-  id: "my-doc-id",          // lowercase, no spaces, unique within this file
-  shortName: "Short Name",  // appears in source references
-  fullName: "Full Publication Name",
-  pubNumber: "CNATRA X-000",
-  type: "Supporting",       // "NATOPS", "FTI", or "Supporting"
-  url: "",                  // add URL when you have it hosted
-  description: "What this publication covers."
+  "id": "cnatra-p-816",
+  "shortName": "FTI Contact",
+  "fullName": "FLIGHT TRAINING INSTRUCTION - Contact",
+  "pubNumber": "CNATRA P-816",
+  "type": "fti",
+  "file": "t6b/CNATRA-P-816.pdf",
+  "url": ""     ← add your external URL here if not using pdfs/raw/
 }
 ```
 
 ---
 
-## Adding a New Category of Discussion Items
+## Media Type Codes
 
-The filter buttons on the Discussion panel are automatically generated from unique `category` values in the data. To add a new category, just use a new category name in a discussion item — the button appears automatically.
-
----
-
-## Frequently Asked Questions
-
-**Can I add a fourth aircraft?**
-Yes. Create `data/t-xx/data.js` with the same structure, add a `<script src="data/t-xx/data.js"></script>` to `index.html`, add the aircraft to `AC_MAP` in `app.js`, and add an `<button>` to the `ac-switcher` in `index.html`.
-
-**The PDF link shows "NOT LINKED" — how do I fix it?**
-Add a URL to the `url` field of that document in the data file. See "Linking a PDF document" above.
-
-**How do I make the site private?**
-GitHub Pages is public. For a private site, use a private GitHub repo with GitHub Pages (requires GitHub Pro/Team) or deploy to Netlify with password protection. Alternatively, just share the URL only with your squadron — it won't be indexed by search engines without a sitemap.
-
-**How do I add a note that a NATOPS revision changed a procedure?**
-Update the `steps` array in the boldface section and/or update the `location` and `note` fields in the relevant `sourceRefs`. You can also add a `note` to a discussion item pointing to the revised section.
-
----
-
-## PDF Pipeline
-
-This repo now includes an offline PDF pipeline that:
-
-1. auto-discovers every PDF under `pdfs/raw/t6b`, `pdfs/raw/t44c`, and `pdfs/raw/t45c`
-2. indexes all publications so they are searchable by topic
-3. extracts `Discuss Items` directly from the curriculum-guide PDFs
-4. filters those extracted discuss items to simulator and flight events by default
-5. suggests the publication and page where each discuss item is likely answered
-
-### Files
-
-- `tools/pdf_pipeline.py` â€” main pipeline script
-- `pdfs/raw/` â€” place PDFs here, grouped by aircraft folder
-- `generated/` â€” created automatically for indexes, extracted discuss items, and match results
-
-### Folder layout
-
-```text
-pdfs/
-  raw/
-    t6b/
-      *.pdf
-    t44c/
-      *.pdf
-    t45c/
-      *.pdf
-```
-
-PDF filenames do **not** need to match a strict naming convention. The script scans all `.pdf` files recursively and infers publication metadata from the file contents when possible.
-
-### WSL workflow
-
-From WSL:
-
-```bash
-cd /mnt/c/Users/bassg/linux/CNATRA-Study-Guide
-source .venv/bin/activate   # if you created a virtualenv
-```
-
-Build a searchable index for every PDF:
-
-```bash
-python3 tools/pdf_pipeline.py index --output generated/all-index.json
-```
-
-Extract discuss items from curriculum guides only, limited to sim/flight events:
-
-```bash
-python3 tools/pdf_pipeline.py extract --output generated/all-discuss-items.json
-```
-
-Match those extracted discuss items against the indexed publications and get page/publication suggestions:
-
-```bash
-python3 tools/pdf_pipeline.py match \
-  --index generated/all-index.json \
-  --items generated/all-discuss-items.json \
-  --output generated/all-discuss-locations.json
-```
-
-### Common commands
-
-Only one aircraft:
-
-```bash
-python3 tools/pdf_pipeline.py index --aircraft T-45C --output generated/t45c-index.json
-python3 tools/pdf_pipeline.py extract --aircraft T-45C --output generated/t45c-discuss-items.json
-python3 tools/pdf_pipeline.py match \
-  --aircraft T-45C \
-  --index generated/t45c-index.json \
-  --items generated/t45c-discuss-items.json \
-  --output generated/t45c-discuss-locations.json
-```
-
-Search publications manually:
-
-```bash
-python3 tools/pdf_pipeline.py search \
-  --index generated/all-index.json \
-  --aircraft T-6B \
-  --query "fuel system usable fuel imbalance"
-```
-
-### Output files
-
-- `generated/all-index.json`
-  Searchable chunks for every indexed publication, including title, inferred publication number, page, and snippet text.
-
-- `generated/all-discuss-items.json`
-  Discuss items extracted from curriculum guides. By default this excludes ground-only events and includes simulator/flight events only.
-
-- `generated/all-discuss-locations.json`
-  For each extracted discuss item, the top publication/page candidates where the answer is likely found.
-
-### Notes
-
-- The default extraction mode is `sim_flight`, which excludes ground events.
-- The matcher excludes curriculum-guide PDFs by default so it points you toward NATOPS, FTI, checklists, supplements, and other supporting pubs instead of back to the syllabus itself.
-- Some PDFs have messy OCR/text extraction. Always verify the suggested location manually before updating `data/*.js`.
-- Boldface and emergency procedures must still be checked verbatim against the current NATOPS revision.
+| Code | Meaning |
+|---|---|
+| UTD | Unit Training Device (simulator) |
+| OFT | Operational Flight Trainer |
+| VTD | Versatile Training Device |
+| UTD/OFT | Both UTD and OFT |
+| UTD/MR | UTD and Mission Rehearsal |
 
 ---
 
 ## Content Disclaimer
 
-This site is a **study aid only**. It is not a substitute for official Naval Air Training Command (CNATRA) publications, NATOPS flight manuals, or official flight training instructions. All boldface and emergency procedures must be memorized from the current revision of the applicable NATOPS flight manual. Content accuracy is the responsibility of the person maintaining the data files.
+This site is a **study aid only**. It is not a substitute for official Naval Air Training Command (CNATRA) publications, NATOPS flight manuals, or official flight training instructions. Source location matches are generated algorithmically — always verify content against the complete, current-revision official publication. All boldface and emergency procedures must be memorized from the current revision of the applicable NATOPS flight manual.
