@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNATRA Study Hub</title>
+  <meta name="description" content="Naval aviation training reference — syllabus, NATOPS, discussion items, and boldface procedures for T-6B, T-44C, and T-45C.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 5h12M3 9h12M3 13h12"/>
+      </svg>
+    </button>
+
+    <a href="#" class="logo" onclick="switchPanel('syllabus'); return false;">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <path d="M11 2L5 9v9h12V9L11 2z" stroke="#00e5ff" stroke-width="1.5"/>
+          <path d="M8 18v-6h6v6" stroke="#00e5ff" stroke-width="1.2"/>
+          <circle cx="11" cy="10" r="1.8" fill="#00e5ff"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">CNATRA Study Hub</div>
+        <div class="logo-sub">Naval Aviation Training Reference</div>
+      </div>
+    </a>
+
+    <div class="ac-switcher">
+      <button class="ac-btn" data-ac="T-6B"  onclick="switchAC('T-6B')">T-6B</button>
+      <button class="ac-btn" data-ac="T-44C" onclick="switchAC('T-44C')">T-44C</button>
+      <button class="ac-btn" data-ac="T-45C" onclick="switchAC('T-45C')">T-45C</button>
+    </div>
+
+    <div class="header-status">
+      <span class="status-dot"></span>
+      <span id="header-status">A/C: T-6B</span>
+    </div>
+  </header>
+
+  <!-- ── BODY LAYOUT ────────────────────────────────────── -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar" id="sidebar">
+      <div class="nav-group">
+        <div class="nav-group-label">Navigation</div>
+        <div id="sidebar-nav"><!-- built by JS --></div>
+      </div>
+
+      <div style="padding: 0 1.25rem; margin-top: auto; border-top: 1px solid var(--border-dim); padding-top: 1rem;">
+        <div style="font-family: var(--mono); font-size: 8px; color: var(--text-muted); letter-spacing: 2px; line-height: 2; text-transform: uppercase;">
+          For study use only.<br>
+          Always verify against<br>
+          current official publications.
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="main-content">
+
+      <!-- ── SYLLABUS PANEL ──────────────────────────────── -->
+      <div class="content-panel active" id="panel-syllabus">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Syllabus Events</div>
+            <div class="panel-subtitle">Click any event to view linked discussion items</div>
+          </div>
+          <span class="badge badge-hud" id="syllabus-badge">T-6B PRIMARY</span>
+        </div>
+        <div class="disclaimer">
+          ⚠ FOR STUDY USE ONLY — Always reference current-revision official publications.
+          Discussion item counts are derived from your data files.
+        </div>
+        <div id="syllabus-content"><!-- rendered by JS --></div>
+      </div>
+
+      <!-- ── DOCUMENTS PANEL ────────────────────────────── -->
+      <div class="content-panel" id="panel-documents">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Publications</div>
+            <div class="panel-subtitle">Link PDF URLs in the data files to enable direct access</div>
+          </div>
+          <span class="badge badge-hud" id="documents-badge">T-6B</span>
+        </div>
+        <div class="disclaimer">
+          ⚠ Host your PDFs and add the URL to each document's <code style="color:var(--hud);font-size:9px;">url: ""</code> field
+          in the data file to enable "OPEN PDF" links. All publications must be current revision.
+        </div>
+        <div id="documents-content"><!-- rendered by JS --></div>
+      </div>
+
+      <!-- ── DISCUSSION PANEL ───────────────────────────── -->
+      <div class="content-panel" id="panel-discussion">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Discussion Items</div>
+            <div class="panel-subtitle">Each item is cross-referenced to its source document and location</div>
+          </div>
+          <span class="badge badge-hud" id="discussion-badge">T-6B</span>
+        </div>
+        <div class="disclaimer">
+          ⚠ Discussion items are derived from syllabus documents. Answers are found in the referenced
+          publications at the locations shown. Always read the complete section, not just the cited passage.
+        </div>
+
+        <!-- Filter & search bar -->
+        <div class="filter-bar">
+          <input
+            class="search-input"
+            id="disc-search"
+            type="search"
+            placeholder="Search discussion items..."
+            oninput="handleSearch(this.value)"
+            autocomplete="off">
+        </div>
+        <div class="filter-bar" id="disc-filter-bar"><!-- category buttons rendered by JS --></div>
+        <div class="result-count" id="disc-count"></div>
+
+        <div class="discussion-list" id="discussion-content"><!-- rendered by JS --></div>
+      </div>
+
+      <!-- ── BOLDFACE PANEL ─────────────────────────────── -->
+      <div class="content-panel" id="panel-boldface">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Boldface / Emergency Procedures</div>
+            <div class="panel-subtitle">Must be memorized verbatim from current NATOPS</div>
+          </div>
+          <span class="badge badge-danger" id="boldface-badge">BOLDFACE</span>
+        </div>
+        <div class="disclaimer" style="border-color:rgba(255,68,68,0.4); background:rgba(255,68,68,0.07); color:#ff8a80;">
+          ⚠ CRITICAL: All boldface and emergency procedures must be memorized verbatim from your current
+          aircraft NATOPS. This panel is a study aid only. Steps and conditions change between revisions —
+          always verify against the current publication before any flight.
+        </div>
+        <div id="boldface-content"><!-- rendered by JS --></div>
+      </div>
+
+    </main>
+  </div><!-- /page-layout -->
+</div><!-- /site-wrapper -->
+
+<!-- ── DATA FILES ─────────────────────────────────────────── -->
+<script src="data/t6b/data.js"></script>
+<script src="data/t44c/data.js"></script>
+<script src="data/t45c/data.js"></script>
+<!-- ── APP LOGIC ───────────────────────────────────────────── -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

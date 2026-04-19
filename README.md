@@ -1,243 +1,191 @@
-// ============================================================
-// T-44C DATA FILE
-// Follow the same editing conventions as data/t6b/data.js
-// ============================================================
+# CNATRA Study Hub
 
-const T44C = {
-  aircraft: "T-44C",
-  fullName: "T-44C Pegasus",
-  role: "Multi-Engine Advanced",
-  color: "#ffb300",
+Naval aviation training reference for **T-6B**, **T-44C**, and **T-45C** — cross-referencing syllabus discussion items to their source documents (NATOPS, FTI, and supporting publications).
 
-  docs: [
-    {
-      id: "natops-t44c",
-      shortName: "NATOPS",
-      fullName: "NATOPS Flight Manual — T-44C Pegasus",
-      pubNumber: "A1-T44CA-NFM-000",
-      type: "NATOPS",
-      url: "",
-      description: "Primary authority for T-44C aircraft systems, limitations, and emergency procedures."
-    },
-    {
-      id: "fti-mae",
-      shortName: "FTI Multi-Engine",
-      fullName: "Flight Training Instruction — Multi-Engine Advanced",
-      pubNumber: "CNATRA P-820",
-      type: "FTI",
-      url: "",
-      description: "Procedures and standards for the multi-engine advanced phase."
-    },
-    {
-      id: "crm-guide",
-      shortName: "CRM Guide",
-      fullName: "Crew Resource Management Guide",
-      pubNumber: "OPNAVINST 3710.7",
-      type: "Supporting",
-      url: "",
-      description: "CRM standards, crew coordination, and multi-crew communication techniques."
-    },
-    {
-      id: "ifr-supplement",
-      shortName: "IFR Supplement",
-      fullName: "IFR Supplement — Multi-Engine Procedures",
-      pubNumber: "CNATRA P-821",
-      type: "Supporting",
-      url: "",
-      description: "IFR procedures specific to multi-engine training aircraft operations."
-    }
-  ],
+> **FOR STUDY USE ONLY.** Always verify all information against current-revision official publications before any flight. Boldface procedures must be memorized from current NATOPS.
 
-  syllabusPhases: [
-    {
-      phase: "Advanced Multi-Engine",
-      events: [
-        { code: "MA-3100", name: "Transition 1",            type: "Dual", hours: "2.0", description: "Systems orientation, normal procedures, traffic pattern, engine starting." },
-        { code: "MA-3101", name: "Transition 2",            type: "Dual", hours: "2.0", description: "Advanced traffic pattern, short/soft field ops, abnormal procedures." },
-        { code: "MA-3110", name: "Multi-Engine Basics 1",   type: "Dual", hours: "2.0", description: "VMC demonstration, engine failure identification, Vmc awareness, single-engine ops." },
-        { code: "MA-3111", name: "Multi-Engine Basics 2",   type: "Dual", hours: "2.0", description: "Single-engine maneuvers, feathering, air restart, SE traffic pattern." },
-        { code: "MA-3120", name: "Instrument Procedures 1", type: "Dual", hours: "2.0", description: "IFR procedures in multi-engine aircraft, precision approaches, holds." },
-        { code: "MA-3121", name: "Instrument Procedures 2", type: "Dual", hours: "2.0", description: "Non-precision approaches, GPS procedures, complex IFR clearances." },
-        { code: "MA-3130", name: "SE Approaches 1",         type: "Dual", hours: "2.0", description: "Single-engine ILS, SE missed approach, SE traffic pattern procedures." },
-        { code: "MA-3131", name: "SE Approaches 2",         type: "Solo", hours: "2.0", description: "Solo multi-engine IFR — apply SE procedures independently." },
-        { code: "MA-3140", name: "Long X-Country",          type: "Dual", hours: "4.0", description: "Extended cross-country under IFR, fuel planning, alternate selection, ATC coordination." }
-      ]
-    }
-  ],
+---
 
-  discussionItems: [
-    // ── SYSTEMS ──
-    {
-      id: "t44c-sys-001",
-      category: "Systems",
-      question: "Describe the T-44C fuel system: tank arrangement, crossfeed operation, fuel imbalance limits, and fuel management for a long cross-country.",
-      syllabusEvents: ["MA-3100", "MA-3140"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 2 — Fuel System", note: "Include the crossfeed valve logic and imbalance limits." }
-      ]
-    },
-    {
-      id: "t44c-sys-002",
-      category: "Systems",
-      question: "Describe the hydraulic system: what is powered by hydraulics, what is the backup system for gear extension, and what indications would you see with a complete hydraulic failure?",
-      syllabusEvents: ["MA-3100"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 2 — Hydraulic System" }
-      ]
-    },
-    {
-      id: "t44c-sys-003",
-      category: "Systems",
-      question: "Describe the T-44C electrical system: AC vs DC buses, what is lost with a generator failure, and the priority of load shedding.",
-      syllabusEvents: ["MA-3100"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 2 — Electrical System", note: "Note the inverter system for AC power." }
-      ]
-    },
-    // ── VMC / MULTI-ENGINE ──
-    {
-      id: "t44c-vmc-001",
-      category: "VMC / Multi-Engine",
-      question: "Define VMC (Vmc) for the T-44C. Describe the certification conditions for Vmc and the factors that increase or decrease actual minimum control speed in flight.",
-      syllabusEvents: ["MA-3110", "MA-3111"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 5 — Limitations / Vmc", note: "Know the published value and the variable factors." },
-        { docId: "fti-mae", location: "Multi-Engine Aerodynamics chapter — Vmc factors" }
-      ]
-    },
-    {
-      id: "t44c-vmc-002",
-      category: "VMC / Multi-Engine",
-      question: "Explain the concept of critical engine for the T-44C. Why is one engine more critical than the other, and how does this affect minimum control speed?",
-      syllabusEvents: ["MA-3110"],
-      sourceRefs: [
-        { docId: "fti-mae", location: "Multi-Engine Aerodynamics — Critical Engine / P-factor" }
-      ]
-    },
-    {
-      id: "t44c-vmc-003",
-      category: "VMC / Multi-Engine",
-      question: "Describe the engine failure identification procedure: identify, verify, feather. What is the hazard of incorrectly identifying the failed engine?",
-      syllabusEvents: ["MA-3110", "MA-3111"],
-      sourceRefs: [
-        { docId: "fti-mae", location: "Engine Failure procedures — Identify, Verify, Feather" },
-        { docId: "natops-t44c", location: "Chapter 3 — Engine Failure In Flight" }
-      ]
-    },
-    // ── EMERGENCY ──
-    {
-      id: "t44c-emer-001",
-      category: "Emergency",
-      question: "Describe the engine fire in flight boldface for the T-44C. What is the purpose of feathering the propeller during a fire?",
-      syllabusEvents: ["MA-3100", "MA-3110"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 3 — Engine Fire In Flight (BOLDFACE)" }
-      ]
-    },
-    {
-      id: "t44c-emer-002",
-      category: "Emergency",
-      question: "At what point during the takeoff roll would you attempt to continue vs. abort following an engine failure? What factors affect this decision?",
-      syllabusEvents: ["MA-3110", "MA-3111"],
-      sourceRefs: [
-        { docId: "fti-mae", location: "Engine Failure — Takeoff Decision criteria" },
-        { docId: "natops-t44c", location: "Chapter 3 — Engine Failure During Takeoff" }
-      ]
-    },
-    {
-      id: "t44c-emer-003",
-      category: "Emergency",
-      question: "Describe the ditching procedure for the T-44C. What are the passenger briefing requirements and the preferred ditching heading relative to wind and swells?",
-      syllabusEvents: ["MA-3140"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 3 — Ditching" }
-      ]
-    },
-    // ── LIMITATIONS ──
-    {
-      id: "t44c-lim-001",
-      category: "Limitations",
-      question: "State the T-44C airspeed limitations: Vne, Vmo, Va, Vlo, Vle, and Vyse (blue line). Why is Vyse called 'blue line' and what does it optimize?",
-      syllabusEvents: ["MA-3100", "MA-3110"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 5 — Airspeed Limitations", note: "Know all values and the reasoning behind Vyse." }
-      ]
-    },
-    // ── CRM ──
-    {
-      id: "t44c-crm-001",
-      category: "CRM",
-      question: "Describe the crew callouts and division of duties during a single-engine missed approach. Who flies, who manages the engine failure, and how are tasks prioritized?",
-      syllabusEvents: ["MA-3130", "MA-3131"],
-      sourceRefs: [
-        { docId: "crm-guide", location: "Task Sharing / Abnormal Procedures section" },
-        { docId: "fti-mae", location: "Single-Engine Approaches — crew coordination" }
-      ]
-    },
-    {
-      id: "t44c-crm-002",
-      category: "CRM",
-      question: "Define threat and error management (TEM). Describe an example of a latent threat during a night IFR cross-country in the T-44C and how it should be briefed.",
-      syllabusEvents: ["MA-3140"],
-      sourceRefs: [
-        { docId: "crm-guide", location: "Threat and Error Management chapter" }
-      ]
-    },
-    // ── INSTRUMENTS ──
-    {
-      id: "t44c-inst-001",
-      category: "Instruments",
-      question: "Describe the procedure for flying a coupled ILS approach in the T-44C: autopilot mode sequence, monitoring responsibilities, and criteria for disconnecting.",
-      syllabusEvents: ["MA-3120", "MA-3121"],
-      sourceRefs: [
-        { docId: "natops-t44c", location: "Chapter 4 — Autopilot / Flight Director" },
-        { docId: "fti-mae", location: "Instrument Procedures — Coupled Approaches" }
-      ]
-    }
-  ],
+## What This Site Does
 
-  boldface: [
+- **Syllabus Panel** — displays all training events by phase. Click any event to filter discussion items linked to it.
+- **Documents Panel** — lists all publications. Clicking "VIEW REFS" filters discussion items sourced from that document. If you add a PDF URL, an "OPEN PDF" button appears.
+- **Discussion Items Panel** — the core feature. Every item shows:
+  - The question (as it appears in the syllabus)
+  - Which syllabus events it applies to
+  - Which documents contain the answer, with the exact chapter/section to look in
+  - An optional note hinting at what to focus on
+- **Boldface Panel** — emergency procedure steps for quick review (must be memorized from current NATOPS).
+
+---
+
+## File Structure
+
+```
+cnatra-study-hub/
+├── index.html              ← single-page app shell (do not edit layout)
+├── css/
+│   └── style.css           ← all styling (edit only if customizing appearance)
+├── js/
+│   └── app.js              ← all rendering logic (do not edit unless adding features)
+├── data/
+│   ├── t6b/
+│   │   └── data.js         ← ✏️  ALL T-6B content lives here
+│   ├── t44c/
+│   │   └── data.js         ← ✏️  ALL T-44C content lives here
+│   └── t45c/
+│       └── data.js         ← ✏️  ALL T-45C content lives here
+└── README.md
+```
+
+**You will spend nearly all your time editing the three `data/*.js` files.** The HTML, CSS, and JS are the engine — the data files are the content.
+
+---
+
+## Deploying to GitHub Pages (Free Hosting)
+
+### First time setup
+
+1. Create a free account at [github.com](https://github.com) if you don't have one.
+2. Create a new repository — call it `cnatra-study-hub` (or any name you want).
+3. Upload all the files from this project, maintaining the folder structure.
+4. Go to your repo → **Settings** → **Pages**.
+5. Under **Source**, select **Deploy from a branch**, choose `main`, folder `/root`.
+6. Click **Save**. GitHub will give you a URL like `https://yourusername.github.io/cnatra-study-hub/`.
+
+### Updating content
+
+Every time you edit a data file:
+1. Edit `data/t6b/data.js`, `data/t44c/data.js`, or `data/t45c/data.js` on your computer.
+2. Go to your GitHub repo in the browser, click the file, click the pencil ✏️ icon, paste your changes, and click **Commit changes**.
+3. The site updates within ~60 seconds.
+
+Or use the GitHub Desktop app / VS Code for a more comfortable editing experience.
+
+---
+
+## How to Edit the Data Files
+
+Each data file has four sections. Here is what to edit and how.
+
+### 1. Linking a PDF document
+
+Find the doc entry and add the URL:
+
+```js
+{
+  id: "natops-t6b",
+  shortName: "NATOPS",
+  fullName: "NATOPS Flight Manual — T-6B Texan II",
+  pubNumber: "A1-T6BAA-NFM-000",
+  type: "NATOPS",
+  url: "https://your-server.com/natops-t6b.pdf",   // ← add this
+  description: "..."
+}
+```
+
+Good places to host PDFs:
+- **GitHub itself** — add the PDF to your repo. If it's under 25MB, it just works. Link: `https://raw.githubusercontent.com/yourusername/cnatra-study-hub/main/data/t6b/natops-t6b.pdf`
+- **Google Drive** — upload, set to "Anyone with link can view", use a direct link generator to get a raw URL.
+- **Dropbox** — share link, change `?dl=0` to `?raw=1`.
+
+### 2. Adding a discussion item
+
+Copy this template and add it to the `discussionItems` array in the correct aircraft's data file:
+
+```js
+{
+  id: "t6b-sys-999",             // unique ID — use aircraft prefix + category + number
+  category: "Systems",           // used for the filter buttons (must match other items of same type)
+  question: "Your discussion item question exactly as written in the syllabus.",
+  syllabusEvents: ["C-2001"],    // one or more event codes from syllabusPhases above
+  sourceRefs: [
     {
-      id: "t44c-bf-001",
-      title: "ENGINE FAILURE IN FLIGHT",
-      warning: "Steps must be memorized verbatim. Verify against current NATOPS revision.",
-      steps: [
-        "POWER (operating engine) — MAXIMUM",
-        "MIXTURES — RICH",
-        "PROPS — HIGH RPM",
-        "IDENTIFY — failed engine (foot on the dead engine)",
-        "VERIFY — retard throttle (confirm failure)",
-        "FEATHER — propeller of failed engine",
-        "GEAR — UP (if not already)",
-        "FLAPS — RETRACT",
-        "AIRSPEED — Vyse (blue line) or best as available",
-        "TRIM — relieve rudder pressure"
-      ]
+      docId: "natops-t6b",       // must match a doc `id` in the docs array
+      location: "Chapter 2 — Fuel System",   // chapter, section, page, or table name
+      note: "Optional hint about what to look for."  // or remove this line
     },
+    // add more refs if the answer spans multiple documents:
     {
-      id: "t44c-bf-002",
-      title: "ENGINE FIRE IN FLIGHT",
-      warning: "Steps must be memorized verbatim. Verify against current NATOPS revision.",
-      steps: [
-        "THROTTLE (affected engine) — CLOSE",
-        "MIXTURE (affected engine) — IDLE CUTOFF",
-        "PROP (affected engine) — FEATHER",
-        "FUEL SELECTOR (affected engine) — OFF",
-        "FIRE EXTINGUISHER — ARM / DISCHARGE",
-        "CROSSFEED — OFF",
-        "LAND AS SOON AS POSSIBLE"
-      ]
-    },
-    {
-      id: "t44c-bf-003",
-      title: "ELECTRICAL FIRE / SMOKE IN COCKPIT",
-      warning: "Steps must be memorized verbatim. Verify against current NATOPS revision.",
-      steps: [
-        "OXYGEN MASKS — ON, 100%",
-        "NON-ESSENTIAL ELECTRICS — OFF",
-        "IDENTIFY source and isolate",
-        "LAND AS SOON AS POSSIBLE"
-      ]
+      docId: "fti-contact",
+      location: "Emergency Procedures section"
     }
   ]
-};
+}
+```
+
+**Rules:**
+- `id` must be unique across the entire file.
+- `syllabusEvents` values must match codes defined in `syllabusPhases`.
+- `docId` values must match `id` values defined in the `docs` array.
+- `category` is free text — whatever you use becomes a filter button. Be consistent (e.g. always "Systems", not sometimes "System").
+
+### 3. Adding a syllabus event
+
+Add to the correct phase in `syllabusPhases`:
+
+```js
+{ code: "C-2099", name: "My New Event", type: "Dual", hours: "1.2",
+  description: "Brief description of what happens in this event." }
+```
+
+Then reference the code in discussion items' `syllabusEvents` arrays.
+
+### 4. Adding a boldface procedure
+
+```js
+{
+  id: "t6b-bf-999",
+  title: "PROCEDURE NAME — ALL CAPS",
+  warning: "Steps must be memorized verbatim. Verify against current NATOPS revision.",
+  steps: [
+    "ITEM — ACTION",
+    "ITEM — ACTION",
+    "ITEM — ACTION"
+  ]
+}
+```
+
+### 5. Adding a new document type / publication
+
+Add to the `docs` array:
+
+```js
+{
+  id: "my-doc-id",          // lowercase, no spaces, unique within this file
+  shortName: "Short Name",  // appears in source references
+  fullName: "Full Publication Name",
+  pubNumber: "CNATRA X-000",
+  type: "Supporting",       // "NATOPS", "FTI", or "Supporting"
+  url: "",                  // add URL when you have it hosted
+  description: "What this publication covers."
+}
+```
+
+---
+
+## Adding a New Category of Discussion Items
+
+The filter buttons on the Discussion panel are automatically generated from unique `category` values in the data. To add a new category, just use a new category name in a discussion item — the button appears automatically.
+
+---
+
+## Frequently Asked Questions
+
+**Can I add a fourth aircraft?**
+Yes. Create `data/t-xx/data.js` with the same structure, add a `<script src="data/t-xx/data.js"></script>` to `index.html`, add the aircraft to `AC_MAP` in `app.js`, and add an `<button>` to the `ac-switcher` in `index.html`.
+
+**The PDF link shows "NOT LINKED" — how do I fix it?**
+Add a URL to the `url` field of that document in the data file. See "Linking a PDF document" above.
+
+**How do I make the site private?**
+GitHub Pages is public. For a private site, use a private GitHub repo with GitHub Pages (requires GitHub Pro/Team) or deploy to Netlify with password protection. Alternatively, just share the URL only with your squadron — it won't be indexed by search engines without a sitemap.
+
+**How do I add a note that a NATOPS revision changed a procedure?**
+Update the `steps` array in the boldface section and/or update the `location` and `note` fields in the relevant `sourceRefs`. You can also add a `note` to a discussion item pointing to the revised section.
+
+---
+
+## Content Disclaimer
+
+This site is a **study aid only**. It is not a substitute for official Naval Air Training Command (CNATRA) publications, NATOPS flight manuals, or official flight training instructions. All boldface and emergency procedures must be memorized from the current revision of the applicable NATOPS flight manual. Content accuracy is the responsibility of the person maintaining the data files.
