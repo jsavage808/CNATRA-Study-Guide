@@ -376,14 +376,6 @@ p:last-child { margin-bottom: 0; }
 .filter-btn:hover  { border-color: var(--hud); color: var(--hud); }
 .filter-btn.active { background: var(--hud-dim); border-color: var(--hud); color: var(--hud); }
 
-.discussion-mode-note {
-  font-family: var(--mono);
-  font-size: 9px;
-  color: var(--text-dim);
-  letter-spacing: 1px;
-  margin-left: 4px;
-}
-
 /* ── SYLLABUS PHASE & EVENT CARDS ─────────────────────────── */
 .phase-block { margin-bottom: 2rem; }
 
@@ -499,14 +491,6 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 4px;
 }
 
-.disc-submeta {
-  font-family: var(--mono);
-  font-size: 9px;
-  color: var(--text-dim);
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-}
-
 .disc-question {
   font-size: 14px;
   color: var(--text);
@@ -544,15 +528,6 @@ p:last-child { margin-bottom: 0; }
   border-top: 1px solid var(--border-dim);
 }
 .disc-item.expanded .disc-body { display: block; padding-top: 14px; }
-
-.disc-origin {
-  font-family: var(--mono);
-  font-size: 9px;
-  color: var(--text-dim);
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
 
 .source-ref-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
 
@@ -754,3 +729,116 @@ mark {
   border-radius: 2px;
   padding: 0 2px;
 }
+
+/* ── ADDITIONS FOR JSON-DRIVEN DATA ──────────────────────── */
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* event/media tags on disc items */
+.disc-event-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.event-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  border: 1px solid var(--border-dim);
+  color: var(--text-dim);
+  background: var(--bg1);
+}
+.event-tag.hud   { border-color: var(--border); color: var(--hud); background: var(--hud-dim); }
+.event-tag.amber { border-color: rgba(255,179,0,0.3); color: var(--amber); background: var(--amber-dim); }
+.event-tag.dim   { color: var(--text-muted); }
+
+/* discussion item topic list */
+.topic-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.8;
+}
+.topic-list li { margin-bottom: 2px; }
+
+/* section label inside expanded disc item */
+.disc-section-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* curriculum source reference footer */
+.curriculum-ref {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+/* source reference card — updated for snippet */
+.source-ref-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.source-ref-score {
+  font-family: var(--mono);
+  font-size: 8px;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  padding: 2px 6px;
+  border: 1px solid var(--border-dim);
+  border-radius: 2px;
+}
+.source-ref-snippet {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 6px 10px;
+  background: var(--bg0);
+  border-radius: 2px;
+  border-left: 2px solid var(--border-dim);
+  font-style: italic;
+}
+.source-ref-actions {
+  margin-top: 6px;
+}
+
+/* document list */
+.doc-ref-count {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+/* phase-block spacing for discussion */
+.phase-block { margin-bottom: 2rem; }
+.phase-label {
+  font-family: var(--cond);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phase-label::after { content:''; flex:1; height:1px; background:var(--border-dim); }
