@@ -1,0 +1,436 @@
+[
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-001",
+    "category": "Systems",
+    "question": "Describe the PT6A-68 engine oil system, normal oil pressure range, and indications of low oil pressure in flight.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u00e2\u20ac\u201d Propulsion System",
+        "note": "See oil system schematic and limits table."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 7.485,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-002",
+    "category": "Systems",
+    "question": "Explain the auto-feather system: arm conditions required, activation logic, and how to reset after an inadvertent actuation.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u00e2\u20ac\u201d Propeller System / Auto-Feather",
+        "note": "Note the torque threshold and arm switch positions."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 7.485,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-003",
+    "category": "Systems",
+    "question": "Describe the fuel system: tank arrangement, usable fuel quantity, unusable fuel, crossfeed capability, and fuel flow path.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u00e2\u20ac\u201d Fuel System",
+        "note": "Reference fuel quantity table and system schematic."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 20.455,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-004",
+    "category": "Systems",
+    "question": "Describe the electrical system: number of buses, generator output, battery endurance, and load-shedding priorities in the event of a generator failure.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u00e2\u20ac\u201d Electrical System",
+        "note": "Pay attention to essential vs. non-essential bus items."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 7.485,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-005",
+    "category": "Systems",
+    "question": "Describe the pressurization and bleed air system: normal cabin altitude, differential pressure limit, and what happens when pressurization is lost.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u00e2\u20ac\u201d Environmental Control System",
+        "note": "Note the cabin altitude warning threshold."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 7.485,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-001",
+    "category": "Limitations",
+    "question": "What is the maximum demonstrated crosswind component for the T-6B? Is this a limitation or an operational consideration, and what is the distinction?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u00e2\u20ac\u201d Operating Limitations",
+        "note": "Crosswind component table. Distinguish demonstrated vs. placarded limits."
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Crosswind Procedures section",
+        "note": "Review the preferred technique and commander's discretion language."
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-002",
+    "category": "Limitations",
+    "question": "State the T-6B airspeed limitations: Vne, Vmo, Va, Vlo (gear operating), Vle (gear extended), and flap extension speeds.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u00e2\u20ac\u201d Airspeed Limitations / Placard Speeds",
+        "note": "Memorize all bolded/placarded values."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 Airspeed Limitations (page 1)",
+        "score": 34.551,
+        "heading": "Chapter 5 Airspeed Limitations",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "Airspeed limitations include Vne, Vmo, Va, Vlo, Vle, and flap extension speeds."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-003",
+    "category": "Limitations",
+    "question": "What are the T-6B G-load limitations (normal category and aerobatic category)? What factors reduce the structural limit load factor?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u00e2\u20ac\u201d Structural Limits",
+        "note": "Note flap/gear-down limits vs. clean configuration."
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u00e2\u20ac\u201d G requirements and restrictions"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 Airspeed Limitations (page 1)",
+        "score": 7.555,
+        "heading": "Chapter 5 Airspeed Limitations",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "Airspeed limitations include Vne, Vmo, Va, Vlo, Vle, and flap extension speeds."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-004",
+    "category": "Limitations",
+    "question": "Describe the torque, ITT, Ng, and prop RPM limits for takeoff power and maximum continuous power settings.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u00e2\u20ac\u201d Engine Operating Limits / Power Assurance Check table"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-001",
+    "category": "Emergency",
+    "question": "Describe the engine fire on deck procedure. At what point would you NOT pull the fire T-handle, and why?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u00e2\u20ac\u201d Engine Fire On Deck (BOLDFACE)",
+        "note": "Know all steps verbatim. Understand the logic behind each step."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 2.743,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-002",
+    "category": "Emergency",
+    "question": "Describe the engine failure in flight boldface. What airspeed do you target, and what are the decision points for field landing vs. bailout?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u00e2\u20ac\u201d Engine Failure In Flight (BOLDFACE)"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Emergency Procedures \u00e2\u20ac\u201d decision altitude and bailout criteria"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 Airspeed Limitations (page 1)",
+        "score": 7.555,
+        "heading": "Chapter 5 Airspeed Limitations",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "Airspeed limitations include Vne, Vmo, Va, Vlo, Vle, and flap extension speeds."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-003",
+    "category": "Emergency",
+    "question": "Describe the smoke and fumes elimination procedure. How do you differentiate between electrical smoke and an oil/fuel vapor smell?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u00e2\u20ac\u201d Smoke and Fume Elimination",
+        "note": "Review the decision tree for source identification."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 Fuel System (page 1)",
+        "score": 7.485,
+        "heading": "Chapter 2 Fuel System",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-004",
+    "category": "Emergency",
+    "question": "Describe the emergency gear extension procedure. What are the indications of a successful emergency extension, and what does a single green light indicate?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u00e2\u20ac\u201d Emergency Gear Extension",
+        "note": "Know the handle location and the sequence of lights."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 Airspeed Limitations (page 1)",
+        "score": 2.777,
+        "heading": "Chapter 5 Airspeed Limitations",
+        "pageStart": 1,
+        "pageEnd": 1,
+        "snippet": "Airspeed limitations include Vne, Vmo, Va, Vlo, Vle, and flap extension speeds."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-aero-001",
+    "category": "Aerobatics",
+    "question": "Describe the entry parameters, g-onset rules, and altitude requirements for the loop. What common errors cause an asymmetrical loop?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u00e2\u20ac\u201d Loop",
+        "note": "Pay attention to airspeed at the top and recovery altitude."
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-aero-002",
+    "category": "Aerobatics",
+    "question": "Explain the difference between a aileron roll and a barrel roll. Describe the entry parameters and common errors for each.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u00e2\u20ac\u201d Rolls"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-form-001",
+    "category": "Formation",
+    "question": "Describe the visual references for parade (fingertip) position: wingtip-to-canopy relationship, fore-aft position cues, and altitude reference.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Formation chapter \u00e2\u20ac\u201d Parade Position visual references"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-form-002",
+    "category": "Formation",
+    "question": "Describe the lost wingman procedure. What are the calls, the actions, and the criteria for initiating the procedure?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Formation chapter \u00e2\u20ac\u201d Lost Wingman / IMC procedures"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-inst-001",
+    "category": "Instruments",
+    "question": "Describe the instrument scan technique. What is the primary/supporting method and how does it differ from the selective radial scan?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-instruments",
+        "location": "Basic Instruments chapter \u00e2\u20ac\u201d Scan Technique"
+      },
+      {
+        "docId": "irc",
+        "location": "Instrument Fundamentals section"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-inst-002",
+    "category": "Instruments",
+    "question": "Describe the ILS approach: what defines the final approach fix, how do you identify glideslope intercept, and what are the criteria for going missed?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-instruments",
+        "location": "Precision Approaches \u00e2\u20ac\u201d ILS",
+        "note": "Reference the approach plate interpretation section."
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-wx-001",
+    "category": "Weather",
+    "question": "State the VFR weather minimums for Class B, C, D, and E airspace below 10,000 ft MSL and above 10,000 ft MSL.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Airspace chapter \u00e2\u20ac\u201d VFR minimums table"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 7 \u00e2\u20ac\u201d Flight Planning / Weather Minimums"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-nav-001",
+    "category": "Navigation",
+    "question": "Describe the low-level navigation planning process: route selection criteria, checkpoint spacing, altitude selection, and timing techniques.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-navigation",
+        "location": "Low-Level Navigation chapter \u00e2\u20ac\u201d Route Planning"
+      }
+    ],
+    "suggestedMatches": []
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-nav-002",
+    "category": "Navigation",
+    "question": "Describe the night illusions most commonly encountered during night flight and the corrections/awareness techniques for each.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-navigation",
+        "location": "Night Operations chapter \u00e2\u20ac\u201d Visual Illusions"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Night Familiarization section"
+      }
+    ],
+    "suggestedMatches": []
+  }
+]

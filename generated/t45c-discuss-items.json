@@ -1,0 +1,1840 @@
+{
+  "filters": {
+    "aircraft": "T-45C",
+    "mediaFilter": "sim_flight"
+  },
+  "summary": [
+    {
+      "aircraft": "T-45C",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "publicationNumber": "CNATRA INST 1542.167D",
+      "file": "t45c/1542.167D.pdf",
+      "includedBlocks": 41,
+      "extractedDiscussItems": 68
+    }
+  ],
+  "items": [
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO31",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 67,
+      "pageEnd": 68,
+      "eventCode": "CO3101",
+      "eventRefs": [
+        "CO3101"
+      ],
+      "discussText": "QOD, IFT operation (if applicable), ground signals, final checker, and shutdown signals",
+      "topics": [
+        "QOD",
+        "IFT operation (if applicable)",
+        "ground signals",
+        "final checker",
+        "and shutdown signals"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO31",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 67,
+      "pageEnd": 68,
+      "eventCode": "CO3102",
+      "eventRefs": [
+        "CO3102"
+      ],
+      "discussText": "QOD, OFT operation, ground signals, and final checker",
+      "topics": [
+        "QOD",
+        "OFT operation",
+        "ground signals",
+        "and final checker"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO32",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 69,
+      "pageEnd": 70,
+      "eventCode": null,
+      "eventRefs": [
+        "CO3102",
+        "BI1110",
+        "CO3201",
+        "CO3202",
+        "COCKPIT",
+        "TACAN"
+      ],
+      "discussText": "QOD, control, performance, and position instruments, instrument scan, and \nscan technique",
+      "topics": [
+        "QOD",
+        "control",
+        "performance",
+        "and position instruments",
+        "instrument scan",
+        "and \nscan technique"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2101",
+      "eventRefs": [
+        "EP2101"
+      ],
+      "discussText": "QOD, canopy malfunctions, engine fire on deck, OBOGS malfunctions and air-start",
+      "topics": [
+        "QOD",
+        "canopy malfunctions",
+        "engine fire on deck",
+        "OBOGS malfunctions and air-start"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2102",
+      "eventRefs": [
+        "EP2102"
+      ],
+      "discussText": "QOD, ground ejection situations, engine stalls, short-field arrested landing, and go-around",
+      "topics": [
+        "QOD",
+        "ground ejection situations",
+        "engine stalls",
+        "short-field arrested landing",
+        "and go-around"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2103",
+      "eventRefs": [
+        "EP2103"
+      ],
+      "discussText": "QOD, gear door malfunctions, and long-field arrested landing, aileron PCU checklist \nprocedures and failure modes, BASH mitigation profile procedures",
+      "topics": [
+        "QOD",
+        "gear door malfunctions",
+        "and long-field arrested landing",
+        "aileron PCU checklist \nprocedures and failure modes",
+        "BASH mitigation profile procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2104",
+      "eventRefs": [
+        "EP2104"
+      ],
+      "discussText": "QOD, smoke or fumes in cockpit, rudder trim failure, stabilator trim failure, flaps fail to \nretract, slats fail to retract, flaps fail to extend, slats fail to extend, split slats, gear unsafe after \nextension, gear door malfunctions after extension, and go-around",
+      "topics": [
+        "QOD",
+        "smoke or fumes in cockpit",
+        "rudder trim failure",
+        "stabilator trim failure",
+        "flaps fail to \nretract",
+        "slats fail to retract",
+        "flaps fail to extend",
+        "slats fail to extend",
+        "split slats",
+        "gear unsafe after \nextension",
+        "gear door malfunctions after extension",
+        "and go-around"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR31",
+      "blockTitle": "Basic Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 73,
+      "pageEnd": 74,
+      "eventCode": "TR3103",
+      "eventRefs": [
+        "TR3103"
+      ],
+      "discussText": "QOD, main ADI failure, GINA malfunctions, turn-and-slip failure, HSI failure, and MFD \nfailure.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-12 \nTR3104-9 \nQOD and partial panel",
+      "topics": [
+        "QOD",
+        "main ADI failure",
+        "GINA malfunctions",
+        "turn-and-slip failure",
+        "HSI failure",
+        "and MFD \nfailure.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-12 \nTR3104-9 \nQOD and partial panel"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3201",
+      "eventRefs": [
+        "TR3201"
+      ],
+      "discussText": "QOD, radial intercepts, and point-to-point navigation",
+      "topics": [
+        "QOD",
+        "radial intercepts",
+        "and point-to-point navigation"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3202",
+      "eventRefs": [
+        "TR3202"
+      ],
+      "discussText": "QOD and MFD failure",
+      "topics": [
+        "QOD and MFD failure"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3203",
+      "eventRefs": [
+        "TR3203"
+      ],
+      "discussText": "QOD and minimum or emergency fuel GCA",
+      "topics": [
+        "QOD and minimum or emergency fuel GCA"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3204",
+      "eventRefs": [
+        "TR3204"
+      ],
+      "discussText": "QOD, lost communication, and en route descent",
+      "topics": [
+        "QOD",
+        "lost communication",
+        "and en route descent"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3205",
+      "eventRefs": [
+        "TR3205"
+      ],
+      "discussText": "QOD, marker beacon failure, and oil pressure warning. \n \nTR3206-8 \nQOD",
+      "topics": [
+        "QOD",
+        "marker beacon failure",
+        "and oil pressure warning. \n \nTR3206-8 \nQOD"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3301",
+      "eventRefs": [
+        "TR3301"
+      ],
+      "discussText": "QOD, parking brake failure, lost aircraft, lost communications, loss of ECS temperature \ncontrol, and OBOGS malfunction",
+      "topics": [
+        "QOD",
+        "parking brake failure",
+        "lost aircraft",
+        "lost communications",
+        "loss of ECS temperature \ncontrol",
+        "and OBOGS malfunction"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3302",
+      "eventRefs": [
+        "TR3302"
+      ],
+      "discussText": "QOD, flap indicator failure, landing gear indicator failure, trim indicator failure, and swerve \non touchdown",
+      "topics": [
+        "QOD",
+        "flap indicator failure",
+        "landing gear indicator failure",
+        "trim indicator failure",
+        "and swerve \non touchdown"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3303",
+      "eventRefs": [
+        "TR3303"
+      ],
+      "discussText": "QOD, fuel flow indicator failure, IFF failure, and long-field arrestment",
+      "topics": [
+        "QOD",
+        "fuel flow indicator failure",
+        "IFF failure",
+        "and long-field arrestment"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3304",
+      "eventRefs": [
+        "TR3304"
+      ],
+      "discussText": "QOD and warning and caution tones",
+      "topics": [
+        "QOD and warning and caution tones"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3305",
+      "eventRefs": [
+        "TR3305"
+      ],
+      "discussText": "QOD, lost canopy, and aircraft configurations for field arrestments",
+      "topics": [
+        "QOD",
+        "lost canopy",
+        "and aircraft configurations for field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3306",
+      "eventRefs": [
+        "TR3306"
+      ],
+      "discussText": "QOD, aileron PCU checklist procedures, PCU failure modes, BASH mitigation profile \nprocedures",
+      "topics": [
+        "QOD",
+        "aileron PCU checklist procedures",
+        "PCU failure modes",
+        "BASH mitigation profile \nprocedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3307",
+      "eventRefs": [
+        "TR3307"
+      ],
+      "discussText": "QOD and aircraft systems",
+      "topics": [
+        "QOD and aircraft systems"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR21",
+      "blockTitle": "Familiarization EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "TR2101",
+      "eventRefs": [
+        "TR2101"
+      ],
+      "discussText": "QOD, brake pressure caution light illuminated airborne, weight-on-wheels proximity switch \nfailure (AOA indexers with aircraft on landing rollout), and arrested landing",
+      "topics": [
+        "QOD",
+        "brake pressure caution light illuminated airborne",
+        "weight-on-wheels proximity switch \nfailure (AOA indexers with aircraft on landing rollout)",
+        "and arrested landing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR21",
+      "blockTitle": "Familiarization EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "TR2102",
+      "eventRefs": [
+        "TR2102"
+      ],
+      "discussText": "QOD and OBOGS malfunctions.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-21",
+      "topics": [
+        "QOD and OBOGS malfunctions.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-21"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3401",
+      "eventRefs": [
+        "TR3401"
+      ],
+      "discussText": "QOD, warning and caution tones, and BASH mitigation profile procedures",
+      "topics": [
+        "QOD",
+        "warning and caution tones",
+        "and BASH mitigation profile procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3402",
+      "eventRefs": [
+        "TR3402"
+      ],
+      "discussText": "QOD, lost canopy, and aircraft configurations for field arrestments",
+      "topics": [
+        "QOD",
+        "lost canopy",
+        "and aircraft configurations for field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3403",
+      "eventRefs": [
+        "TR3403"
+      ],
+      "discussText": "QOD, aileron PCU checklist procedures, and PCU failure modes.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-23",
+      "topics": [
+        "QOD",
+        "aileron PCU checklist procedures",
+        "and PCU failure modes.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-23"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR61",
+      "blockTitle": "Transition Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 86,
+      "pageEnd": 86,
+      "eventCode": null,
+      "eventRefs": [
+        "TR3401",
+        "TR6101"
+      ],
+      "discussText": "QOD, VFR pattern interval sight picture, pattern communications, pattern \nEPs, and delta procedures",
+      "topics": [
+        "QOD",
+        "VFR pattern interval sight picture",
+        "pattern communications",
+        "pattern \nEPs",
+        "and delta procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR22",
+      "blockTitle": "Transition EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 98,
+      "pageEnd": 99,
+      "eventCode": null,
+      "eventRefs": [
+        "TR4304",
+        "NATOPS",
+        "OBOGS",
+        "TR2201"
+      ],
+      "discussText": "QOD, lost aircraft situations, and start sequence",
+      "topics": [
+        "QOD",
+        "lost aircraft situations",
+        "and start sequence"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "OCF31",
+      "blockTitle": "Out-of-Control Flight Simulator",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 100,
+      "pageEnd": 100,
+      "eventCode": null,
+      "eventRefs": [
+        "OCF31",
+        "OCF1102",
+        "NATOPS",
+        "CONTROL",
+        "FLIGHT",
+        "OCF3101"
+      ],
+      "discussText": "QOD, runaway trim, engine flameout, ejection situations, locked-in \ncompressor stall, air-start, and NATOPS, Chapter 11",
+      "topics": [
+        "QOD",
+        "runaway trim",
+        "engine flameout",
+        "ejection situations",
+        "locked-in \ncompressor stall",
+        "air-start",
+        "and NATOPS",
+        "Chapter 11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NTR31",
+      "blockTitle": "Night Transition",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 105,
+      "pageEnd": 106,
+      "eventCode": null,
+      "eventRefs": [
+        "NTR31",
+        "IR3490",
+        "NATOPS",
+        "IFLOLS",
+        "NIGHT",
+        "NTR3101"
+      ],
+      "discussText": "QOD, lost aircraft situations, night preflight and night cockpit lighting",
+      "topics": [
+        "QOD",
+        "lost aircraft situations",
+        "night preflight and night cockpit lighting"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NTR21",
+      "blockTitle": "Night Transition EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 107,
+      "pageEnd": 107,
+      "eventCode": null,
+      "eventRefs": [
+        "NTR21",
+        "NTR3101",
+        "NATOPS",
+        "NORDO",
+        "NIGHT",
+        "NTR2101"
+      ],
+      "discussText": "QOD, NORDO light signals, night Bingo considerations, airfield lighting, and \ncockpit fogging",
+      "topics": [
+        "QOD",
+        "NORDO light signals",
+        "night Bingo considerations",
+        "airfield lighting",
+        "and \ncockpit fogging"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FCL31",
+      "blockTitle": "Field Carrier Landing Practice",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 111,
+      "pageEnd": 112,
+      "eventCode": null,
+      "eventRefs": [
+        "FCL31",
+        "IFLOLS",
+        "FCL4S01",
+        "FIELD",
+        "CARRIER",
+        "LANDING",
+        "PATTERN",
+        "FCL3101"
+      ],
+      "discussText": "QOD, scan technique, field Delta pattern, and \u201cDirty Bingo.\u201d",
+      "topics": [
+        "QOD",
+        "scan technique",
+        "field Delta pattern",
+        "and \u201cDirty Bingo.\u201d"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FCL21",
+      "blockTitle": "FCLP EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 113,
+      "eventCode": null,
+      "eventRefs": [
+        "FCL21",
+        "FCL3101",
+        "NATOPS",
+        "BINGO",
+        "FCL2101",
+        "OBOGS"
+      ],
+      "discussText": "QOD and ditching situations, BINGO profile",
+      "topics": [
+        "QOD and ditching situations",
+        "BINGO profile"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ31",
+      "blockTitle": "Carrier Qualification Landing Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 120,
+      "pageEnd": 123,
+      "eventCode": "CQ3101",
+      "eventRefs": [
+        "CQ3101"
+      ],
+      "discussText": "QOD, ship-to-shore checklist, Delta pattern (CV versus field), Case I arrival, shipboard \nalignment, Case I departure, use of IFLOLS in NORDO, Bingo, and wave-off situations",
+      "topics": [
+        "QOD",
+        "ship-to-shore checklist",
+        "Delta pattern (CV versus field)",
+        "Case I arrival",
+        "shipboard \nalignment",
+        "Case I departure",
+        "use of IFLOLS in NORDO",
+        "Bingo",
+        "and wave-off situations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ31",
+      "blockTitle": "Carrier Qualification Landing Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 120,
+      "pageEnd": 123,
+      "eventCode": "CQ3102",
+      "eventRefs": [
+        "CQ3102"
+      ],
+      "discussText": "QOD, preflight and ground operations, communications, CV terms and comm brevity, pattern \nentry, Case II arrival and Case II departure, ship-to-shore checklist, and Bingo card data",
+      "topics": [
+        "QOD",
+        "preflight and ground operations",
+        "communications",
+        "CV terms and comm brevity",
+        "pattern \nentry",
+        "Case II arrival and Case II departure",
+        "ship-to-shore checklist",
+        "and Bingo card data"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ21",
+      "blockTitle": "CQ EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 124,
+      "pageEnd": 132,
+      "eventCode": null,
+      "eventRefs": [
+        "CQ4S05",
+        "CARRIER",
+        "CQ2101",
+        "OBOGS",
+        "CQ4S90",
+        "CQ4S11",
+        "CQ3102",
+        "CQ4S01",
+        "TRAWING",
+        "CQ4S91",
+        "CQ1104",
+        "CQ4S86",
+        "CNATRA",
+        "NATOPS",
+        "NAVAIR",
+        "BLANK",
+        "TACAN",
+        "IR1103",
+        "IR3490",
+        "IR1101",
+        "TRAINING",
+        "FLIGHT",
+        "SUPPORT",
+        "AN1101",
+        "TR4402",
+        "IR1102"
+      ],
+      "discussText": "QOD, carrier-related EPs, ditching situations, and short-field arrestments",
+      "topics": [
+        "QOD",
+        "carrier-related EPs",
+        "ditching situations",
+        "and short-field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR31",
+      "blockTitle": "Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 133,
+      "pageEnd": 134,
+      "eventCode": null,
+      "eventRefs": [
+        "AN1101",
+        "MANEUVERS",
+        "TACAN",
+        "RATING",
+        "IR3106"
+      ],
+      "discussText": "QOD, circle-to-land, and instrument-to-visual scan.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-4",
+      "topics": [
+        "QOD",
+        "circle-to-land",
+        "and instrument-to-visual scan.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-4"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR32",
+      "blockTitle": "Airways Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 135,
+      "pageEnd": 136,
+      "eventCode": "IR3201",
+      "eventRefs": [
+        "IR3201"
+      ],
+      "discussText": "QOD, weather criteria, lost communications, and en route descent. \n \nIR3202-5 \nQOD, en route weather updates, and in-flight fuel calculations",
+      "topics": [
+        "QOD",
+        "weather criteria",
+        "lost communications",
+        "and en route descent. \n \nIR3202-5 \nQOD",
+        "en route weather updates",
+        "and in-flight fuel calculations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR21",
+      "blockTitle": "Airways Navigation EP",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 137,
+      "pageEnd": 137,
+      "eventCode": null,
+      "eventRefs": [
+        "IR3203",
+        "NATOPS",
+        "CONTR",
+        "RATING",
+        "IR2101"
+      ],
+      "discussText": "QOD",
+      "topics": [
+        "QOD"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3301",
+      "eventRefs": [
+        "IR3301"
+      ],
+      "discussText": "QOD and weather minimums required per CNAF-M 3710.7",
+      "topics": [
+        "QOD and weather minimums required per CNAF-M 3710.7"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3302",
+      "eventRefs": [
+        "IR3302"
+      ],
+      "discussText": "QOD and PIREP",
+      "topics": [
+        "QOD and PIREP"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3303",
+      "eventRefs": [
+        "IR3303"
+      ],
+      "discussText": "QOD and en route descent.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-11",
+      "topics": [
+        "QOD and en route descent.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3101",
+      "eventRefs": [
+        "FRM3101"
+      ],
+      "discussText": "QOD, lost sight, and underrun",
+      "topics": [
+        "QOD",
+        "lost sight",
+        "and underrun"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3102",
+      "eventRefs": [
+        "FRM3102"
+      ],
+      "discussText": "QOD and section approach minima",
+      "topics": [
+        "QOD and section approach minima"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3103",
+      "eventRefs": [
+        "FRM3103"
+      ],
+      "discussText": "QOD and midair collision.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVII-3",
+      "topics": [
+        "QOD and midair collision.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVII-3"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM61",
+      "blockTitle": "Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 154,
+      "pageEnd": 154,
+      "eventCode": null,
+      "eventRefs": [
+        "FRM61",
+        "FRM3103",
+        "FORMATION",
+        "FRM6102"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM21",
+      "blockTitle": "Formation EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 155,
+      "pageEnd": 155,
+      "eventCode": null,
+      "eventRefs": [
+        "FRM21",
+        "FRM6102",
+        "NATOPS",
+        "FORMATION",
+        "EMERGENCY",
+        "FRM2101"
+      ],
+      "discussText": "QOD and SAR situations",
+      "topics": [
+        "QOD and SAR situations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "DIV61",
+      "blockTitle": "Division Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 160,
+      "pageEnd": 160,
+      "eventCode": null,
+      "eventRefs": [
+        "DIV61",
+        "DIV1102",
+        "DIVISION",
+        "DIV6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NFR31",
+      "blockTitle": "Night Formation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 164,
+      "pageEnd": 164,
+      "eventCode": null,
+      "eventRefs": [
+        "NFR31",
+        "NFR1102",
+        "NTR42S2",
+        "NORDO",
+        "NIGHT",
+        "FORMATION",
+        "NFR3101",
+        "TACAN"
+      ],
+      "discussText": "QOD and NORDO light signals",
+      "topics": [
+        "QOD and NORDO light signals"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NFR21",
+      "blockTitle": "Night Formation EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 165,
+      "pageEnd": 165,
+      "eventCode": null,
+      "eventRefs": [
+        "NFR21",
+        "NFR3101",
+        "NORDO",
+        "NIGHT",
+        "FORMATION",
+        "NFR2101"
+      ],
+      "discussText": "QOD, NORDO light signals, night Bingo considerations, airfield lighting, \ncockpit fogging, and pattern stall",
+      "topics": [
+        "QOD",
+        "NORDO light signals",
+        "night Bingo considerations",
+        "airfield lighting",
+        "cockpit fogging",
+        "and pattern stall"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAC61",
+      "blockTitle": "Tactical Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 173,
+      "pageEnd": 173,
+      "eventCode": null,
+      "eventRefs": [
+        "TAC61",
+        "TAC1103",
+        "TACTICAL",
+        "FORMATION",
+        "TAC6101"
+      ],
+      "discussText": "QOD, lost sight game plan, G-warm maneuver, 500-ft safety bubble, shackles, \ntac turns, in-place turns, tactical wing position, off-heading turns, co-altitude considerations, \ngunsight tracking exercise, and rejoin from spread",
+      "topics": [
+        "QOD",
+        "lost sight game plan",
+        "G-warm maneuver",
+        "500-ft safety bubble",
+        "shackles",
+        "tac turns",
+        "in-place turns",
+        "tactical wing position",
+        "off-heading turns",
+        "co-altitude considerations",
+        "gunsight tracking exercise",
+        "and rejoin from spread"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "DTF61",
+      "blockTitle": "Division Tactical Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 179,
+      "pageEnd": 179,
+      "eventCode": null,
+      "eventRefs": [
+        "DTF61",
+        "DTF1102",
+        "DIVISION",
+        "TACTICAL",
+        "FORMATION",
+        "DTF6101"
+      ],
+      "discussText": "QOD, lost sight game plan, division G-warm, and division maneuvers",
+      "topics": [
+        "QOD",
+        "lost sight game plan",
+        "division G-warm",
+        "and division maneuvers"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3101",
+      "eventRefs": [
+        "ON3101"
+      ],
+      "discussText": "QOD, low altitude hazards, T-45C dive recovery rules, and Small Descent ROT",
+      "topics": [
+        "QOD",
+        "low altitude hazards",
+        "T-45C dive recovery rules",
+        "and Small Descent ROT"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3102",
+      "eventRefs": [
+        "ON3102"
+      ],
+      "discussText": "QOD, MFD failure, and Small Descent ROT",
+      "topics": [
+        "QOD",
+        "MFD failure",
+        "and Small Descent ROT"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3103",
+      "eventRefs": [
+        "ON3103"
+      ],
+      "discussText": "QOD and Mission Crosscheck Time.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-13",
+      "topics": [
+        "QOD and Mission Crosscheck Time.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-13"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "SLL61",
+      "blockTitle": "Section Low-Level Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 186,
+      "pageEnd": 186,
+      "eventCode": null,
+      "eventRefs": [
+        "SLL61",
+        "SLL1102",
+        "SECTION",
+        "LEVEL",
+        "SLL6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3101",
+      "eventRefs": [
+        "STK3101"
+      ],
+      "discussText": "QOD, compute offset aimpoint, and weapons pattern",
+      "topics": [
+        "QOD",
+        "compute offset aimpoint",
+        "and weapons pattern"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3102",
+      "eventRefs": [
+        "STK3102"
+      ],
+      "discussText": "QOD, abort criteria, and weapons pattern.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-20",
+      "topics": [
+        "QOD",
+        "abort criteria",
+        "and weapons pattern.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-20"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3103",
+      "eventRefs": [
+        "STK3103"
+      ],
+      "discussText": "QOD, hung ordnance approach, weapons pattern, wind corrections, compute CEP, weapons \nemergencies, and emergency jettison",
+      "topics": [
+        "QOD",
+        "hung ordnance approach",
+        "weapons pattern",
+        "wind corrections",
+        "compute CEP",
+        "weapons \nemergencies",
+        "and emergency jettison"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3104",
+      "eventRefs": [
+        "STK3104"
+      ],
+      "discussText": "QOD, delivery validation criteria, heavy wind corrections, and weapons pattern. \n \nSTK3105-6 \nQOD and CCIP target tracking",
+      "topics": [
+        "QOD",
+        "delivery validation criteria",
+        "heavy wind corrections",
+        "and weapons pattern. \n \nSTK3105-6 \nQOD and CCIP target tracking"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK61",
+      "blockTitle": "Strike Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 191,
+      "pageEnd": 191,
+      "eventCode": null,
+      "eventRefs": [
+        "STK61",
+        "STK3102",
+        "STRIKE",
+        "STK6102"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK21",
+      "blockTitle": "Strike EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 192,
+      "pageEnd": 192,
+      "eventCode": null,
+      "eventRefs": [
+        "STK21",
+        "STK6102",
+        "NATOPS",
+        "STRIKE",
+        "STK2101"
+      ],
+      "discussText": "QOD and lost interval",
+      "topics": [
+        "QOD and lost interval"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM31",
+      "blockTitle": "Target Area Mechanics",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 196,
+      "pageEnd": 196,
+      "eventCode": "TAM3101",
+      "eventRefs": [
+        "TAM3101"
+      ],
+      "discussText": "QOD, TAM Execution Template, Air-to-Surface Checklist, timing",
+      "topics": [
+        "QOD",
+        "TAM Execution Template",
+        "Air-to-Surface Checklist",
+        "timing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM31",
+      "blockTitle": "Target Area Mechanics",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 196,
+      "pageEnd": 196,
+      "eventCode": "TAM3102",
+      "eventRefs": [
+        "TAM3102"
+      ],
+      "discussText": "QOD, TAM Execution Template, Air-to-Surface Checklist, timing",
+      "topics": [
+        "QOD",
+        "TAM Execution Template",
+        "Air-to-Surface Checklist",
+        "timing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM61",
+      "blockTitle": "Target Area Mechanics Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 197,
+      "pageEnd": 197,
+      "eventCode": null,
+      "eventRefs": [
+        "TAM61",
+        "TAM1102",
+        "TARGET",
+        "MECHANICS",
+        "TAM6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "OCF32",
+      "blockTitle": "Out-of-Control Simulator",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 201,
+      "pageEnd": 201,
+      "eventCode": null,
+      "eventRefs": [
+        "OCF32",
+        "BFM1104",
+        "NATOPS",
+        "CONTROL",
+        "FLIGHT",
+        "OCF3201"
+      ],
+      "discussText": "QOD, runaway trim, engine flameout, ejection situations, locked-in \ncompressor stall, air-start, and NATOPS Chapter 11",
+      "topics": [
+        "QOD",
+        "runaway trim",
+        "engine flameout",
+        "ejection situations",
+        "locked-in \ncompressor stall",
+        "air-start",
+        "and NATOPS Chapter 11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "BFM61",
+      "blockTitle": "Basic Fighter Maneuvering Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 204,
+      "pageEnd": 204,
+      "eventCode": null,
+      "eventRefs": [
+        "BFM61",
+        "BFM1104",
+        "BFM6101",
+        "BFM6102",
+        "BASIC",
+        "FIGHTER"
+      ],
+      "discussText": "QOD, training rules, deck awareness, LAR considerations",
+      "topics": [
+        "QOD",
+        "training rules",
+        "deck awareness",
+        "LAR considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FTX31",
+      "blockTitle": "Fighter Intercepts",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 213,
+      "pageEnd": 213,
+      "eventCode": null,
+      "eventRefs": [
+        "FTX31",
+        "FTX1102",
+        "FIGHTER",
+        "FTX3101"
+      ],
+      "discussText": "QOD, timeline awareness, training rules, KIO procedures",
+      "topics": [
+        "QOD",
+        "timeline awareness",
+        "training rules",
+        "KIO procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FTX61",
+      "blockTitle": "Fighter Intercepts Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 214,
+      "pageEnd": 214,
+      "eventCode": null,
+      "eventRefs": [
+        "FTX61",
+        "FTX3101",
+        "FIGHTER",
+        "FTX6101"
+      ],
+      "discussText": "QOD, deck awareness, LAR considerations, faded run setup, NFS block, \nfaded run execution, KIO procedures, formation lead considerations, and training rules",
+      "topics": [
+        "QOD",
+        "deck awareness",
+        "LAR considerations",
+        "faded run setup",
+        "NFS block",
+        "faded run execution",
+        "KIO procedures",
+        "formation lead considerations",
+        "and training rules"
+      ]
+    }
+  ]
+}

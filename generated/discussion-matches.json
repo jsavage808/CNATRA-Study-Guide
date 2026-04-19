@@ -1,0 +1,1338 @@
+[
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-001",
+    "category": "Systems",
+    "question": "Describe the PT6A-68 engine oil system, normal oil pressure range, and indications of low oil pressure in flight.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u2014 Propulsion System",
+        "note": "See oil system schematic and limits table."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 294)",
+        "score": 28.395,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 294,
+        "pageEnd": 294,
+        "snippet": "NOTE\nThe white arc and counter on most indicators\nis a display arc, and has no specific signifi-\ncance; however, on the torque and ITT indi-\ncators, the white arc is the normal operating\nrange. GAGE MARKING LOGIC AND DEFINITIONS\nThe EICAS displays provide both analog scale (graphical\ngage display) and digital counter presentation of engine and\nsystems operating parameters. As limits are approached, \nreached and/or exceeded, the gage and text presentations \nchange color to alert the pilot. The te"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 299)",
+        "score": 28.392,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 299,
+        "pageEnd": 299,
+        "snippet": "Operating\nCondition\nOperating Limits\nPower Setting Torque % ITT \u00b0C N1% (1) NP% (4) Oil Pressure psi Oil Temp \u00b0C\nTakeoff/Max\nContinuous\n100(8) 820 Max 104 Max 100 Max (2) 90 to 120 (6) 10 to 105\nIdle 1 to 10% (9)\n(ground)\n750 Max 60 to 61 (ground) \n67 Min (flight)\n46 to 50 \n(ground)\n90 Min -40 to 105 (Ground)\n10 to 105 (Flight)\n106 to 110 (7)\nStart --- 871-1000\n (5 sec)\n--- --- 200 Max -40 Min\nTransient 101 to 107 (10)\n (5 sec) \n821-870\n (20 sec)\n104 Max 110 (3)\n (20 sec)\n40 to 130 (5) 106 to 110"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 96)",
+        "score": 28.122,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 96,
+        "pageEnd": 96,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nCrew Alert System (CAS) \nRed (Warning) Message Cause/Explanation\nBATT BUS Battery bus inoperative\nGEN BUS Generator bus inoperative\nPMU FAIL Power management unit failure\nGEN Generator inoperative\nCKPT PX Cockpit overpressurization; pressure exceeds 3.9 to 4.0 psid\nCANOPY Canopy unlocked/unsafe\nFUEL PX Fuel pressure below 10 psi\nOIL PX Oil pressure below 40 psi above idle, below 15 psi at idl e, or oil pressure between 15-40 psi at\nidle for 5 sec"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER NINE PRIMARY CONTACT (page 200)",
+        "score": 25.937,
+        "heading": "CHAPTER NINE PRIMARY CONTACT",
+        "pageStart": 200,
+        "pageEnd": 200,
+        "snippet": "CHAPTER NINE PRIMARY CONTACT \n9-26 AEROBATICS \n3. Procedures.\n\na. CONFIGURATION: Entry airspeed 180-200 KIAS.\n\nCHECKLIST: Complete the Pre-Stalling, Spinning and Aerobatic Checklist.\n\nCLEAR AREA: Clear working area with visual scan, TCAS, and clearing turns as \nrequired.\n\nb. Raise the nose to an approximately ~10\u00b0 pitch attitude, stop the nose movement by \nrelaxing back-stick pressure.\n\nc. Roll the aircraft to the wings-level, inverted attitude. Once inverted, neutralize the \nailerons and apply "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 289)",
+        "score": 25.803,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 289,
+        "pageEnd": 289,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nInadvertent Departure From Controlled Flight *1. PCL - IDLE\n*2. CONTROLS - NEUTRAL\n*3. ALTITUDE - CHECK\n*4. Recover from unusual attitude\nFire In Flight IF FIRE IS CONFIRMED:\n*1. PCL - OFF\n*2. FIREWALL SHUTOFF HANDLE - PULL\nIF FIRE IS EXTINGUISHED:\n*3. Forced Landing - Execute\nIF FIRE DOES NOT EXTINGUI SH OR FORCED LANDING IS\nIMPRACTICAL:\n*4. Eject (BOTH)\nIF FIRE IS NOT CONFIRMED:\n*5. PEL - Execute\nSmoke and Fume Elimination/Electrical Fire *1. O"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-002",
+    "category": "Systems",
+    "question": "Explain the auto-feather system: arm conditions required, activation logic, and how to reset after an inadvertent actuation.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u2014 Propeller System / Auto-Feather",
+        "note": "Note the torque threshold and arm switch positions."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 244)",
+        "score": 23.242,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 244,
+        "pageEnd": 244,
+        "snippet": "* 6. FIREWALL SHUTOFF handle - Pull\n* 7. Execute Forced Landing or Eject\nIF AIRSTART IS SUCCESSFUL:\n* 8. PCL - As required after N\n1 reaches IDLE RPM\n(approximately 67% N1)\n* 9. PEL - Execute \n10. Confirm the position of the following:\na. BOOST PUMP switch - ON \nContinuous operation with the BOOST\nPUMP switch in the ON position will cause\ndamage to the engine-driven low pressure\nfuel pump. Upon landing, notify maintenance\nof the duration of flight with BOOST PUMP\nswitch in the ON position. \nb. I"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 287)",
+        "score": 20.629,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 287,
+        "pageEnd": 287,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nEmergency Procedure Steps to be Executed Immediately \nto Prevent Loss of Life and/or Aircraft\nAbort Start Procedure * 1. PCL - OFF; or STARTER switch - AUTO/RESET\nEmergency Engine Shutdown on the Ground *1. PCL - OFF \n*2. FIREWALL SHUTOFF HANDLE - PULL\n*3. Emergency ground egress - As required\nEmergency Ground Egress *1. ISS mode selector - SOLO\n*2. Seat safety pin - Install (BOTH)\n*3. PARKING BRAKE - As required\n*4. Canopy - Open\nIF CANOPY CANNO"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 231)",
+        "score": 18.092,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 231,
+        "pageEnd": 231,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\n*2 . FIREWALL SHUTOFF HANDLE - PULL\n* 3. Emergency ground egress - As required\nEMERGENCY GROUND EGRESS\nNOTE\nIn a situation requiring immediate ground\negress, the ejection system has the capability\nfor 0/0 ejection. If emergency egress is required on the ground (Figure 3-1),\nperform the following steps af ter the aircraft has come to a\ncomplete stop and the engine has been shut down:\n* 1. ISS mode selector - SOLO\nFailure to ensure that the ISS mod"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 242)",
+        "score": 18.07,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 242,
+        "pageEnd": 242,
+        "snippet": "Engine instruments - Monitor ITT, N1, and oil pressure\nIF AIRSTART IS UNSUCCESSFUL:\n9. PCL - OFF\n10. FIREWALL SHUTOFF handle - Pull\n11. Execute Forced Landing or Eject\nIF AIRSTART IS SUCCESSFUL:\n12. PCL - As required after N 1 reaches IDLE RPM\n(approximately 67% N1)\n13. STARTER switch - NORM\n14. GEN switch - Verify ON, reset if necessary\nExpect high amperage readings (above 30 amps) after\nthe start. NOTE\nIf generator will not reset, verify the\nSTARTER switch is in NORM. The starter\nwill drain ba"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 243)",
+        "score": 18.066,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 243,
+        "pageEnd": 243,
+        "snippet": "If there is no rise in ITT within 10 seconds\nafter fuel flow indications, place the PCL to\nOFF and abort the start. After fuel flow is indicated (75 to 80 pph), ITT will\nrise and peak. Continue to smoothly advance the PCL\nwhile monitoring ITT, N\n1, fuel flow, and engine indi-\ncations until IDLE is reached. 9. Engine instrument - Monitor ITT, N 1, and oil pressure\nThe most critical pilot action during the PMU\nOFF start is PCL movement while monitor-\ning fuel flow, ITT, and N\n1 acceleration.\n\nIF A"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-003",
+    "category": "Systems",
+    "question": "Describe the fuel system: tank arrangement, usable fuel quantity, unusable fuel, crossfeed capability, and fuel flow path.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u2014 Fuel System",
+        "note": "Reference fuel quantity table and system schematic."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 29)",
+        "score": 23.223,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 29,
+        "pageEnd": 29,
+        "snippet": "\u2022 The amber L FUEL LO and R FUEL LO caution are\nactivated by optical sensors and indicate fuel quantity\nbelow approximately 110 pounds in the respective\nwing tank. The optical sensors are independent of the\nfuel probes and fuel quantity gages. The FUEL QTY\nLO circuit breaker is located on the front cockpit bat-\ntery bus. \u2022 The amber FUEL BAL caution illuminates if indicated\nfuel imbalance exceeds 30 pounds for 2 minutes, or a\nfuel probe fails. The FUEL BAL caution will illumi-\nnate until the sys"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 257)",
+        "score": 20.629,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 257,
+        "pageEnd": 257,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nDo not attempt to manually balance fuel load\nif FP FAIL caution is illuminated. With a\nprobe failure, a fuel imbalance indication\nmay not be correct, and manual balancing\nattempts may cause or aggravate a fuel imbal-\nance. 4. MANUAL FUEL BAL switch - To low tank\n5. Fuel gages - Monitor\nIF FUEL IMBALANCE IS CORRECTED (FUEL BAL\nCAUTION EXTINGUISHES):\n6. MANUAL FUEL BAL switch - OFF, when imbalance\nis corrected\nNOTE\nWith a full lateral fuel imbalanc"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 96)",
+        "score": 20.452,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 96,
+        "pageEnd": 96,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nCrew Alert System (CAS) \nRed (Warning) Message Cause/Explanation\nBATT BUS Battery bus inoperative\nGEN BUS Generator bus inoperative\nPMU FAIL Power management unit failure\nGEN Generator inoperative\nCKPT PX Cockpit overpressurization; pressure exceeds 3.9 to 4.0 psid\nCANOPY Canopy unlocked/unsafe\nFUEL PX Fuel pressure below 10 psi\nOIL PX Oil pressure below 40 psi above idle, below 15 psi at idl e, or oil pressure between 15-40 psi at\nidle for 5 sec"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 27)",
+        "score": 18.087,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 27,
+        "pageEnd": 27,
+        "snippet": "NOTE\nWhen parking on ramps with greater than 1%\nslope, the fuel system may vent fuel over-\nboard through a pressure relief valve. The fuel system incorporates an auto balance system to keep\nthe fuel level in the wing tanks within 20 pounds of each\nother. When a fuel imbalan ce of 20 pounds or more is\ndetected for more than 30 seconds, the transfer valve will\nclose the motive flow line to the light tank. This action stops\nfuel in the light tank from be ing transferred to the collector\ntank while "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 29)",
+        "score": 18.075,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 29,
+        "pageEnd": 29,
+        "snippet": "\u2022 A pilot-selectable \u201cBI NGO, BINGO\u201d audio alert\nsounds when the total fuel is equal to or less than the\nvalue shown on the EICAS display at LSK L3. The\nalert sounds continuously until a value lower than the\nfuel total is set via the UFCP. The default value is 400\nlbs. The fuel quantity indicating system uses seven fuel probes:\nthree in each wing tank and one in the collect or tank. For\nexample, if the tanks are full, the outer probe is providing the\nreading for fuel quantity. The other probes a"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-004",
+    "category": "Systems",
+    "question": "Describe the electrical system: number of buses, generator output, battery endurance, and load-shedding priorities in the event of a generator failure.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u2014 Electrical System",
+        "note": "Pay attention to essential vs. non-essential bus items."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 250)",
+        "score": 25.814,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 250,
+        "pageEnd": 250,
+        "snippet": "GEN RESET switch - Depress and hold for a mini-\nmum of 1 second\nIF GENERATOR REMAINS INOPERATIVE (DC VOLT-\nMETER BELOW 25 VOLTS AND AMMETER DIS-\nCHARGING):\n4. Descent below 10,000 ft MSL - INITIATE (AS\nREQUIRED)\n5. GEN switch - OFF (BOTH)\n6. BUS TIE switch - OPEN (BUS TIE caution and GEN\nBUS warning illuminate)\nNOTE\nOpening the bus tie switch will reduce elec-\ntrical load on the main battery by shedding\nthe generator bus. This will permit main bat-\ntery operation for at least 30 minutes. 7. Land"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 72)",
+        "score": 23.275,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 72,
+        "pageEnd": 72,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nBACKUP FLIGHT INSTRUMENT (BFI)\nThe backup flight instrument (BFI) is located in the upper\nright side of the instrument pa nel in each cockpit (Figure 1-\n3, Figure 1-4, and Figure 1-40) and provides attitude, alti-\ntude, airspeed, heading and vertical velocity. This instrument\nprovides backup indications in the event of failure of the\nelectronic flight instrumentation system or the aircraft elec-\ntrical system. The backup flight instrument is norm"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 34)",
+        "score": 20.636,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 34,
+        "pageEnd": 34,
+        "snippet": "\u2022 With only aux battery power available,\nexcessive radio transmissions reduce avail-\nable battery time. EXTERNAL POWER\nAn external power receptacle is installed in the left, aft fuse-\nlage, below the left avionics bay door. External power is dis-\ntributed on the battery bus and is controlled by the battery\nswitch. The aircraft is intern ally protected from external\npower over/under voltage. A voltage sensor is located\nbetween the extern al power connector and the external\npower relay. If the ext"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 250)",
+        "score": 20.636,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 250,
+        "pageEnd": 250,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTE\nIllumination of both red and amber OIL PX\nmessage while the oil pressure gage indicates\nnormal pressure indicates an SCU failure. IF ONLY AMBER OIL PX CAUTION ILLUMINATES:\n* 1. Terminate maneuver\n* 2. Check oil pressure; if oil pressure is normal, continue\noperations \nIF RED OIL PX WARNING ILLUMINATES AND/OR\nAMBER OIL PX CAUTION REMAINS ILLUMINATED\nFOR 5 SECONDS, OIL PRESSURE FLUCTUATIONS,\nOR OIL TEMPERATURE OUT OF LIMITS:\n* 3. PCL - Minimum"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 30)",
+        "score": 18.234,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 30,
+        "pageEnd": 30,
+        "snippet": "If the generator malfunctions in flight, the generator may be\nreset with the generator reset b utton, located in either cock-\npit, or by cycling the GEN switch off and back on. If the red\nGEN warning illuminates on the EICAS display, the air con-\nditioning is the only equipment automatically shed. Power is\nprovided through the GEN SW circuit breaker located on the\nfront cockpit generator bus. BATTERY\nWhen the generator is not pow ering the electrical system,\npower is provided by an aerobatic, 24"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-sys-005",
+    "category": "Systems",
+    "question": "Describe the pressurization and bleed air system: normal cabin altitude, differential pressure limit, and what happens when pressurization is lost.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 2 \u2014 Environmental Control System",
+        "note": "Note the cabin altitude warning threshold."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 70)",
+        "score": 32.986,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 70,
+        "pageEnd": 70,
+        "snippet": "If the DEFOG\nswitch is placed to OFF, the e lectrically controlled defog\nvalve may take up to 40 seconds to close. The canopy/windshield defogging system\nmay not clear the windshield during an icing\nencounter. During an icing encounter, the windshield\nmay become completely opaque and restrict\nforward visibility. Increased pilot workload\nmay occur during the landing phase of flight. NOTE\nThe first indication of icing may be the start\nof ice accumulation on the forward canopy\nbow and at the base o"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 71)",
+        "score": 32.983,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 71,
+        "pageEnd": 71,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\n3.6\u00b10.2 psi is reached at 18,069 feet. Cockpit pressure alti-\ntude at 31,000 feet is 16,600 feet. NOTE\nIf readings other than 3.6\u00b10.2 psi are encoun-\ntered at or above 18,069 feet PA, notify main-\ntenance. If cockpit pressure altitude rises above 19,000 feet, an amber\nCKPT ALT caution illuminates. If cockpit differential pres-\nsure exceeds 3.9 to 4.0 psi, a red CKPT PX warning illumi-\nnates. Cockpit differential pressure and cockpit altitude are\n"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 185)",
+        "score": 30.48,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 185,
+        "pageEnd": 185,
+        "snippet": "When the lever is set to the NORMAL\nposition, the regulator directs the OBOGS concentrator to\nprovide the proper oxygen concentration for the present alti-\ntude. Oxygen concentration with the lever in NORMAL\nposition ranges from 25 to 70% for altitudes from sea level\nto 15,000 feet MSL, and from 45 to 95% for altitudes from\n15,000 to 31,000 feet MSL. When the concentration lever fo r either regulator is set to\nMAX, the OBOGS concentrator supplies the highest possi-\nble oxygen concentration to bo"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 263)",
+        "score": 30.389,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 263,
+        "pageEnd": 263,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTENOTE\nCabin pressurization will bleed out through\nthe cabin pressurization outflow valves when\nthe inflow switch is set to OFF. The canopy\npressure seal and anti-G systems will not be\noperational. DEFOG VALVE FAILS TO CLOSE IN FLIGHT\nI f th e de f o g v a lv e f a i ls t o c lose in flight and cockpit heat\nbecomes very uncomfortable, the TEMP CONTROL switch\ncan be used to minimize cockpit heat input. Verify that appropriate time has elapsed be"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 61)",
+        "score": 27.811,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 61,
+        "pageEnd": 61,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nside of the ejection seat. If the emergency oxygen system is\nmanually activated above 10,000 ft cockpit altitude, the air-\ncraft needs to descend and remain at or below a cockpit alti-\ntude of 10,000 feet prior to exhaustion of the emergency\noxygen supply or the effects of hypoxia may incapacitate the\npilot. The emergency oxygen system pressure is not regu-\nlated and once activated, initially delivers 100% oxygen at a\nhigher pressure than the OBO"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-001",
+    "category": "Limitations",
+    "question": "What is the maximum demonstrated crosswind component for the T-6B? Is this a limitation or an operational consideration, and what is the distinction?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u2014 Operating Limitations",
+        "note": "Crosswind component table. Distinguish demonstrated vs. placarded limits."
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Crosswind Procedures section",
+        "note": "Review the preferred technique and commander's discretion language."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "A8-2 (page 462)",
+        "score": 18.116,
+        "heading": "A8-2",
+        "pageStart": 462,
+        "pageEnd": 462,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nTOTAL LANDING DISTANCE\nTotal landing distance is the sum of air distance and ground\nroll distance. The charts as pr esented provide total landing\ndistance, and a factor to calculate the ground roll. FACTORS AFFECTING APPROACH \nAND LANDING\nWIND CORRECTIONS\nAccounting for wind when planning approach and landing\nrequires that the wind direction and speed be known. The\nheadwind, tailwind, or cros swind component can then be\ndetermined using the Takeo"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "GLOSSARY-2 (page 516)",
+        "score": 16.044,
+        "heading": "GLOSSARY-2",
+        "pageStart": 516,
+        "pageEnd": 516,
+        "snippet": "Demonstrated \nCrosswind The maximum 90 degree crosswind\ncomponent for which adequate control\nof the aircraft during takeoff and land-\ning was demonstrated during certifica-\ntion tests. Gradient The ratio of the change in height to the\nhorizontal distance (rise over run), usu-\nally expressed in percent."
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "A3-2 (page 392)",
+        "score": 15.609,
+        "heading": "A3-2",
+        "pageStart": 392,
+        "pageEnd": 392,
+        "snippet": "Charts which present climb gradient are calculated on actual\n(gross) climb performance. FACTORS AFFECTING TAKEOFF\nWind Corrections\nAccounting for wind when planning takeoff requires that\nthe wind direction and speed known. The headwind, tail-\nwind, or crosswind component can then be determined\nusing the Takeoff and Landing Crosswind chart in Figure\nA3-6. Headwind and Tailwind\nThe wind grids include factors of 50% for steady state head-\nwinds and 150% for steady state tailwinds. Reported wind\ncom"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 302)",
+        "score": 15.505,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 302,
+        "pageEnd": 302,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nWEIGHT LIMITATIONS\nMaximum ramp weight - 6950 pounds\nMaximum takeoff weight - 6900 pounds\nMaximum landing weight - 6900 pounds\nMaximum zero fuel weight - 5850 pounds\nMaximum weight in baggage compartment - 80 pounds\nTAXI, TAKEOFF, AND LANDING \nLIMITATIONS\nNOSE WHEEL STEERING LIMITATIONS\nDo not use nose wheel steering for takeoff or landing. CANOPY DEFOG LIMITATIONS\nCanopy defog must be off for takeoff and landing. LANDING LIMITATIONS\nMaximum rate"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 216)",
+        "score": 12.951,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 216,
+        "pageEnd": 216,
+        "snippet": "\u2022 Neutralize rudder pedals prior to engaging\nnose wheel steering to avoid excessive\nswerve when nose wheel steering is selected. TOUCH AND GO LANDING\nUpon touchdown, smoothly advance the PCL to MAX. Anticipate a slight amount of right rudder as torque\nincreases. Rotate at rotation speed. The landing gear may be left down when remaining in the\npattern, but the pilot must observe the maximum gear\nextended speed in Section V. A fter liftoff, proceed with the\nAfter Takeoff checklist. CROSSWIND LANDI"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-002",
+    "category": "Limitations",
+    "question": "State the T-6B airspeed limitations: Vne, Vmo, Va, Vlo (gear operating), Vle (gear extended), and flap extension speeds.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u2014 Airspeed Limitations / Placard Speeds",
+        "note": "Memorize all bolded/placarded values."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 300)",
+        "score": 33.572,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 300,
+        "pageEnd": 300,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nMAXIMUM OPERATING AIRSPEED/MAXIMUM \nOPERATING MACH NUMBER (VMO/MMO)\nMaximum operating airspeed (V MO) is not to be intention-\nally exceeded in any phase of flight (climb, cruise, descent,\nmaneuvering). V\nMO is 316 KIAS up to and including 19,020\nfeet MSL. Maximum operating Mach number (MMO) is not to be inten-\ntionally exceeded in any phase of flight (c limb, cruise,\ndescent, maneuvering). Above 19,020 feet MSL, M MO is\n0.67 indicated Mach number"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "GLOSSARY (page 515)",
+        "score": 25.781,
+        "heading": "GLOSSARY",
+        "pageStart": 515,
+        "pageEnd": 515,
+        "snippet": "GLOSSARY\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nGLOSSARY-1\nAIRSPEED TERMINOLOGY\nCAS Calibrated Airspeed - indicated air-\nspeed corrected for position and instru-\nment error. EAS Equivalent Airspeed - calibrated air-\nspeed corrected for compressibility. IAS Indicated Airspeed - speed as shown\non aircraft instruments which assumes\nno instrument error. IMN Indicated Mach Number\nKCAS Knots Calibrated Airspeed\nKEAS Knots Equivalent Airspeed\nKIAS Knots Indicated Airspeed\nKT Knot, Knots\nKTAS"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 309)",
+        "score": 23.25,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 309,
+        "pageEnd": 309,
+        "snippet": "FLAP AND SPEED BRAKE CONTROLS\nThe split flaps may be operated at airspeeds up to 150 KIAS. There is very little pitch trim change when flaps are selected\nto the takeoff position, and there is no apparent aerodynamic\nbuffeting up to 150 KIAS. Lowering the flaps to the LDG\nposition produces a slight pitch up, which is easily controlla-\nble. Aerodynamic and airframe buffeting is noticeable as air-\nspeed is increased in this configuration. Buffeting intensifies\nnoticeably as the flap limit airspeed "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 293)",
+        "score": 21.352,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 293,
+        "pageEnd": 293,
+        "snippet": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5-2\nPropeller Limitations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5-7\nPropeller Ground Operation Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 248)",
+        "score": 20.634,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 248,
+        "pageEnd": 248,
+        "snippet": "Backup flight instru-\nment and lighting, fire detection (FIRE 1\nonly), and VHF radio (tuning through\nstandby VHF control unit) will be powered\nfor approximately 30 minutes. Landing gear\nmust be extended by emergency means. The\nflap lever is powered t hrough the hot battery\nbus and should function as long as the main\nbattery has not depleted. With normal flap\nextension and a loss of power to the battery\nbus, flaps will retract. Gear and flap indica-\ntors, as well as exterior lighting, will not be"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-003",
+    "category": "Limitations",
+    "question": "What are the T-6B G-load limitations (normal category and aerobatic category)? What factors reduce the structural limit load factor?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u2014 Structural Limits",
+        "note": "Note flap/gear-down limits vs. clean configuration."
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u2014 G requirements and restrictions"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 524)",
+        "score": 10.696,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 524,
+        "pageEnd": 524,
+        "snippet": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1-28\nAvailable Load (G) Factor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . A9-1\nAvailable Load Factor (G Available) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6-5\nAverage Gross Weight. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 302)",
+        "score": 10.658,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 302,
+        "pageEnd": 302,
+        "snippet": "Operating Flight Strength (Vn) Diagram\nASYMMETRIC MANEUVER LIMIT 4.7g\n101373AB.AI\nPN01D\nINDICATED AIRSPEED - KNOTS\n350300250200150100 500\n-4.0\n-3.0\n-2.0\n-1.0\n0.0\n1.0\n2.0\n3.0\n4.0\n5.0\n6.0\n7.0\nLOAD FACTOR ~ (g's)\nSYMMETRIC MANEUVER LIMIT 7g\nLIMIT SPEED 244 (MACH 0.67)\nLIMIT SPEED 316\nSYMMETRIC MANEUVER LIMIT -3.5g\nASYMMETRIC \nMANEUVER LIMIT -1g\nSEA LEVEL\n31,000 FT"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "A9-11 (page 477)",
+        "score": 10.459,
+        "heading": "A9-11",
+        "pageStart": 477,
+        "pageEnd": 477,
+        "snippet": "A9-11\n\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nFigure A9-6. Available Load Factor\n11 . 522 . 533 . 544 . 555 . 566 . 577 . 5\nAVAILABLE LOAD FACTOR ~ G\n5500\n5700\n5900\n6100\n6300\n6500\n6700\n6900\nWEIGHT ~ POUNDS\n80\n90\n100\n110\n120\n130\n140\n150\n160\n170\n180\n190\n200\n210\n220\n230\n240\n250\n260\n270\n280\n290\n300\n310\n320\nINDICATED AIRSPEED ~ KNOTS\nPHAAMS003A\nPRESSURE ALTITUDE ~ 1000 FEET\nSL\n5\n1015\n20\n25\n31\n7.0 G\n LIM\nIT\nBASELINE\n29\nAIRPLANE : T-6B\nENGINE : PT6A-68\nDATE : MAR 2OO8\nDATA BASIS : ESTIMATED\n"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 310)",
+        "score": 10.456,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 310,
+        "pageEnd": 310,
+        "snippet": "6-4\n\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nFigure 6-2. Maneuverability - G Available\n11 . 522 . 533 . 544 . 555 . 566 . 577 . 5\nAVAILABLE LOAD FACTOR ~ G\n5500\n5700\n5900\n6100\n6300\n6500\n6700\n6900\nWEIGHT ~ POUNDS\n80\n90\n100\n110\n120\n130\n140\n150\n160\n170\n180\n190\n200\n210\n220\n230\n240\n250\n260\n270\n280\n290\n300\n310\n320\nINDICATED AIRSPEED ~ KNOTS\nPHAAMS003A\nPRESSURE ALTITUDE ~ 1000 FEET\nSL\n5\n1015\n20\n25\n31\n7.0 G\n LIM\nIT\nBASELINE\n29\nAIRPLANE : T-6B\nENGINE : PT6A-68\nDATE : MAR 2OO8\nDATA BASIS : ESTIM"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER TWO (page 37)",
+        "score": 10.367,
+        "heading": "PRIMARY CONTACT CHAPTER TWO",
+        "pageStart": 37,
+        "pageEnd": 37,
+        "snippet": "In naval aviation, there is great importance assigned to precise control of an aircraft at high angle \nof attack conditions. Safe operation in carrier aviation demands the ultimate in precision flying \nat low airspeed. The aerodynamic lift characteristics of an airplane must be fully understood by \nthe Student Naval Aviator as well as the seasoned \"fleet pilot\" for obvious safety reasons. \nAdditionally, mission requirements and their execution may depend on the pilot\u2019s own \ncapabilities and gras"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-lim-004",
+    "category": "Limitations",
+    "question": "Describe the torque, ITT, Ng, and prop RPM limits for takeoff power and maximum continuous power settings.",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 5 \u2014 Engine Operating Limits / Power Assurance Check table"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 386)",
+        "score": 28.414,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 386,
+        "pageEnd": 386,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTE\nAlthough there is no time limit for operation\nat maximum power, su stained operation at\nmaximum power may significantly reduce\nengine service life. MAXIMUM CLIMB POWER\nThe amount of power availabl e during climb when above\ncritical altitude. This setting is the PCL position which yields\nan ITT 13 \u00b0C below observed maximum power ITT at criti-\ncal altitude; not to exceed 807 \u00b0C. MAXIMUM CRUISE POWER\nThe amount of power available for cruise fli"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 385)",
+        "score": 28.381,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 385,
+        "pageEnd": 385,
+        "snippet": "Each chart will have a chase through line on each\nchart section to indicate the proper order for use of the charts. Reference to \u201cAir Temperatur e\u201d refers to ambient air tem-\nperatures reported by a recognized weather source. POWER AVAILABLE IN-FLIGHT\nFigures A2-2 and A2-3 provide power available in-flight at\nmaximum power and maximum cruise power. POWER DEFINITIONS\nThe following definitions describe the engine power ratings. CRITICAL ALTITUDE\nThe altitude at which 100% torque is no longer avail"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "GLOSSARY-2 (page 516)",
+        "score": 28.372,
+        "heading": "GLOSSARY-2",
+        "pageStart": 516,
+        "pageEnd": 516,
+        "snippet": "GLOSSARY-2\nWind Wind velocities reco rded as variables\non the charts and tables in this manual\nare considered to be headwind or tail-\nwind components of the actual winds\n50 feet above the runway surface\n(tower winds). POWER TERMINOLOGY\nMaximum Power \n(MAX) The amount of power available at PCL\nfull forward. At this PCL position, the\nengine is rated to produce at least 1100\nshp and indicate 100% torque below\ncritical altitude, at a maximum ITT not\nto exceed 820 \u00b0C on a standard day. Maximum Climb "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "GLOSSARY-2 (page 516)",
+        "score": 28.364,
+        "heading": "GLOSSARY-2",
+        "pageStart": 516,
+        "pageEnd": 516,
+        "snippet": "ITT Interstage Turbine Temperature - the\ntemperature of the gases present\nbetween the compressor turbine and\npower turbine. N\n1 Gas Generator Speed - speed of the gas\ngenerator section of the engine,\nexpressed as a percentage with 104%\nrepresenting maximum rated speed. N\nP Propeller RPM\nPCL Power Control Lever - the power con-\ntrol lever sets engine power and pro-\npeller thrust from idle to takeoff\nthrough the PMU and FMU. PIU Propeller Interface Unit - the propeller\ninterface unit modulates eng"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 299)",
+        "score": 25.811,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 299,
+        "pageEnd": 299,
+        "snippet": "Operating\nCondition\nOperating Limits\nPower Setting Torque % ITT \u00b0C N1% (1) NP% (4) Oil Pressure psi Oil Temp \u00b0C\nTakeoff/Max\nContinuous\n100(8) 820 Max 104 Max 100 Max (2) 90 to 120 (6) 10 to 105\nIdle 1 to 10% (9)\n(ground)\n750 Max 60 to 61 (ground) \n67 Min (flight)\n46 to 50 \n(ground)\n90 Min -40 to 105 (Ground)\n10 to 105 (Flight)\n106 to 110 (7)\nStart --- 871-1000\n (5 sec)\n--- --- 200 Max -40 Min\nTransient 101 to 107 (10)\n (5 sec) \n821-870\n (20 sec)\n104 Max 110 (3)\n (20 sec)\n40 to 130 (5) 106 to 110"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-001",
+    "category": "Emergency",
+    "question": "Describe the engine fire on deck procedure. At what point would you NOT pull the fire T-handle, and why?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u2014 Engine Fire On Deck (BOLDFACE)",
+        "note": "Know all steps verbatim. Understand the logic behind each step."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 27)",
+        "score": 23.223,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 27,
+        "pageEnd": 27,
+        "snippet": "Power for the #1 fire warning system is provided through a\ncircuit breaker, placarded FIRE 1, located on the battery bus\ncircuit breaker panel in the fr ont cockpit. Power for the #2\nsystem is provided through a circuit breaker, placarded FIRE\n2, located on the generator bus circuit breaker panel in the\nfront cockpit. Both FIRE test positions must check good\n(all four bulbs in each annunciator) in both\ncockpits (if occupied). FIREWALL SHUTOFF HANDLE\nThe firewall shutoff handle (Figure 1-5), loca"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 240)",
+        "score": 23.209,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 240,
+        "pageEnd": 240,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTENOTE\nIf experiencing uncommanded power\nchanges/loss of power/uncommanded propel-\nler feather or compressor stalls, refer to\nappropriate procedure. *1 . ZOOM/GLIDE - 125 KNOTS (MINIMUM) \n*2 . PCL - OFF\nNOTE\nPropeller will not feather unless the PCL is\nfully in OFF. *3 . INTERCEPT ELP\n\u2022 If a suitable landing surface is available, turn\nimmediately to intercept the nearest suitable\npoint on the ELP. Any delay could result in\ninsufficient gliding "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 287)",
+        "score": 23.207,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 287,
+        "pageEnd": 287,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nEmergency Procedure Steps to be Executed Immediately \nto Prevent Loss of Life and/or Aircraft\nAbort Start Procedure * 1. PCL - OFF; or STARTER switch - AUTO/RESET\nEmergency Engine Shutdown on the Ground *1. PCL - OFF \n*2. FIREWALL SHUTOFF HANDLE - PULL\n*3. Emergency ground egress - As required\nEmergency Ground Egress *1. ISS mode selector - SOLO\n*2. Seat safety pin - Install (BOTH)\n*3. PARKING BRAKE - As required\n*4. Canopy - Open\nIF CANOPY CANNO"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER SEVEN (page 167)",
+        "score": 20.676,
+        "heading": "PRIMARY CONTACT CHAPTER SEVEN",
+        "pageStart": 167,
+        "pageEnd": 167,
+        "snippet": "PRIMARY CONTACT CHAPTER SEVEN \nEMERGENCY PROCEDURES 7-17 \nengine indications which may include Torque, ITT, N1, Np, Oil \nand Hydraulic pressure. Your instructor will verify indications and \nthen give simulated engine indications and any EICAS messages \nthat may apply. At 125 KIAS, an engine which has flamed out will \nrotate below 8% N1 and indicated 0% N1. The engine oil pressure \nindicator may display oil pressures up to 4 psi with an N1 of 0%\n\nb. PCL - OFF (IP will simulate PCL off by setting "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 247)",
+        "score": 20.669,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 247,
+        "pageEnd": 247,
+        "snippet": "FIRE IN FLIGHT\nIllumination of the FIRE annunciator indicates the possibil-\nity of fire in the engine compartment. Pending confirmation\nof an engine fire, initiate PEL procedures with the intention\nof landing as soon as possible. IF FIRE IS CONFIRMED:\nIllumination of the fire warning light accom-\npanied by one or more of the following indi-\ncations is confirmation of an engine fire:\nsmoke; flames; engine vibration; unusual\nsounds; high ITT; and fluctuating oil pres-\nsure, oil temperature, or hyd"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-002",
+    "category": "Emergency",
+    "question": "Describe the engine failure in flight boldface. What airspeed do you target, and what are the decision points for field landing vs. bailout?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u2014 Engine Failure In Flight (BOLDFACE)"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Emergency Procedures \u2014 decision altitude and bailout criteria"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 233)",
+        "score": 23.616,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 233,
+        "pageEnd": 233,
+        "snippet": "EMER LDG GR HANDLE - PULL\n(AS REQUIRED)\nNOTE\nWith a loss of hydraulic pressure, landing\ngear and flaps cannot be lowered by normal\nmeans. * 4. Flaps - As required\nIN-FLIGHT EMERGENCIES\nENGINE FAILURE DURING FLIGHT\nIn the event of an engine failure, a decision to eject, land, or\nairstart must be made. The altitude at which the engine fails\nwill determine the time available to perform the following\nprocedures. Initial indications of engine failure/flameout are: loss of\npower and airspeed; rapid de"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER SEVEN PRIMARY CONTACT (page 166)",
+        "score": 23.242,
+        "heading": "CHAPTER SEVEN PRIMARY CONTACT",
+        "pageStart": 166,
+        "pageEnd": 166,
+        "snippet": "CHAPTER SEVEN PRIMARY CONTACT \n7-16 EMERGENCY PROCEDURES \nc. Over climbing to low key, resulting in excessive altitude precluding a safe descent \nprofile to landing.\n\nd. Failure to complete the Before Landing Checklist prior to low key.\n\ne. Failure to anticipate or correct for wind. \nf. Failure to reduce power to idle during landing phase of PEL.\n\n705. ENGINE FAILURE DURING FLIGHT (POWER LOSS)\n\n1. Description. A complete engine failure or insufficient power available to execute a PEL \nmay occur "
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER SEVEN PRIMARY CONTACT (page 166)",
+        "score": 23.228,
+        "heading": "CHAPTER SEVEN PRIMARY CONTACT",
+        "pageStart": 166,
+        "pageEnd": 166,
+        "snippet": "Carefully manage your energy state to arrive at high key on or slightly above altitude. Do not \nunnecessarily dissipate energy quickly with a failed engine. Use the extra time to formulate a \nplan that will maximize the possibility for success.\n\nThe Engine Failure During Flight procedures in the T-6B NATOPS Flight Manual offers an \norganized approach to recovery with an engine failure in flight. If the engine can\u2019t be restored to \nnormal operations, you will need to decide whether to use the ELP"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER SEVEN (page 161)",
+        "score": 23.225,
+        "heading": "PRIMARY CONTACT CHAPTER SEVEN",
+        "pageStart": 161,
+        "pageEnd": 161,
+        "snippet": "PRIMARY CONTACT CHAPTER SEVEN \nEMERGENCY PROCEDURES 7-11 \nsignificantly alter required ELP ground track. At tower controlled runways, actual \nsurface winds are known. Other methods to determine the winds include:\n\ni. Radio calls to other aircraft, a fixed base operator (FBO) on the field, ASOS, \netc.\n\nii. Without access to actual observations, use winds briefed by weather forecaster \nin the preflight briefing as a starting assumption.\n\niii. If performing an ELP at a non-towered airfield (NTA) wi"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 344)",
+        "score": 20.873,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 344,
+        "pageEnd": 344,
+        "snippet": "8-3-6\n\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\n5* Erect Spin\nBASIC AIRWORK UQ CQ Q POINTS REMARKS\n6* Approach Turn Stall\n7* Aerobatic Maneuvers\n(minimum of two)\nTOTAL /7 AREA SCORE: AREA GRADE: UQ / CQ / Q\nEMERGENCIES* UQ CQ Q POINTS REMARKS\n1* Engine Failure\n2* Fire in Flight\n3* System Failure\n4* PEL\n5* PEL (P)\nTOTAL /5 AREA SCORE: AREA GRADE: UQ / CQ / Q\nINSTRUMENT PROCEDURES UQ CQ Q POINTS REMARKS\n1* Holding\n2* Non-Precision Approach\n3* Precision Approach\nTOTAL /3 AREA SCORE: AREA G"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-003",
+    "category": "Emergency",
+    "question": "Describe the smoke and fumes elimination procedure. How do you differentiate between electrical smoke and an oil/fuel vapor smell?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u2014 Smoke and Fume Elimination",
+        "note": "Review the decision tree for source identification."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 289)",
+        "score": 20.643,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 289,
+        "pageEnd": 289,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nInadvertent Departure From Controlled Flight *1. PCL - IDLE\n*2. CONTROLS - NEUTRAL\n*3. ALTITUDE - CHECK\n*4. Recover from unusual attitude\nFire In Flight IF FIRE IS CONFIRMED:\n*1. PCL - OFF\n*2. FIREWALL SHUTOFF HANDLE - PULL\nIF FIRE IS EXTINGUISHED:\n*3. Forced Landing - Execute\nIF FIRE DOES NOT EXTINGUI SH OR FORCED LANDING IS\nIMPRACTICAL:\n*4. Eject (BOTH)\nIF FIRE IS NOT CONFIRMED:\n*5. PEL - Execute\nSmoke and Fume Elimination/Electrical Fire *1. O"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 285)",
+        "score": 20.484,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 285,
+        "pageEnd": 285,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nFUEL BAL Fuel imbalance exceeds 30 pounds for 2 minutes, or fuel\nprobe or EDM fail\n3-30\nEHYD PX LO Emergency hydraulic pressure at or below 2400\u00b1150 psi 3-31\nOBOGS TEMP OBOGS temperature above 200 \u00b0F3 -35\nTAD FAIL Rudder trim aid device failure 3-37\nL FUEL LO Left wing tank below approximately 110 pounds usable fuel No Procedure\nR FUEL LO Right wing tank below approximately 110 pounds usable fuel No Procedure\nPMU STATUS PMU has detected and accom"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 247)",
+        "score": 18.471,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 247,
+        "pageEnd": 247,
+        "snippet": "\u2022 If the fire cannot be confirmed, the fire warn-\ning system may be at fault and should be\ntested as conditions permit. If only one fire\nloop annunciator is illuminated (top or bot-\ntom half only), a false fire indication may\nexist if the other loop tests good. SMOKE AND FUME ELIMINATION/ELECTRICAL \nFIRE\nThis procedure may be used in the event of smoke or fumes\nas a result of an electrical fire or contamination from the ECS\nsystem."
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 245)",
+        "score": 15.502,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 245,
+        "pageEnd": 245,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nthe oil transfer sleeve and the propeller shaft (a \u201cprop-sleeve\ntouchdown\u201d). The most apparent indication of a rollback will be an uncom-\nmanded reduction in power/thrust. If the PMU remains on\nline, secondary indications may include any or all of the fol-\nlowing: lower than expected fuel flow, uncommanded\ndecrease in N1. If the PMU does not remain on line, antici-\npate a step change in engine power as the fuel metering unit\nreverts to the nomina"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 244)",
+        "score": 15.495,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 244,
+        "pageEnd": 244,
+        "snippet": "* 6. FIREWALL SHUTOFF handle - Pull\n* 7. Execute Forced Landing or Eject\nIF AIRSTART IS SUCCESSFUL:\n* 8. PCL - As required after N\n1 reaches IDLE RPM\n(approximately 67% N1)\n* 9. PEL - Execute \n10. Confirm the position of the following:\na. BOOST PUMP switch - ON \nContinuous operation with the BOOST\nPUMP switch in the ON position will cause\ndamage to the engine-driven low pressure\nfuel pump. Upon landing, notify maintenance\nof the duration of flight with BOOST PUMP\nswitch in the ON position. \nb. I"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-emer-004",
+    "category": "Emergency",
+    "question": "Describe the emergency gear extension procedure. What are the indications of a successful emergency extension, and what does a single green light indicate?",
+    "existingSourceRefs": [
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 3 \u2014 Emergency Gear Extension",
+        "note": "Know the handle location and the sequence of lights."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 281)",
+        "score": 28.375,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 281,
+        "pageEnd": 281,
+        "snippet": "Any electrical fa ilure which causes the\nINST circuit breaker (left front console) in\neither cockpit to trip will cause the position\nindicator lights and the light in the gear han-\ndle to be inoperative in the respective cockpit. \u2022 A tripped LDGGR CONT circuit breaker\n(left front console) will cause the weight-on-\nwheels switches to revert to \"in-air\" function-\nality. This will result in loss of ground idle\nRPM and resultant longer landing rollouts, as\nwell as a loss of nose wheel steering funct"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 273)",
+        "score": 25.819,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 273,
+        "pageEnd": 273,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTENOTE\nNormal safe indica tions with electrical\npower, when the emergency extension sys-\ntem has been used to lower the gear, are two\ngreen main gear lights, two red main door\nlights, green nose gear light, and red light in\nhandle. * 3. Airspeed - 120 KIAS minimum until intercepting\nfinal; 110 KIAS minimum on final\n* 4. Flaps - As required\nDo not lower flaps LDG until landing is\nassured. Drag will increase dramatically once\nlanding flaps are lo"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 39)",
+        "score": 23.419,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 39,
+        "pageEnd": 39,
+        "snippet": "Normal gear sequence and indications are as follows:\nFigure 1-22. Landing Gear Controls and Indicators\nPA01D\n150265AA.AI\nLDG UP\nWARNING\nSILENCE\nDOWNLOCK\nOVERRIDE\nLDG DOWN\nA\nA\nDETAIL A\nFRONT\nCOCKPIT\nONLY\nFRONT\nREAR\nNORMAL EXTENSION SEQUENCE/INDICATIONS\nHANDLE GEAR DOORS\nGEAR \nLIGHTS\nHANDLE \nLIGHT\nUP UP CLOSED NONE OFF\nDOWN UP OPENING 2 RED \n(MAINS)\nRED\nDOWN EXTENDING OPEN 3 RED RED\nDOWN DOWN CLOSING 3 GREEN\n2 RED \n(MAINS)\nRED\nDOWN DOWN CLOSED 3 GREEN OFF\nNORMAL RETRACTION SEQUENCE/INDICATIONS\nHAN"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 40)",
+        "score": 23.209,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 40,
+        "pageEnd": 40,
+        "snippet": "The emergency hydraulic accu-\nmulator provides hydraulic pressure through independent\nlines to the four gear actuators to extend the main gear doors\nand landing gear. Electrical power is not required to use the\nemergency gear extension system. Actuate the emergency gear system by pushing the button on\nthe EMER LDG GR handle and pulling the EMER LDG GR\nhandle out. The main gear doors open and all three gear\nextend regardless of the landing gear handle position. Once\nthe gear are down and locked, "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 277)",
+        "score": 20.702,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 277,
+        "pageEnd": 277,
+        "snippet": "Safe\ngear-down indications are:\n\u2022 Gear indications in both cockpits combine to show\nthree green position lights regardless of gear warning\ntone or any combination of red position lights\n\u2022 Either AOA indexer is illuminated\n\u2022 Landing and/or taxi lights are switched on and illumi-\nnated\n\u2022 If the main gear indicate down and locked and the\ninboard gear doors are fully closed (no red lights), the\nnose gear can be assumed to be down and locked\nNOTE\nIf only the nose gear indicates unsafe with the\nmain g"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-aero-001",
+    "category": "Aerobatics",
+    "question": "Describe the entry parameters, g-onset rules, and altitude requirements for the loop. What common errors cause an asymmetrical loop?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u2014 Loop",
+        "note": "Pay attention to airspeed at the top and recovery altitude."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 195)",
+        "score": 20.681,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 195,
+        "pageEnd": 195,
+        "snippet": "g. After completing the half roll, maintain 45\u00b0 nose-low until beginning the pull up for \nthe second half of the maneuver. Plan to initiate the pull up to attain briefed entry \nairspeed at the horizon (passing through level flight). Begin the pull-up at \napproximately 205 to 210 KIAS (airspeed lead point approximately equal to number \nof degrees of nose-low pitch). Continue the pull-up into another Loop entry. The \nsecond half of the Cuban-8 is identical to the first except the roll is in the op"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 191)",
+        "score": 18.064,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 191,
+        "pageEnd": 191,
+        "snippet": "PRIMARY CONTACT CHAPTER NINE \nAEROBATICS 9-17 \n3. Procedures.\n\na. CONFIGURATION: Entry airspeed 180-220 KIAS. Set power to ~80%.\n\nCHECKLIST: Complete the Pre-Stalling, Spinning and Aerobatic Checklist.\n\nCLEAR AREA: Clear working area with visual scan, TCAS, and clearing turns as \nrequired.\n\nb. Smoothly raise the nose to ~10\u00b0 nose-high pitch attitude. Relax back-stick pressure \nand stop nose track, then roll the aircraft left or right using aileron\n\nc. As the aircraft approaches wings level, neut"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER NINE PRIMARY CONTACT (page 184)",
+        "score": 15.552,
+        "heading": "CHAPTER NINE PRIMARY CONTACT",
+        "pageStart": 184,
+        "pageEnd": 184,
+        "snippet": "e. Airspeed will reach its slowest point at the top of the Loop (100-120 KIAS). The \ngreatest amount of right rudder input will therefore be required at this point in order \nto maintain balanced flight. The amount of aft stick force required to maintain a \nconstant nose pitch rate will have decreased significantly from the initial pull-up. \nMaintain positive \"G\" loading and wings parallel to the horizon.\n\nf. Allow the nose to fall through the opposite horizon, adjusting the amount of aft stick \n"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER FOUR PRIMARY CONTACT (page 78)",
+        "score": 15.509,
+        "heading": "CHAPTER FOUR PRIMARY CONTACT",
+        "pageStart": 78,
+        "pageEnd": 78,
+        "snippet": "CHAPTER FOUR PRIMARY CONTACT \n4-12 GROUND PROCEDURES \n412. AFTER LANDING CHECKLIST\n\n1. Description. N/A\n\n2. General. Once clear of the duty runway, switch to Ground Control in accordance with \nlocal course rules and complete the After Landing Checklist. It is important not to get anxious \nduring the landing rollout. Do not start the checklist until clear of the duty runway.\n\n3. Procedures. After clearing the runway, switch to Ground Control and complete the \nchecklist in accordance with the T-6B"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 197)",
+        "score": 15.497,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 197,
+        "pageEnd": 197,
+        "snippet": "PRIMARY CONTACT CHAPTER NINE \nAEROBATICS 9-23 \nf. As the nose approaches a point ~10\u00ba above the opposite horizon (\"FCP canopy bow\" \non the horizon), slow the rate of nose movement by neutralizing back-stick pressure. \nCommence a roll in either direction to the upright position. Anticipate the need for \nslight forward stick pressure as the aircraft passes 90\u00ba of roll.\n\ng. The maneuver is complete when the aircraft is once again in the level flight attitude \non the reciprocal heading. The airspeed"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-aero-002",
+    "category": "Aerobatics",
+    "question": "Explain the difference between a aileron roll and a barrel roll. Describe the entry parameters and common errors for each.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Aerobatics chapter \u2014 Rolls"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 195)",
+        "score": 20.681,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 195,
+        "pageEnd": 195,
+        "snippet": "g. After completing the half roll, maintain 45\u00b0 nose-low until beginning the pull up for \nthe second half of the maneuver. Plan to initiate the pull up to attain briefed entry \nairspeed at the horizon (passing through level flight). Begin the pull-up at \napproximately 205 to 210 KIAS (airspeed lead point approximately equal to number \nof degrees of nose-low pitch). Continue the pull-up into another Loop entry. The \nsecond half of the Cuban-8 is identical to the first except the roll is in the op"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER NINE PRIMARY CONTACT (page 190)",
+        "score": 20.679,
+        "heading": "CHAPTER NINE PRIMARY CONTACT",
+        "pageStart": 190,
+        "pageEnd": 190,
+        "snippet": "CHAPTER NINE PRIMARY CONTACT \n9-16 AEROBATICS \n4. Common Errors.\n\na. Failure to raise the nose high enough during the first 45\u00ba of turn. Generally, this will \nresult in a correspondingly nose low attitude and proportionally high airspeed when \nrecovery is made.\n\nb. Improperly coordinating the rate of roll with the rate of pitch. An insufficient roll rate \nwill result in an overshoot of the intended recovery heading while an excessive roll \nrate will result in an undershoot. A common tendency is "
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 191)",
+        "score": 20.645,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 191,
+        "pageEnd": 191,
+        "snippet": "PRIMARY CONTACT CHAPTER NINE \nAEROBATICS 9-17 \n3. Procedures.\n\na. CONFIGURATION: Entry airspeed 180-220 KIAS. Set power to ~80%.\n\nCHECKLIST: Complete the Pre-Stalling, Spinning and Aerobatic Checklist.\n\nCLEAR AREA: Clear working area with visual scan, TCAS, and clearing turns as \nrequired.\n\nb. Smoothly raise the nose to ~10\u00b0 nose-high pitch attitude. Relax back-stick pressure \nand stop nose track, then roll the aircraft left or right using aileron\n\nc. As the aircraft approaches wings level, neut"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "AEROBATICS 9-1 (page 175)",
+        "score": 18.107,
+        "heading": "AEROBATICS 9-1",
+        "pageStart": 175,
+        "pageEnd": 175,
+        "snippet": "AEROBATICS 9-1 \nCHAPTER NINE \nAEROBATICS\n\n900. INTRODUCTION\n\nAerobatics is any intentional maneuver involving an abrupt change in aircraft\u2019s attitude, \nintentionally performed spins, or other maneuvers requiring pitch/dive angles greater than 45\u00b0, \nbank angles greater than 60\u00b0, or accelerations greater than two Gs.\n\nYou will be receiving training on the Anti-G straining maneuver (AGSM) and the physiological \neffects of increased G loads. Review the aircraft G limits.\n\nRefer to Figure 9-1 for aer"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER NINE (page 197)",
+        "score": 18.079,
+        "heading": "PRIMARY CONTACT CHAPTER NINE",
+        "pageStart": 197,
+        "pageEnd": 197,
+        "snippet": "PRIMARY CONTACT CHAPTER NINE \nAEROBATICS 9-23 \nf. As the nose approaches a point ~10\u00ba above the opposite horizon (\"FCP canopy bow\" \non the horizon), slow the rate of nose movement by neutralizing back-stick pressure. \nCommence a roll in either direction to the upright position. Anticipate the need for \nslight forward stick pressure as the aircraft passes 90\u00ba of roll.\n\ng. The maneuver is complete when the aircraft is once again in the level flight attitude \non the reciprocal heading. The airspeed"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-form-001",
+    "category": "Formation",
+    "question": "Describe the visual references for parade (fingertip) position: wingtip-to-canopy relationship, fore-aft position cues, and altitude reference.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Formation chapter \u2014 Parade Position visual references"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER FIVE PRIMARY CONTACT (page 88)",
+        "score": 23.299,
+        "heading": "CHAPTER FIVE PRIMARY CONTACT",
+        "pageStart": 88,
+        "pageEnd": 88,
+        "snippet": "CHAPTER FIVE PRIMARY CONTACT \n5-8 FLIGHT PROCEDURES\n\nFigure 5-4 Skipping on Takeoff\n\n507. DEPARTURE\n\n1. Description. N/A\n\n2. General. See local Standard Operating Procedures or Course Rules.\n\n3. Procedures. See local Standard Operating Procedures or Course Rules.\n\n508. STRAIGHT AND LEVEL FLIGHT\n\n1. Description. Maintain a constant altitude, airspeed and heading using the horizon as the \nprimary reference.\n\n2. General. Straight-and-level flight requires familiarity with flight instruments and vis"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "FUNDAMENTAL FLIGHT CONCEPTS 3-1 (page 47)",
+        "score": 20.727,
+        "heading": "FUNDAMENTAL FLIGHT CONCEPTS 3-1",
+        "pageStart": 47,
+        "pageEnd": 47,
+        "snippet": "At first, control of the airplane is a matter of consciously fixing the relationship of a specific \nreference point on the airplane to the horizon. As basic flight skills are developed through \nexperience and training, the pilot will acquire a continuous awareness of these relationships \nwithout conscious effort. The reference points will be used almost subconsciously in varying \ndegrees to determine the attitude of the airplane during all maneuvers.\n\nIn establishing the reference points, the ai"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER FIVE PRIMARY CONTACT (page 90)",
+        "score": 18.102,
+        "heading": "CHAPTER FIVE PRIMARY CONTACT",
+        "pageStart": 90,
+        "pageEnd": 90,
+        "snippet": "CHAPTER FIVE PRIMARY CONTACT \n5-10 FLIGHT PROCEDURES \ndirection that the nose or wings travel. Apply trim in the opposite direction to nose or wing \nmovement (for example, if the nose drops apply aft elevator trim, if the aircraft rolls left apply \nright aileron trim).\n\nA common error in straight-and-level flight is to apply force to the control stick inadvertently \ndue to the weight of the pilot\u2019s arm. Minimize this by resting the forearm on the thigh.\n\na. To achieve straight flight (constant h"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 51)",
+        "score": 18.055,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 51,
+        "pageEnd": 51,
+        "snippet": "Rotate internal canopy handle forward with a slow\nsteady motion until resistance is felt in lock mecha-\nnism. Reverse direction just until pressure is relieved,\nthen continue to rotate internal canopy handle forward\nto LATCHED position. \u2022 Attempting to rotate the internal canopy han-\ndle too quickly or with excessive force may\ndamage the canopy locking system and/or\ndefeat the cam mechanism of the canopy\nhooks, preventing them from fully dropping\nand accepting the canopy sill. \u2022 Any time signifi"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 51)",
+        "score": 15.675,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 51,
+        "pageEnd": 51,
+        "snippet": "Check canopy lock by gently attempting to rotate\ninternal canopy handle aft. When properly locked,\ninternal canopy handle cannot be rotated aft without\nraising lock release lever. 8. Verify mechanical gr een indicators visible. To open the canopy from the inside: \n1. Raise lock release lever located aft of internal canopy\nhandle. 2. Hold lock release lever in UNLOCK position while\nslowly rotating internal canopy handle aft to placarded\nOPEN position. 3. Lift canopy open. CANOPY FRACTURING SYSTEM"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-form-002",
+    "category": "Formation",
+    "question": "Describe the lost wingman procedure. What are the calls, the actions, and the criteria for initiating the procedure?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Formation chapter \u2014 Lost Wingman / IMC procedures"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 283)",
+        "score": 7.74,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 283,
+        "pageEnd": 283,
+        "snippet": "3-55\n\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\n9. PCL - At 13% N 1 minimum, advance only as far as\nnecessary to obtain fuel flow indications (expect\napproximately 70 to 80 pph)\nFuel flow indications wi ll begin when the PCL is\napproximately halfway between OFF and the normal\nstart ready position.\n10. ITT and N 1 - Monitor\n\u2022 If there is no rise in ITT within 10 seconds\nafter fuel flow indications, place the PCL in\nOFF and perform the Abort Start procedure.\n\u2022 With the PMU disabled, monito"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 234)",
+        "score": 7.739,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 234,
+        "pageEnd": 234,
+        "snippet": "The zoom to eject is accomplished by pulling up to\na 20\u00b0 climb angle (if able) and ejecting before a sink rate\ndevelops. Zoom to eject allows the pilot to add 200 feet of\naltitude increase above the alti tude gain noted in the zoom\nchart due to not pushing over. If the decision to eject is not\nimmediately obvious, follow the zoom to climb procedure. If attempting an airstart or positioning to land, the following\nprocedures should be followed. Above 150 KIAS, initiate a\nzoom climb using a 2 G pul"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 227)",
+        "score": 5.417,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 227,
+        "pageEnd": 227,
+        "snippet": "3-3\nGround Emergencies. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3-4\nAbort Start Procedure. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3-4\nMotoring Run Procedure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 252)",
+        "score": 5.254,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 252,
+        "pageEnd": 252,
+        "snippet": "To conserve bat tery power, consider\ndeactivating interior/exterior lighting as con-\nditions permit. The avionics master switch\ncan also be set to OFF, disabling all avionics\nand radios, with the exception of the standby\nVHF. \u2022 If main battery depletes, refer to Battery Bus\nInoperative procedure. Items on generator\nbus will remain functional with an operative\ngenerator. \u2022 Cockpit will depressurize when power to the\nbattery bus is lost. Battery and Generator Failure\nThis checklist assumes that th"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 361)",
+        "score": 5.221,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 361,
+        "pageEnd": 361,
+        "snippet": "To initiate\na Conference Hotel, have ground personnel (SDO,\nFDO, Base Ops, FSS, ATC) call the Tinker AFB Com-\nmand Post at DSN 884 -7313 or commercial (405) 734\n-7313 and state: \"I am initiating a Conference Hotel for\nthe T-6 aircraft.\". Ground personnel should be made\naware that they will be acting as a communications re-\nlay between the engineering support team and the air-\ncraft. 2. Upon initial contact with Tinker AFB Command Post,\nground personnel should be ready to provide the fol-\nlowing:"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-inst-001",
+    "category": "Instruments",
+    "question": "Describe the instrument scan technique. What is the primary/supporting method and how does it differ from the selective radial scan?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-instruments",
+        "location": "Basic Instruments chapter \u2014 Scan Technique"
+      },
+      {
+        "docId": "irc",
+        "location": "Instrument Fundamentals section"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER THREE (page 55)",
+        "score": 22.788,
+        "heading": "PRIMARY CONTACT CHAPTER THREE",
+        "pageStart": 55,
+        "pageEnd": 55,
+        "snippet": "PRIMARY CONTACT CHAPTER THREE \nFUNDAMENTAL FLIGHT CONCEPTS 3-9\n\nFigure 3-3 Front-to-Side Scanning Method\n\nAn equally effective scan pattern is the front-to-side method illustrated in Figure 3-3. In this \npattern, start in the center block of your visual field (center of front windscreen), move to left \nfocusing in each block, then, after reaching the last block on the left, swing quickly back to the \ncenter block and repeat the performance to the right. At the end of the scan, return to the pane"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER THREE PRIMARY CONTACT (page 48)",
+        "score": 17.504,
+        "heading": "CHAPTER THREE PRIMARY CONTACT",
+        "pageStart": 48,
+        "pageEnd": 48,
+        "snippet": "CHAPTER THREE PRIMARY CONTACT \n3-2 FUNDAMENTAL FLIGHT CONCEPTS \nWhen pilots use this method, they achieve a more precise and competent overall piloting ability. \nIt results in less difficulty in holding desired altitudes, controlling airspeed during takeoffs, \nclimbs, descents, and landing approaches, and in maintaining headings in the traffic pattern, as \nwell as on cross-country flights.\n\nThe use of integrated flight instruction does not, and is not intended to, prepare pilots for flight in \ni"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER THREE PRIMARY CONTACT (page 54)",
+        "score": 14.966,
+        "heading": "CHAPTER THREE PRIMARY CONTACT",
+        "pageStart": 54,
+        "pageEnd": 54,
+        "snippet": "CHAPTER THREE PRIMARY CONTACT \n3-8 FUNDAMENTAL FLIGHT CONCEPTS \nmaneuver, so initially the scanning process will seem new and somewhat unnatural. It cannot be \noveremphasized, however, that your level of success in flight training will vary proportionately \nwith your ability to force yourself to develop and maintain a correct and expeditious scan pattern.\n\nThe entire pattern should take very little time and no one item should fix your attention at the \nexclusion of another. Meanwhile, correction"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER THREE PRIMARY CONTACT (page 52)",
+        "score": 14.964,
+        "heading": "CHAPTER THREE PRIMARY CONTACT",
+        "pageStart": 52,
+        "pageEnd": 52,
+        "snippet": "CHAPTER THREE PRIMARY CONTACT \n3-6 FUNDAMENTAL FLIGHT CONCEPTS \nFor flight that is not restricted to cockpit references for setting aircraft attitudes, the following \nflight instruments (located on the PFD) will comprise the group to be used as \"crosscheck\" or \nperformance instruments in succeeding chapters:\n\n\uf0b7 Attitude Indicator\n\n\uf0b7 Altimeter\n\n\uf0b7 Vertical Speed Indicator (VSI)\n\n\uf0b7 Airspeed Indicator\n\n\uf0b7 Heading Indicator\n\n\uf0b7 Turn and Bank Indicator (Turn needle and ball)\n\nNOTE\n\nFor a complete discus"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER THREE (page 51)",
+        "score": 12.544,
+        "heading": "PRIMARY CONTACT CHAPTER THREE",
+        "pageStart": 51,
+        "pageEnd": 51,
+        "snippet": "Of the basic skills required for flight, instrument interpretation requires the most thorough study \nand analysis. It begins with your understanding of each instrument\u2019s construction and operating \nprinciples. Then you must apply this knowledge to the performance of the aircraft you are \nflying, the particular maneuvers to be executed, the scan and control methods, and the flight \nconditions in which you are operating. For each maneuver, you will learn what performance to \nexpect and the combina"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-inst-002",
+    "category": "Instruments",
+    "question": "Describe the ILS approach: what defines the final approach fix, how do you identify glideslope intercept, and what are the criteria for going missed?",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-instruments",
+        "location": "Precision Approaches \u2014 ILS",
+        "note": "Reference the approach plate interpretation section."
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 158)",
+        "score": 23.275,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 158,
+        "pageEnd": 158,
+        "snippet": "DTG is a\ndirect distance to the waypoint. 3. At the missed approach po int, if the missed approach\nprocedure has not been initiated, the following indica-\ntions occur:\na. On the PFD and NAV MFD pages, a bearing\npointer slaved to the FMS source rotates 180 \uf0b0 to\nindicate waypoint passage. b. Distance-to-go to the MAP starts to increase. c. Navigation and guidance co ntinue along the exten-\nsion of the final approach course. The missed approach point (MAP) is not\nsequenced unless the pilot manually"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 214)",
+        "score": 20.83,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 214,
+        "pageEnd": 214,
+        "snippet": "2-24\n\nAIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nFigure 2-6. Typical Instrument (Non Radar) Approach\nPT02D \n972574AA.AI\n NOTE \nTHESE PROCEDURES ARE NOT INTENDED TO LIMIT THE PILOT'S PREROGATIVE TO ALTER AIRSPEEDS AND \nCONFIGURATIONS TO MEET EXISTING CONDITIONS.\n\nWHEN ON FINAL, THE PILOT HAS THE OPTION OF SELECTING LDG FLAPS AND SLOWING TO FINAL \nAPPROACH SPEED. \n1\nENTRY\nAPPROACH \nFIX\nINBOUND\nGEAR DOWN, \nPERFORM BEFORE \n315135\nPROCEDURE \nTURN\nRECOMMENDED \nAPPROACH \nAIRSPEED - KIAS\nENTRY OU"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 158)",
+        "score": 18.238,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 158,
+        "pageEnd": 158,
+        "snippet": "Verify the course and distance of the leg to the TO\nWPT, and make the direct-to intercept active by press-\ning the EXEC key on the UFCP, followed by W1 on\nthe scratchpad keys\nA straight-in approach can al so be created in advance by\ninserting a temporary waypoint into the route as an initial\napproach Fix (IAF) created as a place/bearing/distance way-\npoint based on, the FAF. On receipt of the ATC clearance,\ndirect-to navigation to this temporary IAF, or to intercept the\nnew leg inbound to the FA"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 213)",
+        "score": 18.207,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 213,
+        "pageEnd": 213,
+        "snippet": "Prior\nto the final approach fix, ensure the landing gear is down and\nflaps are set to TO, and slow to a minimum of 110 KIAS. With the field in sight and departing the MDA, DA, or DH,\nslow to 105 KIAS minimum, or the pilot may select landing\nflaps and slow to 100 KIAS minimum. Fly GPS approaches using the above airspeeds and configu-\nrations. The GPS always displays distance to the\nactive waypoint. Duri ng GPS approaches,\nthis distance may not be the same as the pub-\nlished DME distance on the in"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER SIX (page 125)",
+        "score": 15.612,
+        "heading": "PRIMARY CONTACT CHAPTER SIX",
+        "pageStart": 125,
+        "pageEnd": 125,
+        "snippet": "PRIMARY CONTACT CHAPTER SIX \nLANDING PROCEDURES 6-9 \nprocedures that are utilized to correct for deviations from the desired altitude/airspeed \nare those learned on your first flight. Remember, the combination of attitude and \npower work together to produce aircraft performance.\n\nFigure 6-2 90\u00b0 Position\n\ne. The \"final\" (or \u201cgroove\u201d) is that final portion of the landing approach, beginning at \na point 1200-1500 feet from the runway threshold at an altitude of 150-250 feet AGL \nwhere the aircraft "
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-wx-001",
+    "category": "Weather",
+    "question": "State the VFR weather minimums for Class B, C, D, and E airspace below 10,000 ft MSL and above 10,000 ft MSL.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-contact",
+        "location": "Airspace chapter \u2014 VFR minimums table"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "Chapter 7 \u2014 Flight Planning / Weather Minimums"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 359)",
+        "score": 20.676,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 359,
+        "pageEnd": 359,
+        "snippet": "5.3 FUNCTIONAL CHECKFLIGHT \nCONDUCT\nSafety shall be the governing factor on all post maintenance\ncheck flights. In addition to conducting all flights during\ndaylight hours within the local flying area in VMC, the fol-\nlowing guidelines apply: \n1. All A and B profile FCFs shall remain within dead-en-\ngine glide distance of a suitable landing area until ac-\nceptable engine operation has been determined. 2. All A and B profile FCFs shall depart the airfield on a\nreverse ELP profile to attain dead-e"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 262)",
+        "score": 15.511,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 262,
+        "pageEnd": 262,
+        "snippet": "Below 10,000 feet MSL:\n6. PRESSURIZATION switch - RAM/DUMP\nNOTE\n\u2022 Selecting RAM/DUMP does not shut off\nbleed air inflow.\n\u2022 Defog is turned off when RAM/DUMP is\nselected.\n7. BLEED AIR INFLOW switch - OFF\n8. Oxygen mask - Remove (as required) (BOTH)\nOxygen mask must be on and secure before\nactuating CFS or initiating ejection.\n9. Land as soon as practical\nIf physiological symptoms persist and the\npilot(s) feel unsafe to land, maintain below\n10,000 feet MSL as l ong as practical before\nconsidering "
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 264)",
+        "score": 15.48,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 264,
+        "pageEnd": 264,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\n3. Notify maintenance personnel of the TAD FAIL after\nlanding, even if TAD successfully resets in flight\nFLIGHT WITH SHATTERED/DAMAGED CANOPY \n1. OBOGS - MAX (AS REQUIRED) (BOTH)\n2. Airspeed - 150 KIAS maximum\nThis airspeed will minimi ze turbulence and cockpit\nnoise. 3. Descend - Below 18,000 ft MSL\n4. PRESSURIZATION switch - DUMP below 18,000 ft\nMSL if canopy damaged but intact\n5. Controllability Check - As required\n6. Land as soon as possible\n"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 262)",
+        "score": 15.467,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 262,
+        "pageEnd": 262,
+        "snippet": "AIR FORCE TO 1T-6B-1\nNAVY NAVAIR A1-T6BAA-NFM-100\nNOTE\n\u2022 If physiological symp toms are recognized,\nimmediate access to a pure and secure source\nof oxygen is the best course of action to expe-\ndite recovery. If the cockpit altitude is above\n10,000 feet, pulling the GREEN RING is\nrequired since ambient cockpit air contains\ninsufficient oxygen pressure to support phys-\niological requirements. At a cockpit altitude\nof 10,000 feet or below, pulling the GREEN\nRING is optional as ambient cockpit air c"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "APPENDIX B PRIMARY CONTACT (page 218)",
+        "score": 15.467,
+        "heading": "APPENDIX B PRIMARY CONTACT",
+        "pageStart": 218,
+        "pageEnd": 218,
+        "snippet": "APPENDIX B PRIMARY CONTACT \nB-4 COMMUNICATIONS \n2. Figures\n\nDigits indicating hundreds and thousands in round numbers, such as ceiling heights and upper \nwind levels up to 9999, shall be spoken as follows:\n\nExample: 500 FIVE HUNDRED \n4500 FOUR THOUSAND FIVE HUNDRED\n\nNumbers above 9999 shall be spoken by separating the digits preceding the word \"thousand.\"\n\nExample: 10,000 ONE ZERO THOUSAND \n 13,400 ONE THREE THOUSAND FOUR HUNDRED\n\nAll other numbers shall be transmitted by pronouncing each digit."
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-nav-001",
+    "category": "Navigation",
+    "question": "Describe the low-level navigation planning process: route selection criteria, checkpoint spacing, altitude selection, and timing techniques.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-navigation",
+        "location": "Low-Level Navigation chapter \u2014 Route Planning"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER SEVEN (page 159)",
+        "score": 23.216,
+        "heading": "PRIMARY CONTACT CHAPTER SEVEN",
+        "pageStart": 159,
+        "pageEnd": 159,
+        "snippet": "PRIMARY CONTACT CHAPTER SEVEN \nEMERGENCY PROCEDURES 7-9 \na. Planning. The primary reference during an ELP is the runway. Crosscheck energy \nlevel (altitude + airspeed) with position. Look outside to maintain proper ground \ntrack. Predict energy level (altitude +airspeed) as early as possible at known reference \npoints (high key, low key and base key) and anticipate required corrections. Position \ndeviations can occur due to poor planning, imprecise aircraft control, or improper \nwind analysis. T"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 342)",
+        "score": 18.109,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 342,
+        "pageEnd": 342,
+        "snippet": "CONDITIONALLY QUALIFIED\nPossessed the necessary equipment, checked presence, read-\niness, and security of all other required safety equipment,\nand had satisfactory knowledge of its use. UNQUALIFIED\nLacked necessary equipment or was not familiar with use of\nequipment. 3.8.1.2 NATOPS Flight Manual / Pocket Checklists*\nQUALIFIED\nBoth publications current w ith respect to incorporated\nchanges. UNQUALIFIED\nCurrent changes not incorporated in either publication. 3.8.1.3 Flight Preparation*\nQUALIFIED\nP"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 102)",
+        "score": 18.034,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 102,
+        "pageEnd": 102,
+        "snippet": "UFCP Default Values\nCompass True/\nMagnetic Setting\nMagnetic Magnetic\nDME Frequency Slave Slave\nG Limit, Negative -3.5 Persistent\nG Limit, Positive 7.0 Persistent\nHeading Bug Setting 360 \u00b0 Persistent\nMFD Declutter Level Level 0 Persistent\nMinimums\nAnnunciator\nOFF Persistent\nNavigation Course 360 \u00b0 Persistent\nNavigation Source FMS Persistent\nOffset Across Track\nDirection\nR Persistent\nOffset Across Track\nDistance\n0.0 Persistent\nOffset Along Track\nDistance\n0.0 Persistent\nOffset Bearing 360 \u00b0 Persist"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "RNP Required Navigation Performance (page 521)",
+        "score": 17.423,
+        "heading": "RNP Required Navigation Performance",
+        "pageStart": 521,
+        "pageEnd": 521,
+        "snippet": "RH Right Hand\nRITT Raw Inter Turbine Temperature\nRMI Radio Magnetic Indicator\nRMT Remote\nRNG Range\nRNP Required Navigation Performance\nRNWY Runway\nRP Rear Pilot\nRPT Reporting Altitude or Reporting Point\nor Repeat\nRPTR Repeater\nRTE Route\nRTN Return\nSEAWARS Sea Water Activated Release System\nSAT Static Air Temperature\nSEL Select\nSID Standard Instrument Departure\nSIM Simulate\nSPAD Scratch Pad\nSPD Speed\nSPR Single Point Refueling\nSQ Squelch\nSSK Seat Survival Kit\nSta Station\nSTAR Standard Terminal Ar"
+      },
+      {
+        "docId": "natops-t6b",
+        "location": "AIR FORCE TO 1T-6B-1 (page 133)",
+        "score": 15.572,
+        "heading": "AIR FORCE TO 1T-6B-1",
+        "pageStart": 133,
+        "pageEnd": 133,
+        "snippet": "<6>With Mil Declutter enabled, two levels of declutter\n(level 0 or level 1) are prov ided on the MFD to control the\namount of information shown on the display at a given time. The declutter level can be selected using the UFCP and the\ncurrent declutter level selection applies to the PFD, NAV,\nand TSD pages. The information that is removed from the\nNAV display depends on which declutter level is selected as\nshown in the table below:\nNAVIGATION INFORMATION DISPLAY AND \nSOURCE SELECTION\nThe navigat"
+      }
+    ]
+  },
+  {
+    "aircraft": "T-6B",
+    "discussionItemId": "t6b-nav-002",
+    "category": "Navigation",
+    "question": "Describe the night illusions most commonly encountered during night flight and the corrections/awareness techniques for each.",
+    "existingSourceRefs": [
+      {
+        "docId": "fti-navigation",
+        "location": "Night Operations chapter \u2014 Visual Illusions"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "Night Familiarization section"
+      }
+    ],
+    "suggestedMatches": [
+      {
+        "docId": "fti-contact",
+        "location": "SOLO FLIGHT 8-1 (page 171)",
+        "score": 27.87,
+        "heading": "SOLO FLIGHT 8-1",
+        "pageStart": 171,
+        "pageEnd": 171,
+        "snippet": "SOLO FLIGHT 8-1 \nCHAPTER EIGHT \nSOLO FLIGHT\n\n800. INTRODUCTION\n\nFor most students, the First Safe for Solo Checkride will be the most demanding task undertaken \nto date in their aviation career. While the safe-for-solo check is certainly challenging, successful \ncompletion is a rewarding, confidence-building experience.\n\n801. THE SOLO FLIGHT\n\n1. Preflight Preparation\n\na. Physical preparation. Make sure your body is well rested. The average sleep \nrequirement is eight hours during each 24-hour pe"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER ELEVEN PRIMARY CONTACT (page 208)",
+        "score": 18.349,
+        "heading": "CHAPTER ELEVEN PRIMARY CONTACT",
+        "pageStart": 208,
+        "pageEnd": 208,
+        "snippet": "2. The navigation lights will remain on until the propeller has come to a complete stop.\n\n1112. POSTFLIGHT INSPECTION\n\n1. All aircraft will be postflighted following each flight in accordance with the T-6B \nNATOPS Flight Manual.\n\n2. Complete a thorough postflight inspection utilizing a white-lens flashlight.\n\n1113. NIGHT CONTACT FLIGHT PROCEDURES\n\nThis section provides the basic procedures required to conduct night flight operations. While \nthese procedures form a basis, the expanded procedures "
+      },
+      {
+        "docId": "fti-contact",
+        "location": "FUNDAMENTAL FLIGHT CONCEPTS 3-1 (page 47)",
+        "score": 17.545,
+        "heading": "FUNDAMENTAL FLIGHT CONCEPTS 3-1",
+        "pageStart": 47,
+        "pageEnd": 47,
+        "snippet": "At first, control of the airplane is a matter of consciously fixing the relationship of a specific \nreference point on the airplane to the horizon. As basic flight skills are developed through \nexperience and training, the pilot will acquire a continuous awareness of these relationships \nwithout conscious effort. The reference points will be used almost subconsciously in varying \ndegrees to determine the attitude of the airplane during all maneuvers.\n\nIn establishing the reference points, the ai"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "PRIMARY CONTACT CHAPTER THREE (page 51)",
+        "score": 15.816,
+        "heading": "PRIMARY CONTACT CHAPTER THREE",
+        "pageStart": 51,
+        "pageEnd": 51,
+        "snippet": "Of the basic skills required for flight, instrument interpretation requires the most thorough study \nand analysis. It begins with your understanding of each instrument\u2019s construction and operating \nprinciples. Then you must apply this knowledge to the performance of the aircraft you are \nflying, the particular maneuvers to be executed, the scan and control methods, and the flight \nconditions in which you are operating. For each maneuver, you will learn what performance to \nexpect and the combina"
+      },
+      {
+        "docId": "fti-contact",
+        "location": "CHAPTER ONE PRIMARY CONTACT (page 24)",
+        "score": 15.671,
+        "heading": "CHAPTER ONE PRIMARY CONTACT",
+        "pageStart": 24,
+        "pageEnd": 24,
+        "snippet": "Occasionally, physiological problems arise during the course of a flight. Airsickness, fatigue, \nhypoxia, food poisoning and dehydration can overcome a pilot and result in reduced situational \nawareness and even complete incapacitation. Pilots must not only recognize these symptoms in \nthemselves but also in other crew members. At any time, the non-affected crew member should \nbe ready to take the controls, and if necessary, fly to a safer environment (i.e., higher altitude, \naway from other air"
+      }
+    ]
+  }
+]

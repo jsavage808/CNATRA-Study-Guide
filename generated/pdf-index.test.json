@@ -1,0 +1,41 @@
+{
+  "documents": [
+    {
+      "aircraft": "T-6B",
+      "docId": "natops-t6b",
+      "shortName": "NATOPS",
+      "title": "NATOPS Flight Manual - T-6B Texan II",
+      "file": "t6b/A1-T6BAA-NFM-000.pdf",
+      "pageCount": 1,
+      "chunkCount": 2
+    }
+  ],
+  "chunks": [
+    {
+      "chunkId": "natops-t6b-p0001-c001",
+      "aircraft": "T-6B",
+      "docId": "natops-t6b",
+      "file": "t6b/A1-T6BAA-NFM-000.pdf",
+      "title": "NATOPS Flight Manual - T-6B Texan II",
+      "shortName": "NATOPS",
+      "pageStart": 1,
+      "pageEnd": 1,
+      "heading": "Chapter 2 Fuel System",
+      "text": "The fuel system consists of tanks, feed lines, boost pumps, and usable fuel data. Crossfeed is not available.",
+      "score": 0
+    },
+    {
+      "chunkId": "natops-t6b-p0001-c002",
+      "aircraft": "T-6B",
+      "docId": "natops-t6b",
+      "file": "t6b/A1-T6BAA-NFM-000.pdf",
+      "title": "NATOPS Flight Manual - T-6B Texan II",
+      "shortName": "NATOPS",
+      "pageStart": 1,
+      "pageEnd": 1,
+      "heading": "Chapter 5 Airspeed Limitations",
+      "text": "Airspeed limitations include Vne, Vmo, Va, Vlo, Vle, and flap extension speeds.",
+      "score": 0
+    }
+  ]
+}

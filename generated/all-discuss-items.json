@@ -1,0 +1,3840 @@
+{
+  "filters": {
+    "aircraft": null,
+    "mediaFilter": "sim_flight"
+  },
+  "summary": [
+    {
+      "aircraft": "T-44C",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "publicationNumber": "CNATRAINST 1542.175D",
+      "file": "t44c/1542.175D CH-1.pdf",
+      "includedBlocks": 11,
+      "extractedDiscussItems": 24
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "publicationNumber": "CNATRA INST 1542.167D",
+      "file": "t45c/1542.167D.pdf",
+      "includedBlocks": 41,
+      "extractedDiscussItems": 68
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "publicationNumber": "CNATRAINST 1542.166D",
+      "file": "t6b/1542.166D_signed.pdf",
+      "includedBlocks": 24,
+      "extractedDiscussItems": 47
+    }
+  ],
+  "items": [
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2101",
+      "eventRefs": [
+        "FAM2101"
+      ],
+      "discussText": "Seat and rudder pedal adjustment, fuel management panel, pilot instrument panel, engine \ninstruments and switches, center instrument panel, annunciator panel analysis, right seat \ninstrument panel, circuit breaker panels, control pedestal, overhead control panel, MFD, \nchecklists: before start, engine start, after start, brake check (out of chocks), engine run-up, \ntakeoff, after landing, and secure",
+      "topics": [
+        "Seat and rudder pedal adjustment",
+        "fuel management panel",
+        "pilot instrument panel",
+        "engine \ninstruments and switches",
+        "center instrument panel",
+        "annunciator panel analysis",
+        "right seat \ninstrument panel",
+        "circuit breaker panels",
+        "control pedestal",
+        "overhead control panel",
+        "MFD",
+        "checklists: before start",
+        "engine start",
+        "after start",
+        "brake check (out of chocks)",
+        "engine run-up",
+        "takeoff",
+        "after landing",
+        "and secure"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2102",
+      "eventRefs": [
+        "FAM2102"
+      ],
+      "discussText": "Takeoff procedures, checklist management, landing procedures, checklists: climb, cruise, \ndescent, approach, landing, start malfunctions, and MFD operations, CRM callouts, and \npressurization system malfunctions",
+      "topics": [
+        "Takeoff procedures",
+        "checklist management",
+        "landing procedures",
+        "checklists: climb",
+        "cruise",
+        "descent",
+        "approach",
+        "landing",
+        "start malfunctions",
+        "and MFD operations",
+        "CRM callouts",
+        "and \npressurization system malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2103",
+      "eventRefs": [
+        "FAM2103"
+      ],
+      "discussText": "Loss of brakes, hot brakes, brake fire, mechanical stops in throttle quadrant, inadvertent \ncondition lever to fuel cutoff, engine failure at altitude, anti-ice and deice systems autopilot \ndisengagement, and ground emergencies, anti-ice and deice systems, and windshield heating \nfailure",
+      "topics": [
+        "Loss of brakes",
+        "hot brakes",
+        "brake fire",
+        "mechanical stops in throttle quadrant",
+        "inadvertent \ncondition lever to fuel cutoff",
+        "engine failure at altitude",
+        "anti-ice and deice systems autopilot \ndisengagement",
+        "and ground emergencies",
+        "anti-ice and deice systems",
+        "and windshield heating \nfailure"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2104",
+      "eventRefs": [
+        "FAM2104"
+      ],
+      "discussText": "Vmca demo, dynamic engine cut, engine failure or fire during or after takeoff, fuel system \nmalfunctions, smoke or fume emergencies, in-flight damage, bird strikes, wing or \nuncontrollable fire, ditching",
+      "topics": [
+        "Vmca demo",
+        "dynamic engine cut",
+        "engine failure or fire during or after takeoff",
+        "fuel system \nmalfunctions",
+        "smoke or fume emergencies",
+        "in-flight damage",
+        "bird strikes",
+        "wing or \nuncontrollable fire",
+        "ditching"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2105",
+      "eventRefs": [
+        "FAM2105"
+      ],
+      "discussText": "Flap malfunctions, no-flap landings, gear malfunctions, unsafe gear and gear up landings, \nengine malfunctions, propeller malfunctions, electrical malfunctions, and air-starts",
+      "topics": [
+        "Flap malfunctions",
+        "no-flap landings",
+        "gear malfunctions",
+        "unsafe gear and gear up landings",
+        "engine malfunctions",
+        "propeller malfunctions",
+        "electrical malfunctions",
+        "and air-starts"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM31",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 62,
+      "pageEnd": 63,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM31",
+        "FAM2105",
+        "FAM0201",
+        "MANEUVER",
+        "FAM3101"
+      ],
+      "discussText": "Basic air work, high-work maneuvers, landing patterns, and checklist \nmanagement",
+      "topics": [
+        "Basic air work",
+        "high-work maneuvers",
+        "landing patterns",
+        "and checklist \nmanagement"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM32",
+      "blockTitle": "Emergency Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 67,
+      "pageEnd": 72,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM32",
+        "FAM4102",
+        "MANEUVER",
+        "FAM3201",
+        "FAM42",
+        "FAM4104",
+        "FAM4201",
+        "FAM4203",
+        "FAM4202",
+        "FAM4204",
+        "FAM4205",
+        "FAM4206"
+      ],
+      "discussText": "Emergency procedures, simulated emergency scenarios, CRM during \nsimulated emergencies, dynamic engine cut, SSE pattern work, and SSE \n(landings, wave-offs, touch-and-go), landing gear system and malfunctions",
+      "topics": [
+        "Emergency procedures",
+        "simulated emergency scenarios",
+        "CRM during \nsimulated emergencies",
+        "dynamic engine cut",
+        "SSE pattern work",
+        "and SSE \n(landings",
+        "wave-offs",
+        "touch-and-go)",
+        "landing gear system and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM33",
+      "blockTitle": "Familiarization Emergency Procedures/CRM",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 73,
+      "pageEnd": 74,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM33",
+        "FAM4204",
+        "MANEUVER",
+        "FAM3301"
+      ],
+      "discussText": "Maintaining aircraft control during emergencies, pattern considerations, \ncommunications, and CRM",
+      "topics": [
+        "Maintaining aircraft control during emergencies",
+        "pattern considerations",
+        "communications",
+        "and CRM"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM34",
+      "blockTitle": "Night Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 77,
+      "pageEnd": 78,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM34",
+        "FAM4390",
+        "MANEUVER",
+        "FAM3401"
+      ],
+      "discussText": "Night flying environment, field lighting, aircraft lighting, observer duties, \noutside scan techniques, see and avoid, porpoised landing, CRM guidelines and callouts, and \nnight instrument approaches",
+      "topics": [
+        "Night flying environment",
+        "field lighting",
+        "aircraft lighting",
+        "observer duties",
+        "outside scan techniques",
+        "see and avoid",
+        "porpoised landing",
+        "CRM guidelines and callouts",
+        "and \nnight instrument approaches"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "I2101",
+      "eventRefs": [
+        "I2101"
+      ],
+      "discussText": "Instrument crosscheck, instrument takeoff, full-panel approach-to-stalls, stalls and spin \nrecovery, high work maneuvers, and control and performance concept",
+      "topics": [
+        "Instrument crosscheck",
+        "instrument takeoff",
+        "full-panel approach-to-stalls",
+        "stalls and spin \nrecovery",
+        "high work maneuvers",
+        "and control and performance concept"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "I2102",
+      "eventRefs": [
+        "I2102"
+      ],
+      "discussText": "Unusual attitudes, pitot-static system, flight instrument characteristics, ESIS operation, wet \ncompass characteristics, and departure procedures",
+      "topics": [
+        "Unusual attitudes",
+        "pitot-static system",
+        "flight instrument characteristics",
+        "ESIS operation",
+        "wet \ncompass characteristics",
+        "and departure procedures"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "I2103",
+      "eventRefs": [
+        "I2103"
+      ],
+      "discussText": "Anti-icing system, emergency or minimum fuel state, TERPs, IFR En route Supplement, \nFlight Information Handbook, NOTAMs, and autopilot/flight director usage",
+      "topics": [
+        "Anti-icing system",
+        "emergency or minimum fuel state",
+        "TERPs",
+        "IFR En route Supplement",
+        "Flight Information Handbook",
+        "NOTAMs",
+        "and autopilot/flight director usage"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 87,
+      "eventCode": "I3101",
+      "eventRefs": [
+        "I3101"
+      ],
+      "discussText": "IAF and FAF procedures (6T\u2019s, descent, and lead turns), CRM callouts and techniques, GCA \napproach, PAR, ASR, and ILS configuration point, ASR recommended altitudes, NAVAID \nsetup (takeoff, en route, approach, and missed approach), cockpit procedures (en route versus \nmultiple terminal approaches, task management), and point-to-point navigation",
+      "topics": [
+        "IAF and FAF procedures (6T\u2019s",
+        "descent",
+        "and lead turns)",
+        "CRM callouts and techniques",
+        "GCA \napproach",
+        "PAR",
+        "ASR",
+        "and ILS configuration point",
+        "ASR recommended altitudes",
+        "NAVAID \nsetup (takeoff",
+        "en route",
+        "approach",
+        "and missed approach)",
+        "cockpit procedures (en route versus \nmultiple terminal approaches",
+        "task management)",
+        "and point-to-point navigation"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 87,
+      "eventCode": "I3102",
+      "eventRefs": [
+        "I3102"
+      ],
+      "discussText": "Holding, missed approach holding versus HILO procedures, VOR and TAC approach \nprocedures, missed approach, circling procedures, circling missed approach (determining \nMAP and continuation beyond MAP), needle-only approach procedures, and continuous \ndescent final approach (CDFA)",
+      "topics": [
+        "Holding",
+        "missed approach holding versus HILO procedures",
+        "VOR and TAC approach \nprocedures",
+        "missed approach",
+        "circling procedures",
+        "circling missed approach (determining \nMAP and continuation beyond MAP)",
+        "needle-only approach procedures",
+        "and continuous \ndescent final approach (CDFA)"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 87,
+      "eventCode": "I3103",
+      "eventRefs": [
+        "I3103"
+      ],
+      "discussText": "NATOPS Instrument Flight Manual, SOPs, local instructions, NATOPS, LOC and LOC-BC \napproaches (configuration, presentation, MA, and FAF Identification by other than DME), \nESIS procedures, reverse sensing, and TERPS",
+      "topics": [
+        "NATOPS Instrument Flight Manual",
+        "SOPs",
+        "local instructions",
+        "NATOPS",
+        "LOC and LOC-BC \napproaches (configuration",
+        "presentation",
+        "MA",
+        "and FAF Identification by other than DME)",
+        "ESIS procedures",
+        "reverse sensing",
+        "and TERPS"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 87,
+      "eventCode": "I3104",
+      "eventRefs": [
+        "I3104"
+      ],
+      "discussText": "RNAV(GPS) approach types (LNAV, LNAV/VNAV, LPV, TAA, T\u2019s, and HILO), feeder fix \nselection of IAF, RNAV configuration point, RAIM, GPS sensitivity modes, autopilot and \nflight director, lost communications (FIH and LOA) , and SSE approach procedures.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-6",
+      "topics": [
+        "RNAV(GPS) approach types (LNAV",
+        "LNAV/VNAV",
+        "LPV",
+        "TAA",
+        "T\u2019s",
+        "and HILO)",
+        "feeder fix \nselection of IAF",
+        "RNAV configuration point",
+        "RAIM",
+        "GPS sensitivity modes",
+        "autopilot and \nflight director",
+        "lost communications (FIH and LOA)",
+        "and SSE approach procedures.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-6"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 92,
+      "pageEnd": 94,
+      "eventCode": "I3201",
+      "eventRefs": [
+        "I3201"
+      ],
+      "discussText": "SSE approach procedures, SSE circling approach, procedure track (arc and radial combination \nand teardrop), emergency voice reports , departure procedures (SID, ODP, vector, diverse) \nand avionics system and malfunctions",
+      "topics": [
+        "SSE approach procedures",
+        "SSE circling approach",
+        "procedure track (arc and radial combination \nand teardrop)",
+        "emergency voice reports",
+        "departure procedures (SID",
+        "ODP",
+        "vector",
+        "diverse) \nand avionics system and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 92,
+      "pageEnd": 94,
+      "eventCode": "I3202",
+      "eventRefs": [
+        "I3202"
+      ],
+      "discussText": "Weather filing criteria, turbulence and wind shear, icing, approach and landing minimums, \nESIS approach, fuel system and malfunctions, in-flight damage and bird strikes",
+      "topics": [
+        "Weather filing criteria",
+        "turbulence and wind shear",
+        "icing",
+        "approach and landing minimums",
+        "ESIS approach",
+        "fuel system and malfunctions",
+        "in-flight damage and bird strikes"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 92,
+      "pageEnd": 94,
+      "eventCode": "I3203",
+      "eventRefs": [
+        "I3203"
+      ],
+      "discussText": "En route weather filing facilities (FSS and PMSV), STARS (filing, planning, and lost \ncomms), SSE missed approach, and electrical system and malfunctions",
+      "topics": [
+        "En route weather filing facilities (FSS and PMSV)",
+        "STARS (filing",
+        "planning",
+        "and lost \ncomms)",
+        "SSE missed approach",
+        "and electrical system and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 92,
+      "pageEnd": 94,
+      "eventCode": "I3204",
+      "eventRefs": [
+        "I3204"
+      ],
+      "discussText": "SSE configuration point with or without VNAV, flight director malfunctions, autopilot \nmalfunctions and disconnect procedures, landing gear system and malfunctions, and propeller \nsystem and malfunctions",
+      "topics": [
+        "SSE configuration point with or without VNAV",
+        "flight director malfunctions",
+        "autopilot \nmalfunctions and disconnect procedures",
+        "landing gear system and malfunctions",
+        "and propeller \nsystem and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I33",
+      "blockTitle": "Mid-Stage Instrument Check",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 98,
+      "pageEnd": 99,
+      "eventCode": null,
+      "eventRefs": [
+        "I4204",
+        "MANEUVER",
+        "I3390"
+      ],
+      "discussText": "Operations limits quiz, IAF/FAF entry procedures (6 T\u2019s, descent, and lead \nturns), pressurization system and malfunctions, electrical system, and CNAF-M 3710.7 weather \nfiling criteria",
+      "topics": [
+        "Operations limits quiz",
+        "IAF/FAF entry procedures (6 T\u2019s",
+        "descent",
+        "and lead \nturns)",
+        "pressurization system and malfunctions",
+        "electrical system",
+        "and CNAF-M 3710.7 weather \nfiling criteria"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I34",
+      "blockTitle": "Advanced Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 103,
+      "pageEnd": 105,
+      "eventCode": "I3401",
+      "eventRefs": [
+        "I3401"
+      ],
+      "discussText": "Vmca, Vmcg, PIC decision making, WW versus convective SIGMET, weather considerations \nduring emergencies, approach lighting, weight and balance form F, and other discussion items \nat the discretion of the IP",
+      "topics": [
+        "Vmca",
+        "Vmcg",
+        "PIC decision making",
+        "WW versus convective SIGMET",
+        "weather considerations \nduring emergencies",
+        "approach lighting",
+        "weight and balance form F",
+        "and other discussion items \nat the discretion of the IP"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I34",
+      "blockTitle": "Advanced Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 103,
+      "pageEnd": 105,
+      "eventCode": "I3402",
+      "eventRefs": [
+        "I3402"
+      ],
+      "discussText": "Memory items and deferred emergencies, NATOPS Procedures and situations not covered by \nNATOPS, changing flight plan in-flight, ATC priority handling, adaptability/flexibility during \nemergencies, and other discussion items at the discretion of the IP.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \nV-24",
+      "topics": [
+        "Memory items and deferred emergencies",
+        "NATOPS Procedures and situations not covered by \nNATOPS",
+        "changing flight plan in-flight",
+        "ATC priority handling",
+        "adaptability/flexibility during \nemergencies",
+        "and other discussion items at the discretion of the IP.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \nV-24"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I35",
+      "blockTitle": "Instrument Emergency Procedures/ CRM",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 106,
+      "pageEnd": 107,
+      "eventCode": "I3501",
+      "eventRefs": [
+        "I3501"
+      ],
+      "discussText": "Simulated scenario background. \n \n I3502 \n CRM and simulated scenario background",
+      "topics": [
+        "Simulated scenario background. \n \n I3502 \n CRM and simulated scenario background"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO31",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 67,
+      "pageEnd": 68,
+      "eventCode": "CO3101",
+      "eventRefs": [
+        "CO3101"
+      ],
+      "discussText": "QOD, IFT operation (if applicable), ground signals, final checker, and shutdown signals",
+      "topics": [
+        "QOD",
+        "IFT operation (if applicable)",
+        "ground signals",
+        "final checker",
+        "and shutdown signals"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO31",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 67,
+      "pageEnd": 68,
+      "eventCode": "CO3102",
+      "eventRefs": [
+        "CO3102"
+      ],
+      "discussText": "QOD, OFT operation, ground signals, and final checker",
+      "topics": [
+        "QOD",
+        "OFT operation",
+        "ground signals",
+        "and final checker"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CO32",
+      "blockTitle": "Cockpit Orientation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 69,
+      "pageEnd": 70,
+      "eventCode": null,
+      "eventRefs": [
+        "CO3102",
+        "BI1110",
+        "CO3201",
+        "CO3202",
+        "COCKPIT",
+        "TACAN"
+      ],
+      "discussText": "QOD, control, performance, and position instruments, instrument scan, and \nscan technique",
+      "topics": [
+        "QOD",
+        "control",
+        "performance",
+        "and position instruments",
+        "instrument scan",
+        "and \nscan technique"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2101",
+      "eventRefs": [
+        "EP2101"
+      ],
+      "discussText": "QOD, canopy malfunctions, engine fire on deck, OBOGS malfunctions and air-start",
+      "topics": [
+        "QOD",
+        "canopy malfunctions",
+        "engine fire on deck",
+        "OBOGS malfunctions and air-start"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2102",
+      "eventRefs": [
+        "EP2102"
+      ],
+      "discussText": "QOD, ground ejection situations, engine stalls, short-field arrested landing, and go-around",
+      "topics": [
+        "QOD",
+        "ground ejection situations",
+        "engine stalls",
+        "short-field arrested landing",
+        "and go-around"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2103",
+      "eventRefs": [
+        "EP2103"
+      ],
+      "discussText": "QOD, gear door malfunctions, and long-field arrested landing, aileron PCU checklist \nprocedures and failure modes, BASH mitigation profile procedures",
+      "topics": [
+        "QOD",
+        "gear door malfunctions",
+        "and long-field arrested landing",
+        "aileron PCU checklist \nprocedures and failure modes",
+        "BASH mitigation profile procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "EP21",
+      "blockTitle": "Emergency Procedures",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 71,
+      "pageEnd": 72,
+      "eventCode": "EP2104",
+      "eventRefs": [
+        "EP2104"
+      ],
+      "discussText": "QOD, smoke or fumes in cockpit, rudder trim failure, stabilator trim failure, flaps fail to \nretract, slats fail to retract, flaps fail to extend, slats fail to extend, split slats, gear unsafe after \nextension, gear door malfunctions after extension, and go-around",
+      "topics": [
+        "QOD",
+        "smoke or fumes in cockpit",
+        "rudder trim failure",
+        "stabilator trim failure",
+        "flaps fail to \nretract",
+        "slats fail to retract",
+        "flaps fail to extend",
+        "slats fail to extend",
+        "split slats",
+        "gear unsafe after \nextension",
+        "gear door malfunctions after extension",
+        "and go-around"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR31",
+      "blockTitle": "Basic Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 73,
+      "pageEnd": 74,
+      "eventCode": "TR3103",
+      "eventRefs": [
+        "TR3103"
+      ],
+      "discussText": "QOD, main ADI failure, GINA malfunctions, turn-and-slip failure, HSI failure, and MFD \nfailure.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-12 \nTR3104-9 \nQOD and partial panel",
+      "topics": [
+        "QOD",
+        "main ADI failure",
+        "GINA malfunctions",
+        "turn-and-slip failure",
+        "HSI failure",
+        "and MFD \nfailure.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-12 \nTR3104-9 \nQOD and partial panel"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3201",
+      "eventRefs": [
+        "TR3201"
+      ],
+      "discussText": "QOD, radial intercepts, and point-to-point navigation",
+      "topics": [
+        "QOD",
+        "radial intercepts",
+        "and point-to-point navigation"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3202",
+      "eventRefs": [
+        "TR3202"
+      ],
+      "discussText": "QOD and MFD failure",
+      "topics": [
+        "QOD and MFD failure"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3203",
+      "eventRefs": [
+        "TR3203"
+      ],
+      "discussText": "QOD and minimum or emergency fuel GCA",
+      "topics": [
+        "QOD and minimum or emergency fuel GCA"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3204",
+      "eventRefs": [
+        "TR3204"
+      ],
+      "discussText": "QOD, lost communication, and en route descent",
+      "topics": [
+        "QOD",
+        "lost communication",
+        "and en route descent"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR32",
+      "blockTitle": "Radio Instrument Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 75,
+      "pageEnd": 77,
+      "eventCode": "TR3205",
+      "eventRefs": [
+        "TR3205"
+      ],
+      "discussText": "QOD, marker beacon failure, and oil pressure warning. \n \nTR3206-8 \nQOD",
+      "topics": [
+        "QOD",
+        "marker beacon failure",
+        "and oil pressure warning. \n \nTR3206-8 \nQOD"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3301",
+      "eventRefs": [
+        "TR3301"
+      ],
+      "discussText": "QOD, parking brake failure, lost aircraft, lost communications, loss of ECS temperature \ncontrol, and OBOGS malfunction",
+      "topics": [
+        "QOD",
+        "parking brake failure",
+        "lost aircraft",
+        "lost communications",
+        "loss of ECS temperature \ncontrol",
+        "and OBOGS malfunction"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3302",
+      "eventRefs": [
+        "TR3302"
+      ],
+      "discussText": "QOD, flap indicator failure, landing gear indicator failure, trim indicator failure, and swerve \non touchdown",
+      "topics": [
+        "QOD",
+        "flap indicator failure",
+        "landing gear indicator failure",
+        "trim indicator failure",
+        "and swerve \non touchdown"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3303",
+      "eventRefs": [
+        "TR3303"
+      ],
+      "discussText": "QOD, fuel flow indicator failure, IFF failure, and long-field arrestment",
+      "topics": [
+        "QOD",
+        "fuel flow indicator failure",
+        "IFF failure",
+        "and long-field arrestment"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3304",
+      "eventRefs": [
+        "TR3304"
+      ],
+      "discussText": "QOD and warning and caution tones",
+      "topics": [
+        "QOD and warning and caution tones"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3305",
+      "eventRefs": [
+        "TR3305"
+      ],
+      "discussText": "QOD, lost canopy, and aircraft configurations for field arrestments",
+      "topics": [
+        "QOD",
+        "lost canopy",
+        "and aircraft configurations for field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3306",
+      "eventRefs": [
+        "TR3306"
+      ],
+      "discussText": "QOD, aileron PCU checklist procedures, PCU failure modes, BASH mitigation profile \nprocedures",
+      "topics": [
+        "QOD",
+        "aileron PCU checklist procedures",
+        "PCU failure modes",
+        "BASH mitigation profile \nprocedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR33",
+      "blockTitle": "Familiarization Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 78,
+      "pageEnd": 81,
+      "eventCode": "TR3307",
+      "eventRefs": [
+        "TR3307"
+      ],
+      "discussText": "QOD and aircraft systems",
+      "topics": [
+        "QOD and aircraft systems"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR21",
+      "blockTitle": "Familiarization EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "TR2101",
+      "eventRefs": [
+        "TR2101"
+      ],
+      "discussText": "QOD, brake pressure caution light illuminated airborne, weight-on-wheels proximity switch \nfailure (AOA indexers with aircraft on landing rollout), and arrested landing",
+      "topics": [
+        "QOD",
+        "brake pressure caution light illuminated airborne",
+        "weight-on-wheels proximity switch \nfailure (AOA indexers with aircraft on landing rollout)",
+        "and arrested landing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR21",
+      "blockTitle": "Familiarization EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "eventCode": "TR2102",
+      "eventRefs": [
+        "TR2102"
+      ],
+      "discussText": "QOD and OBOGS malfunctions.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-21",
+      "topics": [
+        "QOD and OBOGS malfunctions.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-21"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3401",
+      "eventRefs": [
+        "TR3401"
+      ],
+      "discussText": "QOD, warning and caution tones, and BASH mitigation profile procedures",
+      "topics": [
+        "QOD",
+        "warning and caution tones",
+        "and BASH mitigation profile procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3402",
+      "eventRefs": [
+        "TR3402"
+      ],
+      "discussText": "QOD, lost canopy, and aircraft configurations for field arrestments",
+      "topics": [
+        "QOD",
+        "lost canopy",
+        "and aircraft configurations for field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR34",
+      "blockTitle": "Transition Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "eventCode": "TR3403",
+      "eventRefs": [
+        "TR3403"
+      ],
+      "discussText": "QOD, aileron PCU checklist procedures, and PCU failure modes.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-23",
+      "topics": [
+        "QOD",
+        "aileron PCU checklist procedures",
+        "and PCU failure modes.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nIV-23"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR61",
+      "blockTitle": "Transition Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 86,
+      "pageEnd": 86,
+      "eventCode": null,
+      "eventRefs": [
+        "TR3401",
+        "TR6101"
+      ],
+      "discussText": "QOD, VFR pattern interval sight picture, pattern communications, pattern \nEPs, and delta procedures",
+      "topics": [
+        "QOD",
+        "VFR pattern interval sight picture",
+        "pattern communications",
+        "pattern \nEPs",
+        "and delta procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TR22",
+      "blockTitle": "Transition EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 98,
+      "pageEnd": 99,
+      "eventCode": null,
+      "eventRefs": [
+        "TR4304",
+        "NATOPS",
+        "OBOGS",
+        "TR2201"
+      ],
+      "discussText": "QOD, lost aircraft situations, and start sequence",
+      "topics": [
+        "QOD",
+        "lost aircraft situations",
+        "and start sequence"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "OCF31",
+      "blockTitle": "Out-of-Control Flight Simulator",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 100,
+      "pageEnd": 100,
+      "eventCode": null,
+      "eventRefs": [
+        "OCF31",
+        "OCF1102",
+        "NATOPS",
+        "CONTROL",
+        "FLIGHT",
+        "OCF3101"
+      ],
+      "discussText": "QOD, runaway trim, engine flameout, ejection situations, locked-in \ncompressor stall, air-start, and NATOPS, Chapter 11",
+      "topics": [
+        "QOD",
+        "runaway trim",
+        "engine flameout",
+        "ejection situations",
+        "locked-in \ncompressor stall",
+        "air-start",
+        "and NATOPS",
+        "Chapter 11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NTR31",
+      "blockTitle": "Night Transition",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 105,
+      "pageEnd": 106,
+      "eventCode": null,
+      "eventRefs": [
+        "NTR31",
+        "IR3490",
+        "NATOPS",
+        "IFLOLS",
+        "NIGHT",
+        "NTR3101"
+      ],
+      "discussText": "QOD, lost aircraft situations, night preflight and night cockpit lighting",
+      "topics": [
+        "QOD",
+        "lost aircraft situations",
+        "night preflight and night cockpit lighting"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NTR21",
+      "blockTitle": "Night Transition EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 107,
+      "pageEnd": 107,
+      "eventCode": null,
+      "eventRefs": [
+        "NTR21",
+        "NTR3101",
+        "NATOPS",
+        "NORDO",
+        "NIGHT",
+        "NTR2101"
+      ],
+      "discussText": "QOD, NORDO light signals, night Bingo considerations, airfield lighting, and \ncockpit fogging",
+      "topics": [
+        "QOD",
+        "NORDO light signals",
+        "night Bingo considerations",
+        "airfield lighting",
+        "and \ncockpit fogging"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FCL31",
+      "blockTitle": "Field Carrier Landing Practice",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 111,
+      "pageEnd": 112,
+      "eventCode": null,
+      "eventRefs": [
+        "FCL31",
+        "IFLOLS",
+        "FCL4S01",
+        "FIELD",
+        "CARRIER",
+        "LANDING",
+        "PATTERN",
+        "FCL3101"
+      ],
+      "discussText": "QOD, scan technique, field Delta pattern, and \u201cDirty Bingo.\u201d",
+      "topics": [
+        "QOD",
+        "scan technique",
+        "field Delta pattern",
+        "and \u201cDirty Bingo.\u201d"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FCL21",
+      "blockTitle": "FCLP EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 113,
+      "eventCode": null,
+      "eventRefs": [
+        "FCL21",
+        "FCL3101",
+        "NATOPS",
+        "BINGO",
+        "FCL2101",
+        "OBOGS"
+      ],
+      "discussText": "QOD and ditching situations, BINGO profile",
+      "topics": [
+        "QOD and ditching situations",
+        "BINGO profile"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ31",
+      "blockTitle": "Carrier Qualification Landing Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 120,
+      "pageEnd": 123,
+      "eventCode": "CQ3101",
+      "eventRefs": [
+        "CQ3101"
+      ],
+      "discussText": "QOD, ship-to-shore checklist, Delta pattern (CV versus field), Case I arrival, shipboard \nalignment, Case I departure, use of IFLOLS in NORDO, Bingo, and wave-off situations",
+      "topics": [
+        "QOD",
+        "ship-to-shore checklist",
+        "Delta pattern (CV versus field)",
+        "Case I arrival",
+        "shipboard \nalignment",
+        "Case I departure",
+        "use of IFLOLS in NORDO",
+        "Bingo",
+        "and wave-off situations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ31",
+      "blockTitle": "Carrier Qualification Landing Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 120,
+      "pageEnd": 123,
+      "eventCode": "CQ3102",
+      "eventRefs": [
+        "CQ3102"
+      ],
+      "discussText": "QOD, preflight and ground operations, communications, CV terms and comm brevity, pattern \nentry, Case II arrival and Case II departure, ship-to-shore checklist, and Bingo card data",
+      "topics": [
+        "QOD",
+        "preflight and ground operations",
+        "communications",
+        "CV terms and comm brevity",
+        "pattern \nentry",
+        "Case II arrival and Case II departure",
+        "ship-to-shore checklist",
+        "and Bingo card data"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "CQ21",
+      "blockTitle": "CQ EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 124,
+      "pageEnd": 132,
+      "eventCode": null,
+      "eventRefs": [
+        "CQ4S05",
+        "CARRIER",
+        "CQ2101",
+        "OBOGS",
+        "CQ4S90",
+        "CQ4S11",
+        "CQ3102",
+        "CQ4S01",
+        "TRAWING",
+        "CQ4S91",
+        "CQ1104",
+        "CQ4S86",
+        "CNATRA",
+        "NATOPS",
+        "NAVAIR",
+        "BLANK",
+        "TACAN",
+        "IR1103",
+        "IR3490",
+        "IR1101",
+        "TRAINING",
+        "FLIGHT",
+        "SUPPORT",
+        "AN1101",
+        "TR4402",
+        "IR1102"
+      ],
+      "discussText": "QOD, carrier-related EPs, ditching situations, and short-field arrestments",
+      "topics": [
+        "QOD",
+        "carrier-related EPs",
+        "ditching situations",
+        "and short-field arrestments"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR31",
+      "blockTitle": "Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 133,
+      "pageEnd": 134,
+      "eventCode": null,
+      "eventRefs": [
+        "AN1101",
+        "MANEUVERS",
+        "TACAN",
+        "RATING",
+        "IR3106"
+      ],
+      "discussText": "QOD, circle-to-land, and instrument-to-visual scan.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-4",
+      "topics": [
+        "QOD",
+        "circle-to-land",
+        "and instrument-to-visual scan.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-4"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR32",
+      "blockTitle": "Airways Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 135,
+      "pageEnd": 136,
+      "eventCode": "IR3201",
+      "eventRefs": [
+        "IR3201"
+      ],
+      "discussText": "QOD, weather criteria, lost communications, and en route descent. \n \nIR3202-5 \nQOD, en route weather updates, and in-flight fuel calculations",
+      "topics": [
+        "QOD",
+        "weather criteria",
+        "lost communications",
+        "and en route descent. \n \nIR3202-5 \nQOD",
+        "en route weather updates",
+        "and in-flight fuel calculations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR21",
+      "blockTitle": "Airways Navigation EP",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 137,
+      "pageEnd": 137,
+      "eventCode": null,
+      "eventRefs": [
+        "IR3203",
+        "NATOPS",
+        "CONTR",
+        "RATING",
+        "IR2101"
+      ],
+      "discussText": "QOD",
+      "topics": [
+        "QOD"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3301",
+      "eventRefs": [
+        "IR3301"
+      ],
+      "discussText": "QOD and weather minimums required per CNAF-M 3710.7",
+      "topics": [
+        "QOD and weather minimums required per CNAF-M 3710.7"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3302",
+      "eventRefs": [
+        "IR3302"
+      ],
+      "discussText": "QOD and PIREP",
+      "topics": [
+        "QOD and PIREP"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "IR33",
+      "blockTitle": "Instrument Rating",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 140,
+      "pageEnd": 143,
+      "eventCode": "IR3303",
+      "eventRefs": [
+        "IR3303"
+      ],
+      "discussText": "QOD and en route descent.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-11",
+      "topics": [
+        "QOD and en route descent.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \n \nV-11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3101",
+      "eventRefs": [
+        "FRM3101"
+      ],
+      "discussText": "QOD, lost sight, and underrun",
+      "topics": [
+        "QOD",
+        "lost sight",
+        "and underrun"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3102",
+      "eventRefs": [
+        "FRM3102"
+      ],
+      "discussText": "QOD and section approach minima",
+      "topics": [
+        "QOD and section approach minima"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM31",
+      "blockTitle": "Formation Simulators",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 152,
+      "pageEnd": 153,
+      "eventCode": "FRM3103",
+      "eventRefs": [
+        "FRM3103"
+      ],
+      "discussText": "QOD and midair collision.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVII-3",
+      "topics": [
+        "QOD and midair collision.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVII-3"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM61",
+      "blockTitle": "Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 154,
+      "pageEnd": 154,
+      "eventCode": null,
+      "eventRefs": [
+        "FRM61",
+        "FRM3103",
+        "FORMATION",
+        "FRM6102"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FRM21",
+      "blockTitle": "Formation EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 155,
+      "pageEnd": 155,
+      "eventCode": null,
+      "eventRefs": [
+        "FRM21",
+        "FRM6102",
+        "NATOPS",
+        "FORMATION",
+        "EMERGENCY",
+        "FRM2101"
+      ],
+      "discussText": "QOD and SAR situations",
+      "topics": [
+        "QOD and SAR situations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "DIV61",
+      "blockTitle": "Division Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 160,
+      "pageEnd": 160,
+      "eventCode": null,
+      "eventRefs": [
+        "DIV61",
+        "DIV1102",
+        "DIVISION",
+        "DIV6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NFR31",
+      "blockTitle": "Night Formation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 164,
+      "pageEnd": 164,
+      "eventCode": null,
+      "eventRefs": [
+        "NFR31",
+        "NFR1102",
+        "NTR42S2",
+        "NORDO",
+        "NIGHT",
+        "FORMATION",
+        "NFR3101",
+        "TACAN"
+      ],
+      "discussText": "QOD and NORDO light signals",
+      "topics": [
+        "QOD and NORDO light signals"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "NFR21",
+      "blockTitle": "Night Formation EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 165,
+      "pageEnd": 165,
+      "eventCode": null,
+      "eventRefs": [
+        "NFR21",
+        "NFR3101",
+        "NORDO",
+        "NIGHT",
+        "FORMATION",
+        "NFR2101"
+      ],
+      "discussText": "QOD, NORDO light signals, night Bingo considerations, airfield lighting, \ncockpit fogging, and pattern stall",
+      "topics": [
+        "QOD",
+        "NORDO light signals",
+        "night Bingo considerations",
+        "airfield lighting",
+        "cockpit fogging",
+        "and pattern stall"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAC61",
+      "blockTitle": "Tactical Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 173,
+      "pageEnd": 173,
+      "eventCode": null,
+      "eventRefs": [
+        "TAC61",
+        "TAC1103",
+        "TACTICAL",
+        "FORMATION",
+        "TAC6101"
+      ],
+      "discussText": "QOD, lost sight game plan, G-warm maneuver, 500-ft safety bubble, shackles, \ntac turns, in-place turns, tactical wing position, off-heading turns, co-altitude considerations, \ngunsight tracking exercise, and rejoin from spread",
+      "topics": [
+        "QOD",
+        "lost sight game plan",
+        "G-warm maneuver",
+        "500-ft safety bubble",
+        "shackles",
+        "tac turns",
+        "in-place turns",
+        "tactical wing position",
+        "off-heading turns",
+        "co-altitude considerations",
+        "gunsight tracking exercise",
+        "and rejoin from spread"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "DTF61",
+      "blockTitle": "Division Tactical Formation Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 179,
+      "pageEnd": 179,
+      "eventCode": null,
+      "eventRefs": [
+        "DTF61",
+        "DTF1102",
+        "DIVISION",
+        "TACTICAL",
+        "FORMATION",
+        "DTF6101"
+      ],
+      "discussText": "QOD, lost sight game plan, division G-warm, and division maneuvers",
+      "topics": [
+        "QOD",
+        "lost sight game plan",
+        "division G-warm",
+        "and division maneuvers"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3101",
+      "eventRefs": [
+        "ON3101"
+      ],
+      "discussText": "QOD, low altitude hazards, T-45C dive recovery rules, and Small Descent ROT",
+      "topics": [
+        "QOD",
+        "low altitude hazards",
+        "T-45C dive recovery rules",
+        "and Small Descent ROT"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3102",
+      "eventRefs": [
+        "ON3102"
+      ],
+      "discussText": "QOD, MFD failure, and Small Descent ROT",
+      "topics": [
+        "QOD",
+        "MFD failure",
+        "and Small Descent ROT"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "ON31",
+      "blockTitle": "Operational Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 182,
+      "pageEnd": 183,
+      "eventCode": "ON3103",
+      "eventRefs": [
+        "ON3103"
+      ],
+      "discussText": "QOD and Mission Crosscheck Time.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-13",
+      "topics": [
+        "QOD and Mission Crosscheck Time.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-13"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "SLL61",
+      "blockTitle": "Section Low-Level Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 186,
+      "pageEnd": 186,
+      "eventCode": null,
+      "eventRefs": [
+        "SLL61",
+        "SLL1102",
+        "SECTION",
+        "LEVEL",
+        "SLL6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3101",
+      "eventRefs": [
+        "STK3101"
+      ],
+      "discussText": "QOD, compute offset aimpoint, and weapons pattern",
+      "topics": [
+        "QOD",
+        "compute offset aimpoint",
+        "and weapons pattern"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3102",
+      "eventRefs": [
+        "STK3102"
+      ],
+      "discussText": "QOD, abort criteria, and weapons pattern.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-20",
+      "topics": [
+        "QOD",
+        "abort criteria",
+        "and weapons pattern.\n\nCNATRAINST 1542.167D \n12 Nov 2024 \n \nVIII-20"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3103",
+      "eventRefs": [
+        "STK3103"
+      ],
+      "discussText": "QOD, hung ordnance approach, weapons pattern, wind corrections, compute CEP, weapons \nemergencies, and emergency jettison",
+      "topics": [
+        "QOD",
+        "hung ordnance approach",
+        "weapons pattern",
+        "wind corrections",
+        "compute CEP",
+        "weapons \nemergencies",
+        "and emergency jettison"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK31",
+      "blockTitle": "Strike",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 189,
+      "pageEnd": 190,
+      "eventCode": "STK3104",
+      "eventRefs": [
+        "STK3104"
+      ],
+      "discussText": "QOD, delivery validation criteria, heavy wind corrections, and weapons pattern. \n \nSTK3105-6 \nQOD and CCIP target tracking",
+      "topics": [
+        "QOD",
+        "delivery validation criteria",
+        "heavy wind corrections",
+        "and weapons pattern. \n \nSTK3105-6 \nQOD and CCIP target tracking"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK61",
+      "blockTitle": "Strike Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 191,
+      "pageEnd": 191,
+      "eventCode": null,
+      "eventRefs": [
+        "STK61",
+        "STK3102",
+        "STRIKE",
+        "STK6102"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "STK21",
+      "blockTitle": "Strike EPs",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 192,
+      "pageEnd": 192,
+      "eventCode": null,
+      "eventRefs": [
+        "STK21",
+        "STK6102",
+        "NATOPS",
+        "STRIKE",
+        "STK2101"
+      ],
+      "discussText": "QOD and lost interval",
+      "topics": [
+        "QOD and lost interval"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM31",
+      "blockTitle": "Target Area Mechanics",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 196,
+      "pageEnd": 196,
+      "eventCode": "TAM3101",
+      "eventRefs": [
+        "TAM3101"
+      ],
+      "discussText": "QOD, TAM Execution Template, Air-to-Surface Checklist, timing",
+      "topics": [
+        "QOD",
+        "TAM Execution Template",
+        "Air-to-Surface Checklist",
+        "timing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM31",
+      "blockTitle": "Target Area Mechanics",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 196,
+      "pageEnd": 196,
+      "eventCode": "TAM3102",
+      "eventRefs": [
+        "TAM3102"
+      ],
+      "discussText": "QOD, TAM Execution Template, Air-to-Surface Checklist, timing",
+      "topics": [
+        "QOD",
+        "TAM Execution Template",
+        "Air-to-Surface Checklist",
+        "timing"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "TAM61",
+      "blockTitle": "Target Area Mechanics Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 197,
+      "pageEnd": 197,
+      "eventCode": null,
+      "eventRefs": [
+        "TAM61",
+        "TAM1102",
+        "TARGET",
+        "MECHANICS",
+        "TAM6101"
+      ],
+      "discussText": "QOD, lost sight procedures, in-flight emergency considerations",
+      "topics": [
+        "QOD",
+        "lost sight procedures",
+        "in-flight emergency considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "OCF32",
+      "blockTitle": "Out-of-Control Simulator",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 201,
+      "pageEnd": 201,
+      "eventCode": null,
+      "eventRefs": [
+        "OCF32",
+        "BFM1104",
+        "NATOPS",
+        "CONTROL",
+        "FLIGHT",
+        "OCF3201"
+      ],
+      "discussText": "QOD, runaway trim, engine flameout, ejection situations, locked-in \ncompressor stall, air-start, and NATOPS Chapter 11",
+      "topics": [
+        "QOD",
+        "runaway trim",
+        "engine flameout",
+        "ejection situations",
+        "locked-in \ncompressor stall",
+        "air-start",
+        "and NATOPS Chapter 11"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "BFM61",
+      "blockTitle": "Basic Fighter Maneuvering Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 204,
+      "pageEnd": 204,
+      "eventCode": null,
+      "eventRefs": [
+        "BFM61",
+        "BFM1104",
+        "BFM6101",
+        "BFM6102",
+        "BASIC",
+        "FIGHTER"
+      ],
+      "discussText": "QOD, training rules, deck awareness, LAR considerations",
+      "topics": [
+        "QOD",
+        "training rules",
+        "deck awareness",
+        "LAR considerations"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FTX31",
+      "blockTitle": "Fighter Intercepts",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 213,
+      "pageEnd": 213,
+      "eventCode": null,
+      "eventRefs": [
+        "FTX31",
+        "FTX1102",
+        "FIGHTER",
+        "FTX3101"
+      ],
+      "discussText": "QOD, timeline awareness, training rules, KIO procedures",
+      "topics": [
+        "QOD",
+        "timeline awareness",
+        "training rules",
+        "KIO procedures"
+      ]
+    },
+    {
+      "aircraft": "T-45C",
+      "curriculumDocId": "1542-167d",
+      "curriculumTitle": "T-45C UNDERGRADUATE STRIKE AND ADVANCED E-2 TRAINING MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRA INST 1542.167D",
+      "curriculumFile": "t45c/1542.167D.pdf",
+      "blockCode": "FTX61",
+      "blockTitle": "Fighter Intercepts Exposure",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 214,
+      "pageEnd": 214,
+      "eventCode": null,
+      "eventRefs": [
+        "FTX61",
+        "FTX3101",
+        "FIGHTER",
+        "FTX6101"
+      ],
+      "discussText": "QOD, deck awareness, LAR considerations, faded run setup, NFS block, \nfaded run execution, KIO procedures, formation lead considerations, and training rules",
+      "topics": [
+        "QOD",
+        "deck awareness",
+        "LAR considerations",
+        "faded run setup",
+        "NFS block",
+        "faded run execution",
+        "KIO procedures",
+        "formation lead considerations",
+        "and training rules"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Familiarization Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2101",
+      "eventRefs": [
+        "FAM2101"
+      ],
+      "discussText": "Checklist challenge-action response format, dual concurrence/response CRM, memorized \nchecklists, ground handling signals, safety check/call prior to cockpit entry and departing \naircraft, and blindfold cockpit check",
+      "topics": [
+        "Checklist challenge-action response format",
+        "dual concurrence/response CRM",
+        "memorized \nchecklists",
+        "ground handling signals",
+        "safety check/call prior to cockpit entry and departing \naircraft",
+        "and blindfold cockpit check"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM21",
+      "blockTitle": "Familiarization Cockpit Procedures",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 59,
+      "pageEnd": 61,
+      "eventCode": "FAM2102",
+      "eventRefs": [
+        "FAM2102"
+      ],
+      "discussText": "No start, hung start, hot start, loss of start ready light during start sequence, battery bus light \nduring start, fire on ground, emergency engine shutdown on the ground, emergency ground \negress, and CFS and ejection CRM",
+      "topics": [
+        "No start",
+        "hung start",
+        "hot start",
+        "loss of start ready light during start sequence",
+        "battery bus light \nduring start",
+        "fire on ground",
+        "emergency engine shutdown on the ground",
+        "emergency ground \negress",
+        "and CFS and ejection CRM"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM22",
+      "blockTitle": "Familiarization Emergency Procedures Trainer",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 62,
+      "pageEnd": 64,
+      "eventCode": "FAM2201",
+      "eventRefs": [
+        "FAM2201"
+      ],
+      "discussText": "Abort takeoff, aircraft departs prepared surface, engine failure immediately after takeoff, \nengine failure during flight, immediate air-start, PMU NORM air-start, PMU OFF air-start, \nuncommanded power changes/LOP, uncommanded prop feather, smoke and fume \nelimination, fire warning in flight, controlled ejection and eject",
+      "topics": [
+        "Abort takeoff",
+        "aircraft departs prepared surface",
+        "engine failure immediately after takeoff",
+        "engine failure during flight",
+        "immediate air-start",
+        "PMU NORM air-start",
+        "PMU OFF air-start",
+        "uncommanded power changes/LOP",
+        "uncommanded prop feather",
+        "smoke and fume \nelimination",
+        "fire warning in flight",
+        "controlled ejection and eject"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM22",
+      "blockTitle": "Familiarization Emergency Procedures Trainer",
+      "blockName": "",
+      "media": "UTD/OFT",
+      "mediaClass": "sim",
+      "pageStart": 62,
+      "pageEnd": 64,
+      "eventCode": "FAM2202",
+      "eventRefs": [
+        "FAM2202"
+      ],
+      "discussText": "Chip detector warning, oil system malfunction or low oil pressure, low fuel pressure, \nhydraulic system malfunctions, landing gear emergency extension, OBOGS fail message, \nrunaway trim, precautionary emergency landing (PEL) and BFI",
+      "topics": [
+        "Chip detector warning",
+        "oil system malfunction or low oil pressure",
+        "low fuel pressure",
+        "hydraulic system malfunctions",
+        "landing gear emergency extension",
+        "OBOGS fail message",
+        "runaway trim",
+        "precautionary emergency landing (PEL) and BFI"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM31",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 65,
+      "pageEnd": 67,
+      "eventCode": "FAM3101",
+      "eventRefs": [
+        "FAM3101"
+      ],
+      "discussText": "Normal takeoff, local area departure, integrated (VMC) scan, turn pattern, level speed change, \npower-on stalls, power-off stall (ELP Stall), landing pattern (approach turn and landing \nattitude) stalls, intentional spin entry, incipient spin recovery, and steady-state spin recovery",
+      "topics": [
+        "Normal takeoff",
+        "local area departure",
+        "integrated (VMC) scan",
+        "turn pattern",
+        "level speed change",
+        "power-on stalls",
+        "power-off stall (ELP Stall)",
+        "landing pattern (approach turn and landing \nattitude) stalls",
+        "intentional spin entry",
+        "incipient spin recovery",
+        "and steady-state spin recovery"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM31",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 65,
+      "pageEnd": 67,
+      "eventCode": "FAM3102",
+      "eventRefs": [
+        "FAM3102"
+      ],
+      "discussText": "Normal takeoff, local area departure, inadvertent trim actuation, landing pattern, takeoff flap \nlandings, landing flap landings, no-flap landings, full-stop landings, wave-off, and contact \nunusual attitudes",
+      "topics": [
+        "Normal takeoff",
+        "local area departure",
+        "inadvertent trim actuation",
+        "landing pattern",
+        "takeoff flap \nlandings",
+        "landing flap landings",
+        "no-flap landings",
+        "full-stop landings",
+        "wave-off",
+        "and contact \nunusual attitudes"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM31",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 65,
+      "pageEnd": 67,
+      "eventCode": "FAM3103",
+      "eventRefs": [
+        "FAM3103"
+      ],
+      "discussText": "Crosswind limits, crosswind computations, crosswind takeoff, pattern adjustments for \ncrosswinds, crosswind landings, crosswind T&Gs, crosswind full-stops, aborted takeoff, \naircraft departs prepared surface, and HUD",
+      "topics": [
+        "Crosswind limits",
+        "crosswind computations",
+        "crosswind takeoff",
+        "pattern adjustments for \ncrosswinds",
+        "crosswind landings",
+        "crosswind T&Gs",
+        "crosswind full-stops",
+        "aborted takeoff",
+        "aircraft departs prepared surface",
+        "and HUD"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM61",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 68,
+      "pageEnd": 69,
+      "eventCode": "FAM6101",
+      "eventRefs": [
+        "FAM6101"
+      ],
+      "discussText": "Local course rules, OLF arrival and departure, home field arrival, and local VFR sectional \nreview",
+      "topics": [
+        "Local course rules",
+        "OLF arrival and departure",
+        "home field arrival",
+        "and local VFR sectional \nreview"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM61",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 68,
+      "pageEnd": 69,
+      "eventCode": "FAM6102",
+      "eventRefs": [
+        "FAM6102"
+      ],
+      "discussText": "\u201cIMSAFE\u201d checklist, CRM, see & avoid principle, cloud clearances, and local VFR sectional \nreview",
+      "topics": [
+        "\u201cIMSAFE\u201d checklist",
+        "CRM",
+        "see & avoid principle",
+        "cloud clearances",
+        "and local VFR sectional \nreview"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM62",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 70,
+      "pageEnd": 71,
+      "eventCode": "FAM6201",
+      "eventRefs": [
+        "FAM6201"
+      ],
+      "discussText": "Three Cs, slow flight, SCATSAFE maneuver, energy management, and slip",
+      "topics": [
+        "Three Cs",
+        "slow flight",
+        "SCATSAFE maneuver",
+        "energy management",
+        "and slip"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM62",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 70,
+      "pageEnd": 71,
+      "eventCode": "FAM6202",
+      "eventRefs": [
+        "FAM6202"
+      ],
+      "discussText": "OLF entry, OLF/RDO communication, crosswind takeoff and landings, and wave-off",
+      "topics": [
+        "OLF entry",
+        "OLF/RDO communication",
+        "crosswind takeoff and landings",
+        "and wave-off"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM62",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 70,
+      "pageEnd": 71,
+      "eventCode": "FAM6203",
+      "eventRefs": [
+        "FAM6203"
+      ],
+      "discussText": "Any maneuver performed in this block",
+      "topics": [
+        "Any maneuver performed in this block"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM63",
+      "blockTitle": "RDO Pattern Party",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 72,
+      "pageEnd": 73,
+      "eventCode": "FAM6301",
+      "eventRefs": [
+        "FAM6301"
+      ],
+      "discussText": "OLF Course rules for field of use. \n \n FAM6302 \n OLF Course rules for field of use",
+      "topics": [
+        "OLF Course rules for field of use. \n \n FAM6302 \n OLF Course rules for field of use"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM32",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 77,
+      "pageEnd": 78,
+      "eventCode": "FAM3201",
+      "eventRefs": [
+        "FAM3201"
+      ],
+      "discussText": "Impending engine failure indications, PEL, PEL/P, and ELP",
+      "topics": [
+        "Impending engine failure indications",
+        "PEL",
+        "PEL/P",
+        "and ELP"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM32",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 77,
+      "pageEnd": 78,
+      "eventCode": "FAM3202",
+      "eventRefs": [
+        "FAM3202"
+      ],
+      "discussText": "Engine failure indications, engine failure during flight, immediate air-start (PMU NORM), \nforced landing, and eject",
+      "topics": [
+        "Engine failure indications",
+        "engine failure during flight",
+        "immediate air-start (PMU NORM)",
+        "forced landing",
+        "and eject"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM33",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 79,
+      "pageEnd": 80,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM33",
+        "FAM3202",
+        "MANEUVER",
+        "FAM3301"
+      ],
+      "discussText": "Crosswind takeoff/touch-and-go/full-stop landings, aborted takeoff, aircraft \ndeparts a prepared surface, wind shear recovery, and Up Front Control Panel (UFCP) failure",
+      "topics": [
+        "Crosswind takeoff/touch-and-go/full-stop landings",
+        "aborted takeoff",
+        "aircraft \ndeparts a prepared surface",
+        "wind shear recovery",
+        "and Up Front Control Panel (UFCP) failure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM64",
+      "blockTitle": "Advanced RDO Pattern Party",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 81,
+      "pageEnd": 82,
+      "eventCode": "FAM6401",
+      "eventRefs": [
+        "FAM6401"
+      ],
+      "discussText": "PEL profile and procedures, any EP. \n \n FAM6402 \n Any EP",
+      "topics": [
+        "PEL profile and procedures",
+        "any EP. \n \n FAM6402 \n Any EP"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM34",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 95,
+      "pageEnd": 96,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM34",
+        "FAM1208",
+        "I4490",
+        "F4290",
+        "MANEUVER",
+        "FAM3401"
+      ],
+      "discussText": "AOA approach, maneuvering speeds, contact unusual attitudes, aileron roll, \nloop, half cuban eight, immelmann, split-s, wingover, barrel roll, OCF recovery and airborne \ndamaged aircraft, combination maneuvers, and HUD",
+      "topics": [
+        "AOA approach",
+        "maneuvering speeds",
+        "contact unusual attitudes",
+        "aileron roll",
+        "loop",
+        "half cuban eight",
+        "immelmann",
+        "split-s",
+        "wingover",
+        "barrel roll",
+        "OCF recovery and airborne \ndamaged aircraft",
+        "combination maneuvers",
+        "and HUD"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 107,
+      "pageEnd": 108,
+      "eventCode": "I2101",
+      "eventRefs": [
+        "I2101"
+      ],
+      "discussText": "Instrument scan patterns, airspeed changes, steep turns, timed-turns, constant airspeed climbs \nand descents, en route descent",
+      "topics": [
+        "Instrument scan patterns",
+        "airspeed changes",
+        "steep turns",
+        "timed-turns",
+        "constant airspeed climbs \nand descents",
+        "en route descent"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 107,
+      "pageEnd": 108,
+      "eventCode": "I2102",
+      "eventRefs": [
+        "I2102"
+      ],
+      "discussText": "IMC emergencies, GCA pattern, and S-1 pattern",
+      "topics": [
+        "IMC emergencies",
+        "GCA pattern",
+        "and S-1 pattern"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I21",
+      "blockTitle": "Basic Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 107,
+      "pageEnd": 108,
+      "eventCode": "I2103",
+      "eventRefs": [
+        "I2103"
+      ],
+      "discussText": "Approach maneuver, IFR unusual attitudes, IMC emergencies, IAC failure (dual), and BFI",
+      "topics": [
+        "Approach maneuver",
+        "IFR unusual attitudes",
+        "IMC emergencies",
+        "IAC failure (dual)",
+        "and BFI"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I22",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 109,
+      "pageEnd": 110,
+      "eventCode": "I2201",
+      "eventRefs": [
+        "I2201"
+      ],
+      "discussText": "HSI orientation, direct to a VOR, tracking, station passage, over-the-station intercepts, and \nradial intercept procedures",
+      "topics": [
+        "HSI orientation",
+        "direct to a VOR",
+        "tracking",
+        "station passage",
+        "over-the-station intercepts",
+        "and \nradial intercept procedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I22",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 109,
+      "pageEnd": 110,
+      "eventCode": "I2202",
+      "eventRefs": [
+        "I2202"
+      ],
+      "discussText": "Arcing, radial-arc intercepts, arc-radial intercepts, OBOGS malfunctions, \nhyperventilation/hypoxia, and point-to-point",
+      "topics": [
+        "Arcing",
+        "radial-arc intercepts",
+        "arc-radial intercepts",
+        "OBOGS malfunctions",
+        "hyperventilation/hypoxia",
+        "and point-to-point"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I22",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "UTD",
+      "mediaClass": "sim",
+      "pageStart": 109,
+      "pageEnd": 110,
+      "eventCode": "I2203",
+      "eventRefs": [
+        "I2203"
+      ],
+      "discussText": "Holding entry, no-wind orbit, holding corrections, and battery and generator failure",
+      "topics": [
+        "Holding entry",
+        "no-wind orbit",
+        "holding corrections",
+        "and battery and generator failure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I61",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 111,
+      "pageEnd": 112,
+      "eventCode": "I6101",
+      "eventRefs": [
+        "I6101"
+      ],
+      "discussText": "Clearance and departure procedures, VOR procedure turn, teardrop, and HILO approach \nprocedure, FAF-to-MAP timing adjustments, VDP, and missed approach",
+      "topics": [
+        "Clearance and departure procedures",
+        "VOR procedure turn",
+        "teardrop",
+        "and HILO approach \nprocedure",
+        "FAF-to-MAP timing adjustments",
+        "VDP",
+        "and missed approach"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I61",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 111,
+      "pageEnd": 112,
+      "eventCode": "I6102",
+      "eventRefs": [
+        "I6102"
+      ],
+      "discussText": "Arcing, RVFAC, ILS, and localizer approach procedure, holding, and shuttle descent",
+      "topics": [
+        "Arcing",
+        "RVFAC",
+        "ILS",
+        "and localizer approach procedure",
+        "holding",
+        "and shuttle descent"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 115,
+      "eventCode": "I3101",
+      "eventRefs": [
+        "I3101"
+      ],
+      "discussText": "Clearance and departure procedures, en route procedures, procedure turn, tear drop, and \narcing approaches, and missed approach procedures",
+      "topics": [
+        "Clearance and departure procedures",
+        "en route procedures",
+        "procedure turn",
+        "tear drop",
+        "and \narcing approaches",
+        "and missed approach procedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 115,
+      "eventCode": "I3102",
+      "eventRefs": [
+        "I3102"
+      ],
+      "discussText": "HILO approaches, holding, shuttle descent, intersections, and oil system malfunctions",
+      "topics": [
+        "HILO approaches",
+        "holding",
+        "shuttle descent",
+        "intersections",
+        "and oil system malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 115,
+      "eventCode": "I3103",
+      "eventRefs": [
+        "I3103"
+      ],
+      "discussText": "PAR, PAR W/O GS, ASR, recommended altitudes, IMC emergencies, and propeller \nmalfunctions",
+      "topics": [
+        "PAR",
+        "PAR W/O GS",
+        "ASR",
+        "recommended altitudes",
+        "IMC emergencies",
+        "and propeller \nmalfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I31",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 113,
+      "pageEnd": 115,
+      "eventCode": "I3104",
+      "eventRefs": [
+        "I3104"
+      ],
+      "discussText": "Night cockpit setup, SID, RVFAC, ILS/LOV approaches, PTP, any emergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-14",
+      "topics": [
+        "Night cockpit setup",
+        "SID",
+        "RVFAC",
+        "ILS/LOV approaches",
+        "PTP",
+        "any emergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-14"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I62",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 116,
+      "pageEnd": 117,
+      "eventCode": "I6201",
+      "eventRefs": [
+        "I6201"
+      ],
+      "discussText": "CNAF M-3710.7 minimum fuel requirements, and NOTAM to include local, FDC, center, \nspecial notices, International/Domestic Notices, and GPS",
+      "topics": [
+        "CNAF M-3710.7 minimum fuel requirements",
+        "and NOTAM to include local",
+        "FDC",
+        "center",
+        "special notices",
+        "International/Domestic Notices",
+        "and GPS"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I62",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 116,
+      "pageEnd": 117,
+      "eventCode": "I6202",
+      "eventRefs": [
+        "I6202"
+      ],
+      "discussText": "En route weather sources, icing, inadvertent thunderstorm penetration, change of route or \ndestination (inflight), IMC lost communications, and ground-speed calculations",
+      "topics": [
+        "En route weather sources",
+        "icing",
+        "inadvertent thunderstorm penetration",
+        "change of route or \ndestination (inflight)",
+        "IMC lost communications",
+        "and ground-speed calculations"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3201",
+      "eventRefs": [
+        "I3201"
+      ],
+      "discussText": "GPS procedures, GPS allowable operations (GPS waypoints in lieu of NDB, VOR, and \nTACAN fixes), GPS approaches, GPS holding, and GPS flight modes",
+      "topics": [
+        "GPS procedures",
+        "GPS allowable operations (GPS waypoints in lieu of NDB",
+        "VOR",
+        "and \nTACAN fixes)",
+        "GPS approaches",
+        "GPS holding",
+        "and GPS flight modes"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3202",
+      "eventRefs": [
+        "I3202"
+      ],
+      "discussText": "STAR, Trouble T, obstacle departure procedures, obtaining IFR clearance from uncontrolled \nairports, and RVFAC for RNAV approaches",
+      "topics": [
+        "STAR",
+        "Trouble T",
+        "obstacle departure procedures",
+        "obtaining IFR clearance from uncontrolled \nairports",
+        "and RVFAC for RNAV approaches"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3203",
+      "eventRefs": [
+        "I3203"
+      ],
+      "discussText": "No-gyro approach and BFI approach",
+      "topics": [
+        "No-gyro approach and BFI approach"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3204",
+      "eventRefs": [
+        "I3204"
+      ],
+      "discussText": "High-altitude approach and non-radar environment communications",
+      "topics": [
+        "High-altitude approach and non-radar environment communications"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3205",
+      "eventRefs": [
+        "I3205"
+      ],
+      "discussText": "Avionics failures, obstacle departure procedures, and ILS full procedure turn",
+      "topics": [
+        "Avionics failures",
+        "obstacle departure procedures",
+        "and ILS full procedure turn"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I32",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 121,
+      "pageEnd": 123,
+      "eventCode": "I3206",
+      "eventRefs": [
+        "I3206"
+      ],
+      "discussText": "En route fuel management, feeder fixes, feeder routes, and CDI reverse sensing precautions.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-22",
+      "topics": [
+        "En route fuel management",
+        "feeder fixes",
+        "feeder routes",
+        "and CDI reverse sensing precautions.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-22"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I63",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 124,
+      "pageEnd": 125,
+      "eventCode": null,
+      "eventRefs": [
+        "I3206",
+        "MANEUVER",
+        "I6301",
+        "RVFAC"
+      ],
+      "discussText": "Any emergency procedure",
+      "topics": [
+        "Any emergency procedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "N31",
+      "blockTitle": "Day Navigation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 137,
+      "pageEnd": 138,
+      "eventCode": null,
+      "eventRefs": [
+        "NA1190",
+        "NOTAM",
+        "MANEUVER",
+        "N3101"
+      ],
+      "discussText": "VFR chart preparation, emergency field selection, airspace classification, \nVFR field entry/departure (AIM), HUD, route management, standard time corrections, and \nstandard course corrections",
+      "topics": [
+        "VFR chart preparation",
+        "emergency field selection",
+        "airspace classification",
+        "VFR field entry/departure (AIM)",
+        "HUD",
+        "route management",
+        "standard time corrections",
+        "and \nstandard course corrections"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "N61",
+      "blockTitle": "Night Navigation",
+      "blockName": "",
+      "media": "VTD",
+      "mediaClass": "sim",
+      "pageStart": 139,
+      "pageEnd": 140,
+      "eventCode": null,
+      "eventRefs": [
+        "N3101",
+        "NOTAM",
+        "MANEUVER",
+        "N6101"
+      ],
+      "discussText": "Night VNAV timing and course corrections, night VFR chart interpretation, \nairfield and runway lighting, local night VNAV SOP, and any applicable night emergency \nprocedure",
+      "topics": [
+        "Night VNAV timing and course corrections",
+        "night VFR chart interpretation",
+        "airfield and runway lighting",
+        "local night VNAV SOP",
+        "and any applicable night emergency \nprocedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F31",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 146,
+      "pageEnd": 147,
+      "eventCode": null,
+      "eventRefs": [
+        "F1201",
+        "MANEUVER",
+        "F3101"
+      ],
+      "discussText": "Visual signals and Formation maneuvers",
+      "topics": [
+        "Visual signals and Formation maneuvers"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F21",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "UTD/MR",
+      "mediaClass": "sim",
+      "pageStart": 148,
+      "pageEnd": 149,
+      "eventCode": null,
+      "eventRefs": [
+        "F3101",
+        "F2101",
+        "MANEUVER"
+      ],
+      "discussText": "Formation arrival and departure procedures, wingman/flight leader \nresponsibilities, formation communications, and formation position corrections",
+      "topics": [
+        "Formation arrival and departure procedures",
+        "wingman/flight leader \nresponsibilities",
+        "formation communications",
+        "and formation position corrections"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS21",
+      "blockTitle": "Advanced Formation Training",
+      "blockName": "",
+      "media": "UTD/MR",
+      "mediaClass": "sim",
+      "pageStart": 157,
+      "pageEnd": 159,
+      "eventCode": "CS2101",
+      "eventRefs": [
+        "CS2101"
+      ],
+      "discussText": "Cruise position/maneuvering, lead/lag and pure pursuit, knock-it-off/terminate procedures, \naborted takeoff, section PEL procedures, and section approach procedures",
+      "topics": [
+        "Cruise position/maneuvering",
+        "lead/lag and pure pursuit",
+        "knock-it-off/terminate procedures",
+        "aborted takeoff",
+        "section PEL procedures",
+        "and section approach procedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS21",
+      "blockTitle": "Advanced Formation Training",
+      "blockName": "",
+      "media": "UTD/MR",
+      "mediaClass": "sim",
+      "pageStart": 157,
+      "pageEnd": 159,
+      "eventCode": "CS2102",
+      "eventRefs": [
+        "CS2102"
+      ],
+      "discussText": "Aborted takeoff, dissolving the flight (flight split), radial rendezvous, and fan break.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVIII-4",
+      "topics": [
+        "Aborted takeoff",
+        "dissolving the flight (flight split)",
+        "radial rendezvous",
+        "and fan break.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVIII-4"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS31",
+      "blockTitle": "Advanced Familiarization/ Radio Instruments Training",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 160,
+      "pageEnd": 162,
+      "eventCode": "CS3101",
+      "eventRefs": [
+        "CS3101"
+      ],
+      "discussText": "Any previously discussed familiarization items, IFR pick-up, and GCA pattern",
+      "topics": [
+        "Any previously discussed familiarization items",
+        "IFR pick-up",
+        "and GCA pattern"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS31",
+      "blockTitle": "Advanced Familiarization/ Radio Instruments Training",
+      "blockName": "",
+      "media": "OFT",
+      "mediaClass": "sim",
+      "pageStart": 160,
+      "pageEnd": 162,
+      "eventCode": "CS3102",
+      "eventRefs": [
+        "CS3102"
+      ],
+      "discussText": "Any previously discussed familiarization items, IMC emergencies, and lost communications \n(FIH)",
+      "topics": [
+        "Any previously discussed familiarization items",
+        "IMC emergencies",
+        "and lost communications \n(FIH)"
+      ]
+    }
+  ]
+}
