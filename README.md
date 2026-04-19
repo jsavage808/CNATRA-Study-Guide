@@ -186,6 +186,110 @@ Update the `steps` array in the boldface section and/or update the `location` an
 
 ---
 
+## PDF Pipeline
+
+This repo now includes an offline PDF pipeline that:
+
+1. auto-discovers every PDF under `pdfs/raw/t6b`, `pdfs/raw/t44c`, and `pdfs/raw/t45c`
+2. indexes all publications so they are searchable by topic
+3. extracts `Discuss Items` directly from the curriculum-guide PDFs
+4. filters those extracted discuss items to simulator and flight events by default
+5. suggests the publication and page where each discuss item is likely answered
+
+### Files
+
+- `tools/pdf_pipeline.py` â€” main pipeline script
+- `pdfs/raw/` â€” place PDFs here, grouped by aircraft folder
+- `generated/` â€” created automatically for indexes, extracted discuss items, and match results
+
+### Folder layout
+
+```text
+pdfs/
+  raw/
+    t6b/
+      *.pdf
+    t44c/
+      *.pdf
+    t45c/
+      *.pdf
+```
+
+PDF filenames do **not** need to match a strict naming convention. The script scans all `.pdf` files recursively and infers publication metadata from the file contents when possible.
+
+### WSL workflow
+
+From WSL:
+
+```bash
+cd /mnt/c/Users/bassg/linux/CNATRA-Study-Guide
+source .venv/bin/activate   # if you created a virtualenv
+```
+
+Build a searchable index for every PDF:
+
+```bash
+python3 tools/pdf_pipeline.py index --output generated/all-index.json
+```
+
+Extract discuss items from curriculum guides only, limited to sim/flight events:
+
+```bash
+python3 tools/pdf_pipeline.py extract --output generated/all-discuss-items.json
+```
+
+Match those extracted discuss items against the indexed publications and get page/publication suggestions:
+
+```bash
+python3 tools/pdf_pipeline.py match \
+  --index generated/all-index.json \
+  --items generated/all-discuss-items.json \
+  --output generated/all-discuss-locations.json
+```
+
+### Common commands
+
+Only one aircraft:
+
+```bash
+python3 tools/pdf_pipeline.py index --aircraft T-45C --output generated/t45c-index.json
+python3 tools/pdf_pipeline.py extract --aircraft T-45C --output generated/t45c-discuss-items.json
+python3 tools/pdf_pipeline.py match \
+  --aircraft T-45C \
+  --index generated/t45c-index.json \
+  --items generated/t45c-discuss-items.json \
+  --output generated/t45c-discuss-locations.json
+```
+
+Search publications manually:
+
+```bash
+python3 tools/pdf_pipeline.py search \
+  --index generated/all-index.json \
+  --aircraft T-6B \
+  --query "fuel system usable fuel imbalance"
+```
+
+### Output files
+
+- `generated/all-index.json`
+  Searchable chunks for every indexed publication, including title, inferred publication number, page, and snippet text.
+
+- `generated/all-discuss-items.json`
+  Discuss items extracted from curriculum guides. By default this excludes ground-only events and includes simulator/flight events only.
+
+- `generated/all-discuss-locations.json`
+  For each extracted discuss item, the top publication/page candidates where the answer is likely found.
+
+### Notes
+
+- The default extraction mode is `sim_flight`, which excludes ground events.
+- The matcher excludes curriculum-guide PDFs by default so it points you toward NATOPS, FTI, checklists, supplements, and other supporting pubs instead of back to the syllabus itself.
+- Some PDFs have messy OCR/text extraction. Always verify the suggested location manually before updating `data/*.js`.
+- Boldface and emergency procedures must still be checked verbatim against the current NATOPS revision.
+
+---
+
 ## Content Disclaimer
 
 This site is a **study aid only**. It is not a substitute for official Naval Air Training Command (CNATRA) publications, NATOPS flight manuals, or official flight training instructions. All boldface and emergency procedures must be memorized from the current revision of the applicable NATOPS flight manual. Content accuracy is the responsibility of the person maintaining the data files.

@@ -1,0 +1,30 @@
+[
+  {
+    "aircraft": "T-6B",
+    "docId": "natops-t6b",
+    "shortName": "NATOPS",
+    "title": "NATOPS Flight Manual - T-6B Texan II",
+    "file": "t6b/A1-T6BAA-NFM-000.pdf"
+  },
+  {
+    "aircraft": "T-6B",
+    "docId": "fti-contact",
+    "shortName": "FTI Contact",
+    "title": "Flight Training Instruction - Contact",
+    "file": "t6b/CNATRA-P-816.pdf"
+  },
+  {
+    "aircraft": "T-44C",
+    "docId": "natops-t44c",
+    "shortName": "NATOPS",
+    "title": "NATOPS Flight Manual - T-44C Pegasus",
+    "file": "t44c/A1-T44CA-NFM-000.pdf"
+  },
+  {
+    "aircraft": "T-45C",
+    "docId": "natops-t45c",
+    "shortName": "NATOPS",
+    "title": "NATOPS Flight Manual - T-45C Goshawk",
+    "file": "t45c/A1-T45CA-NFM-000.pdf"
+  }
+]

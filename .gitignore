@@ -1,0 +1,6 @@
+generated/
+pdfs/raw/**/*.pdf
+pdfs/raw/**/*.PDF
+.venv/
+__pycache__/
+tools/__pycache__/

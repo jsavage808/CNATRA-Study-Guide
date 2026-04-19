@@ -376,6 +376,14 @@ p:last-child { margin-bottom: 0; }
 .filter-btn:hover  { border-color: var(--hud); color: var(--hud); }
 .filter-btn.active { background: var(--hud-dim); border-color: var(--hud); color: var(--hud); }
 
+.discussion-mode-note {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  margin-left: 4px;
+}
+
 /* ── SYLLABUS PHASE & EVENT CARDS ─────────────────────────── */
 .phase-block { margin-bottom: 2rem; }
 
@@ -491,6 +499,14 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 4px;
 }
 
+.disc-submeta {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
 .disc-question {
   font-size: 14px;
   color: var(--text);
@@ -528,6 +544,15 @@ p:last-child { margin-bottom: 0; }
   border-top: 1px solid var(--border-dim);
 }
 .disc-item.expanded .disc-body { display: block; padding-top: 14px; }
+
+.disc-origin {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
 
 .source-ref-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
 
