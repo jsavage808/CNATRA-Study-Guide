@@ -9,8 +9,8 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "publicationNumber": "CNATRAINST 1542.166D",
       "file": "t6b/1542.166D_signed.pdf",
-      "includedBlocks": 24,
-      "extractedDiscussItems": 47
+      "includedBlocks": 40,
+      "extractedDiscussItems": 85
     }
   ],
   "items": [
@@ -379,6 +379,120 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "curriculumPublicationNumber": "CNATRAINST 1542.166D",
       "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 74,
+      "pageEnd": 76,
+      "eventCode": "FAM4101",
+      "eventRefs": [
+        "FAM4101"
+      ],
+      "discussText": "Ejection seat and CFS, abnormal starts, brake failure, strike of ground object, takeoff, \ndeparture, basic transitions, trim, turn pattern, level speed change, slow flight, and HUD",
+      "topics": [
+        "Ejection seat and CFS",
+        "abnormal starts",
+        "brake failure",
+        "strike of ground object",
+        "takeoff",
+        "departure",
+        "basic transitions",
+        "trim",
+        "turn pattern",
+        "level speed change",
+        "slow flight",
+        "and HUD"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 74,
+      "pageEnd": 76,
+      "eventCode": "FAM4102",
+      "eventRefs": [
+        "FAM4102"
+      ],
+      "discussText": "Tire failures, aborted takeoff, power-on stalls, landing pattern stalls, power-off stalls, landing \npattern, no-flap landing, takeoff flap landing, landing flap landing, landing irregularities, and \nwave-off",
+      "topics": [
+        "Tire failures",
+        "aborted takeoff",
+        "power-on stalls",
+        "landing pattern stalls",
+        "power-off stalls",
+        "landing \npattern",
+        "no-flap landing",
+        "takeoff flap landing",
+        "landing flap landing",
+        "landing irregularities",
+        "and \nwave-off"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 74,
+      "pageEnd": 76,
+      "eventCode": "FAM4103",
+      "eventRefs": [
+        "FAM4103"
+      ],
+      "discussText": "OLF operations, local course rules, home-field arrival, and SCATSAFE maneuver",
+      "topics": [
+        "OLF operations",
+        "local course rules",
+        "home-field arrival",
+        "and SCATSAFE maneuver"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 74,
+      "pageEnd": 76,
+      "eventCode": "FAM4104",
+      "eventRefs": [
+        "FAM4104"
+      ],
+      "discussText": "Crosswind takeoff/approach/landing, OCF, and contact unusual attitudes",
+      "topics": [
+        "Crosswind takeoff/approach/landing",
+        "OCF",
+        "and contact unusual attitudes"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
       "blockCode": "FAM32",
       "blockTitle": "Familiarization",
       "blockName": "",
@@ -482,6 +596,302 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "curriculumPublicationNumber": "CNATRAINST 1542.166D",
       "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM42",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 83,
+      "pageEnd": 85,
+      "eventCode": "FAM4201",
+      "eventRefs": [
+        "FAM4201"
+      ],
+      "discussText": "NATOPS limitations, engine system, engine malfunctions, ELP, PEL, forced landing, and \nAldis lamp signals",
+      "topics": [
+        "NATOPS limitations",
+        "engine system",
+        "engine malfunctions",
+        "ELP",
+        "PEL",
+        "forced landing",
+        "and \nAldis lamp signals"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM42",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 83,
+      "pageEnd": 85,
+      "eventCode": "FAM4202",
+      "eventRefs": [
+        "FAM4202"
+      ],
+      "discussText": "Hydraulic system, spin, OCF recovery procedures, anti-spin recovery procedures, crosswind \ntakeoffs/touch-and-goes/full-stop landings.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nIV-30",
+      "topics": [
+        "Hydraulic system",
+        "spin",
+        "OCF recovery procedures",
+        "anti-spin recovery procedures",
+        "crosswind \ntakeoffs/touch-and-goes/full-stop landings.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nIV-30"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM42",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 83,
+      "pageEnd": 85,
+      "eventCode": "FAM4203",
+      "eventRefs": [
+        "FAM4203"
+      ],
+      "discussText": "Oil and propeller systems, engine air starts, ejection and visual straight-in",
+      "topics": [
+        "Oil and propeller systems",
+        "engine air starts",
+        "ejection and visual straight-in"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM42",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 83,
+      "pageEnd": 85,
+      "eventCode": "FAM4204",
+      "eventRefs": [
+        "FAM4204"
+      ],
+      "discussText": "Electrical system, avionics malfunctions, lost communications, and local area flight \nprocedures/SOP",
+      "topics": [
+        "Electrical system",
+        "avionics malfunctions",
+        "lost communications",
+        "and local area flight \nprocedures/SOP"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM43",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 86,
+      "pageEnd": 88,
+      "eventCode": "FAM4301",
+      "eventRefs": [
+        "FAM4301"
+      ],
+      "discussText": "OBOGS and pressurization system, aborted takeoff, lost aircraft procedures, discontinued \nentry, and airborne-damaged aircraft",
+      "topics": [
+        "OBOGS and pressurization system",
+        "aborted takeoff",
+        "lost aircraft procedures",
+        "discontinued \nentry",
+        "and airborne-damaged aircraft"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM43",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 86,
+      "pageEnd": 88,
+      "eventCode": "FAM4302",
+      "eventRefs": [
+        "FAM4302"
+      ],
+      "discussText": "Fuel system, full-stop landings, heavy-weight landing considerations, and any critical action \nemergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nIV-33",
+      "topics": [
+        "Fuel system",
+        "full-stop landings",
+        "heavy-weight landing considerations",
+        "and any critical action \nemergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nIV-33"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM43",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 86,
+      "pageEnd": 88,
+      "eventCode": "FAM4303",
+      "eventRefs": [
+        "FAM4303"
+      ],
+      "discussText": "Hard landings, gear emergencies, flap failures, emergency orbit pattern, and any critical \naction emergency procedures",
+      "topics": [
+        "Hard landings",
+        "gear emergencies",
+        "flap failures",
+        "emergency orbit pattern",
+        "and any critical \naction emergency procedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM43",
+      "blockTitle": "Day Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 86,
+      "pageEnd": 88,
+      "eventCode": "FAM4304",
+      "eventRefs": [
+        "FAM4304"
+      ],
+      "discussText": "Securing rear cockpit for solo, unauthorized solo maneuvers, unintentional instrument flight, \nlocal course rules, and any previously discussed maneuver or procedure",
+      "topics": [
+        "Securing rear cockpit for solo",
+        "unauthorized solo maneuvers",
+        "unintentional instrument flight",
+        "local course rules",
+        "and any previously discussed maneuver or procedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM44",
+      "blockTitle": "Familiarization Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 89,
+      "pageEnd": 90,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM44",
+        "FAM4304",
+        "MANEUVER",
+        "FAM4490"
+      ],
+      "discussText": "Any previously discussed items, unauthorized solo maneuvers, lost aircraft \nprocedures, unintentional instrument flight, local course rules, maneuvers, and emergency \nprocedures",
+      "topics": [
+        "Any previously discussed items",
+        "unauthorized solo maneuvers",
+        "lost aircraft \nprocedures",
+        "unintentional instrument flight",
+        "local course rules",
+        "maneuvers",
+        "and emergency \nprocedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM45",
+      "blockTitle": "Familiarization Solo Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 91,
+      "pageEnd": 92,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM45",
+        "FAM4490",
+        "MANEUVER",
+        "FAM4501"
+      ],
+      "discussText": "Per the ODO/FDO solo brief",
+      "topics": [
+        "Per the ODO/FDO solo brief"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM46",
+      "blockTitle": "Night Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 93,
+      "pageEnd": 94,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM46",
+        "FAM1205",
+        "N4101",
+        "N6101",
+        "NOTAM",
+        "MANEUVER",
+        "FAM4601"
+      ],
+      "discussText": "Night flying considerations, night VFR chart interpretation, airport night \nlighting, aircraft and cockpit lighting, applicable night emergencies, local night SOP, and \nelectrical system malfunctions",
+      "topics": [
+        "Night flying considerations",
+        "night VFR chart interpretation",
+        "airport night \nlighting",
+        "aircraft and cockpit lighting",
+        "applicable night emergencies",
+        "local night SOP",
+        "and \nelectrical system malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
       "blockCode": "FAM34",
       "blockTitle": "Familiarization",
       "blockName": "",
@@ -513,6 +923,81 @@
         "OCF recovery and airborne \ndamaged aircraft",
         "combination maneuvers",
         "and HUD"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM47",
+      "blockTitle": "Familiarization Aerobatics",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 97,
+      "pageEnd": 100,
+      "eventCode": "FAM4701",
+      "eventRefs": [
+        "FAM4701"
+      ],
+      "discussText": "OCF recovery procedures, contact unusual attitudes, and all aerobatic maneuvers",
+      "topics": [
+        "OCF recovery procedures",
+        "contact unusual attitudes",
+        "and all aerobatic maneuvers"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM47",
+      "blockTitle": "Familiarization Aerobatics",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 97,
+      "pageEnd": 100,
+      "eventCode": "FAM4702",
+      "eventRefs": [
+        "FAM4702"
+      ],
+      "discussText": "Spin, inverted spin, progressive spin, accelerated stall, and AOA approach",
+      "topics": [
+        "Spin",
+        "inverted spin",
+        "progressive spin",
+        "accelerated stall",
+        "and AOA approach"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "FAM47",
+      "blockTitle": "Familiarization Aerobatics",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 97,
+      "pageEnd": 100,
+      "eventCode": "FAM4703",
+      "eventRefs": [
+        "FAM4703"
+      ],
+      "discussText": "T-6B VN diagram, maneuvering speed, acceleration limitations, and any emergency \nprocedure",
+      "topics": [
+        "T-6B VN diagram",
+        "maneuvering speed",
+        "acceleration limitations",
+        "and any emergency \nprocedure"
       ]
     },
     {
@@ -894,6 +1379,59 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "curriculumPublicationNumber": "CNATRAINST 1542.166D",
       "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 118,
+      "pageEnd": 120,
+      "eventCode": "I4101",
+      "eventRefs": [
+        "I4101"
+      ],
+      "discussText": "CRM, holding, and VOR approach procedures. \n \n I4102 \nILS/LOC approach procedures, RVFAC, and icing considerations.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-19",
+      "topics": [
+        "CRM",
+        "holding",
+        "and VOR approach procedures. \n \n I4102 \nILS/LOC approach procedures",
+        "RVFAC",
+        "and icing considerations.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nV-19"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 118,
+      "pageEnd": 120,
+      "eventCode": "I4103",
+      "eventRefs": [
+        "I4103"
+      ],
+      "discussText": "PAR, ASR, and no-gyro approaches; hypoxia/hyperventilation; and OBOGS malfunctions, \ninadvertent thunderstorm penetration and any emergency procedure",
+      "topics": [
+        "PAR",
+        "ASR",
+        "and no-gyro approaches",
+        "hypoxia/hyperventilation",
+        "and OBOGS malfunctions",
+        "inadvertent thunderstorm penetration and any emergency procedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
       "blockCode": "I32",
       "blockTitle": "Radio Instruments",
       "blockName": "",
@@ -1066,6 +1604,243 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "curriculumPublicationNumber": "CNATRAINST 1542.166D",
       "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 126,
+      "pageEnd": 128,
+      "eventCode": "I4201",
+      "eventRefs": [
+        "I4201"
+      ],
+      "discussText": "Clearance and departure procedures, stereo routes (canned flight plans), airway navigation, \nand lost communications (local/FIH)",
+      "topics": [
+        "Clearance and departure procedures",
+        "stereo routes (canned flight plans)",
+        "airway navigation",
+        "and lost communications (local/FIH)"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 126,
+      "pageEnd": 128,
+      "eventCode": "I4202",
+      "eventRefs": [
+        "I4202"
+      ],
+      "discussText": "FMS flight plan usage (SID/STAR, holding, and approach) and FMS arrivals",
+      "topics": [
+        "FMS flight plan usage (SID/STAR",
+        "holding",
+        "and approach) and FMS arrivals"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 126,
+      "pageEnd": 128,
+      "eventCode": "I4203",
+      "eventRefs": [
+        "I4203"
+      ],
+      "discussText": "No-gyro approach, emergency field selection, and fuel management",
+      "topics": [
+        "No-gyro approach",
+        "emergency field selection",
+        "and fuel management"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Radio Instruments",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 126,
+      "pageEnd": 128,
+      "eventCode": "I4204",
+      "eventRefs": [
+        "I4204"
+      ],
+      "discussText": "CNAF M-3710.7 takeoff and approach minimums and alternate filing minimums",
+      "topics": [
+        "CNAF M-3710.7 takeoff and approach minimums and alternate filing minimums"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Instrument Navigation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 129,
+      "pageEnd": 131,
+      "eventCode": "I4301",
+      "eventRefs": [
+        "I4301"
+      ],
+      "discussText": "Flight planning, jet log, DD-1801, DD-175-1 weather brief, CNAF M-3710.7 takeoff and \napproach minimums, alternate filing minimums, FSS, and Strange Field operations",
+      "topics": [
+        "Flight planning",
+        "jet log",
+        "DD-1801",
+        "DD-175-1 weather brief",
+        "CNAF M-3710.7 takeoff and \napproach minimums",
+        "alternate filing minimums",
+        "FSS",
+        "and Strange Field operations"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Instrument Navigation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 129,
+      "pageEnd": 131,
+      "eventCode": "I4302",
+      "eventRefs": [
+        "I4302"
+      ],
+      "discussText": "En route weather, divert to alternate, change of flight plan while airborne, IFR supplement, \ncircling maneuver, and VDP",
+      "topics": [
+        "En route weather",
+        "divert to alternate",
+        "change of flight plan while airborne",
+        "IFR supplement",
+        "circling maneuver",
+        "and VDP"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Instrument Navigation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 129,
+      "pageEnd": 131,
+      "eventCode": "I4303",
+      "eventRefs": [
+        "I4303"
+      ],
+      "discussText": "Controlled/uncontrolled airspace, emergency field selection, high altitude approach, CNAF \nM-3710.7 minimum fuel requirements, and fuel management",
+      "topics": [
+        "Controlled/uncontrolled airspace",
+        "emergency field selection",
+        "high altitude approach",
+        "CNAF \nM-3710.7 minimum fuel requirements",
+        "and fuel management"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Instrument Navigation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 129,
+      "pageEnd": 131,
+      "eventCode": "I4304",
+      "eventRefs": [
+        "I4304"
+      ],
+      "discussText": "Lost communications (FIH), SID/STAR, and any emergency procedure, obstacle departure \nprocedures, Trouble T, and any emergency procedure",
+      "topics": [
+        "Lost communications (FIH)",
+        "SID/STAR",
+        "and any emergency procedure",
+        "obstacle departure \nprocedures",
+        "Trouble T",
+        "and any emergency procedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "I44",
+      "blockTitle": "Instrument Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 132,
+      "pageEnd": 135,
+      "eventCode": null,
+      "eventRefs": [
+        "I4304",
+        "NOTAM",
+        "MANEUVER",
+        "I4490",
+        "BLANK"
+      ],
+      "discussText": "Lost communications (FIH), CNAF M-3710.7 takeoff/approach minimums, \nflight planning (submit a completed DD-1801 and jet log: Stopover flight plan to include an \nen route holding delay (1\nst leg), and terminal delay (2nd leg)), NOTAM, en route weather, any \nemergency procedure, and any previously discussed item",
+      "topics": [
+        "Lost communications (FIH)",
+        "CNAF M-3710.7 takeoff/approach minimums",
+        "flight planning (submit a completed DD-1801 and jet log: Stopover flight plan to include an \nen route holding delay (1\nst leg)",
+        "and terminal delay (2nd leg))",
+        "NOTAM",
+        "en route weather",
+        "any \nemergency procedure",
+        "and any previously discussed item"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
       "blockCode": "N31",
       "blockTitle": "Day Navigation",
       "blockName": "",
@@ -1127,6 +1902,42 @@
       "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
       "curriculumPublicationNumber": "CNATRAINST 1542.166D",
       "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "N41",
+      "blockTitle": "Day Navigation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 141,
+      "pageEnd": 143,
+      "eventCode": null,
+      "eventRefs": [
+        "N3101",
+        "NOTAM",
+        "MANEUVER",
+        "N4101"
+      ],
+      "discussText": "VFR chart preparation, route management, standard time corrections, standard \ncourse corrections, airspace classification, and VFR field entry-departure (AIM), local \ncross-country SOP, FMS procedures, emergency field selection, destination maintenance \nfacilities and operating procedures, TOT, and any applicable day emergency",
+      "topics": [
+        "VFR chart preparation",
+        "route management",
+        "standard time corrections",
+        "standard \ncourse corrections",
+        "airspace classification",
+        "and VFR field entry-departure (AIM)",
+        "local \ncross-country SOP",
+        "FMS procedures",
+        "emergency field selection",
+        "destination maintenance \nfacilities and operating procedures",
+        "TOT",
+        "and any applicable day emergency"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
       "blockCode": "F31",
       "blockTitle": "Formation",
       "blockName": "",
@@ -1170,6 +1981,136 @@
         "wingman/flight leader \nresponsibilities",
         "formation communications",
         "and formation position corrections"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F41",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 150,
+      "pageEnd": 152,
+      "eventCode": "F4101",
+      "eventRefs": [
+        "F4101"
+      ],
+      "discussText": "Hand signals, wingman/flight leader responsibilities, aborted takeoff, lost sight procedures, \nblind procedures, and HEFOE",
+      "topics": [
+        "Hand signals",
+        "wingman/flight leader responsibilities",
+        "aborted takeoff",
+        "lost sight procedures",
+        "blind procedures",
+        "and HEFOE"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F41",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 150,
+      "pageEnd": 152,
+      "eventCode": "F4102",
+      "eventRefs": [
+        "F4102"
+      ],
+      "discussText": "Airborne damaged aircraft, speed brake use as a section, and area/sun management, and lost \ncommunication procedures",
+      "topics": [
+        "Airborne damaged aircraft",
+        "speed brake use as a section",
+        "and area/sun management",
+        "and lost \ncommunication procedures"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F41",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 150,
+      "pageEnd": 152,
+      "eventCode": "F4103",
+      "eventRefs": [
+        "F4103"
+      ],
+      "discussText": "Section PEL, section takeoff, emergency field selection, and inadvertent instrument flight",
+      "topics": [
+        "Section PEL",
+        "section takeoff",
+        "emergency field selection",
+        "and inadvertent instrument flight"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F41",
+      "blockTitle": "Formation",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 150,
+      "pageEnd": 152,
+      "eventCode": "F4104",
+      "eventRefs": [
+        "F4104"
+      ],
+      "discussText": "Landing gear inspection, knock-it-off, terminate, cruise maneuvering, principles of lead, and \nlag and pure pursuit.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVII-9",
+      "topics": [
+        "Landing gear inspection",
+        "knock-it-off",
+        "terminate",
+        "cruise maneuvering",
+        "principles of lead",
+        "and \nlag and pure pursuit.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVII-9"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "F42",
+      "blockTitle": "Formation Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 153,
+      "pageEnd": 155,
+      "eventCode": null,
+      "eventRefs": [
+        "F4104",
+        "MANEUVER",
+        "F4290",
+        "CS4101"
+      ],
+      "discussText": "Any previously discussed maneuver, any emergency procedure",
+      "topics": [
+        "Any previously discussed maneuver",
+        "any emergency procedure"
       ]
     },
     {
@@ -1270,6 +2211,91 @@
         "Any previously discussed familiarization items",
         "IMC emergencies",
         "and lost communications \n(FIH)"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS41",
+      "blockTitle": "Capstone",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 163,
+      "pageEnd": 166,
+      "eventCode": "CS4101",
+      "eventRefs": [
+        "CS4101"
+      ],
+      "discussText": "Any previously discussed maneuver and any emergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVIII-10",
+      "topics": [
+        "Any previously discussed maneuver and any emergency procedure.\n\nCNATRAINST 1542.166D \n 15 Jul 2024 \n \nVIII-10"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS41",
+      "blockTitle": "Capstone",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 163,
+      "pageEnd": 166,
+      "eventCode": "CS4102",
+      "eventRefs": [
+        "CS4102"
+      ],
+      "discussText": "Any previously discussed maneuver and any emergency procedure",
+      "topics": [
+        "Any previously discussed maneuver and any emergency procedure"
+      ]
+    },
+    {
+      "aircraft": "T-6B",
+      "curriculumDocId": "1542-166d-signed",
+      "curriculumTitle": "NAVAL AIR TRAINING COMMAND NAS CORPUS CHRISTI, TEXAS CIN Q-2A-0266, CIN Q-2A-0366,",
+      "curriculumPublicationNumber": "CNATRAINST 1542.166D",
+      "curriculumFile": "t6b/1542.166D_signed.pdf",
+      "blockCode": "CS42",
+      "blockTitle": "Capstone Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 167,
+      "pageEnd": 196,
+      "eventCode": null,
+      "eventRefs": [
+        "CS4102",
+        "NOTAM",
+        "MANEUVER",
+        "CS4290",
+        "BEHAVIOR",
+        "STATEMENT",
+        "STANDARDS",
+        "GRADED",
+        "ITEMS",
+        "NATOPS",
+        "DD1801",
+        "NAVAID",
+        "RVFAC",
+        "FORMATION",
+        "NAVAIDS",
+        "BLANK",
+        "STUDENT",
+        "CNATRA",
+        "NAVAIR",
+        "T6BAA"
+      ],
+      "discussText": "Any previously discussed maneuver and any emergency procedure",
+      "topics": [
+        "Any previously discussed maneuver and any emergency procedure"
       ]
     }
   ]

@@ -9,8 +9,8 @@
       "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
       "publicationNumber": "CNATRAINST 1542.175D",
       "file": "t44c/1542.175D CH-1.pdf",
-      "includedBlocks": 11,
-      "extractedDiscussItems": 24
+      "includedBlocks": 20,
+      "extractedDiscussItems": 48
     }
   ],
   "items": [
@@ -212,6 +212,124 @@
       "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
       "curriculumPublicationNumber": "CNATRAINST 1542.175D",
       "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 64,
+      "pageEnd": 66,
+      "eventCode": "FAM4101",
+      "eventRefs": [
+        "FAM4101"
+      ],
+      "discussText": "Outside scan techniques, see and avoid, takeoff, crosswind takeoff and landing, aborted \ntakeoff, landing pattern, full-stop landings, touch-and-go procedures, training-time-out, \nNATOPS brief, dual engine wave-offs, aircraft engine operating limits, engine start \nprocedures, abnormal starts and malfunctions, and brake system and malfunctions",
+      "topics": [
+        "Outside scan techniques",
+        "see and avoid",
+        "takeoff",
+        "crosswind takeoff and landing",
+        "aborted \ntakeoff",
+        "landing pattern",
+        "full-stop landings",
+        "touch-and-go procedures",
+        "training-time-out",
+        "NATOPS brief",
+        "dual engine wave-offs",
+        "aircraft engine operating limits",
+        "engine start \nprocedures",
+        "abnormal starts and malfunctions",
+        "and brake system and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 64,
+      "pageEnd": 66,
+      "eventCode": "FAM4102",
+      "eventRefs": [
+        "FAM4102"
+      ],
+      "discussText": "Porpoised landings, aircraft airframe operating limits, full-flap landings, engine fire on deck, \nMFD operation, stalls and spin recovery, no-flap landings, ditching power-on, and fuel \nsystem and malfunctions",
+      "topics": [
+        "Porpoised landings",
+        "aircraft airframe operating limits",
+        "full-flap landings",
+        "engine fire on deck",
+        "MFD operation",
+        "stalls and spin recovery",
+        "no-flap landings",
+        "ditching power-on",
+        "and fuel \nsystem and malfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 64,
+      "pageEnd": 66,
+      "eventCode": "FAM4103",
+      "eventRefs": [
+        "FAM4103"
+      ],
+      "discussText": "Lost communications (VFR), smoke and fire of unknown origin, oxygen system use, \nemergency descent, smoke and fume elimination, and electrical system and malfunctions.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nIV-9",
+      "topics": [
+        "Lost communications (VFR)",
+        "smoke and fire of unknown origin",
+        "oxygen system use",
+        "emergency descent",
+        "smoke and fume elimination",
+        "and electrical system and malfunctions.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nIV-9"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM41",
+      "blockTitle": "Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 64,
+      "pageEnd": 66,
+      "eventCode": "FAM4104",
+      "eventRefs": [
+        "FAM4104"
+      ],
+      "discussText": "Engine system and malfunctions, engine failure during take-off, right-hand pattern, and night \nor IMC ditch versus day VMC ditch",
+      "topics": [
+        "Engine system and malfunctions",
+        "engine failure during take-off",
+        "right-hand pattern",
+        "and night \nor IMC ditch versus day VMC ditch"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
       "blockCode": "FAM32",
       "blockTitle": "Emergency Familiarization",
       "blockName": "",
@@ -281,6 +399,34 @@
       "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
       "curriculumPublicationNumber": "CNATRAINST 1542.175D",
       "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM43",
+      "blockTitle": "Familiarization Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 75,
+      "pageEnd": 76,
+      "eventCode": null,
+      "eventRefs": [
+        "FAM43",
+        "FAM4206",
+        "FAM3301",
+        "FAM4390",
+        "MANEUVER"
+      ],
+      "discussText": "CRM, pilot monitoring responsibilities, and touch-and-go abort decisions. \nOperation limits quiz and RDO briefing",
+      "topics": [
+        "CRM",
+        "pilot monitoring responsibilities",
+        "and touch-and-go abort decisions. \nOperation limits quiz and RDO briefing"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
       "blockCode": "FAM34",
       "blockTitle": "Night Familiarization",
       "blockName": "",
@@ -306,6 +452,55 @@
         "porpoised landing",
         "CRM guidelines and callouts",
         "and \nnight instrument approaches"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM45",
+      "blockTitle": "Night Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 79,
+      "pageEnd": 80,
+      "eventCode": "FAM4501",
+      "eventRefs": [
+        "FAM4501"
+      ],
+      "discussText": "Local operations, right-hand pattern and CRM night or IMC ditching, \nrunway/taxiway/parking signs and symbols, runway markings, and night visual approaches",
+      "topics": [
+        "Local operations",
+        "right-hand pattern and CRM night or IMC ditching",
+        "runway/taxiway/parking signs and symbols",
+        "runway markings",
+        "and night visual approaches"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "FAM45",
+      "blockTitle": "Night Familiarization",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 79,
+      "pageEnd": 80,
+      "eventCode": "FAM4502",
+      "eventRefs": [
+        "FAM4502"
+      ],
+      "discussText": "Aircraft operating limits, CRM guidelines/callouts",
+      "topics": [
+        "Aircraft operating limits",
+        "CRM guidelines/callouts"
       ]
     },
     {
@@ -528,6 +723,180 @@
       "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
       "curriculumPublicationNumber": "CNATRAINST 1542.175D",
       "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 88,
+      "pageEnd": 91,
+      "eventCode": "I4101",
+      "eventRefs": [
+        "I4101"
+      ],
+      "discussText": "Holding, GCA approach, PAR, ILS, and ASR configuration point, PAR versus ASR descent \npoint, ASR recommended altitudes, NAVAID characteristics (ILS, LOC, LOC-BC (service \nvolumes, operation principles, NATOPS procedures, and cockpit presentation)), ATC \ncommunication (clearance delivery, ground, tower, center, approach, tower, and ground), \nuncontrolled airfields (communications, canceling IFR, and procedures), holding in lieu of \n(HILO) PT approach, approach plate titles and notes, ATIS, AWOS, and ASOS, DD-175-1, \nand terminal area delay DD-1801",
+      "topics": [
+        "Holding",
+        "GCA approach",
+        "PAR",
+        "ILS",
+        "and ASR configuration point",
+        "PAR versus ASR descent \npoint",
+        "ASR recommended altitudes",
+        "NAVAID characteristics (ILS",
+        "LOC",
+        "LOC-BC (service \nvolumes",
+        "operation principles",
+        "NATOPS procedures",
+        "and cockpit presentation))",
+        "ATC \ncommunication (clearance delivery",
+        "ground",
+        "tower",
+        "center",
+        "approach",
+        "tower",
+        "and ground)",
+        "uncontrolled airfields (communications",
+        "canceling IFR",
+        "and procedures)",
+        "holding in lieu of \n(HILO) PT approach",
+        "approach plate titles and notes",
+        "ATIS",
+        "AWOS",
+        "and ASOS",
+        "DD-175-1",
+        "and terminal area delay DD-1801"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 88,
+      "pageEnd": 91,
+      "eventCode": "I4102",
+      "eventRefs": [
+        "I4102"
+      ],
+      "discussText": "Procedure turns (methods and types), instrument publications (DoD (NGA), FAA (NACO), \nJeppesen, other), DPs (ODP, SID,vector, diverse, and uncontrolled field), VDP, CDFA, \nlanding transition, low close-in obstacles, ILS, LOC, LOC-BC approach (configuration, \npresentation, MA, and FAF identification by other than DME), reverse sensing, and stopover \nDD-1801",
+      "topics": [
+        "Procedure turns (methods and types)",
+        "instrument publications (DoD (NGA)",
+        "FAA (NACO)",
+        "Jeppesen",
+        "other)",
+        "DPs (ODP",
+        "SID,vector",
+        "diverse",
+        "and uncontrolled field)",
+        "VDP",
+        "CDFA",
+        "landing transition",
+        "low close-in obstacles",
+        "ILS",
+        "LOC",
+        "LOC-BC approach (configuration",
+        "presentation",
+        "MA",
+        "and FAF identification by other than DME)",
+        "reverse sensing",
+        "and stopover \nDD-1801"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 88,
+      "pageEnd": 91,
+      "eventCode": "I4103",
+      "eventRefs": [
+        "I4103"
+      ],
+      "discussText": "Point-to-point navigation; TERPS required obstacle clearance (ROC) for initial, intermediate, \nfinal, and circling phases; NAVAID characteristics (VOR, TACAN, and NDB \n(service volumes, operation principles, NATOPS procedures, and cockpit presentation)); \nVOR, TAC, and NDB approach procedures; missed approach (determining MAP and \ncontinuation beyond MAP), circling procedures and circling missed approach; procedure track \n(arc and radial combination and teardrop); VDP; and RNAV (FMS, GPS, DME/DME, \nVOR/DME, and INS), and FAA flight plan.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-10",
+      "topics": [
+        "Point-to-point navigation",
+        "TERPS required obstacle clearance (ROC) for initial",
+        "intermediate",
+        "final",
+        "and circling phases",
+        "NAVAID characteristics (VOR",
+        "TACAN",
+        "and NDB \n(service volumes",
+        "operation principles",
+        "NATOPS procedures",
+        "and cockpit presentation))",
+        "VOR",
+        "TAC",
+        "and NDB approach procedures",
+        "missed approach (determining MAP and \ncontinuation beyond MAP)",
+        "circling procedures and circling missed approach",
+        "procedure track \n(arc and radial combination and teardrop)",
+        "VDP",
+        "and RNAV (FMS",
+        "GPS",
+        "DME/DME",
+        "VOR/DME",
+        "and INS)",
+        "and FAA flight plan.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-10"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I41",
+      "blockTitle": "Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 88,
+      "pageEnd": 91,
+      "eventCode": "I4104",
+      "eventRefs": [
+        "I4104"
+      ],
+      "discussText": "Pilot-controlled lighting; lost communications (FIH and LOA) (IFR \u2013 VMC versus IMC); \nwind shear; visual approach; contact approach; ESIS approach procedures; needle only \napproach procedures; SSE approach procedures; TERPS (FAA Order 8260.3B); Trouble T \n(OIS, low close-in obstacles, climb gradients, alternate routing, nonstandard takeoff weather \nminimums, and VCOA)",
+      "topics": [
+        "Pilot-controlled lighting",
+        "lost communications (FIH and LOA) (IFR \u2013 VMC versus IMC)",
+        "wind shear",
+        "visual approach",
+        "contact approach",
+        "ESIS approach procedures",
+        "needle only \napproach procedures",
+        "SSE approach procedures",
+        "TERPS (FAA Order 8260.3B)",
+        "Trouble T \n(OIS",
+        "low close-in obstacles",
+        "climb gradients",
+        "alternate routing",
+        "nonstandard takeoff weather \nminimums",
+        "and VCOA)"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
       "blockCode": "I32",
       "blockTitle": "Emergency Instrument Approaches",
       "blockName": "",
@@ -638,6 +1007,128 @@
       "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
       "curriculumPublicationNumber": "CNATRAINST 1542.175D",
       "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 95,
+      "pageEnd": 97,
+      "eventCode": "I4201",
+      "eventRefs": [
+        "I4201"
+      ],
+      "discussText": "SSE approach procedures (configuration, airspeeds and power in the descent, and descent \nrate), SSE circling approach and missed approach, emergency voice reports, propeller system \nand malfunctions, in-flight damage and bird strikes, ESIS approach, and simulated versus \nactual EP.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-16",
+      "topics": [
+        "SSE approach procedures (configuration",
+        "airspeeds and power in the descent",
+        "and descent \nrate)",
+        "SSE circling approach and missed approach",
+        "emergency voice reports",
+        "propeller system \nand malfunctions",
+        "in-flight damage and bird strikes",
+        "ESIS approach",
+        "and simulated versus \nactual EP.\n\nCNATRAINST 1542.175D \n10 Jul 2025 \n \nV-16"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 95,
+      "pageEnd": 97,
+      "eventCode": "I4202",
+      "eventRefs": [
+        "I4202"
+      ],
+      "discussText": "Needle only VOR and TAC approach procedures, landing minimums, flight director \nmalfunctions, autopilot malfunctions and disconnect procedures, electrical system and \nmalfunctions, anti-ice and deice system, windshield heating, and flight control system and \nmalfunctions",
+      "topics": [
+        "Needle only VOR and TAC approach procedures",
+        "landing minimums",
+        "flight director \nmalfunctions",
+        "autopilot malfunctions and disconnect procedures",
+        "electrical system and \nmalfunctions",
+        "anti-ice and deice system",
+        "windshield heating",
+        "and flight control system and \nmalfunctions"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 95,
+      "pageEnd": 97,
+      "eventCode": "I4203",
+      "eventRefs": [
+        "I4203"
+      ],
+      "discussText": "Procedure track (arc and radial combination and teardrop), VDP, CDFA, smoke and fume \nemergencies, smoke and fire of unknown origin, avionics system and malfunctions, and \nairfield diagrams and symbols",
+      "topics": [
+        "Procedure track (arc and radial combination and teardrop)",
+        "VDP",
+        "CDFA",
+        "smoke and fume \nemergencies",
+        "smoke and fire of unknown origin",
+        "avionics system and malfunctions",
+        "and \nairfield diagrams and symbols"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I42",
+      "blockTitle": "Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 95,
+      "pageEnd": 97,
+      "eventCode": "I4204",
+      "eventRefs": [
+        "I4204"
+      ],
+      "discussText": "Hazardous weather, pitot static system and malfunctions (alternate static and related avionics \nequipment), engine system and malfunctions (engine failure or fire after takeoff), STAR \n(filing, planning, and lost comms), fuel planning (required totals and reserve, and NATOPS \nperformance information), fuel system and malfunctions, brake system and malfunctions, \nwake turbulence, wind shear, PULL UP warning, and weight and balance form F",
+      "topics": [
+        "Hazardous weather",
+        "pitot static system and malfunctions (alternate static and related avionics \nequipment)",
+        "engine system and malfunctions (engine failure or fire after takeoff)",
+        "STAR \n(filing",
+        "planning",
+        "and lost comms)",
+        "fuel planning (required totals and reserve",
+        "and NATOPS \nperformance information)",
+        "fuel system and malfunctions",
+        "brake system and malfunctions",
+        "wake turbulence",
+        "wind shear",
+        "PULL UP warning",
+        "and weight and balance form F"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
       "blockCode": "I33",
       "blockTitle": "Mid-Stage Instrument Check",
       "blockName": "",
@@ -660,6 +1151,141 @@
         "pressurization system and malfunctions",
         "electrical system",
         "and CNAF-M 3710.7 weather \nfiling criteria"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Cross-Country",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 100,
+      "pageEnd": 102,
+      "eventCode": "I4301",
+      "eventRefs": [
+        "I4301"
+      ],
+      "discussText": "CRM Seven Skills, callouts, ATC communications (clearance delivery, ground, tower, center, \napproach, tower, and ground), pre-flight planning (nav bag, fuel planning and packet, weight \nand balance, NOTAMS (destination, alternates, and en route), CNAF-M 3710.7 weather filing \ncriteria, DD-1801, DD-175-1, OPARS, AIRMETs, and SIGMETs), unfamiliar field \noperations, and MFD operation",
+      "topics": [
+        "CRM Seven Skills",
+        "callouts",
+        "ATC communications (clearance delivery",
+        "ground",
+        "tower",
+        "center",
+        "approach",
+        "tower",
+        "and ground)",
+        "pre-flight planning (nav bag",
+        "fuel planning and packet",
+        "weight \nand balance",
+        "NOTAMS (destination",
+        "alternates",
+        "and en route)",
+        "CNAF-M 3710.7 weather filing \ncriteria",
+        "DD-1801",
+        "DD-175-1",
+        "OPARS",
+        "AIRMETs",
+        "and SIGMETs)",
+        "unfamiliar field \noperations",
+        "and MFD operation"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Cross-Country",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 100,
+      "pageEnd": 102,
+      "eventCode": "I4302",
+      "eventRefs": [
+        "I4302"
+      ],
+      "discussText": "DPs (ODP, SID, vector, diverse), checklist management, en route charts, airfield markings \nand lighting, STARs (filing, planning, and lost comms), en route weather facilities \n(FSS and Metro), airport diagrams and symbols, circling and circling missed approach (TAS \nconsiderations), securing and RON procedures",
+      "topics": [
+        "DPs (ODP",
+        "SID",
+        "vector",
+        "diverse)",
+        "checklist management",
+        "en route charts",
+        "airfield markings \nand lighting",
+        "STARs (filing",
+        "planning",
+        "and lost comms)",
+        "en route weather facilities \n(FSS and Metro)",
+        "airport diagrams and symbols",
+        "circling and circling missed approach (TAS \nconsiderations)",
+        "securing and RON procedures"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Cross-Country",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 100,
+      "pageEnd": 102,
+      "eventCode": "I4303",
+      "eventRefs": [
+        "I4303"
+      ],
+      "discussText": "FAA flight plan, contacting FSS, performance data, anti-icing systems, RNP, lost \ncommunications (en route, VMC versus IMC), and course deviations for weather",
+      "topics": [
+        "FAA flight plan",
+        "contacting FSS",
+        "performance data",
+        "anti-icing systems",
+        "RNP",
+        "lost \ncommunications (en route",
+        "VMC versus IMC)",
+        "and course deviations for weather"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I43",
+      "blockTitle": "Cross-Country",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 100,
+      "pageEnd": 102,
+      "eventCode": "I4304",
+      "eventRefs": [
+        "I4304"
+      ],
+      "discussText": "Filing in-flight, SSE en route, FMS en route navigation, wake turbulence, arrival transition, \nand procedure turn (holding technique)",
+      "topics": [
+        "Filing in-flight",
+        "SSE en route",
+        "FMS en route navigation",
+        "wake turbulence",
+        "arrival transition",
+        "and procedure turn (holding technique)"
       ]
     },
     {
@@ -738,6 +1364,151 @@
       "discussText": "Simulated scenario background. \n \n I3502 \n CRM and simulated scenario background",
       "topics": [
         "Simulated scenario background. \n \n I3502 \n CRM and simulated scenario background"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I44",
+      "blockTitle": "Advanced Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 108,
+      "pageEnd": 110,
+      "eventCode": "I4401",
+      "eventRefs": [
+        "I4401"
+      ],
+      "discussText": "Airspace and RVSM, weight and balance form F, \u201cland as soon as practicable versus \npossible,\u201d RNP, and other discussion items at the discretion of the IP",
+      "topics": [
+        "Airspace and RVSM",
+        "weight and balance form F",
+        "\u201cland as soon as practicable versus \npossible,\u201d RNP",
+        "and other discussion items at the discretion of the IP"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I44",
+      "blockTitle": "Advanced Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 108,
+      "pageEnd": 110,
+      "eventCode": "I4402",
+      "eventRefs": [
+        "I4402"
+      ],
+      "discussText": "Student brief CRM case study, threat and error management, CRM, ORM, and other \ndiscussion items at the discretion of the IP",
+      "topics": [
+        "Student brief CRM case study",
+        "threat and error management",
+        "CRM",
+        "ORM",
+        "and other \ndiscussion items at the discretion of the IP"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I44",
+      "blockTitle": "Advanced Emergency Instrument Approaches",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 108,
+      "pageEnd": 110,
+      "eventCode": "I4403",
+      "eventRefs": [
+        "I4403"
+      ],
+      "discussText": "Density altitude considerations (true airspeed, descents required, and circling rate of turn), \ninstrument rating request form CNAF-M 3710.7 and other discussion items at the discretion \nof the IP",
+      "topics": [
+        "Density altitude considerations (true airspeed",
+        "descents required",
+        "and circling rate of turn)",
+        "instrument rating request form CNAF-M 3710.7 and other discussion items at the discretion \nof the IP"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "I45",
+      "blockTitle": "NATOPS Instrument Check Flight",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 111,
+      "pageEnd": 114,
+      "eventCode": null,
+      "eventRefs": [
+        "NATOPS",
+        "I4403",
+        "MANEUVER",
+        "I4590",
+        "BLANK"
+      ],
+      "discussText": "Instrument rating request form CNAF-M 3710.7, Trouble T \n(OIS, low close-in obstacles, climb gradients, alternate routing, nonstandard takeoff weather \nminimums, and VCOA), operations limits quiz, and additional discussion items at the discretion \nof the IP",
+      "topics": [
+        "Instrument rating request form CNAF-M 3710.7",
+        "Trouble T \n(OIS",
+        "low close-in obstacles",
+        "climb gradients",
+        "alternate routing",
+        "nonstandard takeoff weather \nminimums",
+        "and VCOA)",
+        "operations limits quiz",
+        "and additional discussion items at the discretion \nof the IP"
+      ]
+    },
+    {
+      "aircraft": "T-44C",
+      "curriculumDocId": "1542-175d-ch-1",
+      "curriculumTitle": "T-44C E-2D INTERMEDIATE MULTI-SERVICE PILOT TRAINING SYSTEM (MPTS) MASTER CURRICULUM GUIDE",
+      "curriculumPublicationNumber": "CNATRAINST 1542.175D",
+      "curriculumFile": "t44c/1542.175D CH-1.pdf",
+      "blockCode": "F41",
+      "blockTitle": "Maritime Formation Fundamentals",
+      "blockName": "",
+      "media": "AIRCRAFT",
+      "mediaClass": "flight",
+      "pageStart": 116,
+      "pageEnd": 136,
+      "eventCode": null,
+      "eventRefs": [
+        "F0101",
+        "MANEUVER",
+        "F4101",
+        "BLANK",
+        "BEHAVIOR",
+        "STATEMENT",
+        "STANDARDS",
+        "GRADED",
+        "NATOPS",
+        "STUDENT",
+        "CNATRA",
+        "NAWCTSD"
+      ],
+      "discussText": "Formation flight procedures, flight sequence, and formation emergency \nprocedures",
+      "topics": [
+        "Formation flight procedures",
+        "flight sequence",
+        "and formation emergency \nprocedures"
       ]
     }
   ]

@@ -235,7 +235,7 @@ function renderDiscItem(item, idx) {
 }
 
 function renderSourceRef(ref) {
-  const pdfUrl = ref.file ? `pdfs/raw/${ref.file}#page=${ref.pageStart||1}` : '';
+  const pdfUrl = getPdfUrl(ref.docId, ref.file, ref.pageStart);
   return `
   <div class="source-ref">
     <div class="source-ref-header">
@@ -289,7 +289,7 @@ function renderDocuments(data) {
     <div class="section-divider">${type.toUpperCase()}</div>
     <div class="docs-grid">${byType[type].map(doc => {
       const count = refCounts[doc.id]||0;
-      const pdfPath = doc.file ? `pdfs/raw/${doc.file}` : '';
+      const pdfPath = getPdfUrl(doc.id, doc.file);
       return `
       <div class="doc-row">
         <div class="doc-icon">${ICONS.doc}</div>
@@ -306,6 +306,14 @@ function renderDocuments(data) {
         </div>
       </div>`; }).join('')}
     </div>`).join('');
+}
+
+function getPdfUrl(docId, file, pageStart) {
+  const data = acData[currentAC];
+  const document = data?.documents?.find(d => d.id === docId);
+  const baseUrl = document?.url || (file ? `pdfs/raw/${file}` : '');
+  if (!baseUrl) return '';
+  return pageStart ? `${baseUrl}#page=${pageStart}` : baseUrl;
 }
 
 function filterByDoc(docId) {

@@ -8,7 +8,7 @@ import json
 import math
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -190,6 +190,56 @@ def infer_aircraft_from_path(path: Path) -> str:
   return path.parent.name.upper()
 
 
+def normalize_aircraft_name(value: str | None) -> str | None:
+  if not value:
+    return None
+  normalized = str(value).strip()
+  if not normalized:
+    return None
+
+  compact = re.sub(r"[^a-z0-9]", "", normalized.lower())
+  if compact in AIRCRAFT_ALIASES:
+    return AIRCRAFT_ALIASES[compact]
+
+  for alias, aircraft in AIRCRAFT_ALIASES.items():
+    if alias in compact:
+      return aircraft
+
+  return normalized.upper()
+
+
+def aircraft_from_relative_file(relative_file: str | None) -> str | None:
+  if not relative_file:
+    return None
+  return infer_aircraft_from_path(Path(relative_file))
+
+
+def resolve_record_aircraft(record: dict, file_key: str = "file") -> str | None:
+  file_aircraft = aircraft_from_relative_file(record.get(file_key))
+  field_aircraft = normalize_aircraft_name(record.get("aircraft"))
+
+  if file_aircraft and field_aircraft and file_aircraft != field_aircraft:
+    return None
+  return file_aircraft or field_aircraft
+
+
+def infer_aircraft_from_text(*values: str) -> str | None:
+  haystack = " ".join(value for value in values if value)
+  normalized = haystack.lower()
+  patterns = {
+      "T-6B": (r"\bt[\s-]*6b\b", r"\btexan ii\b"),
+      "T-44C": (r"\bt[\s-]*44c\b",),
+      "T-45C": (r"\bt[\s-]*45c\b", r"\bgoshawk\b", r"\bt[\s-]*45\b"),
+  }
+  matches: list[str] = []
+  for aircraft, aircraft_patterns in patterns.items():
+    if any(re.search(pattern, normalized) for pattern in aircraft_patterns):
+      matches.append(aircraft)
+  if len(matches) == 1:
+    return matches[0]
+  return None
+
+
 def infer_publication_number(name: str, first_pages_text: str) -> str:
   for candidate in (first_pages_text, name):
     match = PUB_NUMBER_RE.search(candidate)
@@ -255,6 +305,9 @@ def infer_short_name(doc_type: str, title: str, publication_number: str) -> str:
 
 def classify_media(media: str) -> str:
   text = media.lower()
+  compact = re.sub(r"[^a-z0-9]", "", text)
+  if compact in AIRCRAFT_ALIASES:
+    return "flight"
   if any(token in text for token in ("aircraft",)):
     return "flight"
   if any(token in text for token in ("oft", "utd", "vtd", "sim", "cpt", "est", "ept")):
@@ -325,7 +378,11 @@ def parse_block_header(page_text: str) -> dict | None:
         break
 
       if not media_tokens:
-        media_tokens.append(tokens[1])
+        inferred_media = normalize_aircraft_name(tokens[1])
+        if inferred_media in AIRCRAFT_ALIASES.values():
+          media_tokens.append("AIRCRAFT")
+        else:
+          media_tokens.append(tokens[1])
         cursor = 2
 
       remainder = tokens[cursor:]
@@ -540,6 +597,24 @@ def build_doc_chunks(document: dict) -> tuple[dict, list[Chunk]]:
   doc_type = infer_doc_type(pdf_path.name, preview_text)
   title = infer_title(pdf_path, preview_text)
   short_name = infer_short_name(doc_type, title, publication_number)
+  folder_aircraft = document["aircraft"]
+  content_aircraft = infer_aircraft_from_text(pdf_path.name, title, publication_number, preview_text)
+
+  if content_aircraft and content_aircraft != folder_aircraft:
+    metadata = {
+        "aircraft": folder_aircraft,
+        "docId": document["docId"],
+        "shortName": short_name,
+        "title": title,
+        "publicationNumber": publication_number,
+        "docType": doc_type,
+        "file": document["relativeFile"],
+        "pageCount": len(reader.pages),
+        "chunkCount": 0,
+        "skipped": True,
+        "skipReason": f"content aircraft {content_aircraft} does not match folder aircraft {folder_aircraft}",
+    }
+    return metadata, []
 
   chunks: list[Chunk] = []
   current_heading = title
@@ -563,7 +638,7 @@ def build_doc_chunks(document: dict) -> tuple[dict, list[Chunk]]:
       chunks.append(
           Chunk(
               chunk_id=chunk_id,
-              aircraft=document["aircraft"],
+              aircraft=folder_aircraft,
               doc_id=document["docId"],
               file=document["relativeFile"],
               title=title,
@@ -579,7 +654,7 @@ def build_doc_chunks(document: dict) -> tuple[dict, list[Chunk]]:
       chunk_counter += 1
 
   metadata = {
-      "aircraft": document["aircraft"],
+      "aircraft": folder_aircraft,
       "docId": document["docId"],
       "shortName": short_name,
       "title": title,
@@ -598,7 +673,8 @@ def load_index(path: Path) -> dict:
 
 def build_index(args: argparse.Namespace) -> int:
   pdf_root = Path(args.pdf_root)
-  documents = discover_documents(pdf_root, args.aircraft)
+  requested_aircraft = normalize_aircraft_name(args.aircraft)
+  documents = discover_documents(pdf_root, requested_aircraft)
   docs_payload: list[dict] = []
   chunks_payload: list[dict] = []
 
@@ -610,7 +686,7 @@ def build_index(args: argparse.Namespace) -> int:
   payload = {
       "manifest": {
           "pdfRoot": str(pdf_root.as_posix()),
-          "aircraft": args.aircraft,
+          "aircraft": requested_aircraft,
       },
       "documents": docs_payload,
       "chunks": chunks_payload,
@@ -624,9 +700,10 @@ def build_index(args: argparse.Namespace) -> int:
 def search_index(args: argparse.Namespace) -> int:
   index = load_index(Path(args.index))
   chunks = index["chunks"]
+  requested_aircraft = normalize_aircraft_name(args.aircraft)
 
-  if args.aircraft:
-    chunks = [chunk for chunk in chunks if chunk["aircraft"] == args.aircraft]
+  if requested_aircraft:
+    chunks = [chunk for chunk in chunks if resolve_record_aircraft(chunk) == requested_aircraft]
   if args.exclude_doc_type:
     excluded = {item.strip().lower() for item in args.exclude_doc_type.split(",") if item.strip()}
     chunks = [chunk for chunk in chunks if chunk.get("docType", "").lower() not in excluded]
@@ -663,7 +740,8 @@ def search_index(args: argparse.Namespace) -> int:
 
 def extract_discussion_items(args: argparse.Namespace) -> int:
   pdf_root = Path(args.pdf_root)
-  documents = discover_documents(pdf_root, args.aircraft)
+  requested_aircraft = normalize_aircraft_name(args.aircraft)
+  documents = discover_documents(pdf_root, requested_aircraft)
   extracted: list[dict] = []
   summary: list[dict] = []
 
@@ -717,7 +795,7 @@ def extract_discussion_items(args: argparse.Namespace) -> int:
 
   payload = {
       "filters": {
-          "aircraft": args.aircraft,
+          "aircraft": requested_aircraft,
           "mediaFilter": args.media_filter,
       },
       "summary": summary,
@@ -736,15 +814,34 @@ def match_discussion_items(args: argparse.Namespace) -> int:
 
   excluded_types = {item.strip().lower() for item in args.exclude_doc_type.split(",") if item.strip()}
   output: list[dict] = []
+  requested_aircraft = normalize_aircraft_name(args.aircraft)
+  skipped_chunks = 0
+  skipped_items = 0
+  scoped_chunks: dict[str, list[dict]] = defaultdict(list)
 
-  for item in items:
-    if args.aircraft and item["aircraft"] != args.aircraft:
+  for chunk in chunks:
+    chunk_aircraft = resolve_record_aircraft(chunk)
+    if not chunk_aircraft:
+      skipped_chunks += 1
+      continue
+    if requested_aircraft and chunk_aircraft != requested_aircraft:
+      continue
+    if chunk.get("docType", "").lower() in excluded_types:
       continue
 
-    relevant_chunks = [
-        chunk for chunk in chunks
-        if chunk["aircraft"] == item["aircraft"] and chunk.get("docType", "").lower() not in excluded_types
-    ]
+    scoped_chunk = dict(chunk)
+    scoped_chunk["aircraft"] = chunk_aircraft
+    scoped_chunks[chunk_aircraft].append(scoped_chunk)
+
+  for item in items:
+    item_aircraft = resolve_record_aircraft(item, file_key="curriculumFile") or normalize_aircraft_name(item.get("aircraft"))
+    if not item_aircraft:
+      skipped_items += 1
+      continue
+    if requested_aircraft and item_aircraft != requested_aircraft:
+      continue
+
+    relevant_chunks = scoped_chunks.get(item_aircraft, [])
 
     query = " ".join(
         segment for segment in [
@@ -768,6 +865,7 @@ def match_discussion_items(args: argparse.Namespace) -> int:
     output.append(
         {
             **item,
+            "aircraft": item_aircraft,
             "suggestedLocations": [
                 {
                     "docId": chunk["docId"],
@@ -790,8 +888,15 @@ def match_discussion_items(args: argparse.Namespace) -> int:
 
   payload = {
       "filters": {
-          "aircraft": args.aircraft,
+          "aircraft": requested_aircraft,
           "excludeDocType": sorted(excluded_types),
+          "strictAircraftScope": True,
+      },
+      "summary": {
+          "matchedItems": len(output),
+          "skippedItems": skipped_items,
+          "skippedChunks": skipped_chunks,
+          "aircraftScopes": sorted(scoped_chunks.keys()),
       },
       "items": output,
   }
