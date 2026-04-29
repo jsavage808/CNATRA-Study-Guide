@@ -30,6 +30,22 @@ const PANEL_NAV = [
   { id: 'boldface', label: 'EPs / Limits / Quiz', icon: ICONS.boldface },
 ];
 
+const DISCUSSION_OVERRIDES = {
+  'T-45C': {
+    TR34: [
+      { eventCode: 'TR3401', discussText: 'QOD' },
+      { eventCode: 'TR3401', discussText: 'warning and caution tones' },
+      { eventCode: 'TR3401', discussText: 'BASH mitigation profile procedures' },
+      { eventCode: 'TR3402', discussText: 'QOD' },
+      { eventCode: 'TR3402', discussText: 'lost canopy' },
+      { eventCode: 'TR3402', discussText: 'aircraft configurations for field arrestments' },
+      { eventCode: 'TR3403', discussText: 'QOD' },
+      { eventCode: 'TR3403', discussText: 'aileron PCU checklist procedures' },
+      { eventCode: 'TR3403', discussText: 'PCU failure modes' },
+    ],
+  },
+};
+
 const STUDY_DATA = {
   'T-6B': {
     aircraft: 'T-6B',
@@ -198,8 +214,12 @@ async function loadAndSwitch(ac) {
     } catch (error) {
       console.error('Failed to load', ac, error);
       showLoading(false);
-      document.getElementById('discussion-content').innerHTML =
-        `<div class="empty-state">Could not load data for ${ac}.<br>Ensure data/${key}/discuss-data.json exists.</div>`;
+      const message = `<div class="empty-state">Could not load data for ${ac}.<br>Make sure <code>data/${key}/discuss-data.json</code> is reachable from the browser.<br>If you opened <code>index.html</code> directly, use a local web server or the published site instead of <code>file://</code>.</div>`;
+      document.getElementById('discussion-content').innerHTML = message;
+      const studyEl = document.getElementById('boldface-content');
+      if (studyEl) {
+        studyEl.innerHTML = message;
+      }
       return;
     }
   }
@@ -266,7 +286,7 @@ function renderDiscussion(data) {
   const countEl = document.getElementById('disc-count');
   if (!el) return;
 
-  const items = normalizeDiscussionItems(preprocessDiscussionItems(data.discussionItems || []));
+  const items = normalizeDiscussionItems(applyDiscussionOverrides(preprocessDiscussionItems(data.discussionItems || [])));
   const blocksSeen = new Set();
   const blocks = [];
   items.forEach(item => {
@@ -550,6 +570,50 @@ function preprocessDiscussionItems(items) {
   });
 
   return expanded;
+}
+
+function applyDiscussionOverrides(items) {
+  const overrides = DISCUSSION_OVERRIDES[currentAC];
+  if (!overrides) return items;
+
+  let result = [...items];
+  Object.entries(overrides).forEach(([blockCode, replacementItems]) => {
+    const matching = result
+      .map((item, index) => ({ item, index }))
+      .filter(entry => entry.item.blockCode === blockCode);
+
+    if (!matching.length) return;
+
+    const firstIndex = matching[0].index;
+    const template = matching[0].item;
+    const originalByText = new Map();
+    matching.forEach(({ item }) => {
+      const key = String(item.discussText || '').trim().toUpperCase();
+      if (!originalByText.has(key)) {
+        originalByText.set(key, item);
+      }
+    });
+
+    const synthetic = replacementItems.map((replacement, idx) => {
+      const matchedOriginal = originalByText.get(String(replacement.discussText || '').trim().toUpperCase()) || template;
+      return {
+        ...matchedOriginal,
+        id: `${matchedOriginal.id || `${blockCode}-${idx}`}-override-${replacement.eventCode.toLowerCase()}-${idx}`,
+        eventCode: replacement.eventCode,
+        eventRefs: [replacement.eventCode],
+        discussText: `${replacement.eventCode} ${replacement.discussText}`.trim(),
+        topics: [replacement.discussText],
+        _overrideBlock: blockCode,
+        _sourceIndex: (template._sourceIndex ?? firstIndex) + idx * 0.001,
+      };
+    });
+
+    const before = result.slice(0, firstIndex);
+    const after = result.slice(firstIndex).filter(item => item.blockCode !== blockCode);
+    result = [...before, ...synthetic, ...after];
+  });
+
+  return result;
 }
 
 function splitEmbeddedEventTransition(item) {
