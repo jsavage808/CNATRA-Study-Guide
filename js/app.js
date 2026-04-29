@@ -49,7 +49,7 @@ async function initializeApp() {
 
 async function loadStudyData() {
   try {
-    const res = await fetch('data/study-data.json');
+    const res = await fetch('data/study-data.json?v=20260429b', { cache: 'no-store' });
     if (!res.ok) throw new Error(res.status);
     studyData = await res.json();
   } catch (error) {
@@ -553,7 +553,7 @@ function renderStudyPanel() {
 
   const study = studyData[currentAC];
   if (!study) {
-    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Check data/study-data.json.</div>`;
+    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Refresh the page once to pick up the new study assets, then verify <code>data/study-data.json</code> is being served.</div>`;
     return;
   }
 
