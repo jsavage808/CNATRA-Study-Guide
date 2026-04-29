@@ -201,25 +201,15 @@ function renderDiscussion(data) {
 }
 
 function renderEventGroup(eventGroup, nextIndex) {
-  const mediaLabel = eventGroup.media.length === 1 ? eventGroup.media[0] : `${eventGroup.media.length} media`;
   return `
-    <section class="event-group-card">
-      <div class="event-group-header">
-        <div class="event-group-heading">
-          <div class="event-group-tags">
-            <span class="event-tag hud">${eventGroup.eventCode}</span>
-            ${mediaLabel ? `<span class="event-tag amber">${mediaLabel}</span>` : ''}
-            <span class="event-tag dim">${eventGroup.items.length} item${eventGroup.items.length !== 1 ? 's' : ''}</span>
-          </div>
-          <div class="event-group-title">${highlight(eventGroup.eventCode, searchTerm)}</div>
-          <div class="event-group-subtitle">${highlight(eventGroup.eventTitle, searchTerm)}</div>
-        </div>
+    <section class="event-section">
+      <div class="event-section-header">
+        <div class="event-section-code">${highlight(eventGroup.eventCode, searchTerm)}</div>
+        <div class="event-section-title">${highlight(eventGroup.eventTitle, searchTerm)}</div>
       </div>
-      <div class="event-group-body">
-        <div class="event-discussion-list">
-          ${eventGroup.items.map(item => renderDiscussRow(item, nextIndex())).join('')}
-        </div>
-      </div>
+      <ul class="event-bullet-list">
+        ${eventGroup.items.map(item => renderDiscussRow(item, nextIndex())).join('')}
+      </ul>
     </section>
   `;
 }
@@ -233,7 +223,7 @@ function renderDiscussRow(item, idx) {
   const primaryUrl = primaryRef ? getPdfUrl(primaryRef.docId, primaryRef.file, primaryRef.pageStart) : '';
 
   return `
-    <article class="discuss-list-item" id="disc-${item.id}">
+    <li class="discuss-bullet-item" id="disc-${item.id}">
       <div class="discuss-list-main">
         <div class="disc-num">${String(idx).padStart(2, '0')}</div>
         <div class="discuss-list-content">
@@ -254,7 +244,7 @@ function renderDiscussRow(item, idx) {
           </div>
         ` : ''}
       </div>
-    </article>
+    </li>
   `;
 }
 
@@ -363,11 +353,12 @@ function normalizeDiscussionItems(items) {
   return items.map((item, index) => {
     const blockCode = item.blockCode || 'OTHER';
     const explicitCode = normalizeEventCode(item.eventCode);
-    const embeddedCode = extractEventCode(item.discussText) || extractEventCodeList(item.eventRefs || []);
-    const resolvedEventCode = explicitCode || embeddedCode || currentEventByBlock[blockCode] || blockCode;
+    const textCode = extractEventCode(item.discussText);
+    const refCode = extractEventCodeList(item.eventRefs || [], blockCode, currentEventByBlock[blockCode]);
+    const resolvedEventCode = explicitCode || textCode || refCode || currentEventByBlock[blockCode] || blockCode;
     currentEventByBlock[blockCode] = resolvedEventCode;
 
-    const resolvedEventTitle = explicitCode || embeddedCode
+    const resolvedEventTitle = explicitCode || textCode
       ? cleanEventTitle(item.discussText, resolvedEventCode, item.blockTitle)
       : cleanEventTitle(item.discussText, null, item.blockTitle);
 
@@ -457,12 +448,24 @@ function extractEventCode(text) {
   return match ? match[0] : '';
 }
 
-function extractEventCodeList(values) {
-  for (const value of values) {
-    const code = normalizeEventCode(value);
-    if (code) return code;
+function extractEventCodeList(values, blockCode = '', activeCode = '') {
+  const codes = values
+    .map(value => normalizeEventCode(value))
+    .filter(Boolean);
+
+  const normalizedBlock = normalizeEventCode(blockCode);
+  const normalizedActive = normalizeEventCode(activeCode);
+
+  if (normalizedActive && codes.includes(normalizedActive)) {
+    return normalizedActive;
   }
-  return '';
+
+  const specificCandidates = codes.filter(code => code !== normalizedBlock && code.length > normalizedBlock.length);
+  if (specificCandidates.length) {
+    return specificCandidates[0];
+  }
+
+  return codes.find(code => code !== normalizedBlock) || normalizedBlock || '';
 }
 
 function cleanEventTitle(text, eventCode, fallback) {
