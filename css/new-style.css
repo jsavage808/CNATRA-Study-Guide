@@ -728,9 +728,23 @@ a:hover { text-decoration: underline; }
   color: var(--text-dim);
 }
 
+.event-section-preview {
+  grid-column: 1;
+  margin: 6px 0 0;
+  padding-left: 16px;
+  list-style: disc;
+  color: var(--text-dim);
+}
+
+.event-section-preview li {
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 2px 0;
+}
+
 .event-section-chevron {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   align-self: center;
   font-family: var(--mono);
   font-size: 18px;
@@ -1081,6 +1095,7 @@ mark {
   .disc-question { font-size: 13.5px; }
   .event-section-code { font-size: 18px; }
   .event-section-title { font-size: 11px; }
+  .event-section-preview li { font-size: 10px; }
   .discuss-bullet-item { grid-template-columns: 1fr; }
   .discuss-list-actions { align-items: flex-start; }
 
