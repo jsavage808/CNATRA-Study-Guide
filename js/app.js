@@ -9,43 +9,31 @@ let blockFilter = 'ALL';
 let mediaFilter = 'ALL';
 let searchTerm = '';
 let acData = {};
+let studyData = {};
+let studyTab = 'procedures';
+let quizState = {
+  mode: 'procedure',
+  question: null,
+  revealed: false,
+  checked: false,
+};
 
 const ICONS = {
   discussion: `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3h12v7H9l-3 4v-4H2z"/></svg>`,
   documents: `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/><path d="M6 9h4M6 11.5h3"/></svg>`,
-  boldface: `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 2L2 14h12L8 2z"/><path d="M8 7v4"/><circle cx="8" cy="12.5" r=".5" fill="currentColor"/></svg>`,
+  boldface: `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5h12M2 8h12M2 12.5h12"/><path d="M12.5 2.5v11"/></svg>`,
   doc: `<svg viewBox="0 0 16 16" fill="none" stroke="#00e5ff" stroke-width="1.3"><path d="M4 2h6l4 4v8H4V2z"/><path d="M10 2v4h4"/></svg>`,
 };
 
 const PANEL_NAV = [
   { id: 'discussion', label: 'Discussion Items', icon: ICONS.discussion },
   { id: 'documents', label: 'Publications', icon: ICONS.documents },
-  { id: 'boldface', label: 'Boldface / Emergency', icon: ICONS.boldface },
+  { id: 'boldface', label: 'EPs / Limits / Quiz', icon: ICONS.boldface },
 ];
-
-const BOLDFACE_DATA = {
-  'T-6B': [
-    { title: 'ENGINE FIRE - ON DECK', steps: ['CONDITION LEVER - FUEL OFF', 'FIRE PULL HANDLE - PULL', 'AGENT SWITCH - PUSH (if fire persists)', 'EVACUATE AIRCRAFT'] },
-    { title: 'ENGINE FAILURE IN FLIGHT', steps: ['THROTTLE - IDLE', 'LANDING SPOT - SELECT', 'AIRSPEED - 100 KIAS (best glide)', 'MAYDAY - TRANSMIT (121.5 or assigned freq)', 'EJECT - (if unable to make suitable field)'] },
-    { title: 'ENGINE FIRE IN FLIGHT', steps: ['THROTTLE - IDLE', 'CONDITION LEVER - FUEL OFF', 'FIRE PULL HANDLE - PULL', 'AGENT SWITCH - PUSH', 'AIRSPEED - AS REQUIRED FOR LANDING / EJECT'] },
-    { title: 'SMOKE AND FUMES - IMMEDIATE ACTION', steps: ['OXYGEN MASK - ON, 100%', 'BLEED AIR - OFF', 'PRESSURIZATION - DUMP', 'VENTS - OPEN', 'LAND AS SOON AS POSSIBLE'] },
-  ],
-  'T-44C': [
-    { title: 'ENGINE FAILURE IN FLIGHT', steps: ['POWER (operating engine) - MAXIMUM', 'MIXTURES - RICH', 'PROPS - HIGH RPM', 'IDENTIFY - failed engine (foot on the dead engine)', 'VERIFY - retard throttle (confirm failure)', 'FEATHER - propeller of failed engine', 'GEAR - UP (if not already)', 'FLAPS - RETRACT', 'AIRSPEED - Vyse (blue line) or best available', 'TRIM - relieve rudder pressure'] },
-    { title: 'ENGINE FIRE IN FLIGHT', steps: ['THROTTLE (affected engine) - CLOSE', 'MIXTURE (affected engine) - IDLE CUTOFF', 'PROP (affected engine) - FEATHER', 'FUEL SELECTOR (affected engine) - OFF', 'FIRE EXTINGUISHER - ARM / DISCHARGE', 'CROSSFEED - OFF', 'LAND AS SOON AS POSSIBLE'] },
-    { title: 'ELECTRICAL FIRE / SMOKE IN COCKPIT', steps: ['OXYGEN MASKS - ON, 100%', 'NON-ESSENTIAL ELECTRICS - OFF', 'IDENTIFY source and isolate', 'LAND AS SOON AS POSSIBLE'] },
-  ],
-  'T-45C': [
-    { title: 'ENGINE FAILURE IN FLIGHT', steps: ['PCL - IDLE', 'LANDING SPOT - SELECT', 'AIRSPEED - BEST GLIDE', 'MAYDAY - TRANSMIT', 'EJECT (if unable to make suitable landing area)'] },
-    { title: 'ENGINE FIRE IN FLIGHT', steps: ['PCL - OFF', 'FIRE HANDLE - PULL', 'AGENT SWITCH - PUSH', 'EJECT (if fire continues)'] },
-    { title: 'HYDRAULIC SYSTEM FAILURE', steps: ['HYD PRESSURE - CONFIRM LOSS', 'CROSS-TRANSFER VALVE - OPEN (if applicable)', 'LANDING GEAR - EMERGENCY EXTEND', 'DIVERT to nearest suitable field', 'ARRESTED LANDING - PLAN'] },
-    { title: 'CABIN PRESSURIZATION FAILURE', steps: ['OXYGEN MASK - ON, 100%', 'DESCENT - INITIATE, 6,000 ft/min or max available', 'LEVEL OFF at 10,000 ft MSL (or MEA if higher)', 'PRESSURIZATION CONTROLS - CHECK / RESET', 'DIVERT if unable to pressurize'] },
-  ],
-};
 
 document.addEventListener('DOMContentLoaded', () => {
   buildNav();
-  loadAndSwitch('T-6B');
+  initializeApp();
   window.addEventListener('hashchange', () => {
     const hash = window.location.hash.slice(1);
     if (['discussion', 'documents', 'boldface'].includes(hash)) {
@@ -53,6 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+async function initializeApp() {
+  await loadStudyData();
+  loadAndSwitch('T-6B');
+}
+
+async function loadStudyData() {
+  try {
+    const res = await fetch('data/study-data.json');
+    if (!res.ok) throw new Error(res.status);
+    studyData = await res.json();
+  } catch (error) {
+    console.error('Failed to load study data', error);
+    studyData = {};
+  }
+}
 
 async function loadAndSwitch(ac) {
   const key = ac.toLowerCase().replace('-', '');
@@ -75,6 +79,12 @@ async function loadAndSwitch(ac) {
   blockFilter = 'ALL';
   mediaFilter = 'ALL';
   searchTerm = '';
+  quizState = {
+    mode: 'procedure',
+    question: null,
+    revealed: false,
+    checked: false,
+  };
   showLoading(false);
 
   document.querySelectorAll('.ac-btn').forEach(button => {
@@ -118,7 +128,7 @@ function renderPanel(panel) {
   if (!data) return;
   if (panel === 'discussion') renderDiscussion(data);
   if (panel === 'documents') renderDocuments(data);
-  if (panel === 'boldface') renderBoldface();
+  if (panel === 'boldface') renderStudyPanel();
 }
 
 function renderDiscussion(data) {
@@ -537,22 +547,249 @@ function cleanEventTitle(text, eventCode, fallback) {
   return cleaned || fallback || eventCode;
 }
 
-function renderBoldface() {
+function renderStudyPanel() {
   const el = document.getElementById('boldface-content');
   if (!el) return;
-  const procs = BOLDFACE_DATA[currentAC] || [];
-  el.innerHTML = `<div class="boldface-grid">${procs.map(proc => `
-    <div class="bf-card">
-      <div class="bf-header">
-        <svg viewBox="0 0 16 16" fill="none" stroke="#ff4444" stroke-width="1.3" width="16" height="16"><path d="M8 2L2 14h12L8 2z"/></svg>
-        <div class="bf-title">${proc.title}</div>
+
+  const study = studyData[currentAC];
+  if (!study) {
+    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Check data/study-data.json.</div>`;
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="study-shell">
+      <div class="study-tab-row">
+        <button class="study-tab${studyTab === 'procedures' ? ' active' : ''}" type="button" onclick="setStudyTab('procedures')">EPs</button>
+        <button class="study-tab${studyTab === 'limits' ? ' active' : ''}" type="button" onclick="setStudyTab('limits')">Limits</button>
+        <button class="study-tab${studyTab === 'quiz' ? ' active' : ''}" type="button" onclick="setStudyTab('quiz')">Quiz</button>
       </div>
-      <div class="bf-steps">${proc.steps.map((step, index) => `
-        <div class="bf-step"><div class="bf-num">${index + 1}.</div><div class="bf-text">${step}</div></div>
-      `).join('')}</div>
-      <div class="bf-warning">Memorize verbatim. Verify against current NATOPS revision before flight.</div>
+      <div class="study-pane">
+        ${studyTab === 'procedures' ? renderStudyProcedures(study) : ''}
+        ${studyTab === 'limits' ? renderStudyLimits(study) : ''}
+        ${studyTab === 'quiz' ? renderStudyQuiz(study) : ''}
+      </div>
     </div>
-  `).join('')}</div>`;
+  `;
+}
+
+function setStudyTab(tab) {
+  studyTab = tab;
+  if (tab === 'quiz' && !quizState.question) {
+    buildQuizQuestion('procedure');
+  }
+  renderStudyPanel();
+}
+
+function renderStudyProcedures(study) {
+  return `
+    <div class="study-summary">
+      <div class="study-summary-copy">
+        <div class="study-summary-title">${study.title} emergency procedures</div>
+        <div class="study-summary-text">Memorize from the cited NATOPS or checklist page. Use the quiz tab to practice the sequence from memory.</div>
+      </div>
+      <div class="study-summary-badge">${study.emergencyProcedures.length} procedures</div>
+    </div>
+    <div class="study-card-grid">
+      ${study.emergencyProcedures.map(proc => renderProcedureCard(proc)).join('')}
+    </div>
+  `;
+}
+
+function renderProcedureCard(proc) {
+  const sourceLink = getStudySourceUrl(proc.source);
+  return `
+    <article class="study-card">
+      <div class="study-card-head">
+        <div>
+          <div class="study-card-kicker">${escHtml(proc.category || 'Emergency Procedure')}</div>
+          <h3 class="study-card-title">${escHtml(proc.title)}</h3>
+        </div>
+        ${sourceLink ? `<a class="study-source-link" href="${sourceLink}" target="_blank" rel="noopener">${escHtml(proc.source.label || 'Source')} p.${proc.source.page}</a>` : ''}
+      </div>
+      <ol class="study-steps">
+        ${proc.steps.map(step => `<li>${escHtml(step)}</li>`).join('')}
+      </ol>
+      ${proc.note ? `<div class="study-note">${escHtml(proc.note)}</div>` : ''}
+      ${proc.source?.location ? `<div class="study-source-meta">${escHtml(proc.source.location)}</div>` : ''}
+    </article>
+  `;
+}
+
+function renderStudyLimits(study) {
+  return `
+    <div class="study-summary">
+      <div class="study-summary-copy">
+        <div class="study-summary-title">${study.title} operating limits</div>
+        <div class="study-summary-text">Compact NATOPS-backed reference for high-frequency numbers and configuration limits.</div>
+      </div>
+      <div class="study-summary-badge">${study.limits.length} limit items</div>
+    </div>
+    <div class="limits-grid">
+      ${study.limits.map(limit => renderLimitCard(limit)).join('')}
+    </div>
+  `;
+}
+
+function renderLimitCard(limit) {
+  const sourceLink = getStudySourceUrl(limit.source);
+  return `
+    <article class="limit-card">
+      <div class="limit-label">${escHtml(limit.label)}</div>
+      <div class="limit-value">${escHtml(limit.value)}</div>
+      <div class="limit-footer">
+        ${limit.source?.location ? `<span>${escHtml(limit.source.location)}</span>` : '<span></span>'}
+        ${sourceLink ? `<a class="study-source-link" href="${sourceLink}" target="_blank" rel="noopener">${escHtml(limit.source.label || 'Source')} p.${limit.source.page}</a>` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function renderStudyQuiz(study) {
+  const question = quizState.question;
+  const isProcedure = quizState.mode === 'procedure';
+  return `
+    <div class="quiz-toolbar">
+      <div class="quiz-toggle">
+        <button class="study-tab${quizState.mode === 'procedure' ? ' active' : ''}" type="button" onclick="buildQuizQuestion('procedure')">EP Quiz</button>
+        <button class="study-tab${quizState.mode === 'limit' ? ' active' : ''}" type="button" onclick="buildQuizQuestion('limit')">Limits Quiz</button>
+      </div>
+      <button class="doc-open-btn" type="button" onclick="buildQuizQuestion('${quizState.mode}')">Next Question</button>
+    </div>
+    ${question ? `
+      <div class="quiz-card">
+        <div class="quiz-card-head">
+          <div class="quiz-kicker">${isProcedure ? 'Procedure Sequence' : 'Limits Recall'}</div>
+          <h3 class="quiz-title">${escHtml(question.title)}</h3>
+          ${question.prompt ? `<div class="quiz-prompt">${escHtml(question.prompt)}</div>` : ''}
+        </div>
+        ${isProcedure ? renderProcedureQuizBody(question) : renderLimitQuizBody(question)}
+        <div class="quiz-actions">
+          <button class="doc-open-btn" type="button" onclick="checkQuizAnswers()">Check Answers</button>
+          <button class="doc-open-btn" type="button" onclick="revealQuizAnswers()">Reveal Answers</button>
+          ${question.source ? `<a class="doc-open-btn" href="${getStudySourceUrl(question.source)}" target="_blank" rel="noopener">Open Source</a>` : ''}
+        </div>
+      </div>
+    ` : `<div class="empty-state">No quiz items available for ${currentAC}.</div>`}
+  `;
+}
+
+function renderProcedureQuizBody(question) {
+  return `
+    <div class="quiz-answer-list">
+      ${question.steps.map((step, index) => `
+        <div class="quiz-row">
+          <label class="quiz-row-label">${index + 1}.</label>
+          <div class="quiz-row-main">
+            <input class="quiz-input" type="text" id="quiz-procedure-${index}" placeholder="Type step ${index + 1}">
+            <div class="quiz-feedback" id="quiz-feedback-${index}">${quizState.revealed ? escHtml(step) : ''}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderLimitQuizBody(question) {
+  return `
+    <div class="quiz-answer-list">
+      <div class="quiz-row">
+        <label class="quiz-row-label">A.</label>
+        <div class="quiz-row-main">
+          <input class="quiz-input" type="text" id="quiz-limit-answer" placeholder="Type the limit or value">
+          <div class="quiz-feedback" id="quiz-feedback-limit">${quizState.revealed ? escHtml(question.answer) : ''}</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function buildQuizQuestion(mode = 'procedure') {
+  const study = studyData[currentAC];
+  if (!study) return;
+  const bank = mode === 'procedure' ? study.emergencyProcedures : study.limits;
+  if (!bank.length) return;
+
+  const picked = bank[Math.floor(Math.random() * bank.length)];
+  quizState = {
+    mode,
+    revealed: false,
+    checked: false,
+    question: mode === 'procedure'
+      ? { ...picked }
+      : {
+          title: picked.label,
+          prompt: 'State the limit as published.',
+          answer: picked.value,
+          source: picked.source,
+        },
+  };
+  renderStudyPanel();
+}
+
+function revealQuizAnswers() {
+  quizState.revealed = true;
+  renderStudyPanel();
+}
+
+function checkQuizAnswers() {
+  if (!quizState.question) return;
+  quizState.checked = true;
+
+  if (quizState.mode === 'procedure') {
+    quizState.question.steps.forEach((step, index) => {
+      const input = document.getElementById(`quiz-procedure-${index}`);
+      const feedback = document.getElementById(`quiz-feedback-${index}`);
+      if (!input || !feedback) return;
+      const result = gradeAnswer(step, input.value);
+      feedback.textContent = `${result.label}: ${step}`;
+      feedback.className = `quiz-feedback ${result.className}`;
+    });
+    return;
+  }
+
+  const input = document.getElementById('quiz-limit-answer');
+  const feedback = document.getElementById('quiz-feedback-limit');
+  if (!input || !feedback) return;
+  const result = gradeAnswer(quizState.question.answer, input.value);
+  feedback.textContent = `${result.label}: ${quizState.question.answer}`;
+  feedback.className = `quiz-feedback ${result.className}`;
+}
+
+function gradeAnswer(expected, actual) {
+  const normalizedExpected = normalizeQuizText(expected);
+  const normalizedActual = normalizeQuizText(actual);
+
+  if (!normalizedActual) {
+    return { label: 'No answer', className: 'quiz-feedback-miss' };
+  }
+  if (normalizedActual === normalizedExpected) {
+    return { label: 'Correct', className: 'quiz-feedback-correct' };
+  }
+
+  const expectedTokens = normalizedExpected.split(' ').filter(Boolean);
+  const actualTokens = normalizedActual.split(' ').filter(Boolean);
+  const overlap = expectedTokens.filter(token => actualTokens.includes(token)).length;
+  const ratio = expectedTokens.length ? overlap / expectedTokens.length : 0;
+
+  if (ratio >= 0.65) {
+    return { label: 'Close', className: 'quiz-feedback-close' };
+  }
+  return { label: 'Incorrect', className: 'quiz-feedback-miss' };
+}
+
+function normalizeQuizText(value) {
+  return String(value || '')
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, ' ')
+    .trim();
+}
+
+function getStudySourceUrl(source) {
+  if (!source) return '';
+  if (source.url) return source.url;
+  const baseUrl = source.file ? `pdfs/raw/${source.file}` : '';
+  return source.page ? `${baseUrl}#page=${source.page}` : baseUrl;
 }
 
 function highlight(text, term) {

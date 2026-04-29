@@ -1,0 +1,725 @@
+{
+  "T-6B": {
+    "aircraft": "T-6B",
+    "title": "T-6B Texan II",
+    "emergencyProcedures": [
+      {
+        "id": "t6b-emergency-engine-shutdown-ground",
+        "title": "Emergency Engine Shutdown on the Ground",
+        "category": "Critical Action",
+        "steps": [
+          "PCL - OFF",
+          "FIREWALL SHUTOFF HANDLE - PULL",
+          "Emergency ground egress - As required"
+        ],
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 287,
+          "location": "Figure 3-13. Critical Action Table"
+        }
+      },
+      {
+        "id": "t6b-engine-failure-flight",
+        "title": "Engine Failure During Flight",
+        "category": "Critical Action",
+        "steps": [
+          "ZOOM/GLIDE - 125 KNOTS (MINIMUM)",
+          "PCL - OFF",
+          "INTERCEPT ELP",
+          "Airstart - Attempt if warranted",
+          "FIREWALL SHUTOFF handle - Pull",
+          "Execute Forced Landing or Eject"
+        ],
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 240,
+          "location": "Engine Failure During Flight"
+        }
+      },
+      {
+        "id": "t6b-fire-in-flight",
+        "title": "Fire In Flight",
+        "category": "Critical Action",
+        "steps": [
+          "PCL - OFF",
+          "FIREWALL SHUTOFF HANDLE - PULL",
+          "Forced Landing - Execute",
+          "Eject (BOTH)"
+        ],
+        "note": "If the fire is not confirmed, execute PEL. If the fire is extinguished, execute a forced landing.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 247,
+          "location": "Fire In Flight"
+        }
+      },
+      {
+        "id": "t6b-smoke-fume-electrical-fire",
+        "title": "Smoke and Fume Elimination / Electrical Fire",
+        "category": "Emergency Procedure",
+        "steps": [
+          "OBOGS - CHECK (BOTH): supply lever ON, concentration lever MAX, pressure lever EMERGENCY",
+          "Descend below 10,000 feet MSL - Initiate (as required)",
+          "PRESSURIZATION switch - RAM/DUMP",
+          "BLEED AIR INFLOW switch - OFF",
+          "BAT and GEN switches - OFF",
+          "AUX BAT switch - OFF (as required)",
+          "CFS handle safety pin - Remove (BOTH)",
+          "CFS - Rotate 90 degrees counterclockwise and pull (if necessary)",
+          "Restore electrical power - As required",
+          "Land as soon as possible"
+        ],
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 248,
+          "location": "Smoke and Fume Elimination / Electrical Fire"
+        }
+      },
+      {
+        "id": "t6b-obogs-failure",
+        "title": "OBOGS Failure / Overtemp / Physiological Symptoms",
+        "category": "Critical Action",
+        "steps": [
+          "GREEN RING - PULL (AS REQUIRED) (BOTH)",
+          "DESCENT BELOW 10,000 FEET MSL - INITIATE",
+          "OBOGS SUPPLY LEVER - OFF (BOTH)"
+        ],
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 290,
+          "location": "Figure 3-13. Critical Action Table"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "id": "t6b-vmo-mmo",
+        "label": "VMO / MMO",
+        "value": "316 KIAS up to and including 19,020 feet MSL; 0.67 IMN above 19,020 feet MSL.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 300,
+          "location": "Maximum Operating Airspeed / Maximum Operating Mach Number"
+        }
+      },
+      {
+        "id": "t6b-vfe",
+        "label": "Flaps Limit",
+        "value": "VFE is 150 KIAS.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 300,
+          "location": "Wing Flaps Limitations"
+        }
+      },
+      {
+        "id": "t6b-vle",
+        "label": "Landing Gear Limit",
+        "value": "VLE is 150 KIAS.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 300,
+          "location": "Landing Gear Limitations"
+        }
+      },
+      {
+        "id": "t6b-vg",
+        "label": "Turbulent Air",
+        "value": "VG is 207 KIAS; recommended turbulent airspeed is 180 KIAS.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 300,
+          "location": "Turbulent Air Penetration Speed Limitations"
+        }
+      },
+      {
+        "id": "t6b-vo",
+        "label": "Operating Maneuvering Speed",
+        "value": "VO is 227 KIAS; full rudder deflection above 150 KIAS exceeds rudder control system limits.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 300,
+          "location": "Maneuvering Speed Limitations"
+        }
+      },
+      {
+        "id": "t6b-weights",
+        "label": "Weight Limits",
+        "value": "Maximum ramp 6,950 pounds; takeoff 6,900 pounds; landing 6,900 pounds; zero fuel 5,850 pounds; baggage compartment 80 pounds.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 302,
+          "location": "Weight Limitations"
+        }
+      },
+      {
+        "id": "t6b-touchdown-rate",
+        "label": "Touchdown Sink Rate",
+        "value": "600 feet per minute at normal landing tire pressure; 780 feet per minute at maximum landing tire pressure.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 302,
+          "location": "Landing Limitations"
+        }
+      },
+      {
+        "id": "t6b-wind",
+        "label": "Wind Limits",
+        "value": "Maximum crosswind component: dry runway 25 knots, wet runway 10 knots, icy runway 5 knots. Maximum tailwind component for takeoff: 10 knots.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 302,
+          "location": "Wind Limitations"
+        }
+      },
+      {
+        "id": "t6b-fuel-imbalance",
+        "label": "Fuel Imbalance",
+        "value": "Maximum lateral fuel imbalance is 50 pounds.",
+        "source": {
+          "docId": "a1-t6baa-nfm-000",
+          "label": "NATOPS",
+          "file": "t6b/A1-T6BAA-NFM-000.pdf",
+          "page": 305,
+          "location": "Fuel Imbalance"
+        }
+      }
+    ]
+  },
+  "T-44C": {
+    "aircraft": "T-44C",
+    "title": "T-44C Pegasus",
+    "emergencyProcedures": [
+      {
+        "id": "t44c-emergency-shutdown-deck",
+        "title": "Emergency Shutdown on Deck",
+        "category": "Critical Action",
+        "steps": [
+          "STOP THE AIRCRAFT AND SET THE PARKING BRAKE",
+          "CONDITION LEVER(S) - FUEL CUTOFF",
+          "FIREWALL VALVES - CLOSED",
+          "BOOST PUMPS - OFF",
+          "FIRE EXTINGUISHER - AS REQUIRED",
+          "AUX BATT SWITCH - OFF",
+          "GANGBAR - OFF",
+          "EVACUATE AIRCRAFT"
+        ],
+        "source": {
+          "docId": "natops-checklist-01-t44aac-1c",
+          "label": "Checklist",
+          "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+          "page": 2,
+          "location": "Emergency Shutdown on Deck"
+        }
+      },
+      {
+        "id": "t44c-emergency-shutdown-checklist",
+        "title": "Emergency Shutdown Checklist",
+        "category": "Critical Action",
+        "steps": [
+          "POWER LEVER - IDLE",
+          "PROP LEVER - FEATHER",
+          "CONDITION LEVER - FUEL CUTOFF",
+          "FIREWALL VALVE - CLOSED",
+          "FIRE EXTINGUISHER - AS REQUIRED",
+          "BLEED AIR VALVE - CLOSED"
+        ],
+        "source": {
+          "docId": "natops-checklist-01-t44aac-1c",
+          "label": "Checklist",
+          "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+          "page": 2,
+          "location": "Emergency Shutdown Checklist"
+        }
+      },
+      {
+        "id": "t44c-windmilling-airstart",
+        "title": "Windmilling Airstart",
+        "category": "Critical Action",
+        "steps": [
+          "POWER LEVER (FAILED ENGINE) - IDLE",
+          "PROP LEVER (FAILED ENGINE) - FULL FORWARD",
+          "CONDITION LEVER (FAILED ENGINE) - FUEL CUTOFF",
+          "FIREWALL VALVE - OPEN",
+          "AUTOIGNITION - ARMED",
+          "CONDITION LEVER - LOW IDLE",
+          "POWER - AS REQUIRED"
+        ],
+        "source": {
+          "docId": "natops-checklist-01-t44aac-1c",
+          "label": "Checklist",
+          "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+          "page": 2,
+          "location": "Windmilling Airstart"
+        }
+      },
+      {
+        "id": "t44c-smoke-fire-unknown",
+        "title": "Smoke / Fire of Unknown Origin",
+        "category": "Emergency Procedure",
+        "steps": [
+          "CREW - ALERTED",
+          "CABIN TEMPERATURE MODE - OFF",
+          "VENT BLOWER - AUTO",
+          "OXYGEN MASKS / MIC SWITCHES (100%) - AS REQUIRED",
+          "BLEED AIR VALVES - CLOSED",
+          "EMERGENCY DESCENT - AS REQUIRED",
+          "PRESSURIZATION - DUMP",
+          "EMERGENCY TRANSMISSION - AS REQUIRED",
+          "GANGBAR - OFF",
+          "ALL ELECTRICAL SWITCHES (EXCEPT AUX BATT) - OFF",
+          "BATTERY - ON",
+          "GENERATORS (ONE AT A TIME) - ON",
+          "ESSENTIAL EQUIPMENT - ON"
+        ],
+        "source": {
+          "docId": "natops-checklist-01-t44aac-1c",
+          "label": "Checklist",
+          "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+          "page": 2,
+          "location": "Smoke / Fire of Unknown Origin"
+        }
+      },
+      {
+        "id": "t44c-abnormal-start",
+        "title": "Abnormal Start",
+        "category": "Critical Action",
+        "steps": [
+          "CONDITION LEVER - FUEL CUTOFF (DEC BELOW 790 C)",
+          "STARTER - STARTER ONLY (FOR THE REMAINDER OF THE 40 SECONDS)",
+          "STARTER - OFF (AT 40 SECONDS)"
+        ],
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 1,
+          "location": "Abnormal Start"
+        }
+      },
+      {
+        "id": "t44c-smoke-fume-elimination",
+        "title": "Smoke and Fume Elimination",
+        "category": "Critical Action",
+        "steps": [
+          "OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED",
+          "PRESSURIZATION - DUMP"
+        ],
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 1,
+          "location": "Smoke and Fume Elimination"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "id": "t44c-engine-limits",
+        "label": "Engine Operating Limits",
+        "value": "Maximum allowable 5 minutes: 1,315 ft-lb torque at 2,200 RPM or 1,520 ft-lb at 1,900 RPM, ITT 790, N1 101.5%, prop 2,200 RPM, oil pressure 85-100 PSI, oil temp 10-99 C.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 198,
+          "location": "Figure 4.3-1. Engine Operating Limitations"
+        }
+      },
+      {
+        "id": "t44c-vmo",
+        "label": "VMO / MMO",
+        "value": "VMO is 227 KIAS. Decrease VMO 4 KIAS for every 1,000 feet above 15,500 feet. MMO is 0.48 Mach.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 201,
+          "location": "Airframe Limitations"
+        }
+      },
+      {
+        "id": "t44c-vspeeds",
+        "label": "Key V-Speeds",
+        "value": "VSSE 91 KIAS, VMCA 86 KIAS, VA 153 KIAS, VX 102 KIAS, VY 108 KIAS, VXSE 102 KIAS, VYSE 110 KIAS.",
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 2,
+          "location": "Airspeed Limitations"
+        }
+      },
+      {
+        "id": "t44c-gear-flap",
+        "label": "Gear and Flap Limits",
+        "value": "VLE 155 KIAS. Landing gear retraction 145 KIAS. VFE approach 174 KIAS. VFE full 140 KIAS.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 201,
+          "location": "Airframe Limitations"
+        }
+      },
+      {
+        "id": "t44c-acceleration",
+        "label": "Acceleration Limits",
+        "value": "Clean: +3.0 to -1.0 G. Full flaps: +2.0 to 0.0 G.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 201,
+          "location": "Acceleration Limitations"
+        }
+      },
+      {
+        "id": "t44c-altitude",
+        "label": "Altitude Ceiling",
+        "value": "31,000 feet.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 201,
+          "location": "Altitude Limitations"
+        }
+      },
+      {
+        "id": "t44c-weights",
+        "label": "Weight Limits",
+        "value": "Maximum ramp 9,710 pounds; maximum takeoff 9,650 pounds; maximum landing 9,168 pounds.",
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 2,
+          "location": "Weight Limitations"
+        }
+      },
+      {
+        "id": "t44c-crosswind",
+        "label": "Crosswind Limit",
+        "value": "Maximum crosswind component is 20 knots.",
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 2,
+          "location": "General Limitations"
+        }
+      },
+      {
+        "id": "t44c-touchdown",
+        "label": "Touchdown Sink Rate",
+        "value": "Maximum sink rate at ground contact is 600 feet per minute.",
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 2,
+          "location": "General Limitations"
+        }
+      },
+      {
+        "id": "t44c-fuel",
+        "label": "Fuel Capacity",
+        "value": "Total fuel capacity is 387.6 U.S. gallons, of which 384 U.S. gallons are usable.",
+        "source": {
+          "docId": "t44c-ops-limits-answers",
+          "label": "Ops Limits Study Sheet",
+          "file": "t44c/t44c-ops-limits-answers.pdf",
+          "page": 2,
+          "location": "Fuel System Capacity"
+        }
+      },
+      {
+        "id": "t44c-cabin",
+        "label": "Cabin Pressure Differential",
+        "value": "Maximum operating cabin pressure differential is 4.7 PSI.",
+        "source": {
+          "docId": "a1-t44ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t44c/A1-T44CA-NFM-000.pdf",
+          "page": 202,
+          "location": "Structural Limitations"
+        }
+      }
+    ]
+  },
+  "T-45C": {
+    "aircraft": "T-45C",
+    "title": "T-45C Goshawk",
+    "emergencyProcedures": [
+      {
+        "id": "t45c-abort",
+        "title": "Abort",
+        "category": "Critical Action",
+        "steps": [
+          "Throttle - IDLE",
+          "Speed brakes - EXTEND",
+          "Brakes - APPLY",
+          "Hook - DOWN (IF REQUIRED)"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 501,
+          "location": "14.1 Abort"
+        }
+      },
+      {
+        "id": "t45c-fuel-leak",
+        "title": "Fuel Leak / Excessive Fuel Flow",
+        "category": "Emergency Procedure",
+        "steps": [
+          "Throttle - AS REQUIRED (maintain a minimum of 70 percent N2)",
+          "Land as soon as possible"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 521,
+          "location": "15.6 Fuel Leak / Excessive Fuel Flow"
+        }
+      },
+      {
+        "id": "t45c-electrical-fire",
+        "title": "Electrical Fire",
+        "category": "Critical Action",
+        "steps": [
+          "GEN switch - OFF",
+          "Non-essential electrical equipment - OFF",
+          "Land as soon as practicable",
+          "Proceed to VMC as soon as possible",
+          "BATT switches - OFF",
+          "Emergency oxygen green ring(s) - PULL",
+          "Land as soon as possible",
+          "Landing gear - EMERGENCY EXTEND",
+          "Plan a no-flap approach and arrested landing, if available"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 525,
+          "location": "15.8 Electrical Fire"
+        }
+      },
+      {
+        "id": "t45c-smoke-fumes",
+        "title": "Smoke or Fumes in Cockpit",
+        "category": "Critical Action",
+        "steps": [
+          "Mask - ON / TIGHT",
+          "Initiate controlled descent to below 18,000 feet MSL",
+          "AIR FLOW knob - OFF (below 18,000 feet MSL if possible)",
+          "Airspeed - REDUCE (as practical)",
+          "Warn other cockpit occupant / secure loose items",
+          "Seat - LOWER",
+          "MDC firing handle - PULL",
+          "Land as soon as possible"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 527,
+          "location": "15.9 Smoke or Fumes in Cockpit"
+        }
+      },
+      {
+        "id": "t45c-rapid-decompression",
+        "title": "Rapid Decompression",
+        "category": "Critical Action",
+        "steps": [
+          "Emergency oxygen green ring(s) - PULL",
+          "OBOGS FLOW selector(s) - OFF",
+          "Descend below 10,000 feet cabin altitude",
+          "Remain on emergency oxygen until depleted and then resume OBOGS operation until engine shutdown",
+          "Land as soon as practicable"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 529,
+          "location": "15.10 Rapid Decompression"
+        }
+      },
+      {
+        "id": "t45c-total-electrical-failure",
+        "title": "Total Electrical Failure",
+        "category": "Critical Action",
+        "steps": [
+          "Emergency oxygen green ring(s) - PULL",
+          "Proceed to VMC as soon as possible",
+          "Attempt to reset generator / check BATT switches - ON",
+          "Land as soon as practicable",
+          "Landing gear - EMERGENCY EXTEND",
+          "Plan a no-flap / slat approach",
+          "Make a short field arrestment if available"
+        ],
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 535,
+          "location": "15.13 Total Electrical Failure"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "id": "t45c-solo",
+        "label": "Solo Flying",
+        "value": "Solo flying shall be conducted only from the forward cockpit.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 311,
+          "location": "4.1.1 Solo Flying"
+        }
+      },
+      {
+        "id": "t45c-altitude",
+        "label": "Altitude Limit",
+        "value": "Maximum altitude is 41,000 feet MSL.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 311,
+          "location": "4.1.2 Altitude Limits"
+        }
+      },
+      {
+        "id": "t45c-icing",
+        "label": "Icing",
+        "value": "Flight in known icing conditions shall be avoided. When airframe icing is visible, intentional stalls or use of full flaps is not authorized.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 311,
+          "location": "4.1.3 Icing"
+        }
+      },
+      {
+        "id": "t45c-engine",
+        "label": "Engine Operating Limits",
+        "value": "MRT: 104 percent N2 / 610 C for 30 minutes per flight hour. Transient: 106 percent N2 / 645 C for less than 20 seconds. Maximum continuous: 100 percent N2 / 550 C. Idle: 56.5 +/- 2 percent N2 / 450 C.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 314,
+          "location": "Figure 4.2-1. F405-RR-401 Operating Limitations"
+        }
+      },
+      {
+        "id": "t45c-gear-flaps",
+        "label": "System Airspeed Limits",
+        "value": "Landing gear transition / extended: 200 KIAS or less. Flaps / slats transition / extended: 200 KIAS or less. Arresting hook transition / extended: 450 KIAS or less.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 322,
+          "location": "Figure 4.5-2. System Operation Limitations"
+        }
+      },
+      {
+        "id": "t45c-canopy-deck",
+        "label": "Canopy and Deck Limits",
+        "value": "Canopy full open for taxi: prevailing wind 20 knots or less. Stationary or towing with canopy full open: prevailing wind 32 knots or less. Tires and nosewheel steering on deck: 176 knots groundspeed or less.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 322,
+          "location": "Figure 4.5-2. System Operation Limitations"
+        }
+      },
+      {
+        "id": "t45c-crosswind",
+        "label": "Crosswind Limits",
+        "value": "Single aircraft dry runway 20 knots, wet runway 15 knots, section takeoff 10 knots, banner tow 10 knots, NWS off / failed 15 knots.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 323,
+          "location": "4.5.5 Takeoff / Landing Limitations"
+        }
+      },
+      {
+        "id": "t45c-landing-sink",
+        "label": "Landing Sink Rate",
+        "value": "For landings in a configuration other than authorized FCLP configurations, sink rate shall not exceed 600 feet per minute.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 323,
+          "location": "4.5.5 Takeoff / Landing Limitations"
+        }
+      },
+      {
+        "id": "t45c-banner",
+        "label": "Banner Tow Limits",
+        "value": "Maximum altitude 20,000 feet MSL. Maximum airspeed 220 KIAS. Maximum bank angle 45 degrees. Maximum AOA 18 units.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 324,
+          "location": "4.5.6 Banner Towing"
+        }
+      },
+      {
+        "id": "t45c-prohibited",
+        "label": "Prohibited Maneuvers",
+        "value": "Intentional spins or tailslides are prohibited. Sustained zero or negative G flight for more than 30 seconds is prohibited.",
+        "source": {
+          "docId": "a1-t45ca-nfm-000",
+          "label": "NATOPS",
+          "file": "t45c/A1-T45CA-NFM-000.pdf",
+          "page": 324,
+          "location": "4.5.7 Prohibited Maneuvers"
+        }
+      }
+    ]
+  }
+}

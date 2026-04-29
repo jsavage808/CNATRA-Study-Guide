@@ -929,69 +929,248 @@ a:hover { text-decoration: underline; }
 }
 .doc-open-btn.disabled:hover { background: transparent; }
 
-/* ── BOLDFACE PANEL ──────────────────────────────────────────── */
-.boldface-grid { display: flex; flex-direction: column; gap: var(--space-md); }
-
-.bf-card {
-  background: var(--bg2);
-  border: 1px solid rgba(255, 82, 82, 0.22);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.bf-header {
-  background: rgba(255, 82, 82, 0.07);
-  padding: 11px var(--space-md);
+/* ── STUDY PANEL ─────────────────────────────────────────────── */
+.study-shell {
   display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
-.bf-title {
+.study-tab-row,
+.quiz-toggle {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.study-tab {
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1.5px;
-  color: var(--danger);
   text-transform: uppercase;
 }
 
-.bf-steps { padding: var(--space-md); }
+.study-tab:hover,
+.study-tab.active {
+  border-color: var(--hud);
+  color: var(--hud);
+  background: var(--hud-dim);
+}
 
-.bf-step {
+.study-pane {
   display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.study-summary {
+  display: flex;
+  justify-content: space-between;
   gap: var(--space-md);
   align-items: flex-start;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border-dim);
-}
-.bf-step:last-child { border-bottom: none; }
-
-.bf-num {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--text-muted);
-  min-width: 20px;
-  flex-shrink: 0;
-  margin-top: 2px;
+  padding: 14px var(--space-md);
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.06), rgba(0, 229, 255, 0.02));
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius);
 }
 
-/* Boldface steps — larger and more legible */
-.bf-text {
-  font-family: var(--mono);
-  font-size: 13px;
+.study-summary-title {
+  font-family: var(--cond);
+  font-size: 18px;
+  letter-spacing: 1.2px;
   color: var(--text);
-  letter-spacing: 0.4px;
-  line-height: 1.55;
-  overflow-wrap: break-word;
+  text-transform: uppercase;
 }
 
-.bf-warning {
-  padding: 8px var(--space-md);
-  background: var(--amber-dim);
-  border-top: 1px solid rgba(255, 179, 0, 0.18);
+.study-summary-text {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.study-summary-badge {
+  flex-shrink: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--hud);
+}
+
+.study-card-grid,
+.limits-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.study-card,
+.limit-card,
+.quiz-card {
+  background: var(--bg2);
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius);
+  padding: 14px var(--space-md);
+}
+
+.study-card-head,
+.quiz-card-head,
+.limit-footer,
+.quiz-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.study-card-kicker,
+.quiz-kicker,
+.limit-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.study-card-title,
+.quiz-title {
+  margin-top: 4px;
+  font-family: var(--cond);
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: var(--text);
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.study-source-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--hud);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.study-source-link:hover {
+  background: var(--hud-dim);
+  text-decoration: none;
+}
+
+.study-steps {
+  margin: 12px 0 0 18px;
+  display: grid;
+  gap: 7px;
+}
+
+.study-steps li {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.study-note,
+.study-source-meta,
+.quiz-prompt {
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--text-dim);
+  line-height: 1.55;
+}
+
+.limit-value {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.limit-footer {
+  margin-top: 10px;
+}
+
+.limit-footer span {
   font-size: 11px;
-  color: var(--amber);
+  color: var(--text-muted);
+}
+
+.quiz-toolbar {
+  align-items: center;
+}
+
+.quiz-answer-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.quiz-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.quiz-row-label {
+  padding-top: 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.quiz-row-main {
+  min-width: 0;
+}
+
+.quiz-input {
+  width: 100%;
+  min-height: 38px;
+  padding: 9px 11px;
+  background: var(--bg1);
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+.quiz-input:focus {
+  outline: none;
+  border-color: var(--hud);
+}
+
+.quiz-feedback {
+  margin-top: 6px;
+  font-size: 11.5px;
   line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.quiz-feedback-correct { color: var(--success); }
+.quiz-feedback-close { color: var(--amber); }
+.quiz-feedback-miss { color: #ff8a80; }
+
+.quiz-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 /* ── EMPTY STATE ─────────────────────────────────────────────── */
@@ -1100,9 +1279,21 @@ mark {
   .doc-icon { display: none; } /* hide icon on very small screens */
   .doc-open-btn { padding: 5px 10px; font-size: 9px; }
 
-  /* Boldface */
-  .bf-text { font-size: 12.5px; }
-  .bf-steps { padding: var(--space-sm); }
+  /* Study */
+  .study-summary,
+  .study-card-head,
+  .limit-footer,
+  .quiz-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .study-card,
+  .limit-card,
+  .quiz-card { padding: var(--space-sm); }
+  .study-card-title,
+  .quiz-title { font-size: 17px; }
+  .study-steps li,
+  .limit-value { font-size: 12.5px; }
 
   /* Phase label */
   .phase-label { font-size: 11px; letter-spacing: 2px; }
