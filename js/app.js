@@ -211,12 +211,14 @@ function renderEventGroup(eventGroup, nextIndex) {
             ${mediaLabel ? `<span class="event-tag amber">${mediaLabel}</span>` : ''}
             <span class="event-tag dim">${eventGroup.items.length} item${eventGroup.items.length !== 1 ? 's' : ''}</span>
           </div>
-          <div class="event-group-title">${highlight(eventGroup.eventTitle, searchTerm)}</div>
+          <div class="event-group-title">${highlight(eventGroup.eventCode, searchTerm)}</div>
+          <div class="event-group-subtitle">${highlight(eventGroup.eventTitle, searchTerm)}</div>
         </div>
-        <div class="event-source-summary">Each discuss line keeps its own publication link.</div>
       </div>
       <div class="event-group-body">
-        ${eventGroup.items.map(item => renderDiscussRow(item, nextIndex())).join('')}
+        <div class="event-discussion-list">
+          ${eventGroup.items.map(item => renderDiscussRow(item, nextIndex())).join('')}
+        </div>
       </div>
     </section>
   `;
@@ -227,64 +229,32 @@ function renderDiscussRow(item, idx) {
   const primaryRef = hasRefs ? item.sourceRefs[0] : null;
   const additionalRefs = hasRefs ? item.sourceRefs.slice(1) : [];
   const displayText = getDiscussDisplayText(item);
-  const topics = (item.topics || []).filter(topic => topic && topic.trim() && topic.trim() !== displayText.trim());
+  const itemText = highlight(displayText, searchTerm);
+  const primaryUrl = primaryRef ? getPdfUrl(primaryRef.docId, primaryRef.file, primaryRef.pageStart) : '';
 
   return `
-    <article class="discuss-row" id="disc-${item.id}">
-      <div class="discuss-row-main">
+    <article class="discuss-list-item" id="disc-${item.id}">
+      <div class="discuss-list-main">
         <div class="disc-num">${String(idx).padStart(2, '0')}</div>
-        <div class="disc-meta">
-          <div class="discuss-row-text">${highlight(displayText, searchTerm)}</div>
-          ${topics.length ? `
-            <div class="discuss-topic-chips">
-              ${topics.slice(0, 4).map(topic => `<span class="discuss-topic-chip">${highlight(topic.trim(), searchTerm)}</span>`).join('')}
-            </div>
-          ` : ''}
-          <div class="disc-event-row">
-            ${item.media ? `<span class="event-tag amber">${item.media}</span>` : ''}
-            ${hasRefs ? `<span class="event-tag dim">${item.sourceRefs.length} source${item.sourceRefs.length !== 1 ? 's' : ''}</span>` : ''}
+        <div class="discuss-list-content">
+          ${primaryUrl
+            ? `<a class="discuss-item-link" href="${primaryUrl}" target="_blank" rel="noopener">${itemText}</a>`
+            : `<div class="discuss-item-link missing-link">${itemText}</div>`}
+          <div class="discuss-list-meta">
+            ${primaryRef ? `<span class="discuss-primary-doc">${escHtml(primaryRef.shortName || primaryRef.docId)}</span>` : ''}
+            ${primaryRef?.location ? `<span class="discuss-primary-location">${escHtml(primaryRef.location)}</span>` : ''}
           </div>
         </div>
       </div>
-      <div class="discuss-row-actions">
-        ${hasRefs ? `
-          <div class="source-ref-stack">
-            ${renderPrimarySourceLink(primaryRef)}
-            ${additionalRefs.length ? `
-              <div class="source-ref-more">
-                <button class="more-sources-btn" type="button" onclick="toggleMoreSources('${item.id}')">MORE SOURCES (${additionalRefs.length})</button>
-                <div class="source-ref-list source-ref-list-hidden more-sources-panel" id="more-sources-${item.id}">
-                  ${additionalRefs.map(ref => renderSourceRef(ref, false)).join('')}
-                </div>
-              </div>
-            ` : ''}
+      <div class="discuss-list-actions">
+        ${additionalRefs.length ? `
+          <button class="more-sources-btn" type="button" onclick="toggleMoreSources('${item.id}')">MORE SOURCES (${additionalRefs.length})</button>
+          <div class="source-ref-list source-ref-list-hidden more-sources-panel" id="more-sources-${item.id}">
+            ${additionalRefs.map(ref => renderSourceRef(ref, false)).join('')}
           </div>
-        ` : '<div class="empty-state" style="padding:0.75rem 0;font-size:10px;">No source references found for this item.</div>'}
-        ${item.curriculumFile ? `<div class="curriculum-ref">SOURCE: ${item.curriculumPubNumber || 'MCG'} - Syllabus p.${item.curriculumPage}</div>` : ''}
+        ` : ''}
       </div>
     </article>
-  `;
-}
-
-function renderPrimarySourceLink(ref) {
-  if (!ref) return '';
-  const pdfUrl = getPdfUrl(ref.docId, ref.file, ref.pageStart);
-  if (!pdfUrl) {
-    return `
-      <div class="source-ref primary">
-        <div class="source-ref-caption">PRIMARY SOURCE</div>
-        <div class="source-ref-doc">${escHtml(ref.shortName || ref.docId)}</div>
-        <div class="source-ref-location">${escHtml(ref.location || ref.heading || 'Publication reference available, but no PDF link configured.')}</div>
-      </div>
-    `;
-  }
-
-  return `
-    <a class="primary-source-link" href="${pdfUrl}" target="_blank" rel="noopener">
-      <span class="source-ref-caption">PRIMARY SOURCE</span>
-      <span class="primary-source-doc">${escHtml(ref.shortName || ref.docId)}</span>
-      <span class="primary-source-loc">${escHtml(ref.location || ref.heading || `Page ${ref.pageStart}`)}</span>
-    </a>
   `;
 }
 
