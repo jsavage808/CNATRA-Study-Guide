@@ -698,10 +698,21 @@ a:hover { text-decoration: underline; }
 }
 
 .event-section-header {
+  width: 100%;
   margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .event-section-code {
+  grid-column: 1;
   font-family: var(--cond);
   font-size: 20px;
   letter-spacing: 1.5px;
@@ -710,16 +721,48 @@ a:hover { text-decoration: underline; }
 }
 
 .event-section-title {
+  grid-column: 1;
   margin-top: 4px;
   font-size: 12px;
   line-height: 1.5;
   color: var(--text-dim);
 }
 
+.event-section-chevron {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 18px;
+  color: var(--hud);
+  line-height: 1;
+  padding-left: 8px;
+}
+
+.event-section.open .event-section-chevron {
+  content: '-';
+}
+
 .event-bullet-list {
   list-style: disc;
   padding-left: 22px;
   margin: 0;
+}
+
+.event-bullet-list-hidden {
+  display: none;
+}
+
+.event-section.open .event-section-chevron {
+  transform: none;
+}
+
+.event-section.open .event-section-chevron::before {
+  content: '-';
+}
+
+.event-section-chevron::before {
+  content: '+';
 }
 
 .discuss-bullet-item {

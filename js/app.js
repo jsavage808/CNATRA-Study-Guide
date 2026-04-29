@@ -201,13 +201,15 @@ function renderDiscussion(data) {
 }
 
 function renderEventGroup(eventGroup, nextIndex) {
+  const eventId = slugifyEventId(eventGroup.eventCode);
   return `
-    <section class="event-section">
-      <div class="event-section-header">
+    <section class="event-section" id="event-${eventId}">
+      <button class="event-section-header" type="button" onclick="toggleEventSection('${eventId}')">
         <div class="event-section-code">${highlight(eventGroup.eventCode, searchTerm)}</div>
         <div class="event-section-title">${highlight(eventGroup.eventTitle, searchTerm)}</div>
-      </div>
-      <ul class="event-bullet-list">
+        <div class="event-section-chevron" aria-hidden="true"></div>
+      </button>
+      <ul class="event-bullet-list event-bullet-list-hidden" id="event-list-${eventId}">
         ${eventGroup.items.map(item => renderDiscussRow(item, nextIndex())).join('')}
       </ul>
     </section>
@@ -267,6 +269,15 @@ function toggleMoreSources(id) {
   const el = document.getElementById(`more-sources-${id}`);
   if (!el) return;
   el.classList.toggle('source-ref-list-hidden');
+}
+
+function toggleEventSection(eventId) {
+  const section = document.getElementById(`event-${eventId}`);
+  const list = document.getElementById(`event-list-${eventId}`);
+  if (!section || !list) return;
+  const isOpen = section.classList.contains('open');
+  section.classList.toggle('open', !isOpen);
+  list.classList.toggle('event-bullet-list-hidden', isOpen);
 }
 
 function setBlockFilter(code) {
@@ -511,6 +522,10 @@ function escHtml(value) {
 
 function escapeRegExp(value) {
   return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function slugifyEventId(value) {
+  return String(value || 'event').toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
 
 function toggleMobileMenu() {
