@@ -202,17 +202,15 @@ function renderDiscussion(data) {
 
 function renderEventGroup(eventGroup, nextIndex) {
   const eventId = slugifyEventId(eventGroup.eventCode);
-  const previewItems = eventGroup.items
-    .map(item => `<div class="event-section-preview-item">• ${highlight(getDiscussDisplayText(item), searchTerm)}</div>`)
-    .join('');
+  const previewText = eventGroup.items
+    .map(item => getDiscussDisplayText(item))
+    .filter(Boolean)
+    .join(', ');
   return `
     <section class="event-section" id="event-${eventId}">
       <button class="event-section-header" type="button" onclick="toggleEventSection('${eventId}')">
         <div class="event-section-code">${highlight(eventGroup.eventCode, searchTerm)}</div>
-        <div class="event-section-title">${highlight(eventGroup.eventTitle, searchTerm)}</div>
-        <div class="event-section-preview">
-          ${previewItems}
-        </div>
+        <div class="event-section-title">${highlight(previewText || eventGroup.eventTitle, searchTerm)}</div>
         <div class="event-section-chevron" aria-hidden="true"></div>
       </button>
       <ul class="event-bullet-list event-bullet-list-hidden" id="event-list-${eventId}">
