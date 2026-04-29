@@ -43,19 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function initializeApp() {
-  await loadStudyData();
   loadAndSwitch('T-6B');
-}
-
-async function loadStudyData() {
-  try {
-    const res = await fetch('data/study-data.json?v=20260429b', { cache: 'no-store' });
-    if (!res.ok) throw new Error(res.status);
-    studyData = await res.json();
-  } catch (error) {
-    console.error('Failed to load study data', error);
-    studyData = {};
-  }
 }
 
 async function loadAndSwitch(ac) {
@@ -63,9 +51,14 @@ async function loadAndSwitch(ac) {
   if (!acData[ac]) {
     showLoading(true);
     try {
-      const res = await fetch(`data/${key}/discuss-data.json`);
-      if (!res.ok) throw new Error(res.status);
-      acData[ac] = await res.json();
+      const [discussRes, studyRes] = await Promise.all([
+        fetch(`data/${key}/discuss-data.json?v=20260429c`, { cache: 'no-store' }),
+        fetch(`data/${key}/study-data.json?v=20260429c`, { cache: 'no-store' }),
+      ]);
+      if (!discussRes.ok) throw new Error(`discussion ${discussRes.status}`);
+      if (!studyRes.ok) throw new Error(`study ${studyRes.status}`);
+      acData[ac] = await discussRes.json();
+      studyData[ac] = await studyRes.json();
     } catch (error) {
       console.error('Failed to load', ac, error);
       showLoading(false);
@@ -553,7 +546,8 @@ function renderStudyPanel() {
 
   const study = studyData[currentAC];
   if (!study) {
-    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Refresh the page once to pick up the new study assets, then verify <code>data/study-data.json</code> is being served.</div>`;
+    const key = currentAC.toLowerCase().replace('-', '');
+    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Verify <code>data/${key}/study-data.json</code> is present and reload the page.</div>`;
     return;
   }
 
