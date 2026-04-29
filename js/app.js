@@ -9,7 +9,6 @@ let blockFilter = 'ALL';
 let mediaFilter = 'ALL';
 let searchTerm = '';
 let acData = {};
-let studyData = {};
 let studyTab = 'procedures';
 let quizState = {
   mode: 'procedure',
@@ -31,6 +30,148 @@ const PANEL_NAV = [
   { id: 'boldface', label: 'EPs / Limits / Quiz', icon: ICONS.boldface },
 ];
 
+const STUDY_DATA = {
+  'T-6B': {
+    aircraft: 'T-6B',
+    title: 'T-6B Texan II',
+    emergencyProcedures: [
+      { title: 'Abort Start Procedure', category: 'Memory Item', steps: ['PCL - OFF or STARTER switch - AUTO/RESET'] },
+      { title: 'Emergency Engine Shutdown on the Ground', category: 'Memory Item', steps: ['PCL - OFF', 'FIREWALL SHUTOFF HANDLE - PULL', 'EMERGENCY GROUND EGRESS - AS REQUIRED'] },
+      { title: 'Emergency Ground Egress', category: 'Memory Item', steps: ['ISS MODE SELECTOR - SOLO', 'SEAT SAFETY PIN - INSTALL (BOTH)', 'PARKING BRAKE - AS REQUIRED', 'CANOPY - OPEN', 'CFS HANDLE - ROTATE 90 DEGREES COUNTERCLOCKWISE AND PULL (BOTH)', 'UPPER FITTINGS, LOWER FITTINGS, AND LEG RESTRAINT GARTERS - RELEASE (BOTH)', 'BAT, GEN, AND AUX BAT SWITCHES - OFF', 'EVACUATE AIRCRAFT'] },
+      { title: 'Abort', category: 'Memory Item', steps: ['PCL - IDLE', 'BRAKES - AS REQUIRED'] },
+      { title: 'Engine Failure Immediately After Takeoff (Sufficient Runway Remaining Straight Ahead)', category: 'Memory Item', steps: ['AIRSPEED - 110 KNOTS (MINIMUM)', 'PCL - AS REQUIRED', 'EMER LDG GR HANDLE - PULL (AS REQUIRED)', 'FLAPS - AS REQUIRED'] },
+      { title: 'Engine Failure During Flight', category: 'Memory Item', steps: ['ZOOM/GLIDE - 125 KNOTS (MINIMUM)', 'PCL - OFF', 'INTERCEPT ELP', 'AIRSTART - ATTEMPT IF WARRANTED', 'FIREWALL SHUTOFF HANDLE - PULL', 'EXECUTE FORCED LANDING OR EJECT'] },
+      { title: 'Immediate Airstart (PMU NORM)', category: 'Memory Item', steps: ['PCL - OFF', 'STARTER SWITCH - AUTO/RESET', 'PCL - IDLE, ABOVE 13% N1', 'ENGINE INSTRUMENTS - MONITOR ITT, N1, AND OIL PRESSURE', 'PCL - OFF', 'FIREWALL SHUTOFF HANDLE - PULL', 'EXECUTE FORCED LANDING OR EJECT', 'PCL - AS REQUIRED AFTER N1 REACHES IDLE RPM (APPROXIMATELY 67% N1)', 'PEL - EXECUTE'] },
+      { title: 'Uncommanded Power Changes / Loss of Power / Uncommanded Propeller Feather', category: 'Memory Item', steps: ['PCL - MID RANGE', 'PMU SWITCH - OFF', 'PROP SYS CIRCUIT BREAKER (LEFT FRONT CONSOLE) - PULL, IF NP STABLE BELOW 40%', 'PCL - AS REQUIRED', 'PEL - EXECUTE', 'PROP SYS CIRCUIT BREAKER - RESET, AS REQUIRED', 'PCL - OFF', 'FIREWALL SHUTOFF HANDLE - PULL', 'EXECUTE FORCED LANDING OR EJECT'] },
+      { title: 'Compressor Stalls', category: 'Memory Item', steps: ['PCL - SLOWLY RETARD BELOW STALL THRESHOLD', 'DEFOG SWITCH - ON', 'PCL - SLOWLY ADVANCE (AS REQUIRED)', 'PEL - EXECUTE', 'PCL - OFF', 'FIREWALL SHUTOFF HANDLE - PULL', 'EXECUTE FORCED LANDING OR EJECT'] },
+      { title: 'Inadvertent Departure From Controlled Flight', category: 'Memory Item', steps: ['PCL - IDLE', 'CONTROLS - NEUTRAL', 'ALTITUDE - CHECK', 'RECOVER FROM UNUSUAL ATTITUDE'] },
+      { title: 'Fire In Flight', category: 'Memory Item', steps: ['PCL - OFF', 'FIREWALL SHUTOFF HANDLE - PULL', 'FORCED LANDING - EXECUTE', 'EJECT (BOTH)', 'PEL - EXECUTE'] },
+      { title: 'Chip Detector Warning', category: 'Memory Item', steps: ['PCL - MINIMUM NECESSARY TO INTERCEPT ELP; AVOID UNNECESSARY PCL MOVEMENTS', 'PEL - EXECUTE'] },
+      { title: 'Oil System Malfunction or Low Oil Pressure', category: 'Memory Item', steps: ['TERMINATE MANEUVER', 'CHECK OIL PRESSURE; IF OIL PRESSURE IS NORMAL, CONTINUE OPERATIONS', 'PCL - MINIMUM NECESSARY TO INTERCEPT ELP; AVOID UNNECESSARY PCL MOVEMENTS', 'PEL - EXECUTE'] },
+      { title: 'Low Fuel Pressure', category: 'Memory Item', steps: ['PEL - EXECUTE', 'BOOST PUMP SWITCH - ON'] },
+      { title: 'OBOGS FAIL Message', category: 'Memory Item', steps: ['PCL - ADVANCE'] },
+      { title: 'OBOGS Failure / Physiological Symptoms', category: 'Memory Item', steps: ['GREEN RING - PULL (AS REQUIRED) (BOTH)', 'DESCENT BELOW 10,000 FEET MSL - INITIATE', 'DISCONNECT MAIN OXYGEN SUPPLY HOSE FROM CRU-60P'] },
+      { title: 'Eject', category: 'Memory Item', steps: ['EJECTION HANDLE - PULL (BOTH)'] },
+      { title: 'Smoke and Fume Elimination / Electrical Fire', category: 'Memory Item', steps: ['OBOGS - CHECK', 'OBOGS SUPPLY LEVER - ON', 'OBOGS CONCENTRATION LEVER - MAX', 'OBOGS PRESSURE LEVER - EMERGENCY'] },
+      { title: 'Forced Landing', category: 'Memory Item', steps: ['AIRSPEED - 125 KIAS PRIOR TO EXTENDING LANDING GEAR', 'EMER LDG GR HANDLE - PULL (AS REQUIRED)', 'AIRSPEED - 120 KIAS MINIMUM UNTIL INTERCEPTING FINAL; 110 KIAS MINIMUM ON FINAL', 'FLAPS - AS REQUIRED'] },
+      { title: 'Precautionary Emergency Landing (PEL)', category: 'Memory Item', steps: ['TURN TO NEAREST SUITABLE FIELD', 'CLIMB OR ACCELERATE TO INTERCEPT ELP', 'GEAR, FLAPS, SPEED BRAKE - UP'] },
+    ],
+    limits: [
+      { label: 'VLE / VFE', value: 'MAXIMUM AIRSPEED GEAR DOWN (VLE) AND FLAP DOWN (VFE): 150 KIAS' },
+      { label: 'VMO / MMO', value: 'MAX OPERATING (VMO): 316 KIAS / MAX MACH (MMO): 0.67 MACH' },
+      { label: 'Turbulent Air', value: 'TURBULENT AIR PENETRATION SPEED, MAXIMUM: 207 KIAS' },
+      { label: 'Icing Approval', value: 'THE AIRCRAFT HAS BEEN APPROVED ONLY FOR TRANSIT THROUGH 5000 FEET OF LIGHT RIME ICE.' },
+      { label: 'Minimum Battery Voltage', value: 'MINIMUM BATTERY VOLTAGE: 22.0 VOLTS' },
+      { label: 'Hydraulic Caution', value: 'HYDRAULIC CAUTION: BELOW 1800 PSI, ABOVE 3500 PSI' },
+      { label: 'Fuel Caution Light', value: 'FUEL CAUTION LIGHT: BELOW 110 POUNDS IN RESPECTIVE WING TANK' },
+      { label: 'Cockpit Pressurization', value: 'COCKPIT PRESSURIZATION SCHEDULE LIMIT: 3.6 +/- 0.2 PSI' },
+      { label: 'Starter Cycles', value: 'STARTER DUTY CYCLE IS LIMITED TO FOUR 20 SECOND CYCLES. COOLING: FIRST 30 SEC, SECOND 2 MIN, THIRD 5 MIN, FOURTH 30 MIN.' },
+      { label: 'Inverted Flight', value: 'INVERTED FLIGHT: 60 SECONDS' },
+      { label: 'Intentional Zero G', value: 'INTENTIONAL ZERO G FLIGHT: 5 SECONDS' },
+      { label: 'Negative G Flight', value: 'NEGATIVE G OPERATIONS: 60 SECONDS. DO NOT EXCEED -2.5 G FOR LONGER THAN 30 SECONDS. MINIMUM UPRIGHT POSITIVE G BEFORE ADDITIONAL NEGATIVE GS: 60 SECONDS.' },
+      { label: 'Acceleration Limits', value: 'SYMMETRIC CLEAN +7.0 TO -3.5 GS. SYMMETRIC GEAR AND FLAPS EXTENDED +2.5 TO 0.0 GS. ASYMMETRIC CLEAN +4.7 TO -1.0 GS. ASYMMETRIC GEAR AND FLAPS EXTENDED +2.0 TO 0.0 GS.' },
+      { label: 'Uncoordinated Rolling Maneuvers', value: 'FOR UNCOORDINATED ROLLING MANEUVERS INITIATED AT -1 G, MAXIMUM BANK ANGLE CHANGE IS 180 DEGREES.' },
+      { label: 'Battery Start Voltage', value: 'MIN VOLTAGE FOR BATTERY START: 23.5 VOLTS' },
+      { label: 'Crosswind Limits', value: 'MAX CROSSWIND: DRY RUNWAY 25 KNOTS, WET RUNWAY 10 KNOTS, ICY RUNWAY 5 KNOTS' },
+      { label: 'Tailwind Takeoff', value: 'MAX TAILWIND COMPONENT FOR TAKEOFF: 10 KNOTS' },
+      { label: 'Prohibited Maneuvers', value: 'INVERTED STALLS, INVERTED SPINS, SPINS WITH PCL ABOVE IDLE, SPINS WITH LANDING GEAR / FLAPS / SPEEDBRAKE EXTENDED, SPINS WITH PMU OFF, AGGRAVATED SPINS PAST TWO TURNS, SPINS BELOW 10,000 FEET PRESSURE ALTITUDE, SPINS ABOVE 22,000 FEET PRESSURE ALTITUDE, ABRUPT CROSS-CONTROLLED SNAP MANEUVERS, AEROBATICS / SPINS / STALLS WITH FUEL IMBALANCE GREATER THAN 50 POUNDS, AND TAIL SLIDES ARE PROHIBITED.' },
+    ],
+  },
+  'T-44C': {
+    aircraft: 'T-44C',
+    title: 'T-44C Pegasus',
+    emergencyProcedures: [
+      { title: 'Abnormal Start', category: 'Memory Item', steps: ['CONDITION LEVER - FUEL CUTOFF (DEC BELOW 790 C)', 'STARTER - STARTER ONLY (FOR THE REMAINDER OF THE 40 SECONDS)', 'STARTER - OFF (AT 40 SECONDS)'] },
+      { title: 'Smoke and Fume Elimination', category: 'Memory Item', steps: ['OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED', 'PRESSURIZATION - DUMP'] },
+      { title: 'Fuel Leaks', category: 'Memory Item', steps: ['CONDITION LEVER - FUEL CUTOFF', 'EMERGENCY SHUTDOWN CHECKLIST - EXECUTE'] },
+      { title: 'Emergency Shutdown on Deck', category: 'Memory Item', steps: ['STOP THE AIRCRAFT AND SET THE PARKING BRAKE', 'CONDITION LEVERS - FUEL CUTOFF', 'FIREWALL VALVES - CLOSED', 'BOOST PUMPS - OFF', 'FIRE EXTINGUISHER - AS REQUIRED', 'AUX BATT SWITCH - OFF', 'GANG BAR - OFF', 'EVACUATE AIRCRAFT'] },
+      { title: 'Aborting Takeoff', category: 'Memory Item', steps: ['ANNOUNCE "ABORT"', 'POWER LEVERS - IDLE', 'REVERSE - AS REQUIRED', 'BRAKES - AS REQUIRED', 'CONDITION LEVERS - FUEL CUTOFF', 'FIREWALL VALVES - CLOSED', 'BOOST PUMPS - OFF', 'FIRE EXTINGUISHER(S) - AS REQUIRED', 'AUX BATT SWITCH - OFF', 'GANG BAR - OFF', 'EVACUATE AIRCRAFT'] },
+      { title: 'Engine Failure After Takeoff', category: 'Memory Item', steps: ['POWER - AS REQUIRED', 'LANDING GEAR - UP', 'AIRSPEED - AS REQUIRED (VXSE OR VYSE)', 'EMERGENCY SHUTDOWN CHECKLIST - EXECUTE'] },
+      { title: 'Emergency Shutdown Checklist', category: 'Memory Item', steps: ['POWER LEVER - IDLE', 'PROP LEVER - FEATHER', 'CONDITION LEVER - FUEL CUTOFF', 'FIREWALL VALVE - CLOSED', 'FIRE EXTINGUISHER - AS REQUIRED', 'BLEED AIR VALVE - CLOSED'] },
+      { title: 'Windmilling Airstart', category: 'Memory Item', steps: ['POWER LEVER (FAILED ENGINE) - IDLE', 'PROP LEVER (FAILED ENGINE) - PULL FORWARD', 'CONDITION LEVER (FAILED ENGINE) - FUEL CUTOFF', 'FIREWALL VALVE - OPEN', 'AUTOIGNITION - ARMED', 'CONDITION LEVER - LOW IDLE', 'POWER - AS REQUIRED'] },
+      { title: 'Primary Governor Failure / Malfunction', category: 'Memory Item', steps: ['ATTEMPT TO ADJUST PROP RPM TO NORMAL OPERATING RANGE', 'POWER LEVER - IDLE', 'PROP LEVER - FEATHER', 'ALTERNATE PROP FEATHER CHECKLIST - AS REQUIRED', 'LAND AS SOON AS POSSIBLE'] },
+      { title: 'Explosive Decompression', category: 'Memory Item', steps: ['OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED', 'DESCEND - AS REQUIRED'] },
+      { title: 'Unscheduled Electric Trim Activation', category: 'Memory Item', steps: ['A/P / TRIM DISCONNECT (CONTROL WHEEL) - DEPRESS FULLY AND HOLD'] },
+      { title: 'Emergency Descent Procedure', category: 'Memory Item', steps: ['POWER LEVERS - IDLE', 'PROPS - FULL FORWARD', 'FLAPS - AS REQUIRED', 'LANDING GEAR - AS REQUIRED', 'AIRSPEED - AS REQUIRED', 'WINDSHIELD HEAT - AS REQUIRED'] },
+      { title: 'Spin / Out of Control Flight Recovery', category: 'Memory Item', steps: ['POWER LEVERS - IDLE', 'RUDDER - FULL DEFLECTION OPPOSITE DIRECTION OF TURN NEEDLE', 'CONTROL WHEEL - RAPIDLY FORWARD', 'RUDDER - NEUTRALIZE AFTER ROTATION STOPS', 'CONTROL WHEEL - PULL OUT OF DIVE BY EXERTING SMOOTH, STEADY BACK PRESSURE'] },
+      { title: 'Terrain Warning (IMC or at Night)', category: 'Memory Item', steps: ['WINGS - LEVEL', 'POWER - MAX CONTINUOUS', 'PITCH - AS REQUIRED TO SET AND MAINTAIN VX', 'FLAPS - APPROACH (UNLESS ALREADY UP)', 'GEAR - UP', 'FLAPS - UP', 'PROPS - 1900 RPM', 'CONTINUE CLIMB AT VX UNTIL ALL VISUAL AND VOICE WARNINGS CEASE'] },
+      { title: 'Single-Engine Waveoff / Missed Approach', category: 'Memory Item', steps: ['POWER - MAX CONTINUOUS, ESTABLISH POSITIVE RATE OF CLIMB (VXSE MINIMUM)', 'FLAPS - APPROACH (UNLESS ALREADY UP)', 'LANDING GEAR - UP', 'FLAPS - UP', 'PROP - 1900 RPM'] },
+      { title: 'Low Altitude Windshear', category: 'Memory Item', steps: ['POWER - MAXIMUM CONTINUOUS', 'PITCH - SET AND HOLD APPROXIMATELY 15 DEGREES NOSEUP', 'LANDING GEAR - UP', 'FLAPS - MAINTAIN CURRENT SETTING'] },
+      { title: 'Waveoff / Missed Approach', category: 'Memory Item', steps: ['POWER - AS REQUIRED, ESTABLISH POSITIVE RATE OF CLIMB (VX MINIMUM)', 'FLAPS - APPROACH (UNLESS ALREADY UP)', 'LANDING GEAR - UP', 'FLAPS - UP', 'PROPS - 1900 RPM'] },
+      { title: 'Smoke / Fire of Unknown Origin', category: 'Memory Item', steps: ['CREW - ALERTED', 'CABIN TEMPERATURE MODE - OFF', 'VENT BLOWER - AUTO', 'OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED'] },
+    ],
+    limits: [
+      { label: 'Engine Operating Limits', value: 'MAX ALLOWABLE 5 MIN: 1315 FT-LB / 1520 FT-LB, ITT 790, N1 101.5, NP 2200, OIL PRESS 85-100, OIL TEMP 10-99' },
+      { label: 'Fuel Capacity', value: 'TOTAL FUEL SYSTEM CAPACITY IS 387.6 U.S. GALLONS, OF WHICH 384 U.S. GALLONS ARE USABLE.' },
+      { label: 'Altitude Ceiling', value: '31,000 FT' },
+      { label: 'Max Sink Rate', value: 'MAXIMUM SINK RATE AT GROUND CONTACT: 600 FPM' },
+      { label: 'Crosswind', value: 'MAXIMUM CROSSWIND COMPONENT: 20 KNOTS' },
+      { label: 'Gyro Suction', value: 'GYRO SUCTION NORMAL OPERATING RANGE: 4.3-5.9 INHG' },
+      { label: 'Weight Limits', value: 'MAX TAKEOFF 9650 POUNDS, MAX LANDING 9168 POUNDS, MAX RAMP 9710 POUNDS' },
+      { label: 'Minimum Oxygen', value: 'MIN OXYGEN REQUIRED FOR LOCAL / X-C FLIGHT: 1,000 / 1,500 PSI' },
+      { label: 'Cabin Pressure Differential', value: 'MAXIMUM OPERATING CABIN PRESSURE DIFFERENTIAL: 4.7 PSI' },
+      { label: 'VMCG', value: 'MIN CONTROLLABLE SPEED ON GROUND (VMCG): 63 KIAS' },
+      { label: 'Pneumatic Pressure', value: 'PNEUMATIC PRESSURE NORMAL OPERATING RANGE: 12-20 PSI' },
+      { label: 'Climb / Glide Speeds', value: 'VYSE 110 KIAS, MAX RANGE GLIDE 130 KIAS, MAX ENDURANCE GLIDE 102 KIAS, VX 102 KIAS, VY 108 KIAS, VXSE 102 KIAS' },
+      { label: 'Gear / Flap Limits', value: 'VLE 155 KIAS, VLR 145 KIAS, VFE APPROACH 174 KIAS, VFE FULL 140 KIAS' },
+      { label: 'Single-Engine / Maneuvering Speeds', value: 'VSSE 91 KIAS, VMCA 86 KIAS, VA 153 KIAS' },
+      { label: 'VMO / MMO', value: 'VMO 227 KIAS. DECREASE VMO 4 KIAS FOR EVERY 1,000 FT ABOVE 15,500 FT. MMO .48 MACH' },
+      { label: 'Battery Minimums', value: 'MIN BATTERY VOLTAGE FOR APU CHARGE 18 VDC, APU START 20 VDC, BATT START 22 VDC' },
+      { label: 'Starter Cycle Limits', value: 'STARTER DUTY CYCLE IS LIMITED TO THREE 40 SECOND CYCLES. COOLING AFTER FIRST 60 SECONDS, SECOND 60 SECONDS, THIRD 30 MINUTES' },
+      { label: 'Prop Deicer Ammeter', value: 'PROP DEICER AMMETER NORMAL OPERATION: 14-18 AMPS' },
+      { label: 'Acceleration Limits', value: 'CLEAN +3.0 TO -1.0 G. FULL FLAPS +2.0 TO 0.0 G' },
+      { label: 'Prohibited Maneuvers', value: 'INTENTIONAL SPINS' },
+    ],
+  },
+  'T-45C': {
+    aircraft: 'T-45C',
+    title: 'T-45C Goshawk',
+    emergencyProcedures: [
+      { title: 'Clear Engine Procedure / Abnormal Start / TP Fire on Shutdown', category: 'Immediate Action', steps: ['THROTTLE - OFF'] },
+      { title: 'Emergency Shutdown / Egress', category: 'Immediate Action', steps: ['THROTTLE - OFF', 'ENGINE SWITCH - OFF', 'FUEL SHUTOFF HANDLE - PULL', 'EJECTION SEATS - SAFE', 'BATT SWITCHES - OFF'] },
+      { title: 'Engine Failure', category: 'Immediate Action', steps: ['IF BELOW 1,500 FEET AGL AND AIRSPEED BELOW 180 KIAS: EJECT', 'OTHERWISE: EXECUTE AIRSTART'] },
+      { title: 'Airstart', category: 'Immediate Action', steps: ['EMERGENCY OXYGEN GREEN RING(S) - PULL', 'THROTTLE - OFF', 'GTS START BUTTON - PRESS', 'THROTTLE - IDLE', 'THROTTLE - OFF (ALLOW 30 SECONDS TO DRAIN IF PRACTICAL)', 'IF ABOVE 13% RPM AND 250 KIAS, REPEAT GTS START BUTTON AND THROTTLE IDLE'] },
+      { title: 'Compressor Stall or EGT/RPM Warning Light', category: 'Immediate Action', steps: ['THROTTLE - IDLE', 'EGT/RPM - CHECK', 'EXECUTE ENGINE FAILURE PROCEDURE', 'THROTTLE - SLOWLY ADVANCE TO MINIMUM FOR SAFE FLIGHT', 'MINIMIZE THROTTLE MOVEMENTS'] },
+      { title: 'Abort', category: 'Immediate Action', steps: ['THROTTLE - IDLE', 'SPEED BRAKES - EXTEND', 'BRAKES - APPLY', 'HOOK - DOWN (IF REQUIRED)', 'BRAKES - RELEASE PRIOR TO CROSSING THE ARRESTING GEAR'] },
+      { title: 'Emergency Catapult Flyaway', category: 'Immediate Action', steps: ['THROTTLE - MRT', 'MAINTAIN 24 UNITS AOA', 'IF ENGINE FAILED OR UNABLE TO STOP SETTLE: EJECT'] },
+      { title: 'Brake Failure - Ashore / Skid Caution', category: 'Immediate Action', steps: ['GO AROUND', 'THROTTLE - IDLE', 'BRAKES - RELEASE', 'ANTI-SKID SWITCH - OFF', 'BRAKES - APPLY GRADUALLY', 'HOOK - DOWN (IF REQUIRED)', 'PARKING BRAKE HANDLE - PULL (IF REQUIRED)'] },
+      { title: 'Brake Failure - Afloat', category: 'Immediate Action', steps: ['THROTTLE - IDLE', 'PARKING BRAKE HANDLE - PULL', 'HOOK - DOWN', 'TRANSMIT'] },
+      { title: 'Loss of Directional Control', category: 'Immediate Action', steps: ['GO-AROUND', 'ABORT', 'BRAKES - RELEASE', 'ANTI-SKID SWITCH - OFF', 'BRAKES - APPLY GRADUALLY', 'PADDLE SWITCH - PRESS'] },
+      { title: 'Asymmetric Flaps / Slats', category: 'Immediate Action', steps: ['FLAPS / SLATS LEVER - RETURN TO PREVIOUS SETTING'] },
+      { title: 'Departure / Spin Procedure', category: 'Immediate Action', steps: ['CONTROLS - NEUTRALIZE / FORCIBLY CENTER RUDDER PEDALS', 'SPEED BRAKES - RETRACT', 'THROTTLE - IDLE', 'CHECK ALTITUDE, AOA, AIRSPEED, AND TURN NEEDLE', 'RUDDER PEDAL - FULL OPPOSITE TURN NEEDLE', 'LATERAL STICK - FULL OPPOSITE TURN NEEDLE OR WITH TURN NEEDLE', 'LONGITUDINAL STICK - NEUTRALIZE', 'LATERAL STICK - NEUTRALIZE', 'RUDDER PEDALS - SMOOTHLY CENTER', 'IF OUT OF CONTROL PASSING THROUGH 10,000 FEET AGL: EJECT'] },
+      { title: 'Total Electrical Failure', category: 'Immediate Action', steps: ['EMERGENCY OXYGEN GREEN RING(S) - PULL'] },
+      { title: 'Adverse Physiological Symptoms', category: 'Immediate Action', steps: ['EMERGENCY OXYGEN GREEN RING(S) - PULL', 'OBOGS FLOW SELECTOR(S) - OFF', 'DESCEND BELOW 10,000 FEET CABIN ALTITUDE'] },
+      { title: 'Rapid Decompression', category: 'Immediate Action', steps: ['EMERGENCY OXYGEN GREEN RING(S) - PULL', 'OBOGS FLOW SELECTOR(S) - OFF', 'DESCEND BELOW 10,000 FEET CABIN ALTITUDE'] },
+      { title: 'Electrical Fire', category: 'Immediate Action', steps: ['GEN SWITCH - OFF'] },
+      { title: 'Smoke or Fumes in Cockpit', category: 'Immediate Action', steps: ['MASK - ON / TIGHT', 'INITIATE CONTROLLED DESCENT TO BELOW 18,000 FEET MSL', 'AIR FLOW KNOB - OFF (BELOW 18,000 FEET MSL IF POSSIBLE)', 'AIRSPEED - REDUCE (AS PRACTICAL)', 'WARN OTHER COCKPIT OCCUPANT / SECURE LOOSE ITEMS', 'SEAT - LOWER', 'MDC FIRING HANDLE - PULL'] },
+      { title: 'Fire Warning Light', category: 'Immediate Action', steps: ['GROUND: EXECUTE EMERGENCY SHUTDOWN / EGRESS', 'TAKEOFF: ABORT', 'IF FIRE IS CONFIRMED AND UNABLE TO ABORT: EJECT', 'IN-FLIGHT: THROTTLE - MINIMUM FOR SAFE FLIGHT', 'CHECK FOR SECONDARY INDICATIONS OF FIRE', 'IF FIRE CONFIRMED OR FLIGHT CONTROL LOST: EJECT', 'IF FIRE NOT CONFIRMED AND CONTROL EFFECTIVENESS REMAINS: LAND AS SOON AS POSSIBLE'] },
+      { title: 'GTS Fire Warning Light', category: 'Immediate Action', steps: ['GROUND: EXECUTE EMERGENCY SHUTDOWN / EGRESS', 'IN-FLIGHT: ENGINE SWITCH - OFF'] },
+      { title: 'Oil Press Warning Light', category: 'Immediate Action', steps: ['THROTTLE - SET AND MAINTAIN 78 TO 87% RPM', 'MINIMIZE THROTTLE MOVEMENTS'] },
+      { title: 'Oxygen Warning Light', category: 'Immediate Action', steps: ['THROTTLE - SET MINIMUM 80% RPM', 'EXECUTE ADVERSE PHYSIOLOGICAL SYMPTOMS (AS REQUIRED)'] },
+      { title: 'TP HOT Caution Light', category: 'Immediate Action', steps: ['GROUND: EXECUTE EMERGENCY SHUTDOWN / EGRESS', 'IN-FLIGHT: THROTTLE - MINIMUM FOR SAFE FLIGHT'] },
+    ],
+    limits: [
+      { label: 'Solo Flying', value: 'SOLO FLYING SHALL BE CONDUCTED ONLY FROM THE FORWARD COCKPIT.' },
+      { label: 'Altitude Limit', value: 'MAXIMUM ALTITUDE IS 41,000 FEET MSL.' },
+      { label: 'Icing', value: 'FLIGHT IN KNOWN ICING CONDITIONS SHALL BE AVOIDED. WHEN AIRFRAME ICING IS VISIBLE, INTENTIONAL STALLS OR USE OF FULL FLAPS IS NOT AUTHORIZED.' },
+      { label: 'Engine Handling Limits', value: 'THROTTLE SHALL BE AT IDLE FOR ABRUPT PULLS TO FULL BACK STICK, ABRUPT FULL LATERAL STICK INPUTS AT FULL BACK STICK, AND AIRSPEEDS LESS THAN 85 KIAS ABOVE 15,000 FEET MSL.' },
+      { label: 'Engine Operating Limits', value: 'MRT 104% N2 / 610 C FOR 30 MINUTES PER FLIGHT HOUR. TRANSIENT 106% N2 / 645 C FOR LESS THAN 20 SECONDS. MAX CONTINUOUS 100% N2 / 550 C. IDLE 56.5 +/- 2% N2 / 450 C.' },
+      { label: 'GTS Start Limits', value: 'GTS START WITH EXTERNAL POWER IS PROHIBITED. MINIMUM INTERVAL BETWEEN EACH GTS START ATTEMPT IS 3 MINUTES. AFTER THREE CONSECUTIVE START ATTEMPTS, WAIT 30 MINUTES.' },
+      { label: 'Fuel Temperature Limits', value: 'DO NOT ALLOW INDICATED TAT TO DWELL AT OR BELOW THE FUEL FREEZE POINT PLUS 3 C. OPERATION IS RESTRICTED TO AMBIENT TEMPERATURES ABOVE 0 C WHEN USING FUEL WITHOUT FSII.' },
+      { label: 'System Airspeed Limits', value: 'LANDING GEAR TRANSITION / EXTENDED 200 KIAS OR LESS. FLAPS / SLATS TRANSITION / EXTENDED 200 KIAS OR LESS. ARRESTING HOOK TRANSITION / EXTENDED 450 KIAS OR LESS.' },
+      { label: 'Canopy and Deck Limits', value: 'CANOPY FULL OPEN FOR TAXI 20 KNOTS OR LESS. STATIONARY OR TOWING WITH CANOPY FULL OPEN 32 KNOTS OR LESS. TIRES AND NOSEWHEEL STEERING ON DECK 176 KNOTS GROUNDSPEED OR LESS.' },
+      { label: 'Hot Refueling', value: 'HOT REFUELING FUEL LEVEL 2,800 POUNDS OR LESS IF PRECHECK UNSUCCESSFUL.' },
+      { label: 'Crosswind Limits', value: 'SINGLE AIRCRAFT DRY RUNWAY 20 KNOTS, WET RUNWAY 15 KNOTS, SECTION TAKEOFF 10 KNOTS, BANNER TOW 10 KNOTS, NWS OFF / FAILED 15 KNOTS.' },
+      { label: 'High Gain Nosewheel Steering', value: 'HIGH GAIN NOSEWHEEL STEERING SHALL BE USED FOR LOW SPEED TAXI OPERATIONS ONLY, LESS THAN 10 KNOTS GROUNDSPEED.' },
+      { label: 'FCLP Landing Configurations', value: 'FCLP LANDINGS ARE AUTHORIZED ONLY WITH CLEAN LOADING AND FULL FLAPS, OR PYLONS ALONE / PYLONS WITH EMPTY PMBRS OR BRU-38A AND FULL FLAPS.' },
+      { label: 'Landing Sink Rate', value: 'FOR LANDINGS IN A CONFIGURATION OTHER THAN AUTHORIZED FCLP CONFIGURATIONS, SINK RATE SHALL NOT EXCEED 600 FPM.' },
+      { label: 'Banner Tow Limits', value: 'MAX ALTITUDE 20,000 FEET MSL. MAX AIRSPEED 220 KIAS. MAX BANK ANGLE 45 DEGREES. MAX AOA 18 UNITS.' },
+      { label: 'Banner Release Limits', value: 'MINIMUM BANNER RELEASE ALTITUDE 500 FEET AGL. BANNER RELEASE AIRSPEED 140 TO 200 KIAS. FOR RELEASE BETWEEN 140 AND 150 KIAS USE ONE-HALF FLAPS.' },
+      { label: 'Prohibited Maneuvers', value: 'INTENTIONAL SPINS OR TAILSLIDES ARE PROHIBITED. SUSTAINED ZERO OR NEGATIVE G FLIGHT FOR MORE THAN 30 SECONDS IS PROHIBITED.' },
+    ],
+  },
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   buildNav();
   initializeApp();
@@ -51,14 +192,9 @@ async function loadAndSwitch(ac) {
   if (!acData[ac]) {
     showLoading(true);
     try {
-      const [discussRes, studyRes] = await Promise.all([
-        fetch(`data/${key}/discuss-data.json?v=20260429c`, { cache: 'no-store' }),
-        fetch(`data/${key}/study-data.json?v=20260429c`, { cache: 'no-store' }),
-      ]);
+      const discussRes = await fetch(`data/${key}/discuss-data.json?v=20260429d`, { cache: 'no-store' });
       if (!discussRes.ok) throw new Error(`discussion ${discussRes.status}`);
-      if (!studyRes.ok) throw new Error(`study ${studyRes.status}`);
       acData[ac] = await discussRes.json();
-      studyData[ac] = await studyRes.json();
     } catch (error) {
       console.error('Failed to load', ac, error);
       showLoading(false);
@@ -544,10 +680,9 @@ function renderStudyPanel() {
   const el = document.getElementById('boldface-content');
   if (!el) return;
 
-  const study = studyData[currentAC];
+  const study = STUDY_DATA[currentAC];
   if (!study) {
-    const key = currentAC.toLowerCase().replace('-', '');
-    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Verify <code>data/${key}/study-data.json</code> is present and reload the page.</div>`;
+    el.innerHTML = `<div class="empty-state">No study data found for ${currentAC}.<br>Check the hardcoded study dataset in <code>js/app.js</code>.</div>`;
     return;
   }
 
@@ -699,7 +834,7 @@ function renderLimitQuizBody(question) {
 }
 
 function buildQuizQuestion(mode = 'procedure') {
-  const study = studyData[currentAC];
+  const study = STUDY_DATA[currentAC];
   if (!study) return;
   const bank = mode === 'procedure' ? study.emergencyProcedures : study.limits;
   if (!bank.length) return;
