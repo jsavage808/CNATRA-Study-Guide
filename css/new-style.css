@@ -687,6 +687,188 @@ a:hover { text-decoration: underline; }
 }
 .source-ref-link:hover { background: var(--hud-dim); text-decoration: none; }
 
+.event-group-card {
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.04), rgba(0, 229, 255, 0.01));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.event-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: 14px var(--space-md);
+  border-bottom: 1px solid var(--border-dim);
+  background: rgba(8, 9, 13, 0.36);
+}
+
+.event-group-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.event-group-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.event-group-title {
+  font-family: var(--cond);
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--text);
+  line-height: 1.05;
+}
+
+.event-source-summary {
+  max-width: 260px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.event-group-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.discuss-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+  gap: var(--space-md);
+  padding: 14px var(--space-md);
+  border-top: 1px solid var(--border-dim);
+}
+
+.discuss-row:first-child {
+  border-top: 0;
+}
+
+.discuss-row-main {
+  display: flex;
+  gap: 12px;
+  min-width: 0;
+}
+
+.discuss-row-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+.discuss-topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.discuss-topic-chip {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  color: var(--text-dim);
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border-dim);
+  background: var(--bg1);
+}
+
+.discuss-row-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.source-ref-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.source-ref-caption {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.primary-source-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--hud);
+  border-radius: var(--radius);
+  background: var(--bg1);
+  text-decoration: none;
+  transition: border-color var(--trans), background var(--trans);
+}
+
+.primary-source-link:hover {
+  border-color: var(--hud);
+  background: var(--hud-dim);
+  text-decoration: none;
+}
+
+.primary-source-doc {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--hud);
+}
+
+.primary-source-loc {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.more-sources-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.more-sources-btn:hover {
+  color: var(--hud);
+  border-color: var(--hud);
+}
+
+.more-sources-panel {
+  margin-top: 8px;
+}
+
+.source-ref-list-hidden {
+  display: none;
+}
+
 /* ── DOCUMENTS PANEL ─────────────────────────────────────────── */
 .docs-grid { display: flex; flex-direction: column; gap: var(--space-sm); }
 
@@ -925,6 +1107,10 @@ mark {
   .disc-header { gap: var(--space-sm); padding: 11px var(--space-sm); }
   .disc-body   { padding: var(--space-sm); }
   .disc-question { font-size: 13.5px; }
+  .event-group-header { padding: 12px var(--space-sm); flex-direction: column; align-items: flex-start; }
+  .event-group-title { font-size: 18px; }
+  .event-source-summary { max-width: none; text-align: left; font-size: 8px; }
+  .discuss-row { grid-template-columns: 1fr; padding: 12px var(--space-sm); }
 
   /* Source refs */
   .source-ref { padding: 10px var(--space-sm); }
