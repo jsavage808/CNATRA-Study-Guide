@@ -688,7 +688,7 @@ a:hover { text-decoration: underline; }
 .source-ref-link:hover { background: var(--hud-dim); text-decoration: none; }
 
 .event-section {
-  padding: 12px 0 2px;
+  padding: 10px 0 0;
   border-top: 1px solid var(--border-dim);
 }
 
@@ -699,7 +699,7 @@ a:hover { text-decoration: underline; }
 
 .event-section-header {
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
@@ -714,7 +714,7 @@ a:hover { text-decoration: underline; }
 .event-section-code {
   grid-column: 1;
   font-family: var(--cond);
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1.5px;
   color: var(--hud);
   line-height: 1;
@@ -722,9 +722,9 @@ a:hover { text-decoration: underline; }
 
 .event-section-title {
   grid-column: 1;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.5;
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.4;
   color: var(--text-dim);
 }
 
@@ -745,7 +745,7 @@ a:hover { text-decoration: underline; }
 
 .event-bullet-list {
   list-style: disc;
-  padding-left: 22px;
+  padding-left: 18px;
   margin: 0;
 }
 
@@ -768,14 +768,14 @@ a:hover { text-decoration: underline; }
 .discuss-bullet-item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: var(--space-md);
+  gap: 10px;
   align-items: start;
-  padding: 6px 0;
+  padding: 4px 0;
 }
 
 .discuss-list-main {
   display: flex;
-  gap: 10px;
+  gap: 0;
   min-width: 0;
 }
 
@@ -785,10 +785,10 @@ a:hover { text-decoration: underline; }
 
 .discuss-item-link {
   display: inline;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.45;
   overflow-wrap: break-word;
   text-decoration: none;
 }
@@ -803,29 +803,10 @@ a:hover { text-decoration: underline; }
   cursor: default;
 }
 
-.discuss-list-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0;
-}
-
-.discuss-primary-doc,
-.discuss-primary-location {
-  font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.8px;
-  color: var(--text-dim);
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid var(--border-dim);
-  background: var(--bg1);
-}
-
 .discuss-list-actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   align-items: flex-end;
 }
 
@@ -834,15 +815,15 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   width: fit-content;
-  min-height: 32px;
-  padding: 6px 10px;
+  min-height: 26px;
+  padding: 4px 8px;
   border: 1px solid var(--border-dim);
   border-radius: var(--radius);
   background: transparent;
   color: var(--text-dim);
   cursor: pointer;
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 8px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }

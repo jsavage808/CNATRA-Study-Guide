@@ -127,7 +127,7 @@ function renderDiscussion(data) {
   const countEl = document.getElementById('disc-count');
   if (!el) return;
 
-  const items = normalizeDiscussionItems(data.discussionItems || []);
+  const items = normalizeDiscussionItems(preprocessDiscussionItems(data.discussionItems || []));
   const blocksSeen = new Set();
   const blocks = [];
   items.forEach(item => {
@@ -227,15 +227,10 @@ function renderDiscussRow(item, idx) {
   return `
     <li class="discuss-bullet-item" id="disc-${item.id}">
       <div class="discuss-list-main">
-        <div class="disc-num">${String(idx).padStart(2, '0')}</div>
         <div class="discuss-list-content">
           ${primaryUrl
             ? `<a class="discuss-item-link" href="${primaryUrl}" target="_blank" rel="noopener">${itemText}</a>`
             : `<div class="discuss-item-link missing-link">${itemText}</div>`}
-          <div class="discuss-list-meta">
-            ${primaryRef ? `<span class="discuss-primary-doc">${escHtml(primaryRef.shortName || primaryRef.docId)}</span>` : ''}
-            ${primaryRef?.location ? `<span class="discuss-primary-location">${escHtml(primaryRef.location)}</span>` : ''}
-          </div>
         </div>
       </div>
       <div class="discuss-list-actions">
@@ -380,6 +375,56 @@ function normalizeDiscussionItems(items) {
       resolvedEventTitle: resolvedEventTitle || resolvedEventCode,
     };
   });
+}
+
+function preprocessDiscussionItems(items) {
+  const expanded = [];
+
+  items.forEach((item, index) => {
+    const split = splitEmbeddedEventTransition(item);
+    if (!split) {
+      expanded.push({ ...item, _sourceIndex: index });
+      return;
+    }
+
+    if (split.currentText) {
+      expanded.push({
+        ...item,
+        discussText: split.currentText,
+        _sourceIndex: index,
+      });
+    }
+
+    expanded.push({
+      ...item,
+      id: `${item.id || `item-${index}`}-split-${split.nextCode.toLowerCase()}`,
+      discussText: `${split.nextCode} ${split.nextText}`.trim(),
+      eventCode: split.nextCode,
+      topics: split.nextText ? [split.nextText] : item.topics,
+      _sourceIndex: index + 0.1,
+      _syntheticSplit: true,
+    });
+  });
+
+  return expanded;
+}
+
+function splitEmbeddedEventTransition(item) {
+  const text = String(item.discussText || '').trim();
+  if (!text) return null;
+
+  const matches = [...text.toUpperCase().matchAll(/\b([A-Z]{1,5}[0-9]{2,}[A-Z0-9]*)\b/g)];
+  if (!matches.length) return null;
+
+  const first = matches[0];
+  if (first.index === 0) return null;
+
+  const nextCode = first[1];
+  const currentText = text.slice(0, first.index).trim().replace(/[;,:-]\s*$/, '').trim();
+  const nextText = text.slice(first.index + nextCode.length).trim();
+
+  if (!currentText || !nextText) return null;
+  return { currentText, nextCode, nextText };
 }
 
 function groupDiscussionForDisplay(items) {
