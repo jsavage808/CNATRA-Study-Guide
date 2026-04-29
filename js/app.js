@@ -205,6 +205,8 @@ function renderDiscussion(data) {
 
 function renderDiscItem(item, idx) {
   const hasRefs = item.sourceRefs && item.sourceRefs.length > 0;
+  const primaryRef = hasRefs ? item.sourceRefs[0] : null;
+  const additionalRefs = hasRefs ? item.sourceRefs.slice(1) : [];
   const topicsHtml = item.topics && item.topics.length > 1
     ? `<ul class="topic-list">${item.topics.map(t=>`<li>${highlight(t.trim(),searchTerm)}</li>`).join('')}</ul>`
     : '';
@@ -227,17 +229,30 @@ function renderDiscItem(item, idx) {
       ${topicsHtml ? `<div class="disc-section-label">TOPICS</div>${topicsHtml}` : ''}
       ${hasRefs ? `
         <div class="disc-section-label" style="margin-top:${topicsHtml?'14px':'0'}">WHERE TO FIND THE ANSWER</div>
-        <div class="source-ref-list">${item.sourceRefs.map(ref=>renderSourceRef(ref)).join('')}</div>
+        <div class="source-ref-stack">
+          <div class="source-ref-primary">
+            <div class="source-ref-caption">PRIMARY SOURCE</div>
+            ${renderSourceRef(primaryRef, true)}
+          </div>
+          ${additionalRefs.length ? `
+            <div class="source-ref-more">
+              <button class="more-sources-btn" type="button" onclick="toggleMoreSources('${item.id}')">MORE SOURCES (${additionalRefs.length})</button>
+              <div class="source-ref-list source-ref-list-hidden" id="more-sources-${item.id}">
+                ${additionalRefs.map(ref=>renderSourceRef(ref, false)).join('')}
+              </div>
+            </div>
+          ` : ''}
+        </div>
       ` : '<div class="empty-state" style="padding:0.75rem 0;font-size:10px;">No source references found for this item.</div>'}
       ${item.curriculumFile ? `<div class="curriculum-ref">SOURCE: ${item.curriculumPubNumber||'MCG'} · Syllabus p.${item.curriculumPage}</div>` : ''}
     </div>
   </div>`;
 }
 
-function renderSourceRef(ref) {
+function renderSourceRef(ref, isPrimary = false) {
   const pdfUrl = getPdfUrl(ref.docId, ref.file, ref.pageStart);
   return `
-  <div class="source-ref">
+  <div class="source-ref${isPrimary ? ' primary' : ''}">
     <div class="source-ref-header">
       <span class="source-ref-doc">${ref.shortName || ref.docId}</span>
       ${ref.score ? `<span class="source-ref-score">SCORE ${Math.round(ref.score)}</span>` : ''}
@@ -246,6 +261,12 @@ function renderSourceRef(ref) {
     ${ref.snippet ? `<div class="source-ref-snippet">${escHtml(ref.snippet.trim().substring(0,240))}${ref.snippet.length>240?'…':''}</div>` : ''}
     ${pdfUrl ? `<a class="source-ref-link" href="${pdfUrl}" target="_blank" rel="noopener">OPEN PDF — page ${ref.pageStart} ↗</a>` : ''}
   </div>`;
+}
+
+function toggleMoreSources(id) {
+  const el = document.getElementById(`more-sources-${id}`);
+  if (!el) return;
+  el.classList.toggle('source-ref-list-hidden');
 }
 
 function toggleDisc(id) {
