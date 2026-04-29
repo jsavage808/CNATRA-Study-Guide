@@ -76,6 +76,7 @@ SECTION_KEYWORDS = (
 )
 
 EVENT_CODE_RE = re.compile(r"\b[A-Z]{1,5}[0-9A-Z]{4}\b")
+EVENT_RANGE_RE = re.compile(r"\b([A-Z]{1,5})(\d{4})(?:-(\d+))\b")
 PUB_NUMBER_RE = re.compile(
   r"\b("
   r"A1-[A-Z0-9-]+|"
@@ -240,11 +241,16 @@ def clean_discuss_text(text: str) -> str:
   # Remove section/page litter and list bullets.
   text = re.sub(r"(?m)^\s*[-•*]\s*", "", text)
   text = re.sub(r"\bDiscuss Items?\.?\b", "", text, flags=re.IGNORECASE)
+  text = re.sub(r"(?im)^CNATRA(?:INST|INST)?\s+[A-Z0-9.()-]+\s*$", "", text)
+  text = re.sub(r"(?im)^\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4}\s*$", "", text)
+  text = re.sub(r"(?im)^[IVXLC]+-\d+\s*$", "", text)
   # Remove standalone 'and' lines or list fragments. This directly addresses the user's issue.
   lines = []
   for line in text.splitlines():
     line = line.strip(" .;:,\t")
     if not line:
+      continue
+    if re.fullmatch(r"[A-Z]{1,5}\d{4}(?:-\d+)?", line):
       continue
     if line.lower() == "and":
       continue
@@ -276,6 +282,22 @@ def split_topics(text: str) -> list[str]:
     else:
       topics.append(part)
   return list(dict.fromkeys(topics))
+
+
+def expand_event_token(token: str) -> list[str]:
+  token = token.strip().upper()
+  match = EVENT_RANGE_RE.fullmatch(token)
+  if not match:
+    return [token] if EVENT_CODE_RE.fullmatch(token) else []
+  prefix, start_digits, end_suffix = match.groups()
+  if not end_suffix:
+    return [f"{prefix}{start_digits}"]
+  start_num = int(start_digits)
+  width = len(start_digits)
+  end_num = int(str(start_num)[:-len(end_suffix)] + end_suffix) if len(end_suffix) < width else int(end_suffix)
+  if end_num < start_num:
+    return [f"{prefix}{start_digits}"]
+  return [f"{prefix}{value:0{width}d}" for value in range(start_num, end_num + 1)]
 
 
 def is_heading(line: str) -> bool:
@@ -544,7 +566,10 @@ def parse_block_header(page_text: str) -> dict[str, Any] | None:
 
 
 def extract_event_refs(text: str) -> list[str]:
-  return list(dict.fromkeys(EVENT_CODE_RE.findall(text)))
+  refs: list[str] = []
+  for match in EVENT_RANGE_RE.finditer(text.upper()):
+    refs.extend(expand_event_token(match.group(0)))
+  return list(dict.fromkeys(refs))
 
 
 def extract_discuss_section(block_text: str) -> str:
@@ -559,13 +584,85 @@ def extract_discuss_section(block_text: str) -> str:
   return ""
 
 
+def event_code_sort_key(code: str) -> tuple[str, int, str]:
+  match = re.match(r"^([A-Z]+)([0-9A-Z]+)$", code)
+  if not match:
+    return (code, 0, code)
+  prefix, suffix = match.groups()
+  number_match = re.match(r"^(\d+)", suffix)
+  number = int(number_match.group(1)) if number_match else 0
+  return (prefix, number, suffix)
+
+
+def event_codes_for_block(block: dict[str, Any]) -> list[str]:
+  block_code = (block.get("blockCode") or "").upper()
+  refs: list[str] = []
+  for ref in block.get("eventRefs", []):
+    if not isinstance(ref, str):
+      continue
+    refs.extend(expand_event_token(ref))
+  codes = []
+  for ref in refs:
+    if ref == block_code:
+      continue
+    if not EVENT_CODE_RE.fullmatch(ref):
+      continue
+    if block_code and ref.startswith(block_code):
+      codes.append(ref)
+  return sorted(dict.fromkeys(codes), key=event_code_sort_key)
+
+
+def split_inline_event_sections(discuss_body: str, ordered_codes: list[str]) -> list[tuple[list[str], str]]:
+  if not discuss_body or not ordered_codes:
+    return []
+
+  marker_matches = []
+  for match in EVENT_RANGE_RE.finditer(discuss_body.upper()):
+    codes = [code for code in expand_event_token(match.group(0)) if code in ordered_codes]
+    if codes:
+      marker_matches.append((match.start(), match.end(), codes))
+
+  if not marker_matches:
+    pattern = re.compile(r"\b(" + "|".join(re.escape(code) for code in ordered_codes) + r")\b")
+    direct_matches = list(pattern.finditer(discuss_body.upper()))
+    marker_matches = [(match.start(), match.end(), [match.group(1)]) for match in direct_matches]
+
+  if not marker_matches:
+    if len(ordered_codes) == 1:
+      return [([ordered_codes[0]], clean_discuss_text(discuss_body))]
+    return []
+
+  sections: list[tuple[list[str], str]] = []
+  first_start, _, first_codes = marker_matches[0]
+  if first_start > 0:
+    leading = clean_discuss_text(discuss_body[:first_start])
+    if leading:
+      sections.append(([ordered_codes[0]], leading))
+
+  for index, (_, end_pos, codes) in enumerate(marker_matches):
+    start = end_pos
+    end = marker_matches[index + 1][0] if index + 1 < len(marker_matches) else len(discuss_body)
+    body = clean_discuss_text(discuss_body[start:end])
+    if body:
+      sections.append((codes, body))
+
+  merged: dict[str, list[str]] = defaultdict(list)
+  order: list[str] = []
+  for codes, body in sections:
+    for code in codes:
+      if code not in merged:
+        order.append(code)
+      merged[code].append(body)
+  return [([code], clean_discuss_text(" ".join(merged[code]))) for code in order if clean_discuss_text(" ".join(merged[code]))]
+
+
 def flatten_discuss_items(block: dict[str, Any]) -> list[dict[str, Any]]:
   discuss_body = clean_discuss_text(block.get("discussBody", ""))
   if not discuss_body or discuss_body.lower().startswith("none"):
     return []
   records: list[dict[str, Any]] = []
 
-  explicit_sections = list(re.finditer(r"(?m)^(?P<code>[A-Z]{1,5}[0-9A-Z]{4})\s*$", discuss_body))
+  explicit_sections = list(re.finditer(r"(?m)^(?P<code>[A-Z]{1,5}\d{4}(?:-\d+)?)\s*$", discuss_body))
   if explicit_sections:
     for index, section in enumerate(explicit_sections):
       start = section.end()
@@ -573,13 +670,50 @@ def flatten_discuss_items(block: dict[str, Any]) -> list[dict[str, Any]]:
       text = clean_discuss_text(discuss_body[start:end])
       if not text:
         continue
-      records.append({
-        **block,
-        "eventCode": section.group("code"),
-        "eventRefs": [section.group("code")],
-        "discussText": text,
-        "topics": split_topics(text),
-      })
+      codes = expand_event_token(section.group("code"))
+      topics = split_topics(text)
+      for event_code in codes:
+        if len(topics) > 1:
+          for topic in topics:
+            records.append({
+              **block,
+              "eventCode": event_code,
+              "eventRefs": [event_code],
+              "discussText": topic,
+              "topics": [topic],
+            })
+        else:
+          records.append({
+            **block,
+            "eventCode": event_code,
+            "eventRefs": [event_code],
+            "discussText": text,
+            "topics": topics or [text],
+          })
+    return records
+
+  inline_sections = split_inline_event_sections(discuss_body, event_codes_for_block(block))
+  if inline_sections:
+    for event_codes, text in inline_sections:
+      topics = split_topics(text)
+      for event_code in event_codes:
+        if len(topics) > 1:
+          for topic in topics:
+            records.append({
+              **block,
+              "eventCode": event_code,
+              "eventRefs": [event_code],
+              "discussText": topic,
+              "topics": [topic],
+            })
+        else:
+          records.append({
+            **block,
+            "eventCode": event_code,
+            "eventRefs": [event_code],
+            "discussText": text,
+            "topics": topics or [text],
+          })
     return records
 
   topics = split_topics(discuss_body)
