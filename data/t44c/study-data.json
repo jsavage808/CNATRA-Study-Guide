@@ -1,0 +1,621 @@
+{
+  "aircraft": "T-44C",
+  "title": "T-44C Pegasus",
+  "emergencyProcedures": [
+    {
+      "id": "t44c-abnormal-start",
+      "title": "Abnormal Start",
+      "category": "Critical Action",
+      "steps": [
+        "CONDITION LEVER - FUEL CUTOFF (DEC BELOW 790 C)",
+        "STARTER - STARTER ONLY (FOR THE REMAINDER OF THE 40 SECONDS)",
+        "STARTER - OFF (AT 40 SECONDS)"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Abnormal Start"
+      }
+    },
+    {
+      "id": "t44c-smoke-fume-elimination",
+      "title": "Smoke and Fume Elimination",
+      "category": "Critical Action",
+      "steps": [
+        "OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED",
+        "PRESSURIZATION - DUMP"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Smoke and Fume Elimination"
+      }
+    },
+    {
+      "id": "t44c-fuel-leaks",
+      "title": "Fuel Leaks",
+      "category": "Critical Action",
+      "steps": [
+        "CONDITION LEVER - FUEL CUTOFF",
+        "EMERGENCY SHUTDOWN CHECKLIST - EXECUTE"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Fuel Leaks"
+      }
+    },
+    {
+      "id": "t44c-emergency-shutdown-deck",
+      "title": "Emergency Shutdown on Deck",
+      "category": "Critical Action",
+      "steps": [
+        "STOP THE AIRCRAFT AND SET THE PARKING BRAKE",
+        "CONDITION LEVER(S) - FUEL CUTOFF",
+        "FIREWALL VALVES - CLOSED",
+        "BOOST PUMPS - OFF",
+        "FIRE EXTINGUISHER - AS REQUIRED",
+        "AUX BATT SWITCH - OFF",
+        "GANGBAR - OFF",
+        "EVACUATE AIRCRAFT"
+      ],
+      "source": {
+        "docId": "natops-checklist-01-t44aac-1c",
+        "label": "Checklist",
+        "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+        "page": 2,
+        "location": "Emergency Shutdown on Deck"
+      }
+    },
+    {
+      "id": "t44c-aborting-takeoff",
+      "title": "Aborting Takeoff",
+      "category": "Critical Action",
+      "steps": [
+        "ANNOUNCE \"ABORT\"",
+        "POWER LEVERS - IDLE",
+        "REVERSE - AS REQUIRED",
+        "BRAKES - AS REQUIRED",
+        "CONDITION LEVERS - FUEL CUTOFF",
+        "FIREWALL VALVES - CLOSED",
+        "BOOST PUMPS - OFF",
+        "FIRE EXTINGUISHER(S) - AS REQUIRED",
+        "AUX BATT SWITCH - OFF",
+        "GANGBAR - OFF",
+        "EVACUATE AIRCRAFT"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Aborting Takeoff"
+      }
+    },
+    {
+      "id": "t44c-engine-failure-after-takeoff",
+      "title": "Engine Failure After Takeoff",
+      "category": "Critical Action",
+      "steps": [
+        "POWER - AS REQUIRED",
+        "LANDING GEAR - UP",
+        "AIRSPEED - AS REQUIRED (VXSE OR VYSE)",
+        "EMERGENCY SHUTDOWN CHECKLIST - EXECUTE"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Engine Failure After Takeoff"
+      }
+    },
+    {
+      "id": "t44c-emergency-shutdown-checklist",
+      "title": "Emergency Shutdown Checklist",
+      "category": "Critical Action",
+      "steps": [
+        "POWER LEVER - IDLE",
+        "PROP LEVER - FEATHER",
+        "CONDITION LEVER - FUEL CUTOFF",
+        "FIREWALL VALVE - CLOSED",
+        "FIRE EXTINGUISHER - AS REQUIRED",
+        "BLEED AIR VALVE - CLOSED"
+      ],
+      "source": {
+        "docId": "natops-checklist-01-t44aac-1c",
+        "label": "Checklist",
+        "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+        "page": 2,
+        "location": "Emergency Shutdown Checklist"
+      }
+    },
+    {
+      "id": "t44c-windmilling-airstart",
+      "title": "Windmilling Airstart",
+      "category": "Critical Action",
+      "steps": [
+        "POWER LEVER (FAILED ENGINE) - IDLE",
+        "PROP LEVER (FAILED ENGINE) - FULL FORWARD",
+        "CONDITION LEVER (FAILED ENGINE) - FUEL CUTOFF",
+        "FIREWALL VALVE - OPEN",
+        "AUTOIGNITION - ARMED",
+        "CONDITION LEVER - LOW IDLE",
+        "POWER - AS REQUIRED"
+      ],
+      "source": {
+        "docId": "natops-checklist-01-t44aac-1c",
+        "label": "Checklist",
+        "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+        "page": 2,
+        "location": "Windmilling Airstart"
+      }
+    },
+    {
+      "id": "t44c-primary-governor",
+      "title": "Primary Governor Failure / Malfunction",
+      "category": "Critical Action",
+      "steps": [
+        "ATTEMPT TO ADJUST PROP RPM TO NORMAL OPERATING RANGE",
+        "POWER LEVER - IDLE",
+        "PROP LEVER - FEATHER",
+        "ALTERNATE PROP FEATHER CHECKLIST - AS REQUIRED",
+        "LAND AS SOON AS POSSIBLE"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Primary Governor Failure / Malfunction"
+      }
+    },
+    {
+      "id": "t44c-explosive-decompression",
+      "title": "Explosive Decompression",
+      "category": "Critical Action",
+      "steps": [
+        "OXYGEN MASK / MIC SWITCHES (100 PERCENT) - AS REQUIRED",
+        "DESCEND - AS REQUIRED"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Explosive Decompression"
+      }
+    },
+    {
+      "id": "t44c-unscheduled-electric-trim",
+      "title": "Unscheduled Electric Trim Activation",
+      "category": "Critical Action",
+      "steps": [
+        "A/P / TRIM DISCONNECT (control wheel) - DEPRESS FULLY AND HOLD"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Unscheduled Electric Trim Activation"
+      }
+    },
+    {
+      "id": "t44c-emergency-descent",
+      "title": "Emergency Descent Procedure",
+      "category": "Critical Action",
+      "steps": [
+        "POWER LEVERS - IDLE",
+        "PROPS - FULL FORWARD",
+        "FLAPS - AS REQUIRED",
+        "LANDING GEAR - AS REQUIRED",
+        "AIRSPEED - AS REQUIRED",
+        "WINDSHIELD HEAT - AS REQUIRED"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Emergency Descent Procedure"
+      }
+    },
+    {
+      "id": "t44c-spin-recovery",
+      "title": "Spin / Out of Control Flight Recovery",
+      "category": "Critical Action",
+      "steps": [
+        "POWER LEVERS - IDLE",
+        "RUDDER - FULL DEFLECTION OPPOSITE DIRECTION OF TURN NEEDLE",
+        "CONTROL WHEEL - RAPIDLY FORWARD",
+        "RUDDER - NEUTRALIZE AFTER ROTATION STOPS",
+        "CONTROL WHEEL - PULL OUT OF DIVE BY EXERTING SMOOTH, STEADY BACK PRESSURE"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Spin / Out of Control Flight Recovery"
+      }
+    },
+    {
+      "id": "t44c-terrain-warning",
+      "title": "Terrain Warning (IMC or at Night)",
+      "category": "Critical Action",
+      "steps": [
+        "WINGS - LEVEL",
+        "POWER - MAX CONTINUOUS",
+        "PITCH - AS REQUIRED TO SET AND MAINTAIN VX",
+        "FLAPS - APPROACH (UNLESS ALREADY UP)",
+        "GEAR - UP",
+        "FLAPS - UP",
+        "PROPS - 1900 RPM",
+        "CONTINUE CLIMB AT VX UNTIL ALL VISUAL AND VOICE WARNINGS CEASE"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Terrain Warning (IMC or at Night)"
+      }
+    },
+    {
+      "id": "t44c-single-engine-waveoff",
+      "title": "Single-Engine Waveoff / Missed Approach",
+      "category": "Critical Action",
+      "steps": [
+        "POWER - MAX CONTINUOUS, ESTABLISH POSITIVE RATE OF CLIMB (VXSE MINIMUM)",
+        "FLAPS - APPROACH (UNLESS ALREADY UP)",
+        "LANDING GEAR - UP",
+        "FLAPS - UP",
+        "PROP - 1900 RPM"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Single-Engine Waveoff / Missed Approach"
+      }
+    },
+    {
+      "id": "t44c-low-altitude-windshear",
+      "title": "Low Altitude Windshear",
+      "category": "Critical Action",
+      "steps": [
+        "POWER - MAXIMUM CONTINUOUS",
+        "PITCH - SET AND HOLD APPROXIMATELY 15 DEGREES NOSEUP",
+        "LANDING GEAR - UP",
+        "FLAPS - MAINTAIN CURRENT SETTING"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Low Altitude Windshear"
+      }
+    },
+    {
+      "id": "t44c-waveoff-missed-approach",
+      "title": "Waveoff / Missed Approach",
+      "category": "Critical Action",
+      "steps": [
+        "POWER - AS REQUIRED, ESTABLISH POSITIVE RATE OF CLIMB (VX MINIMUM)",
+        "FLAPS - APPROACH (UNLESS ALREADY UP)",
+        "LANDING GEAR - UP",
+        "FLAPS - UP",
+        "PROPS - 1900 RPM"
+      ],
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 1,
+        "location": "Waveoff / Missed Approach"
+      }
+    },
+    {
+      "id": "t44c-smoke-fire-unknown",
+      "title": "Smoke / Fire of Unknown Origin",
+      "category": "Emergency Procedure",
+      "steps": [
+        "CREW - ALERTED",
+        "CABIN TEMPERATURE MODE - OFF",
+        "VENT BLOWER - AUTO",
+        "OXYGEN MASKS / MIC SWITCHES (100%) - AS REQUIRED",
+        "BLEED AIR VALVES - CLOSED",
+        "EMERGENCY DESCENT - AS REQUIRED",
+        "PRESSURIZATION - DUMP",
+        "EMERGENCY TRANSMISSION - AS REQUIRED",
+        "GANGBAR - OFF",
+        "ALL ELECTRICAL SWITCHES (EXCEPT AUX BATT) - OFF",
+        "BATTERY - ON",
+        "GENERATORS (ONE AT A TIME) - ON",
+        "ESSENTIAL EQUIPMENT - ON"
+      ],
+      "source": {
+        "docId": "natops-checklist-01-t44aac-1c",
+        "label": "Checklist",
+        "file": "t44c/NATOPS Checklist-01-T44AAC-1C.pdf",
+        "page": 2,
+        "location": "Smoke / Fire of Unknown Origin"
+      }
+    }
+  ],
+  "limits": [
+    {
+      "id": "t44c-engine-limits",
+      "label": "Engine Operating Limits",
+      "value": "Maximum allowable 5 minutes: 1,315 ft-lb torque at 2,200 RPM or 1,520 ft-lb at 1,900 RPM, ITT 790, N1 101.5%, prop 2,200 RPM, oil pressure 85-100 PSI, oil temp 10-99 C.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 198,
+        "location": "Figure 4.3-1. Engine Operating Limitations"
+      }
+    },
+    {
+      "id": "t44c-fuel-capacity",
+      "label": "Fuel Capacity",
+      "value": "Total fuel capacity is 387.6 U.S. gallons, of which 384 U.S. gallons are usable.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Fuel System Capacity"
+      }
+    },
+    {
+      "id": "t44c-normal-tas-range",
+      "label": "Normal TAS Altitude Range",
+      "value": "Plus or minus 2,700 feet, flared landings only.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-altitude",
+      "label": "Altitude Ceiling",
+      "value": "31,000 feet.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 201,
+        "location": "Altitude Limitations"
+      }
+    },
+    {
+      "id": "t44c-touchdown",
+      "label": "Touchdown Sink Rate",
+      "value": "Maximum sink rate at ground contact is 600 feet per minute.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-crosswind",
+      "label": "Crosswind Limit",
+      "value": "Maximum crosswind component is 20 knots.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-gyro-suction",
+      "label": "Gyro Suction",
+      "value": "Normal operating range is 4.3 to 5.9 inHg.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-min-oxygen",
+      "label": "Minimum Oxygen Required",
+      "value": "Local / cross-country flight minimum oxygen is 1,000 / 1,500 PSI.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-cabin",
+      "label": "Cabin Pressure Differential",
+      "value": "Maximum operating cabin pressure differential is 4.7 PSI.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 202,
+        "location": "Structural Limitations"
+      }
+    },
+    {
+      "id": "t44c-vmcg",
+      "label": "VMCG",
+      "value": "Minimum controllable speed on ground is 63 KIAS.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Landing Limitations"
+      }
+    },
+    {
+      "id": "t44c-flap-g",
+      "label": "Flap G Limits",
+      "value": "Full flaps: +2.0 to 0.0 G.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Landing Limitations"
+      }
+    },
+    {
+      "id": "t44c-pneumatic",
+      "label": "Pneumatic Pressure",
+      "value": "Normal operating range is 12 to 20 PSI.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-weights",
+      "label": "Weight Limits",
+      "value": "Maximum ramp 9,710 pounds; maximum takeoff 9,650 pounds; maximum landing 9,168 pounds.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Weight Limitations"
+      }
+    },
+    {
+      "id": "t44c-vspeeds",
+      "label": "Climb and Glide Speeds",
+      "value": "VYSE 110 KIAS, max range glide 130 KIAS, max endurance glide 102 KIAS, VX 102 KIAS, VY 108 KIAS, VXSE 102 KIAS.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-gear-flap",
+      "label": "Gear and Flap Limits",
+      "value": "VLE 155 KIAS. Landing gear retraction 145 KIAS. VFE approach 174 KIAS. VFE full 140 KIAS.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 201,
+        "location": "Airframe Limitations"
+      }
+    },
+    {
+      "id": "t44c-engine-safe-speeds",
+      "label": "Single-Engine and Maneuvering Speeds",
+      "value": "VSSE 91 KIAS, VMCA 86 KIAS, VA 153 KIAS.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Airspeed Limitations"
+      }
+    },
+    {
+      "id": "t44c-vmo",
+      "label": "VMO / MMO",
+      "value": "VMO is 227 KIAS. Decrease VMO 4 KIAS for every 1,000 feet above 15,500 feet. MMO is 0.48 Mach.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 201,
+        "location": "Airframe Limitations"
+      }
+    },
+    {
+      "id": "t44c-battery",
+      "label": "Battery Voltage Minimums",
+      "value": "Minimum battery voltage for APU charge is 18 VDC, APU start is 20 VDC, and battery start is 22 VDC.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Electrical Limitations"
+      }
+    },
+    {
+      "id": "t44c-starter-cycle",
+      "label": "Starter Cycle Limits",
+      "value": "Starter duty cycle is limited to three 40-second cycles. Cooling periods: first cycle 60 seconds, second cycle 60 seconds, third cycle 30 minutes.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Starter Cycle Limitations"
+      }
+    },
+    {
+      "id": "t44c-prop-deicer",
+      "label": "Prop Deicer Ammeter",
+      "value": "Normal operation is 14 to 18 amps.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "General Limitations"
+      }
+    },
+    {
+      "id": "t44c-acceleration",
+      "label": "Acceleration Limits",
+      "value": "Clean: +3.0 to -1.0 G.",
+      "source": {
+        "docId": "a1-t44ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t44c/A1-T44CA-NFM-000.pdf",
+        "page": 201,
+        "location": "Acceleration Limitations"
+      }
+    },
+    {
+      "id": "t44c-prohibited",
+      "label": "Prohibited Maneuvers",
+      "value": "Intentional spins are prohibited.",
+      "source": {
+        "docId": "t44c-ops-limits-answers",
+        "label": "Ops Limits Study Sheet",
+        "file": "t44c/t44c-ops-limits-answers.pdf",
+        "page": 2,
+        "location": "Prohibited Maneuvers"
+      }
+    }
+  ]
+}

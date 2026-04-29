@@ -1,0 +1,372 @@
+{
+  "aircraft": "T-45C",
+  "title": "T-45C Goshawk",
+  "emergencyProcedures": [
+    {
+      "id": "t45c-loss-directional-control",
+      "title": "Loss of Directional Control",
+      "category": "Critical Action",
+      "steps": [
+        "Go-around",
+        "Paddle switch - PRESS",
+        "Gear and flaps - DO NOT REPOSITION",
+        "Engine instruments - MONITOR",
+        "Refer to procedure for blown tire(s) or NWS / NWS AUG caution light"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 499,
+        "location": "13.4 Loss of Directional Control"
+      }
+    },
+    {
+      "id": "t45c-abort",
+      "title": "Abort",
+      "category": "Critical Action",
+      "steps": [
+        "Throttle - IDLE",
+        "Speed brakes - EXTEND",
+        "Brakes - APPLY",
+        "Hook - DOWN (IF REQUIRED)"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 501,
+        "location": "14.1 Abort"
+      }
+    },
+    {
+      "id": "t45c-fuel-leak",
+      "title": "Fuel Leak / Excessive Fuel Flow",
+      "category": "Emergency Procedure",
+      "steps": [
+        "Throttle - AS REQUIRED (maintain a minimum of 70 percent N2)",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 521,
+        "location": "15.6 Fuel Leak / Excessive Fuel Flow"
+      }
+    },
+    {
+      "id": "t45c-vibrations",
+      "title": "Vibrations",
+      "category": "Emergency Procedure",
+      "steps": [
+        "Throttle - MINIMUM FOR SAFE FLIGHT",
+        "Engine instruments - MONITOR",
+        "Altitude - DESCEND BELOW 10,000 FEET IF POSSIBLE",
+        "AIR FLOW knob - OFF",
+        "Reduce airspeed",
+        "AIR FLOW knob - NORMAL / AS DESIRED",
+        "Request inspection by other aircraft, if practical",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 523,
+        "location": "15.7 Vibrations"
+      }
+    },
+    {
+      "id": "t45c-electrical-fire",
+      "title": "Electrical Fire",
+      "category": "Critical Action",
+      "steps": [
+        "GEN switch - OFF",
+        "Non-essential electrical equipment - OFF",
+        "Land as soon as practicable",
+        "Proceed to VMC as soon as possible",
+        "BATT switches - OFF",
+        "Emergency oxygen green ring(s) - PULL",
+        "Land as soon as possible",
+        "Landing gear - EMERGENCY EXTEND",
+        "Plan a no-flap approach and arrested landing, if available"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 525,
+        "location": "15.8 Electrical Fire"
+      }
+    },
+    {
+      "id": "t45c-smoke-fumes",
+      "title": "Smoke or Fumes in Cockpit",
+      "category": "Critical Action",
+      "steps": [
+        "Mask - ON / TIGHT",
+        "Initiate controlled descent to below 18,000 feet MSL",
+        "AIR FLOW knob - OFF (below 18,000 feet MSL if possible)",
+        "Airspeed - REDUCE (as practical)",
+        "Warn other cockpit occupant / secure loose items",
+        "Seat - LOWER",
+        "MDC firing handle - PULL",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 527,
+        "location": "15.9 Smoke or Fumes in Cockpit"
+      }
+    },
+    {
+      "id": "t45c-rapid-decompression",
+      "title": "Rapid Decompression",
+      "category": "Critical Action",
+      "steps": [
+        "Emergency oxygen green ring(s) - PULL",
+        "OBOGS FLOW selector(s) - OFF",
+        "Descend below 10,000 feet cabin altitude",
+        "Remain on emergency oxygen until depleted and then resume OBOGS operation until engine shutdown",
+        "Land as soon as practicable"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 529,
+        "location": "15.10 Rapid Decompression"
+      }
+    },
+    {
+      "id": "t45c-total-electrical-failure",
+      "title": "Total Electrical Failure",
+      "category": "Critical Action",
+      "steps": [
+        "Emergency oxygen green ring(s) - PULL",
+        "Proceed to VMC as soon as possible",
+        "Attempt to reset generator / check BATT switches - ON",
+        "Land as soon as practicable",
+        "Landing gear - EMERGENCY EXTEND",
+        "Plan a no-flap / slat approach",
+        "Make a short field arrestment if available"
+      ],
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 535,
+        "location": "15.13 Total Electrical Failure"
+      }
+    }
+  ],
+  "limits": [
+    {
+      "id": "t45c-solo",
+      "label": "Solo Flying",
+      "value": "Solo flying shall be conducted only from the forward cockpit.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 311,
+        "location": "4.1.1 Solo Flying"
+      }
+    },
+    {
+      "id": "t45c-altitude",
+      "label": "Altitude Limit",
+      "value": "Maximum altitude is 41,000 feet MSL.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 311,
+        "location": "4.1.2 Altitude Limits"
+      }
+    },
+    {
+      "id": "t45c-icing",
+      "label": "Icing",
+      "value": "Flight in known icing conditions shall be avoided. When airframe icing is visible, intentional stalls or use of full flaps is not authorized.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 311,
+        "location": "4.1.3 Icing"
+      }
+    },
+    {
+      "id": "t45c-engine-handling",
+      "label": "Engine Handling Limits",
+      "value": "Throttle shall be at idle for abrupt pulls to full back stick, abrupt full lateral stick inputs at full back stick, and airspeeds less than 85 KIAS above 15,000 feet MSL.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 313,
+        "location": "4.2.1 Engine Handling Limitations"
+      }
+    },
+    {
+      "id": "t45c-engine",
+      "label": "Engine Operating Limits",
+      "value": "MRT: 104 percent N2 / 610 C for 30 minutes per flight hour. Transient: 106 percent N2 / 645 C for less than 20 seconds. Maximum continuous: 100 percent N2 / 550 C. Idle: 56.5 +/- 2 percent N2 / 450 C.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 314,
+        "location": "Figure 4.2-1. F405-RR-401 Operating Limitations"
+      }
+    },
+    {
+      "id": "t45c-gts",
+      "label": "GTS Start Limits",
+      "value": "GTS start with external power is prohibited. Minimum interval between each GTS start attempt is 3 minutes. After three consecutive starts, wait 30 minutes before any further start attempts.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 317,
+        "location": "4.3 GTS Limitations"
+      }
+    },
+    {
+      "id": "t45c-fuel-temp",
+      "label": "Fuel Temperature Limits",
+      "value": "For A++(F-24), Jet A, and A++100 (F-27), do not allow indicated TAT to dwell at or below the fuel freeze point plus 3 C. Operation is restricted to ambient temperatures above 0 C when using fuel without FSII.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 319,
+        "location": "4.4 Fuel Limitations"
+      }
+    },
+    {
+      "id": "t45c-system-speeds",
+      "label": "System Airspeed Limits",
+      "value": "Landing gear transition / extended: 200 KIAS or less. Flaps / slats transition / extended: 200 KIAS or less. Arresting hook transition / extended: 450 KIAS or less.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 322,
+        "location": "Figure 4.5-2. System Operation Limitations"
+      }
+    },
+    {
+      "id": "t45c-canopy-deck",
+      "label": "Canopy and Deck Limits",
+      "value": "Canopy full open for taxi: prevailing wind 20 knots or less. Stationary or towing with canopy full open: prevailing wind 32 knots or less. Tires and nosewheel steering on deck: 176 knots groundspeed or less.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 322,
+        "location": "Figure 4.5-2. System Operation Limitations"
+      }
+    },
+    {
+      "id": "t45c-hot-refuel",
+      "label": "Hot Refueling",
+      "value": "Hot refueling fuel level must be 2,800 pounds or less if PRECHECK is unsuccessful.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 322,
+        "location": "Figure 4.5-2. System Operation Limitations"
+      }
+    },
+    {
+      "id": "t45c-crosswind",
+      "label": "Crosswind Limits",
+      "value": "Single aircraft dry runway 20 knots, wet runway 15 knots, section takeoff 10 knots, banner tow 10 knots, NWS off / failed 15 knots.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 323,
+        "location": "4.5.5 Takeoff / Landing Limitations"
+      }
+    },
+    {
+      "id": "t45c-high-gain-nws",
+      "label": "High Gain Nosewheel Steering",
+      "value": "High gain nosewheel steering shall be used for low speed taxi operations only, less than 10 knots groundspeed.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 323,
+        "location": "4.5.5 Takeoff / Landing Limitations"
+      }
+    },
+    {
+      "id": "t45c-fclp",
+      "label": "FCLP Landing Configurations",
+      "value": "FCLP landings are authorized only with clean loading and full flaps, or pylons alone / pylons with empty PMBRs or BRU-38A and full flaps.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 323,
+        "location": "4.5.5 Takeoff / Landing Limitations"
+      }
+    },
+    {
+      "id": "t45c-landing-sink",
+      "label": "Landing Sink Rate",
+      "value": "For landings in a configuration other than authorized FCLP configurations, sink rate shall not exceed 600 feet per minute.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 323,
+        "location": "4.5.5 Takeoff / Landing Limitations"
+      }
+    },
+    {
+      "id": "t45c-banner",
+      "label": "Banner Tow Limits",
+      "value": "Maximum altitude 20,000 feet MSL. Maximum airspeed 220 KIAS. Maximum bank angle 45 degrees. Maximum AOA 18 units.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 324,
+        "location": "4.5.6 Banner Towing"
+      }
+    },
+    {
+      "id": "t45c-banner-release",
+      "label": "Banner Release Limits",
+      "value": "Minimum banner release altitude 500 feet AGL. Banner release airspeed 140 to 200 KIAS. For release between 140 and 150 KIAS, use one-half flaps.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 324,
+        "location": "4.5.6 Banner Towing"
+      }
+    },
+    {
+      "id": "t45c-prohibited",
+      "label": "Prohibited Maneuvers",
+      "value": "Intentional spins or tailslides are prohibited. Sustained zero or negative G flight for more than 30 seconds is prohibited.",
+      "source": {
+        "docId": "a1-t45ca-nfm-000",
+        "label": "NATOPS",
+        "file": "t45c/A1-T45CA-NFM-000.pdf",
+        "page": 324,
+        "location": "4.5.7 Prohibited Maneuvers"
+      }
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "aircraft": "T-6B",
+  "title": "T-6B Texan II",
+  "emergencyProcedures": [
+    {
+      "id": "t6b-abort-start",
+      "title": "Abort Start Procedure",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - OFF",
+        "STARTER switch - AUTO/RESET"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 287,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-emergency-engine-shutdown-ground",
+      "title": "Emergency Engine Shutdown on the Ground",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - OFF",
+        "FIREWALL SHUTOFF HANDLE - PULL",
+        "Emergency ground egress - As required"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 287,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-emergency-ground-egress",
+      "title": "Emergency Ground Egress",
+      "category": "Critical Action",
+      "steps": [
+        "ISS mode selector - SOLO",
+        "Seat safety pin - Install (BOTH)",
+        "PARKING BRAKE - As required",
+        "Canopy - Open",
+        "CFS handle safety pin - Remove (BOTH)",
+        "CFS handle - Rotate 90 degrees counterclockwise and pull (BOTH)",
+        "Upper fittings, lower fittings, and leg restraint garters - Release (BOTH)",
+        "BAT, GEN, and AUX BAT switches - OFF",
+        "Evacuate aircraft"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 287,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-abort",
+      "title": "Abort",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - IDLE",
+        "BRAKES - AS REQUIRED"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 287,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-engine-failure-immediately-after-takeoff",
+      "title": "Engine Failure Immediately After Takeoff",
+      "category": "Critical Action",
+      "steps": [
+        "EJECT (BOTH)"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 287,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-engine-failure-flight",
+      "title": "Engine Failure During Flight",
+      "category": "Critical Action",
+      "steps": [
+        "ZOOM/GLIDE - 125 KNOTS (MINIMUM)",
+        "PCL - OFF",
+        "INTERCEPT ELP",
+        "Airstart - Attempt if warranted",
+        "FIREWALL SHUTOFF handle - Pull",
+        "Execute Forced Landing or Eject"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 240,
+        "location": "Engine Failure During Flight"
+      }
+    },
+    {
+      "id": "t6b-immediate-airstart-pmu-norm",
+      "title": "Immediate Airstart (PMU NORM)",
+      "category": "Critical Action",
+      "steps": [
+        "ZOOM/GLIDE - 125 KNOTS (MINIMUM)",
+        "PCL - OFF",
+        "PCL - IDLE, ABOVE 13% N1",
+        "Engine instruments - Monitor ITT, N1, and oil pressure",
+        "PCL - OFF",
+        "FIREWALL SHUTOFF handle - Pull",
+        "Execute Forced Landing or Eject",
+        "PCL - As required after N1 reaches IDLE RPM (approximately 67% N1)",
+        "PEL - Execute"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 288,
+        "location": "Immediate Airstart (PMU NORM)"
+      }
+    },
+    {
+      "id": "t6b-uncommanded-power-change",
+      "title": "Uncommanded Power Changes / Loss of Power / Uncommanded Propeller Feather",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - MID RANGE",
+        "PMU SWITCH - OFF",
+        "PROP SYS CIRCUIT BREAKER - PULL, IF NP STABLE BELOW 40%",
+        "PCL - As required",
+        "PEL - Execute",
+        "PROP SYS circuit breaker - Reset, as required",
+        "PCL - OFF",
+        "FIREWALL SHUTOFF handle - Pull",
+        "Execute Forced Landing or Eject"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 288,
+        "location": "Uncommanded Power Changes / Loss of Power / Uncommanded Propeller Feather"
+      }
+    },
+    {
+      "id": "t6b-compressor-stalls",
+      "title": "Compressor Stalls",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - IDLE",
+        "PMU switch - OFF",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 288,
+        "location": "Compressor Stalls"
+      }
+    },
+    {
+      "id": "t6b-ocf",
+      "title": "Inadvertent Departure From Controlled Flight",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - IDLE",
+        "CONTROLS - NEUTRAL",
+        "ALTITUDE - CHECK",
+        "Recover from unusual attitude"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 289,
+        "location": "Inadvertent Departure From Controlled Flight"
+      }
+    },
+    {
+      "id": "t6b-fire-in-flight",
+      "title": "Fire In Flight",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - OFF",
+        "FIREWALL SHUTOFF HANDLE - PULL",
+        "Forced Landing - Execute",
+        "Eject (BOTH)",
+        "PEL - Execute"
+      ],
+      "note": "If fire is not confirmed, execute PEL. If fire is extinguished, execute a forced landing.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 247,
+        "location": "Fire In Flight"
+      }
+    },
+    {
+      "id": "t6b-smoke-fume-electrical-fire",
+      "title": "Smoke and Fume Elimination / Electrical Fire",
+      "category": "Emergency Procedure",
+      "steps": [
+        "OBOGS - CHECK (BOTH): supply lever ON, concentration lever MAX, pressure lever EMERGENCY",
+        "Descend below 10,000 feet MSL - Initiate (as required)",
+        "PRESSURIZATION switch - RAM/DUMP",
+        "BLEED AIR INFLOW switch - OFF",
+        "BAT and GEN switches - OFF",
+        "AUX BAT switch - OFF (as required)",
+        "CFS handle safety pin - Remove (BOTH)",
+        "CFS - Rotate 90 degrees counterclockwise and pull (if necessary)",
+        "Restore electrical power - As required",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 248,
+        "location": "Smoke and Fume Elimination / Electrical Fire"
+      }
+    },
+    {
+      "id": "t6b-chip-detector",
+      "title": "Chip Detector Warning",
+      "category": "Critical Action",
+      "steps": [
+        "PCL - Minimum necessary to intercept ELP; avoid unnecessary PCL movements",
+        "PEL - Execute"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 289,
+        "location": "Chip Detector Warning"
+      }
+    },
+    {
+      "id": "t6b-oil-system",
+      "title": "Oil System Malfunction or Low Oil Pressure",
+      "category": "Critical Action",
+      "steps": [
+        "Terminate maneuver",
+        "Check oil pressure",
+        "Land as soon as possible"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 289,
+        "location": "Oil System Malfunction or Low Oil Pressure"
+      }
+    },
+    {
+      "id": "t6b-obogs-failure",
+      "title": "OBOGS Failure / Overtemp / Physiological Symptoms",
+      "category": "Critical Action",
+      "steps": [
+        "GREEN RING - PULL (AS REQUIRED) (BOTH)",
+        "DESCENT BELOW 10,000 FEET MSL - INITIATE",
+        "OBOGS SUPPLY LEVER - OFF (BOTH)"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 290,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-eject",
+      "title": "Eject",
+      "category": "Critical Action",
+      "steps": [
+        "EJECTION HANDLE - PULL (BOTH)"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 290,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-forced-landing",
+      "title": "Forced Landing",
+      "category": "Critical Action",
+      "steps": [
+        "Airspeed - 125 KIAS prior to extending landing gear",
+        "EMER LDG GR handle - Pull (as required)",
+        "Airspeed - 120 KIAS minimum until intercepting final; 110 KIAS minimum on final",
+        "Flaps - As required"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 290,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    },
+    {
+      "id": "t6b-pel",
+      "title": "Precautionary Emergency Landing (PEL)",
+      "category": "Critical Action",
+      "steps": [
+        "Turn to nearest suitable field",
+        "Climb or accelerate to intercept ELP",
+        "Gear, flaps, speed brake - UP"
+      ],
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 290,
+        "location": "Figure 3-13. Critical Action Table"
+      }
+    }
+  ],
+  "limits": [
+    {
+      "id": "t6b-vmo-mmo",
+      "label": "VMO / MMO",
+      "value": "316 KIAS up to and including 19,020 feet MSL; 0.67 IMN above 19,020 feet MSL.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 300,
+        "location": "Maximum Operating Airspeed / Maximum Operating Mach Number"
+      }
+    },
+    {
+      "id": "t6b-vfe",
+      "label": "Flaps Limit",
+      "value": "VFE is 150 KIAS.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 300,
+        "location": "Wing Flaps Limitations"
+      }
+    },
+    {
+      "id": "t6b-vle",
+      "label": "Landing Gear Limit",
+      "value": "VLE is 150 KIAS.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 300,
+        "location": "Landing Gear Limitations"
+      }
+    },
+    {
+      "id": "t6b-vg",
+      "label": "Turbulent Air",
+      "value": "VG is 207 KIAS; recommended turbulent airspeed is 180 KIAS.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 300,
+        "location": "Turbulent Air Penetration Speed Limitations"
+      }
+    },
+    {
+      "id": "t6b-vo",
+      "label": "Operating Maneuvering Speed",
+      "value": "VO is 227 KIAS; full rudder deflection above 150 KIAS exceeds rudder control system limits.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 300,
+        "location": "Maneuvering Speed Limitations"
+      }
+    },
+    {
+      "id": "t6b-zero-g",
+      "label": "Zero G Limit",
+      "value": "Zero G is limited to 5 seconds maximum.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 301,
+        "location": "Flight Maneuvering Limitations"
+      }
+    },
+    {
+      "id": "t6b-negative-g",
+      "label": "Negative G Limits",
+      "value": "Negative G operation, including inverted, is limited to 60 seconds. Additional negative G maneuvers require 60 seconds upright flight between maneuvers.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 301,
+        "location": "Flight Maneuvering Limitations"
+      }
+    },
+    {
+      "id": "t6b-prohibited",
+      "label": "Prohibited Maneuvers",
+      "value": "Inverted stalls, inverted spins, aggravated spins past two turns, spins with PCL above idle, spins with landing gear, flaps, or speed brake extended, spins with PMU off, and spins below 10,000 feet pressure altitude are prohibited.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 301,
+        "location": "Prohibited Maneuvers"
+      }
+    },
+    {
+      "id": "t6b-weights",
+      "label": "Weight Limits",
+      "value": "Maximum ramp 6,950 pounds; takeoff 6,900 pounds; landing 6,900 pounds; zero fuel 5,850 pounds; baggage compartment 80 pounds.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 302,
+        "location": "Weight Limitations"
+      }
+    },
+    {
+      "id": "t6b-touchdown-rate",
+      "label": "Touchdown Sink Rate",
+      "value": "600 feet per minute at normal landing tire pressure; 780 feet per minute at maximum landing tire pressure.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 302,
+        "location": "Landing Limitations"
+      }
+    },
+    {
+      "id": "t6b-wind",
+      "label": "Wind Limits",
+      "value": "Maximum crosswind component: dry runway 25 knots, wet runway 10 knots, icy runway 5 knots. Maximum tailwind component for takeoff: 10 knots.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 302,
+        "location": "Wind Limitations"
+      }
+    },
+    {
+      "id": "t6b-fuel-imbalance",
+      "label": "Fuel Imbalance",
+      "value": "Maximum lateral fuel imbalance is 50 pounds.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 305,
+        "location": "Fuel Imbalance"
+      }
+    },
+    {
+      "id": "t6b-temp",
+      "label": "Ground Temperature Limits",
+      "value": "Ground operation is limited to ambient temperatures from -23 C to +43 C. Ground operation above +43 C is permitted for up to 15 minutes only to taxi the aircraft to park.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 305,
+        "location": "Temperature Limitations"
+      }
+    },
+    {
+      "id": "t6b-generator",
+      "label": "Generator Limits",
+      "value": "Inflight generator limits: +50 to -2 AMPS. Ground / inflight voltage: 28.0 to 28.5 volts.",
+      "source": {
+        "docId": "a1-t6baa-nfm-000",
+        "label": "NATOPS",
+        "file": "t6b/A1-T6BAA-NFM-000.pdf",
+        "page": 299,
+        "location": "Generator Limitations"
+      }
+    }
+  ]
+}
